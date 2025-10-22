@@ -1,0 +1,1329 @@
+[
+    {
+        "product_url": "https://www.tricorbraun.com/4-oz-amber-glass-boston-round-bottle-22-400-neck-finish-319291.html",
+        "product_id": "319291",
+        "product_name": "4 oz Amber Glass Boston Round Bottle 22-400 Neck Finish",
+        "product_uom": "oz",
+        "product_capacity": "4 oz",
+        "product_description": "This 4 ounce amber glass Boston round bottle is great for medicine, essential oils, perfumes, or room sprays, and more. The amber color meets the USP XXI requirements for light transmission, Type III and NP Chemical Resistance Tests; which provides UV protection to help your product last longer. Certificate of Analysis can be provided request. This bottle has a 22-400 neck finish; which can be paired with any of our matching items below to get the best functionality of this bottle for your specific use.",
+        "product_notes": [
+            "128/Case, 108.0 Gram Weight",
+            "Closures not included with bottles, unless otherwise specified."
+        ],
+        "product_images": [
+            {
+                "image_url": "https://www.tricorbraun.com/media/catalog/product/3/1/319291_1_.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=75&width=75&canvas=75:75"
+            }
+        ],
+        "product_availability": {
+            "in_stock": "In stock"
+        },
+        "product_selluom": [
+            {
+                "qty_range": "1 Case",
+                "unit": "Case",
+                "price": "$44.70",
+                "price_per_unit": "$0.35"
+            },
+            {
+                "qty_range": "12 Case",
+                "unit": "Case",
+                "price": "$40.23",
+                "price_per_unit": "$0.31"
+            },
+            {
+                "qty_range": "18 Case",
+                "unit": "Case",
+                "price": "$33.79",
+                "price_per_unit": "$0.26"
+            },
+            {
+                "qty_range": "72 Case",
+                "unit": "Case",
+                "price": "$28.72",
+                "price_per_unit": "$0.22"
+            }
+        ],
+        "product_specs": {
+            "items_per_unit": "128 Items Per Case.",
+            "Country of Origin": "China",
+            "Base Diameter": "1.92",
+            "Color": "Amber",
+            "Neck Height Dimension": "400",
+            "Neck Size (MM)": "22.000000",
+            "Total Height": "4.42",
+            "Capacity": "4 oz",
+            "Material": "Glass",
+            "Neck Finish": "22-400",
+            "Sold By": "Case",
+            "Style": "Boston Round",
+            "quantity": "128",
+            "is_cap_included": false
+        },
+        "product_accessories": {
+            "info": "No Related Products section found"
+        },
+        "product_normalized_uom": {
+            "product_capacity_uom": "oz",
+            "product_capacity_value": "4",
+            "normalized_capacity_uom": "ml",
+            "normalized_capacity_value": "118.29"
+        },
+        "product_metadata": {
+            "scraped_at": "2025-10-22T20:56:28.694939",
+            "processing_time_seconds": 4.52,
+            "is_missing_fields": false,
+            "missing_fields": [],
+            "company_name": "TricorBraun"
+        },
+        "url": "https://www.tricorbraun.com/4-oz-amber-glass-boston-round-bottle-22-400-neck-finish-319291.html"
+    },
+    {
+        "product_url": "https://www.tricorbraun.com/4-oz-amber-glass-boston-round-bottle-22-400-neck-finish-052046.html",
+        "product_id": "052046",
+        "product_name": "4 oz Amber Glass Boston Round Bottle 22-400 Neck Finish",
+        "product_uom": "oz",
+        "product_capacity": "4 oz",
+        "product_description": "This 4 fluid ounce amber glass Boston Round is great for essential oils, perfumes, massage oils and room sprays as well as its more traditional use in packaging pharmaceutical and chemical products. The amber color provides protection against ultraviolet (UV) light to help your product last longer.\nPlease note: This item may require additional lead time or minimum order quantity. Request a Quote for the most current information.",
+        "product_notes": [
+            "Closures not included with bottles, unless otherwise specified."
+        ],
+        "product_images": [
+            {
+                "image_url": "https://www.tricorbraun.com/media/catalog/product/5/b/5b8d43ec6aaa80c54a63a67a00063fa04fe674386106d1da1ba32f8b1374148f.jpeg?optimize=medium&bg-color=255,255,255&fit=bounds&height=75&width=75&canvas=75:75"
+            }
+        ],
+        "product_availability": {
+            "in_stock": "N/A"
+        },
+        "product_selluom": [],
+        "product_specs": {
+            "items_per_unit": null,
+            "Color": "Amber",
+            "Neck Height Dimension": "400.0",
+            "Neck Size (MM)": "22.000000",
+            "Capacity": "4 oz",
+            "Material": "Glass",
+            "Neck Finish": "22-400",
+            "Sold By": "Case",
+            "Shape": "Round",
+            "Style": "Boston Round",
+            "is_cap_included": false
+        },
+        "product_accessories": {
+            "info": "No Related Products section found"
+        },
+        "product_normalized_uom": {
+            "product_capacity_uom": "oz",
+            "product_capacity_value": "4",
+            "normalized_capacity_uom": "ml",
+            "normalized_capacity_value": "118.29"
+        },
+        "product_metadata": {
+            "scraped_at": "2025-10-22T20:56:33.546941",
+            "processing_time_seconds": 4.85,
+            "is_missing_fields": true,
+            "missing_fields": [
+                "product_selluom"
+            ],
+            "company_name": "TricorBraun"
+        },
+        "url": "https://www.tricorbraun.com/4-oz-amber-glass-boston-round-bottle-22-400-neck-finish-052046.html"
+    },
+    {
+        "product_url": "https://www.tricorbraun.com/4-oz-amber-glass-boston-round-bottle-22-400-neck-finish-011696.html",
+        "product_id": "011696",
+        "product_name": "4 oz Amber Glass Boston Round Bottle 22-400 Neck Finish",
+        "product_uom": "oz",
+        "product_capacity": "4 oz",
+        "product_description": "This amber glass Boston Round bottle has a 22-400 neck finish. In addition, the amber colored glass filters out untraviolet (UV) light. This bottle will work well for pharmaceuticals, aromatherapy, essential oil, herbal extracts, candle scents, or any liquid requiring UV protection.\nPlease note: This item may require additional lead time or minimum order quantity. Request a Quote for the most current information.",
+        "product_notes": [
+            "Closures not included with bottles, unless otherwise specified."
+        ],
+        "product_images": [
+            {
+                "image_url": "https://www.tricorbraun.com/media/catalog/product/5/c/5c91df4c363c1b1c32d7bd5132082ef0b35f736ddeca70c52b0ec1e144eb4ce2.jpeg?optimize=medium&bg-color=255,255,255&fit=bounds&height=75&width=75&canvas=75:75"
+            }
+        ],
+        "product_availability": {
+            "in_stock": "N/A"
+        },
+        "product_selluom": [],
+        "product_specs": {
+            "items_per_unit": null,
+            "Country of Origin": "Czechia",
+            "Color": "Amber",
+            "Neck Height Dimension": "400.0",
+            "Neck Size (MM)": "22.000000",
+            "Overflow Capacity": "127.5",
+            "Capacity": "4 oz",
+            "Material": "Glass",
+            "Neck Finish": "22-400",
+            "Sold By": "Case",
+            "Shape": "Round",
+            "Style": "Boston Round",
+            "is_cap_included": false
+        },
+        "product_accessories": {
+            "info": "No Related Products section found"
+        },
+        "product_normalized_uom": {
+            "product_capacity_uom": "oz",
+            "product_capacity_value": "4",
+            "normalized_capacity_uom": "ml",
+            "normalized_capacity_value": "118.29"
+        },
+        "product_metadata": {
+            "scraped_at": "2025-10-22T20:56:38.725032",
+            "processing_time_seconds": 5.18,
+            "is_missing_fields": true,
+            "missing_fields": [
+                "product_selluom"
+            ],
+            "company_name": "TricorBraun"
+        },
+        "url": "https://www.tricorbraun.com/4-oz-amber-glass-boston-round-bottle-22-400-neck-finish-011696.html"
+    },
+    {
+        "product_url": "https://www.tricorbraun.com/4-oz-amber-glass-boston-round-bottle-22-400-neck-finish.html",
+        "product_id": "011683",
+        "product_name": "4 oz Amber Glass Boston Round Bottle 22-400 Neck Finish",
+        "product_uom": "oz",
+        "product_capacity": "4 oz",
+        "product_description": "This 4 ounce amber glass Boston round bottle is great for essential oils, perfumes, room sprays, lotions, massage oils and more. The amber color meets the USP XXI requirements for light transmission, Type III and NP Chemical Resistance Tests; which provides UV protection to help your product last longer. This bottle has a special 22-400 finish; which can be paired with any of our matching items below to get the best functionatily of this bottle for your specific use.\nPlease note: This item may require additional lead time or minimum order quantity. Request a Quote for the most current information.",
+        "product_notes": [
+            "Closures not included with bottles, unless otherwise specified."
+        ],
+        "product_images": [
+            {
+                "image_url": "https://www.tricorbraun.com/media/catalog/product/b/0/b0c090c490da6e7ac529aff8aea88cb64db5463f2213e16bec89d7187bcf178d.jpeg?optimize=medium&bg-color=255,255,255&fit=bounds&height=75&width=75&canvas=75:75"
+            }
+        ],
+        "product_availability": {
+            "in_stock": "N/A"
+        },
+        "product_selluom": [],
+        "product_specs": {
+            "items_per_unit": null,
+            "Country of Origin": "China",
+            "Base Diameter": "2\"",
+            "Circumference": "6\"",
+            "Color": "Amber",
+            "Label Height": "3\"",
+            "Neck Height Dimension": "400.0",
+            "Neck Size (MM)": "22.000000",
+            "Total Height": "4.5\"",
+            "Capacity": "4 oz",
+            "Material": "Glass",
+            "Neck Finish": "22-400",
+            "Sold By": "Case",
+            "Shape": "Round",
+            "Style": "Boston Round",
+            "is_cap_included": false
+        },
+        "product_accessories": [
+            {
+                "sku": "SKU#: 001359",
+                "name": "22-400 Black PP Plastic Dropper Assembly - 7 x 108 mm Straight Tip Glass Pipette",
+                "url": "https://www.tricorbraun.com/22-400-black-pp-plastic-dropper-assembly-7-x-108-mm-straight-tip-glass-pipette.html"
+            }
+        ],
+        "product_normalized_uom": {
+            "product_capacity_uom": "oz",
+            "product_capacity_value": "4",
+            "normalized_capacity_uom": "ml",
+            "normalized_capacity_value": "118.29"
+        },
+        "product_metadata": {
+            "scraped_at": "2025-10-22T20:56:41.467140",
+            "processing_time_seconds": 2.74,
+            "is_missing_fields": true,
+            "missing_fields": [
+                "product_selluom"
+            ],
+            "company_name": "TricorBraun"
+        },
+        "url": "https://www.tricorbraun.com/4-oz-amber-glass-boston-round-bottle-22-400-neck-finish.html"
+    },
+    {
+        "product_url": "https://www.tricorbraun.com/4-oz-clear-glass-boston-round-bottle-22-400-neck-finish-319893.html",
+        "product_id": "319893",
+        "product_name": "4 oz Clear Glass Boston Round Bottle 22-400 Neck Finish",
+        "product_uom": "oz",
+        "product_capacity": "4 oz",
+        "product_description": "This 4 oz clear glass Boston round bottle has a 22-400 neck finish and is great for packaging medicinal liquids and powders, perfumes, massage oils and much more. This 4 oz glass Boston round is sold by the pallet with 9,216-bottles on each pallet. See the related products below to find closures and accessories to help complete your packaging needs.",
+        "product_notes": [
+            "108 Gram Weight, 9,216/Pallet",
+            "Closures not included with bottles, unless otherwise specified."
+        ],
+        "product_images": [
+            {
+                "image_url": "https://www.tricorbraun.com/media/catalog/product/3/1/319893-2.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=75&width=75&canvas=75:75"
+            }
+        ],
+        "product_availability": {
+            "in_stock": "Item is currently estimated to ship within 2 - 4 weeks."
+        },
+        "product_selluom": [
+            {
+                "qty_range": "1 Pallet",
+                "unit": "Pallet",
+                "price": "$2,300.00",
+                "price_per_unit": "$0.25"
+            }
+        ],
+        "product_specs": {
+            "items_per_unit": "9216 Items Per Pallet.",
+            "Country of Origin": "China",
+            "Base Diameter": "1.92\"",
+            "Color": "Clear",
+            "Neck Height Dimension": "400",
+            "Neck Size (MM)": "22.000000",
+            "Total Height": "4.44\"",
+            "Capacity": "4 oz",
+            "Material": "Glass",
+            "Neck Finish": "22-400",
+            "Sold By": "Pallet",
+            "Style": "Boston Round",
+            "quantity": "9,216",
+            "is_cap_included": false
+        },
+        "product_accessories": [
+            {
+                "sku": "SKU#: 001359",
+                "name": "22-400 Black PP Plastic Dropper Assembly - 7 x 108 mm Straight Tip Glass Pipette",
+                "url": "https://www.tricorbraun.com/22-400-black-pp-plastic-dropper-assembly-7-x-108-mm-straight-tip-glass-pipette.html"
+            },
+            {
+                "sku": "SKU#: 140563",
+                "name": "22-400 White PP Plastic Push and Turn Child Resistant Lined Closure - Plain F-217 Liner",
+                "url": "https://www.tricorbraun.com/22-400-pp-plastic-push-and-turn-child-resistant-lined-closure-with-text-top-white.html"
+            }
+        ],
+        "product_normalized_uom": {
+            "product_capacity_uom": "oz",
+            "product_capacity_value": "4",
+            "normalized_capacity_uom": "ml",
+            "normalized_capacity_value": "118.29"
+        },
+        "product_metadata": {
+            "scraped_at": "2025-10-22T20:56:46.135252",
+            "processing_time_seconds": 4.67,
+            "is_missing_fields": false,
+            "missing_fields": [],
+            "company_name": "TricorBraun"
+        },
+        "url": "https://www.tricorbraun.com/4-oz-clear-glass-boston-round-bottle-22-400-neck-finish-319893.html"
+    },
+    {
+        "product_url": "https://www.tricorbraun.com/4-oz-glass-boston-round-bottle-22-400-neck-finish-clear.html",
+        "product_id": "011660",
+        "product_name": "4 oz Clear Glass Boston Round Bottle 22-400 Neck Finish",
+        "product_uom": "oz",
+        "product_capacity": "4 oz",
+        "product_description": "This 4 oz clear glass Boston round bottle has a 22-400 neck finish and is great for beauty and personal care items such as essential oils, colognes, room sprays, lotions, and a wide variety of other products. A Request a Quote item, this bottle is made in India and has a 98-gram weight.\nPlease note: This item may require additional lead time or minimum order quantity. Request a Quote for the most current information.",
+        "product_notes": [
+            "Closures not included with bottles, unless otherwise specified."
+        ],
+        "product_images": [
+            {
+                "image_url": "https://www.tricorbraun.com/media/catalog/product/3/4/34a644e901b6c308785be523b6229b9742bd6ef74e6590684f429d98ed95377a.jpeg?optimize=medium&bg-color=255,255,255&fit=bounds&height=75&width=75&canvas=75:75"
+            }
+        ],
+        "product_availability": {
+            "in_stock": "N/A"
+        },
+        "product_selluom": [],
+        "product_specs": {
+            "items_per_unit": null,
+            "Country of Origin": "India",
+            "Color": "Clear",
+            "Neck Description": "GPI",
+            "Neck Height Dimension": "400.0",
+            "Neck Size (MM)": "22.000000",
+            "Overflow Capacity": "130.5",
+            "Capacity": "4 oz",
+            "Material": "Glass",
+            "Neck Finish": "22-400",
+            "Shape": "Round",
+            "Style": "Boston Round",
+            "is_cap_included": false
+        },
+        "product_accessories": [
+            {
+                "sku": "SKU#: 001359",
+                "name": "22-400 Black PP Plastic Dropper Assembly - 7 x 108 mm Straight Tip Glass Pipette",
+                "url": "https://www.tricorbraun.com/22-400-black-pp-plastic-dropper-assembly-7-x-108-mm-straight-tip-glass-pipette.html"
+            },
+            {
+                "sku": "SKU#: 094164",
+                "name": "22-400 Black PP Plastic Continuous Thread Lined Closure - F-217 Liner",
+                "url": "https://www.tricorbraun.com/22-400-black-continuous-thread-lined-pp-plastic-closure-f217-liner.html"
+            },
+            {
+                "sku": "SKU#: 138464",
+                "name": "22-400 Black PP Plastic Child Resistant Dropper Assembly - 108 mm Glass Pipette",
+                "url": "https://www.tricorbraun.com/22-400-black-p-p-plastic-child-resistant-dropper-assembly-108-mm-glass-pipette.html"
+            },
+            {
+                "sku": "SKU#: 600203",
+                "name": "42 mm x 24 mm Clear PVC Plastic Pre-Cut Shrink Band - No Print with Single Vertical Perforation",
+                "url": "https://www.tricorbraun.com/42-mm-x-24-mm-clear-pvc-plastic-pre-cut-shrink-band-no-print-with-single-vertical-perforation.html"
+            }
+        ],
+        "product_normalized_uom": {
+            "product_capacity_uom": "oz",
+            "product_capacity_value": "4",
+            "normalized_capacity_uom": "ml",
+            "normalized_capacity_value": "118.29"
+        },
+        "product_metadata": {
+            "scraped_at": "2025-10-22T20:56:50.618145",
+            "processing_time_seconds": 4.48,
+            "is_missing_fields": true,
+            "missing_fields": [
+                "product_selluom"
+            ],
+            "company_name": "TricorBraun"
+        },
+        "url": "https://www.tricorbraun.com/4-oz-glass-boston-round-bottle-22-400-neck-finish-clear.html"
+    },
+    {
+        "product_url": "https://www.tricorbraun.com/4-oz-clear-glass-boston-round-bottle-24-400-neck-finish.html",
+        "product_id": "319898",
+        "product_name": "4 oz Clear Glass Boston Round Bottle 24-400 Neck Finish",
+        "product_uom": "oz",
+        "product_capacity": "4 oz",
+        "product_description": "This 4 ounce (118 ml) clear glass Boston round bottle is great for medicine, essential oils, perfumes, or room spray. This item meets the USP XXI requirements for light transmission and Type III and NP Chemical Resistance Tests. Certificate of Analysis can be provided request.\nNote: Flint glass can have a tint to the product that may vary based on the iron oxide content during the manufacture production.",
+        "product_notes": [
+            "128/Case, 108 Gram Weight",
+            "Closures not included with bottles, unless otherwise specified."
+        ],
+        "product_images": [
+            {
+                "image_url": "https://www.tricorbraun.com/media/catalog/product/3/1/319898-2_1_.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=75&width=75&canvas=75:75"
+            }
+        ],
+        "product_availability": {
+            "in_stock": "In stock"
+        },
+        "product_selluom": [
+            {
+                "qty_range": "1 Case",
+                "unit": "Case",
+                "price": "$49.95",
+                "price_per_unit": "$0.39"
+            },
+            {
+                "qty_range": "12 Case",
+                "unit": "Case",
+                "price": "$44.96",
+                "price_per_unit": "$0.35"
+            },
+            {
+                "qty_range": "18 Case",
+                "unit": "Case",
+                "price": "$37.77",
+                "price_per_unit": "$0.30"
+            },
+            {
+                "qty_range": "72 Case",
+                "unit": "Case",
+                "price": "$32.10",
+                "price_per_unit": "$0.25"
+            }
+        ],
+        "product_specs": {
+            "items_per_unit": "128 Items Per Case.",
+            "Country of Origin": "China",
+            "Base Diameter": "2\"",
+            "Color": "Clear",
+            "Neck Height Dimension": "400",
+            "Neck Size (MM)": "24.000000",
+            "Total Height": "4.5\"",
+            "Capacity": "4 oz",
+            "Material": "Glass",
+            "Neck Finish": "24-400",
+            "Sold By": "Case",
+            "Style": "Boston Round",
+            "quantity": "128",
+            "is_cap_included": false
+        },
+        "product_accessories": {
+            "info": "No Related Products section found"
+        },
+        "product_normalized_uom": {
+            "product_capacity_uom": "oz",
+            "product_capacity_value": "4",
+            "normalized_capacity_uom": "ml",
+            "normalized_capacity_value": "118.29"
+        },
+        "product_metadata": {
+            "scraped_at": "2025-10-22T20:56:55.607801",
+            "processing_time_seconds": 4.99,
+            "is_missing_fields": false,
+            "missing_fields": [],
+            "company_name": "TricorBraun"
+        },
+        "url": "https://www.tricorbraun.com/4-oz-clear-glass-boston-round-bottle-24-400-neck-finish.html"
+    },
+    {
+        "product_url": "https://www.tricorbraun.com/4-oz-cobalt-blue-glass-boston-round-bottle-24-400-neck-finish.html",
+        "product_id": "319895",
+        "product_name": "4 oz Cobalt Blue Glass Boston Round Bottle 24-400 Neck Finish",
+        "product_uom": "oz",
+        "product_capacity": "4 oz",
+        "product_description": "This 4 oz cobalt blue glass boston round bottle has a 24-400 continuous thread neck finish. The bottle is great for medicine, essential oil, perfume, room spray, or lotion. The cobalt blue color helps protect products from harmful ultraviolet (UV) light in addition to providing your package with an upscale look.",
+        "product_notes": [
+            "108 Gram Weight, 128/Case",
+            "Closures not included with bottles, unless otherwise specified."
+        ],
+        "product_images": [
+            {
+                "image_url": "https://www.tricorbraun.com/media/catalog/product/3/1/319895-2_1_.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=75&width=75&canvas=75:75"
+            }
+        ],
+        "product_availability": {
+            "in_stock": "In stock"
+        },
+        "product_selluom": [
+            {
+                "qty_range": "1 Case",
+                "unit": "Case",
+                "price": "$52.28",
+                "price_per_unit": "$0.41"
+            },
+            {
+                "qty_range": "12 Case",
+                "unit": "Case",
+                "price": "$48.00",
+                "price_per_unit": "$0.38"
+            },
+            {
+                "qty_range": "18 Case",
+                "unit": "Case",
+                "price": "$41.50",
+                "price_per_unit": "$0.32"
+            },
+            {
+                "qty_range": "72 Case",
+                "unit": "Case",
+                "price": "$39.00",
+                "price_per_unit": "$0.30"
+            }
+        ],
+        "product_specs": {
+            "items_per_unit": "128 Items Per Case.",
+            "Country of Origin": "China",
+            "Base Diameter": "2\"",
+            "Color": "Cobalt Blue",
+            "Neck Height Dimension": "400",
+            "Neck Size (MM)": "24.000000",
+            "Total Height": "4.5\"",
+            "Capacity": "4 oz",
+            "Material": "Glass",
+            "Neck Finish": "24-400",
+            "Sold By": "Case",
+            "Style": "Boston Round",
+            "quantity": "128",
+            "is_cap_included": false
+        },
+        "product_accessories": {
+            "info": "No Related Products section found"
+        },
+        "product_normalized_uom": {
+            "product_capacity_uom": "oz",
+            "product_capacity_value": "4",
+            "normalized_capacity_uom": "ml",
+            "normalized_capacity_value": "118.29"
+        },
+        "product_metadata": {
+            "scraped_at": "2025-10-22T20:56:58.219904",
+            "processing_time_seconds": 2.61,
+            "is_missing_fields": false,
+            "missing_fields": [],
+            "company_name": "TricorBraun"
+        },
+        "url": "https://www.tricorbraun.com/4-oz-cobalt-blue-glass-boston-round-bottle-24-400-neck-finish.html"
+    },
+    {
+        "product_url": "https://www.tricorbraun.com/5-ml-glass-boston-round-dropper-bottle-18mm-neck-finish-cobalt-blue.html",
+        "product_id": "600124",
+        "product_name": "5 ml Cobalt Blue Glass Boston Round Dropper Bottle 18mm Neck Finish",
+        "product_uom": "ml",
+        "product_capacity": "5 ml",
+        "product_description": "This 5 ml cobalt blue glass bottle is the perfect size for high end perfumes and essential oils, samples of your special blends, and on the go smelling salts. The blue color provides some UV filtration to help keep light sensitive products safe. Pair with our dropper closures, shown below, to maximize your use of this bottle and give it the functionality of a dropper bottle.",
+        "product_notes": [
+            "Closures not included with bottles, unless otherwise specified."
+        ],
+        "product_images": [
+            {
+                "image_url": "https://www.tricorbraun.com/media/catalog/product/d/c/dc63a12edaa5ead4bac398fd961059f0f006cf253582cc78f68197660b76dbf7.jpeg?optimize=medium&bg-color=255,255,255&fit=bounds&height=75&width=75&canvas=75:75"
+            }
+        ],
+        "product_availability": {
+            "in_stock": "Item is currently estimated to ship within 7 - 10 business days."
+        },
+        "product_selluom": [
+            {
+                "qty_range": "1 Pallet",
+                "unit": "Pallet",
+                "price": "$8,200.00",
+                "price_per_unit": "$0.21"
+            }
+        ],
+        "product_specs": {
+            "items_per_unit": "38250 Items Per Pallet.",
+            "Country of Origin": "United States",
+            "Base Diameter": ".8125\"",
+            "Circumference": "2.8125\"",
+            "Color": "Blue",
+            "Label Height": "1\"",
+            "Neck Description": "mm SPEC",
+            "Neck Size (MM)": "18.000000",
+            "Total Height": "1.9375\"",
+            "Capacity": "5 ml",
+            "Material": "Glass",
+            "Neck Finish": "18 mm Special",
+            "Sold By": "Pallet",
+            "Shape": "Round",
+            "Style": "Boston Round",
+            "is_cap_included": false
+        },
+        "product_accessories": [
+            {
+                "sku": "SKU#: 082898",
+                "name": "18mm Black Dropper Assembly  - Tamper Indicating - 0.6mm Orifice Vertical Dropper",
+                "url": "https://www.tricorbraun.com/18mm-dropper-assembly-black-tamper-indicating-0-6mm-orifice-vertical-dropper.html"
+            },
+            {
+                "sku": "SKU#: 134732",
+                "name": "18 mm Black PP Plastic Dropper Assembly - 48 mm Straight Tip Glass Pipette",
+                "url": "https://www.tricorbraun.com/18-mm-pp-plastic-dropper-assembly-48-mm-straight-tip-glass-pipette-black.html"
+            },
+            {
+                "sku": "SKU#: 600143",
+                "name": "18 mm Black PP Plastic DIN Push and Turn Child Resistant Closure - 1.2mm Dropper",
+                "url": "https://www.tricorbraun.com/18-mm-din-push-and-turn-child-resistant-black-p-p-plastic-closure-with-1-2mm-dropper.html"
+            },
+            {
+                "sku": "SKU#: 003474",
+                "name": "18mm PP Plastic KERR Black Tamper Evident Unlined Closure",
+                "url": "https://www.tricorbraun.com/18mm-tamper-evident-linerless-black-pp-plastic-closure-breakaway-band-sold-individually.html"
+            }
+        ],
+        "product_normalized_uom": {
+            "product_capacity_uom": "ml",
+            "product_capacity_value": "5",
+            "normalized_capacity_uom": "ml",
+            "normalized_capacity_value": "5.0"
+        },
+        "product_metadata": {
+            "scraped_at": "2025-10-22T20:57:00.830468",
+            "processing_time_seconds": 2.61,
+            "is_missing_fields": false,
+            "missing_fields": [],
+            "company_name": "TricorBraun"
+        },
+        "url": "https://www.tricorbraun.com/5-ml-glass-boston-round-dropper-bottle-18mm-neck-finish-cobalt-blue.html"
+    },
+    {
+        "product_url": "https://www.tricorbraun.com/5-ml-glass-boston-round-dropper-bottle-18mm-neck-finish-green.html",
+        "product_id": "600133",
+        "product_name": "5 ml Green Glass Boston Round Dropper Bottle 18mm Neck Finish",
+        "product_uom": "ml",
+        "product_capacity": "5 ml",
+        "product_description": "This 5 ml round glass dropper bottle is great for packaging a wide range of products. The beautiful green color provides UV filtration to help keep light sensitive products safe. Pair with our dropper closures, shown below, to maximize your use of this bottle and give it the functionality of a dropper bottle.",
+        "product_notes": [
+            "Closures not included with bottles, unless otherwise specified."
+        ],
+        "product_images": [
+            {
+                "image_url": "https://www.tricorbraun.com/media/catalog/product/d/2/d2d959e5dd04feafe084c6bd781e2fe9c28aa10150276650efea842a7f89866e.jpeg?optimize=medium&bg-color=255,255,255&fit=bounds&height=75&width=75&canvas=75:75"
+            }
+        ],
+        "product_availability": {
+            "in_stock": "Item is currently estimated to ship within 7 - 10 business days."
+        },
+        "product_selluom": [
+            {
+                "qty_range": "1 Pallet",
+                "unit": "Pallet",
+                "price": "$6,900.00",
+                "price_per_unit": "$0.18"
+            }
+        ],
+        "product_specs": {
+            "items_per_unit": "38250 Items Per Pallet.",
+            "Country of Origin": "United States",
+            "Base Diameter": ".8125\"",
+            "Circumference": "2.8125\"",
+            "Color": "Green",
+            "Label Height": "1\"",
+            "Neck Description": "mm SPEC",
+            "Neck Size (MM)": "18.000000",
+            "Total Height": "1.9375\"",
+            "Capacity": "5 ml",
+            "Material": "Glass",
+            "Neck Finish": "18 mm Special",
+            "Sold By": "Pallet",
+            "Shape": "Round",
+            "Style": "Boston Round",
+            "is_cap_included": false
+        },
+        "product_accessories": [
+            {
+                "sku": "SKU#: 082898",
+                "name": "18mm Black Dropper Assembly  - Tamper Indicating - 0.6mm Orifice Vertical Dropper",
+                "url": "https://www.tricorbraun.com/18mm-dropper-assembly-black-tamper-indicating-0-6mm-orifice-vertical-dropper.html"
+            },
+            {
+                "sku": "SKU#: 134732",
+                "name": "18 mm Black PP Plastic Dropper Assembly - 48 mm Straight Tip Glass Pipette",
+                "url": "https://www.tricorbraun.com/18-mm-pp-plastic-dropper-assembly-48-mm-straight-tip-glass-pipette-black.html"
+            },
+            {
+                "sku": "SKU#: 600143",
+                "name": "18 mm Black PP Plastic DIN Push and Turn Child Resistant Closure - 1.2mm Dropper",
+                "url": "https://www.tricorbraun.com/18-mm-din-push-and-turn-child-resistant-black-p-p-plastic-closure-with-1-2mm-dropper.html"
+            }
+        ],
+        "product_normalized_uom": {
+            "product_capacity_uom": "ml",
+            "product_capacity_value": "5",
+            "normalized_capacity_uom": "ml",
+            "normalized_capacity_value": "5.0"
+        },
+        "product_metadata": {
+            "scraped_at": "2025-10-22T20:57:03.585123",
+            "processing_time_seconds": 2.75,
+            "is_missing_fields": false,
+            "missing_fields": [],
+            "company_name": "TricorBraun"
+        },
+        "url": "https://www.tricorbraun.com/5-ml-glass-boston-round-dropper-bottle-18mm-neck-finish-green.html"
+    },
+    {
+        "product_url": "https://www.tricorbraun.com/50-ml-glass-boston-round-dropper-bottle-18mm-neck-finish-amber.html",
+        "product_id": "600115",
+        "product_name": "50 ml Amber Glass Boston Round Dropper Bottle 18mm Neck Finish",
+        "product_uom": "ml",
+        "product_capacity": "50 ml",
+        "product_description": "This 50 ml round glass dropper bottle is great for packaging a wide range of products from beauty care to essential oils, and fragrances. The classic amber color provides UV filtration to help keep light sensitive products safe. Pair with our dropper closures, shown below, to maximize your use of this bottle and give it the functionality of a dropper bottle.",
+        "product_notes": [
+            "Closures not included with bottles, unless otherwise specified."
+        ],
+        "product_images": [
+            {
+                "image_url": "https://www.tricorbraun.com/media/catalog/product/3/7/3706785ffdd51aa4a849b4dcf4321cfde40724294d1bb827127814fcf3292d49.jpeg?optimize=medium&bg-color=255,255,255&fit=bounds&height=75&width=75&canvas=75:75"
+            }
+        ],
+        "product_availability": {
+            "in_stock": "Item is currently estimated to ship within 7 - 10 business days."
+        },
+        "product_selluom": [
+            {
+                "qty_range": "1 Pallet",
+                "unit": "Pallet",
+                "price": "$2,125.00",
+                "price_per_unit": "$0.20"
+            }
+        ],
+        "product_specs": {
+            "items_per_unit": "10560 Items Per Pallet.",
+            "Country of Origin": "United States",
+            "Base Diameter": "1.4375\"",
+            "Circumference": "4.6875\"",
+            "Color": "Amber",
+            "Label Height": "2.5\"",
+            "Neck Description": "DIN",
+            "Neck Size (MM)": "18.000000",
+            "Total Height": "3.625\"",
+            "Capacity": "50 ml",
+            "Material": "Glass",
+            "Neck Finish": "18 DIN",
+            "Sold By": "Pallet",
+            "Shape": "Round",
+            "Style": "Boston Round",
+            "is_cap_included": false
+        },
+        "product_accessories": [
+            {
+                "sku": "SKU#: 082898",
+                "name": "18mm Black Dropper Assembly  - Tamper Indicating - 0.6mm Orifice Vertical Dropper",
+                "url": "https://www.tricorbraun.com/18mm-dropper-assembly-black-tamper-indicating-0-6mm-orifice-vertical-dropper.html"
+            },
+            {
+                "sku": "SKU#: 600143",
+                "name": "18 mm Black PP Plastic DIN Push and Turn Child Resistant Closure - 1.2mm Dropper",
+                "url": "https://www.tricorbraun.com/18-mm-din-push-and-turn-child-resistant-black-p-p-plastic-closure-with-1-2mm-dropper.html"
+            }
+        ],
+        "product_normalized_uom": {
+            "product_capacity_uom": "ml",
+            "product_capacity_value": "50",
+            "normalized_capacity_uom": "ml",
+            "normalized_capacity_value": "50.0"
+        },
+        "product_metadata": {
+            "scraped_at": "2025-10-22T20:57:06.275877",
+            "processing_time_seconds": 2.69,
+            "is_missing_fields": false,
+            "missing_fields": [],
+            "company_name": "TricorBraun"
+        },
+        "url": "https://www.tricorbraun.com/50-ml-glass-boston-round-dropper-bottle-18mm-neck-finish-amber.html"
+    },
+    {
+        "product_url": "https://www.tricorbraun.com/8-oz-amber-glass-boston-round-bottle-24-400-neck-finish-057277.html",
+        "product_id": "057277",
+        "product_name": "8 oz Amber Glass Boston Round Bottle 24-400 Neck Finish",
+        "product_uom": "oz",
+        "product_capacity": "8 oz",
+        "product_description": "This 8 oz amber glass boston round bottle has a 24-400 continuous thread neck finish.\nPlease note: This item may require additional lead time or minimum order quantity. Request a Quote for the most current information.",
+        "product_notes": [
+            "Closures not included with bottles, unless otherwise specified."
+        ],
+        "product_images": [
+            {
+                "image_url": "https://www.tricorbraun.com/media/catalog/product/e/c/ec7c33da10ad6d014c51887a406727303a3bac61e985e44fa4648095ec1bb65b.jpeg?optimize=medium&bg-color=255,255,255&fit=bounds&height=75&width=75&canvas=75:75"
+            }
+        ],
+        "product_availability": {
+            "in_stock": "N/A"
+        },
+        "product_selluom": [],
+        "product_specs": {
+            "items_per_unit": null,
+            "Color": "Amber",
+            "Neck Description": "GPI",
+            "Neck Height Dimension": "400.0",
+            "Neck Size (MM)": "24.000000",
+            "Overflow Capacity": "255.0",
+            "Secondary Feature": "Sloped Shoulder",
+            "Capacity": "8 oz",
+            "Material": "Glass",
+            "Neck Finish": "24-400 GPI",
+            "Sold By": "Case",
+            "Shape": "Round",
+            "Style": "Boston Round",
+            "is_cap_included": false
+        },
+        "product_accessories": {
+            "info": "No Related Products section found"
+        },
+        "product_normalized_uom": {
+            "product_capacity_uom": "oz",
+            "product_capacity_value": "8",
+            "normalized_capacity_uom": "ml",
+            "normalized_capacity_value": "236.59"
+        },
+        "product_metadata": {
+            "scraped_at": "2025-10-22T20:57:10.532369",
+            "processing_time_seconds": 4.26,
+            "is_missing_fields": true,
+            "missing_fields": [
+                "product_selluom"
+            ],
+            "company_name": "TricorBraun"
+        },
+        "url": "https://www.tricorbraun.com/8-oz-amber-glass-boston-round-bottle-24-400-neck-finish-057277.html"
+    },
+    {
+        "product_url": "https://www.tricorbraun.com/8-oz-amber-glass-boston-round-bottle-24-400-neck-finish.html",
+        "product_id": "011968",
+        "product_name": "8 oz Amber Glass Boston Round Bottle 24-400 Neck Finish",
+        "product_uom": "oz",
+        "product_capacity": "8 oz",
+        "product_description": "This 8 oz Boston Round bottle has a 24-400 neck finish and is traditionally used in the pharmaceutical and chemical industries. Works for essential oils, colognes, room sprays, lotions and a wide variety of products. The amber bottle color offers protection from ultraviolet (UV) light.\nPlease note: This item may require additional lead time or minimum order quantity. Request a Quote for the most current information.",
+        "product_notes": [
+            "Closures not included with bottles, unless otherwise specified."
+        ],
+        "product_images": [
+            {
+                "image_url": "https://www.tricorbraun.com/media/catalog/product/1/9/1927522e84cbc2a4a0223c75f62db0f56d5180b765bc0ae773ec489e4fdb4861.jpeg?optimize=medium&bg-color=255,255,255&fit=bounds&height=75&width=75&canvas=75:75"
+            }
+        ],
+        "product_availability": {
+            "in_stock": "N/A"
+        },
+        "product_selluom": [],
+        "product_specs": {
+            "items_per_unit": null,
+            "Country of Origin": "India",
+            "Color": "Amber",
+            "Neck Description": "GPI",
+            "Neck Height Dimension": "400.0",
+            "Neck Size (MM)": "24.000000",
+            "Overflow Capacity": "255.0",
+            "Capacity": "8 oz",
+            "Material": "Glass",
+            "Neck Finish": "24-400 GPI",
+            "Sold By": "Case",
+            "Shape": "Round",
+            "Style": "Boston Round",
+            "is_cap_included": false
+        },
+        "product_accessories": [
+            {
+                "sku": "SKU#: 004329",
+                "name": "24-400 White PP Plastic Push and Turn Child Resistant Lined Closure - Plain FSM-1 Liner",
+                "url": "https://www.tricorbraun.com/24-400-white-push-and-turn-child-resistant-lined-pp-plastic-closure.html"
+            },
+            {
+                "sku": "SKU#: 004355",
+                "name": "24-400 White PP Plastic Push and Turn Child Resistant Lined Closure - F-217 Liner",
+                "url": "https://www.tricorbraun.com/24-400-pp-plastic-push-and-turn-child-resistant-lined-closure-white.html"
+            },
+            {
+                "sku": "SKU#: 600268",
+                "name": "24-400 Black/Gold Metal Continuous Thread Lined Closure - Plastisol Liner",
+                "url": "https://www.tricorbraun.com/24-400-continuous-thread-lined-black-gold-metal-closure-plastisol-liner.html"
+            }
+        ],
+        "product_normalized_uom": {
+            "product_capacity_uom": "oz",
+            "product_capacity_value": "8",
+            "normalized_capacity_uom": "ml",
+            "normalized_capacity_value": "236.59"
+        },
+        "product_metadata": {
+            "scraped_at": "2025-10-22T20:57:15.919178",
+            "processing_time_seconds": 5.39,
+            "is_missing_fields": true,
+            "missing_fields": [
+                "product_selluom"
+            ],
+            "company_name": "TricorBraun"
+        },
+        "url": "https://www.tricorbraun.com/8-oz-amber-glass-boston-round-bottle-24-400-neck-finish.html"
+    },
+    {
+        "product_url": "https://www.tricorbraun.com/8-oz-glass-boston-round-bottle-24-400-neck-finish-amber.html",
+        "product_id": "051448",
+        "product_name": "8 oz Amber Glass Boston Round Bottle 24-400 Neck Finish",
+        "product_uom": "oz",
+        "product_capacity": "8 oz",
+        "product_description": "This 8 oz amber glass boston round bottle has a 24-400 continuous thread neck finish.",
+        "product_notes": [
+            "Closures not included with bottles, unless otherwise specified."
+        ],
+        "product_images": [
+            {
+                "image_url": "https://www.tricorbraun.com/media/catalog/product/0/d/0d7fd232fe58a9da38f9282449244b25d522bc476c64ca47ab95abea82ca5110.jpeg?optimize=medium&bg-color=255,255,255&fit=bounds&height=75&width=75&canvas=75:75"
+            }
+        ],
+        "product_availability": {
+            "in_stock": "In stock"
+        },
+        "product_selluom": [
+            {
+                "qty_range": "1 Case",
+                "unit": "Case",
+                "price": "$75.87",
+                "price_per_unit": "$0.70"
+            },
+            {
+                "qty_range": "12 Case",
+                "unit": "Case",
+                "price": "$68.28",
+                "price_per_unit": "$0.63"
+            },
+            {
+                "qty_range": "18 Case",
+                "unit": "Case",
+                "price": "$57.36",
+                "price_per_unit": "$0.53"
+            },
+            {
+                "qty_range": "35 Case",
+                "unit": "Case",
+                "price": "$48.76",
+                "price_per_unit": "$0.45"
+            }
+        ],
+        "product_specs": {
+            "items_per_unit": "108 Items Per Case.",
+            "Country of Origin": "India",
+            "Color": "Amber",
+            "Feature": "Sloped Shoulder",
+            "Neck Description": "GPI",
+            "Neck Height Dimension": "400.0",
+            "Neck Size (MM)": "24.000000",
+            "Overflow Capacity": "255.0",
+            "Capacity": "8 oz",
+            "Material": "Glass",
+            "Neck Finish": "24-400 GPI",
+            "Sold By": "Case",
+            "Shape": "Round",
+            "Style": "Boston Round",
+            "is_cap_included": false
+        },
+        "product_accessories": {
+            "info": "No Related Products section found"
+        },
+        "product_normalized_uom": {
+            "product_capacity_uom": "oz",
+            "product_capacity_value": "8",
+            "normalized_capacity_uom": "ml",
+            "normalized_capacity_value": "236.59"
+        },
+        "product_metadata": {
+            "scraped_at": "2025-10-22T20:57:20.376161",
+            "processing_time_seconds": 4.46,
+            "is_missing_fields": false,
+            "missing_fields": [],
+            "company_name": "TricorBraun"
+        },
+        "url": "https://www.tricorbraun.com/8-oz-glass-boston-round-bottle-24-400-neck-finish-amber.html"
+    },
+    {
+        "product_url": "https://www.tricorbraun.com/8-oz-amber-glass-boston-round-bottle-28-400-neck-finish.html",
+        "product_id": "319290",
+        "product_name": "8 oz Amber Glass Boston Round Bottle 28-400 Neck Finish",
+        "product_uom": "oz",
+        "product_capacity": "8 oz",
+        "product_description": "This 8 oz amber glass Boston Round Bottle has a 28-400 neck finish and is perfect for packaging pharmaceutical liquids medicines or personal care items like body wash or shampoo. This bottle offers UV protection and meet the USP XXI requirements for light transmission and Type III and NP Chemical Resistance Tests. Use them for packaging supplements, vitamins, essential oils, herbal extracts, or any products that may be light sensitive. See related products below.\nPlease note: This item may require additional lead time or minimum order quantity. Request a Quote for the most current information.",
+        "product_notes": [
+            "Closures not included with bottles, unless otherwise specified."
+        ],
+        "product_images": [
+            {
+                "image_url": "https://www.tricorbraun.com/media/catalog/product/1/f/1f635c886b8b2a63b39defeabff7e74046fc0db763f74aab8cceff4c7107f4ac.jpeg?optimize=medium&bg-color=255,255,255&fit=bounds&height=75&width=75&canvas=75:75"
+            }
+        ],
+        "product_availability": {
+            "in_stock": "N/A"
+        },
+        "product_selluom": [],
+        "product_specs": {
+            "items_per_unit": null,
+            "Country of Origin": "China",
+            "Base Diameter": "2.38\"",
+            "Color": "Amber",
+            "Neck Height Dimension": "400",
+            "Neck Size (MM)": "28",
+            "Total Height": "5.43\"",
+            "Capacity": "8 oz",
+            "Material": "Glass",
+            "Neck Finish": "28-400",
+            "Sold By": "Pallet",
+            "Style": "Boston Round",
+            "is_cap_included": false
+        },
+        "product_accessories": [
+            {
+                "sku": "SKU#: 005381",
+                "name": "28-400 Black PP Plastic Continuous Thread Lined Closure - F-217 Liner",
+                "url": "https://www.tricorbraun.com/28-400-pp-plastic-continuous-thread-lined-closure-black.html"
+            },
+            {
+                "sku": "SKU#: 005184",
+                "name": "28-400 White PP Plastic Continuous Thread Closure - F-217 Liner",
+                "url": "https://www.tricorbraun.com/28-400-white-pp-plastic-continuous-thread-closure.html"
+            },
+            {
+                "sku": "SKU#: 005236",
+                "name": "28-400 White Metal Continuous Thread Lined Closure - Vacuum Seal",
+                "url": "https://www.tricorbraun.com/28-400-metal-continuous-thread-lined-closure-white.html"
+            },
+            {
+                "sku": "SKU#: 058371",
+                "name": "28-400 White PP Plastic Continuous Thread Lined Closure - F-217 Liner",
+                "url": "https://www.tricorbraun.com/28-400-white-round-p-p-continuous-thread-closure.html"
+            },
+            {
+                "sku": "SKU#: 058809",
+                "name": "28-400 Black PP Plastic Continuous Thread Lined Closure - Plain PS-22 and F-217 Liners",
+                "url": "https://www.tricorbraun.com/28-400-pp-plastic-continuous-thread-lined-closure-black-pressure-seal-plain-f217-liners.html"
+            },
+            {
+                "sku": "SKU#: 069030",
+                "name": "28-400 Black Metal Continuous Thread Lined Closure - Plastisol Liner",
+                "url": "https://www.tricorbraun.com/28-400-metal-continuous-thread-lined-closure-black.html"
+            },
+            {
+                "sku": "SKU#: 136619",
+                "name": "28-400 Black Phenolic Continuous Thread  Closure - P/E Cone Liner",
+                "url": "https://www.tricorbraun.com/28-400-black-continuous-thread-phenolic-closure-cone-liner.html"
+            },
+            {
+                "sku": "SKU#: 600033",
+                "name": "28-410 Black PP Plastic Ribbed Skirt Saddle Head Lotion Pump - 9.25\" Dip Tube",
+                "url": "https://www.tricorbraun.com/28-410-pp-plastic-ribbed-skirt-saddle-head-lotion-pump-9-25-dip-tube-black.html"
+            },
+            {
+                "sku": "SKU#: 600205",
+                "name": "52 mm x 25 mm Clear PVC Plastic Pre-Cut Shrink Band - No Print with Single Vertical Perforation",
+                "url": "https://www.tricorbraun.com/52-mm-x-25-mm-clear-pvc-plastic-pre-cut-shrink-band-no-print-with-single-vertical-perforation.html"
+            },
+            {
+                "sku": "SKU#: 600230",
+                "name": "28 mm White Foam Pre-Cut Pressure Sensitive Seal - SFYP Printed",
+                "url": "https://www.tricorbraun.com/28-mm-foam-pre-cut-pressure-sensitive-seal-sfyp-printed-white.html"
+            },
+            {
+                "sku": "SKU#: 600258",
+                "name": "28-400 Black PP Plastic Ribbed Skirt Ratchet Trigger Sprayer with 9.5\" Dip Tube",
+                "url": "https://www.tricorbraun.com/28-400-black-p-p-plastic-ribbed-skirt-ratchet-trigger-sprayer-with-9-5-dip-tube.html"
+            },
+            {
+                "sku": "SKU#: 319045",
+                "name": "28-400 White PP Plastic Ribbed Skirt Trigger Sprayer - 9.25\" Dip Tube",
+                "url": "https://www.tricorbraun.com/28-400-white-pp-plastic-ribbed-skirt-trigger-sprayer-9-25-dip-tube-319045.html"
+            }
+        ],
+        "product_normalized_uom": {
+            "product_capacity_uom": "oz",
+            "product_capacity_value": "8",
+            "normalized_capacity_uom": "ml",
+            "normalized_capacity_value": "236.59"
+        },
+        "product_metadata": {
+            "scraped_at": "2025-10-22T20:57:25.603206",
+            "processing_time_seconds": 5.23,
+            "is_missing_fields": true,
+            "missing_fields": [
+                "product_selluom"
+            ],
+            "company_name": "TricorBraun"
+        },
+        "url": "https://www.tricorbraun.com/8-oz-amber-glass-boston-round-bottle-28-400-neck-finish.html"
+    },
+    {
+        "product_url": "https://www.tricorbraun.com/8-oz-clear-glass-boston-round-bottle-24-400-gpi-neck-finish.html",
+        "product_id": "011936",
+        "product_name": "8 oz Clear Glass Boston Round Bottle 24-400 GPI Neck Finish",
+        "product_uom": "oz",
+        "product_capacity": "8 oz",
+        "product_description": "This 8 oz clear Boston Round style of bottle was traditionally used in the pharmaceutical and chemical industries. It has a 24-400 GPI neck finish and will work well for essential oils, colognes, room sprays, lotions and a wide variety of products.\nPlease note: This item may require additional lead time or minimum order quantity. Request a Quote for the most current information.",
+        "product_notes": [
+            "Closures not included with bottles, unless otherwise specified."
+        ],
+        "product_images": [
+            {
+                "image_url": "https://www.tricorbraun.com/media/catalog/product/d/4/d4267ce17b4f6affa23a57625f302778184744c8072fb85f3b4d5795977ec7d0.jpeg?optimize=medium&bg-color=255,255,255&fit=bounds&height=75&width=75&canvas=75:75"
+            }
+        ],
+        "product_availability": {
+            "in_stock": "N/A"
+        },
+        "product_selluom": [],
+        "product_specs": {
+            "items_per_unit": null,
+            "Color": "Clear",
+            "Feature": "Sloped Shoulder",
+            "Neck Description": "GPI",
+            "Neck Height Dimension": "400.0",
+            "Neck Size (MM)": "24.000000",
+            "Overflow Capacity": "255.0",
+            "Capacity": "8 oz",
+            "Material": "Glass",
+            "Neck Finish": "24-400",
+            "Sold By": "Case",
+            "Shape": "Round",
+            "Style": "Boston Round",
+            "is_cap_included": false
+        },
+        "product_accessories": {
+            "info": "No Related Products section found"
+        },
+        "product_normalized_uom": {
+            "product_capacity_uom": "oz",
+            "product_capacity_value": "8",
+            "normalized_capacity_uom": "ml",
+            "normalized_capacity_value": "236.59"
+        },
+        "product_metadata": {
+            "scraped_at": "2025-10-22T20:57:29.913585",
+            "processing_time_seconds": 4.31,
+            "is_missing_fields": true,
+            "missing_fields": [
+                "product_selluom"
+            ],
+            "company_name": "TricorBraun"
+        },
+        "url": "https://www.tricorbraun.com/8-oz-clear-glass-boston-round-bottle-24-400-gpi-neck-finish.html"
+    },
+    {
+        "product_url": "https://www.tricorbraun.com/8-oz-glass-boston-round-bottle-24-400-neck-finish-clear.html",
+        "product_id": "052048",
+        "product_name": "8 oz Clear Glass Boston Round Bottle 24-400 Neck Finish",
+        "product_uom": "oz",
+        "product_capacity": "8 oz",
+        "product_description": "The boston round style of bottle was traditionally used in the pharmaceutical and chemical industries but the graceful shape will work well for any product if you are looking for a distinct package profile. This sleek 8 ounce clear glass boston round bottle has a 24-400 continuous thread neck finish and canned be paired with any of our matching products below to optimize the performace of this classic container.\nThis glass bottle is commonly used for:\nShampoos & Conditioners\nLotions\nMassage Oils\nHair Sprays\nBody Wash\nOther Personal Care Items",
+        "product_notes": [
+            "Shampoos & Conditioners",
+            "Lotions",
+            "Massage Oils",
+            "Hair Sprays",
+            "Body Wash",
+            "Other Personal Care Items",
+            "Closures not included with bottles, unless otherwise specified."
+        ],
+        "product_images": [
+            {
+                "image_url": "https://www.tricorbraun.com/media/catalog/product/6/6/66c5f301059d209f8e42d0ac1abd20c2a6c1ae1bbb354374499f7cca144d8962.jpeg?optimize=medium&bg-color=255,255,255&fit=bounds&height=75&width=75&canvas=75:75"
+            }
+        ],
+        "product_availability": {
+            "in_stock": "In stock"
+        },
+        "product_selluom": [
+            {
+                "qty_range": "1 Case",
+                "unit": "Case",
+                "price": "$11.01",
+                "price_per_unit": "$0.92"
+            },
+            {
+                "qty_range": "12 Case",
+                "unit": "Case",
+                "price": "$10.00",
+                "price_per_unit": "$0.83"
+            },
+            {
+                "qty_range": "18 Case",
+                "unit": "Case",
+                "price": "$8.50",
+                "price_per_unit": "$0.71"
+            },
+            {
+                "qty_range": "308 Case",
+                "unit": "Case",
+                "price": "$7.40",
+                "price_per_unit": "$0.62"
+            }
+        ],
+        "product_specs": {
+            "items_per_unit": "12 Items Per Case.",
+            "Country of Origin": "India",
+            "Color": "Clear",
+            "Neck Description": "GPI",
+            "Neck Height Dimension": "400.0",
+            "Neck Size (MM)": "24.000000",
+            "Overflow Capacity": "255.0",
+            "Secondary Feature": "Sloped Shoulder",
+            "Capacity": "8 oz",
+            "Material": "Glass",
+            "Neck Finish": "24-400 GPI",
+            "Sold By": "Case",
+            "Shape": "Round",
+            "Style": "Boston Round",
+            "is_cap_included": false
+        },
+        "product_accessories": {
+            "info": "No Related Products section found"
+        },
+        "product_normalized_uom": {
+            "product_capacity_uom": "oz",
+            "product_capacity_value": "8",
+            "normalized_capacity_uom": "ml",
+            "normalized_capacity_value": "236.59"
+        },
+        "product_metadata": {
+            "scraped_at": "2025-10-22T20:57:32.523337",
+            "processing_time_seconds": 2.61,
+            "is_missing_fields": false,
+            "missing_fields": [],
+            "company_name": "TricorBraun"
+        },
+        "url": "https://www.tricorbraun.com/8-oz-glass-boston-round-bottle-24-400-neck-finish-clear.html"
+    },
+    {
+        "product_url": "https://www.tricorbraun.com/8-oz-glass-boston-round-bottle-28-400-neck-finish-cobalt-blue.html",
+        "product_id": "045524",
+        "product_name": "8 oz Cobalt Blue Glass Boston Round Bottle 28-400 Neck Finish",
+        "product_uom": "oz",
+        "product_capacity": "8 oz",
+        "product_description": "Our 8 oz cobalt blue glass Boston round bottle offers a regal look and UV protection for bulk essential oils, and herbal extracts; but is also great for shampoos, conditioners, lotions, massage oils and more. Pair with any of our matching products below to maximize your use of this classic container.\n28-400 Neck Finish\nUV Filtration",
+        "product_notes": [
+            "28-400 Neck Finish",
+            "UV Filtration",
+            "Closures not included with bottles, unless otherwise specified."
+        ],
+        "product_images": [
+            {
+                "image_url": "https://www.tricorbraun.com/media/catalog/product/0/4/045524-3.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=75&width=75&canvas=75:75"
+            }
+        ],
+        "product_availability": {
+            "in_stock": "Item is currently estimated to ship within 7 - 10 business days."
+        },
+        "product_selluom": [
+            {
+                "qty_range": "1 Pallet",
+                "unit": "Pallet",
+                "price": "$2,150.00",
+                "price_per_unit": "$0.83"
+            }
+        ],
+        "product_specs": {
+            "items_per_unit": "2592 Items Per Pallet.",
+            "Country of Origin": "United States",
+            "Base Diameter": "2.375\"",
+            "Color": "Blue",
+            "Neck Height Dimension": "400.0",
+            "Neck Size (MM)": "28.000000",
+            "Total Height": "5.5\"",
+            "Capacity": "8 oz",
+            "Material": "Glass",
+            "Neck Finish": "28-400",
+            "Sold By": "Pallet",
+            "Shape": "Round",
+            "Style": "Boston Round",
+            "is_cap_included": false
+        },
+        "product_accessories": [
+            {
+                "sku": "SKU#: 005184",
+                "name": "28-400 White PP Plastic Continuous Thread Closure - F-217 Liner",
+                "url": "https://www.tricorbraun.com/28-400-white-pp-plastic-continuous-thread-closure.html"
+            },
+            {
+                "sku": "SKU#: 005236",
+                "name": "28-400 White Metal Continuous Thread Lined Closure - Vacuum Seal",
+                "url": "https://www.tricorbraun.com/28-400-metal-continuous-thread-lined-closure-white.html"
+            },
+            {
+                "sku": "SKU#: 005381",
+                "name": "28-400 Black PP Plastic Continuous Thread Lined Closure - F-217 Liner",
+                "url": "https://www.tricorbraun.com/28-400-pp-plastic-continuous-thread-lined-closure-black.html"
+            },
+            {
+                "sku": "SKU#: 058371",
+                "name": "28-400 White PP Plastic Continuous Thread Lined Closure - F-217 Liner",
+                "url": "https://www.tricorbraun.com/28-400-white-round-p-p-continuous-thread-closure.html"
+            },
+            {
+                "sku": "SKU#: 069030",
+                "name": "28-400 Black Metal Continuous Thread Lined Closure - Plastisol Liner",
+                "url": "https://www.tricorbraun.com/28-400-metal-continuous-thread-lined-closure-black.html"
+            },
+            {
+                "sku": "SKU#: 600205",
+                "name": "52 mm x 25 mm Clear PVC Plastic Pre-Cut Shrink Band - No Print with Single Vertical Perforation",
+                "url": "https://www.tricorbraun.com/52-mm-x-25-mm-clear-pvc-plastic-pre-cut-shrink-band-no-print-with-single-vertical-perforation.html"
+            },
+            {
+                "sku": "SKU#: 600230",
+                "name": "28 mm White Foam Pre-Cut Pressure Sensitive Seal - SFYP Printed",
+                "url": "https://www.tricorbraun.com/28-mm-foam-pre-cut-pressure-sensitive-seal-sfyp-printed-white.html"
+            }
+        ],
+        "product_normalized_uom": {
+            "product_capacity_uom": "oz",
+            "product_capacity_value": "8",
+            "normalized_capacity_uom": "ml",
+            "normalized_capacity_value": "236.59"
+        },
+        "product_metadata": {
+            "scraped_at": "2025-10-22T20:57:37.903467",
+            "processing_time_seconds": 5.38,
+            "is_missing_fields": false,
+            "missing_fields": [],
+            "company_name": "TricorBraun"
+        },
+        "url": "https://www.tricorbraun.com/8-oz-glass-boston-round-bottle-28-400-neck-finish-cobalt-blue.html"
+    }
+]
