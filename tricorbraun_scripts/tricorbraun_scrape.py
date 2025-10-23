@@ -7,10 +7,12 @@ import re
 import time
 
 import sys
+
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from utils.normalize_to_ml import uom_to_ml
 from berlin_scripts.berlin_packing_scrape import get_capacity_and_uom
+
 ROOT_DIR = "data/tricorbraun_glass_product_links"
 DATA_DIR = "data/tricorbraun_data"
 HEADERS = {
@@ -29,11 +31,12 @@ REQUEST_DELAY = 2
 #                HELPER FUNCTIONS
 # ======================================================
 
+
 def extract_basic_info(section, soup):
     """Return (name, sku, desc, product_capacity, product_uom, desc_tag)."""
     title_tag = section.select_one('span.base[itemprop="name"]')
     sku_tag = section.select_one('div.product.attribute.sku div.value[itemprop="sku"]')
-    desc_tag = section.select_one('div#description div.value')
+    desc_tag = section.select_one("div#description div.value")
 
     name = title_tag.get_text(strip=True) if title_tag else None
     sku = sku_tag.get_text(strip=True) if sku_tag else None
@@ -41,7 +44,7 @@ def extract_basic_info(section, soup):
 
     product_capacity, product_uom = None, None
     if name:
-        match = re.search(r"(\d+(?:\.\d+)?)\s*(oz|ml|L|g|cc)", name)
+        match = re.search(r"(\d+(?:\.\d+)?)\s*(oz|ml|L|g|cc|dram|gallon)", name)
         if match:
             product_capacity = f"{match.group(1)} {match.group(2)}"
             product_uom = match.group(2)
@@ -56,10 +59,10 @@ def extract_notes_from_description(soup, desc_tag):
         notes.extend([li.get_text(strip=True) for li in desc_tag.find_all("li")])
 
     extra_divs = soup.select(
-        'div.product.attribute.description + div, '
-        'div.product.attribute.description ~ div, '
+        "div.product.attribute.description + div, "
+        "div.product.attribute.description ~ div, "
         'div.value[itemprop="description"], '
-        'div.info.pdp__info-text div'
+        "div.info.pdp__info-text div"
     )
     for div in extra_divs:
         text = div.get_text(strip=True)
@@ -74,6 +77,7 @@ def extract_notes_from_description(soup, desc_tag):
             notes.append(text)
 
     return notes
+
 
 def extract_quantity_from_description(soup):
     """Extract quantity (e.g., 128/Case or 28,800/Pallet)."""
@@ -99,7 +103,9 @@ def extract_specs(section, quantity=None):
     """Extract product specifications table."""
     specs = {}
     items_per_unit_value = section.select_one("div.items-per__case span.strong")
-    specs["items_per_unit"] = items_per_unit_value.get_text(strip=True) if items_per_unit_value else None
+    specs["items_per_unit"] = (
+        items_per_unit_value.get_text(strip=True) if items_per_unit_value else None
+    )
     for row in section.select("table#product-attribute-specs-table tr"):
         th = row.find("th")
         td = row.find("td")
@@ -109,7 +115,8 @@ def extract_specs(section, quantity=None):
         specs["quantity"] = quantity
     return specs
 
-def cap_included_with_product(product_notes)->bool:
+
+def cap_included_with_product(product_notes) -> bool:
     """Check only the product title for 'cap included' or 'cap not included'."""
     if not product_notes:
         return True
@@ -120,6 +127,7 @@ def cap_included_with_product(product_notes)->bool:
         return False
     return True
 
+
 def extract_sell_uom(section, soup):
     """Extract pricing tiers (Case/Pallet) and per-unit price info."""
     tiers = []
@@ -128,7 +136,9 @@ def extract_sell_uom(section, soup):
     for id, li in enumerate(li_elements):
         qty = li.select_one(".prices-tier_qty-unit")
         main_price = li.select_one(".price-wrapper .price")  # More precise
-        per_unit = li.select_one(f".benefit .percent.tier-{id} .price")  # Fixed selector
+        per_unit = li.select_one(
+            f".benefit .percent.tier-{id} .price"
+        )  # Fixed selector
 
         qty_text = qty.get_text(strip=True) if qty else None
         price_text = main_price.get_text(strip=True) if main_price else None
@@ -142,14 +152,17 @@ def extract_sell_uom(section, soup):
                 unit_match = parts[-1]
 
         if qty_text and price_text:
-            tiers.append({
-                "qty_range": qty_text,
-                "unit": unit_match,
-                "price": price_text,
-                "price_per_unit": per_unit_text,
-            })
+            tiers.append(
+                {
+                    "qty_range": qty_text,
+                    "unit": unit_match,
+                    "price": price_text,
+                    "price_per_unit": per_unit_text,
+                }
+            )
 
     return tiers
+
 
 def get_availability(section):
     # Find the availability div inside the product section
@@ -163,6 +176,7 @@ def get_availability(section):
     avail_val = text_spans[1].get_text(strip=True) if len(text_spans) > 1 else None
 
     return {"in_stock": avail_val or "Unknown"}
+
 
 def extract_caps_closures(section):
     if not section:
@@ -204,25 +218,28 @@ def extract_caps_closures(section):
 
     return related
 
+
 def normalize_uom(capacity, product_name):
     normalized_uom_data = {}
-    if not capacity and not product_name :
+    if not capacity and not product_name:
         return normalized_uom_data
-    
+
     if capacity:
         product_capacity, product_uom = get_capacity_and_uom(capacity)
-    
+
     elif product_name:
         product_capacity, product_uom = get_capacity_and_uom(product_name)
 
-    else :
-        return None,None
-    
+    else:
+        return None, None
+
     normalized_uom_data = {
         "product_capacity_uom": product_uom,
         "product_capacity_value": product_capacity,
         "normalized_capacity_uom": "ml",
-        "normalized_capacity_value": f"{uom_to_ml(product_uom,product_capacity)}" if product_capacity else None,
+        "normalized_capacity_value": (
+            f"{uom_to_ml(product_uom,product_capacity)}" if product_capacity else None
+        ),
     }
 
     return normalized_uom_data
@@ -251,7 +268,9 @@ def scrape_product(url):
             print(f"⚠️ No related products found: {url}")
 
         # Use refactored helper functions
-        name, sku, desc, product_capacity, product_uom, desc_tag = extract_basic_info(section, soup)
+        name, sku, desc, product_capacity, product_uom, desc_tag = extract_basic_info(
+            section, soup
+        )
         notes = extract_notes_from_description(soup, desc_tag)
 
         # Cap Included
@@ -275,7 +294,7 @@ def scrape_product(url):
 
         availability = get_availability(section)
 
-        normalized_capacity = normalize_uom(specs.get("Capacity",None), name)
+        normalized_capacity = normalize_uom(specs.get("Capacity", None), name)
         product_fields = {
             "product_url": url,
             "product_id": sku,
@@ -289,21 +308,22 @@ def scrape_product(url):
             "product_selluom": sell_uom,
             "product_specs": specs,
             "product_accessories": related_caps_closures,
-            "product_normalized_uom":normalized_capacity
+            "product_normalized_uom": normalized_capacity,
         }
 
-
-        missing_fields = [k for k, v in product_fields.items() if not v or v == [] or v == {}]
+        missing_fields = [
+            k for k, v in product_fields.items() if not v or v == [] or v == {}
+        ]
 
         elapsed = round(time.time() - start_time, 2)
 
         product_fields["product_metadata"] = {
-                "scraped_at": datetime.now().isoformat(),
-                "processing_time_seconds": elapsed,
-                "is_missing_fields": len(missing_fields) > 0,
-                "missing_fields": missing_fields,
-                "company_name": "TricorBraun"
-            }
+            "scraped_at": datetime.now().isoformat(),
+            "processing_time_seconds": elapsed,
+            "is_missing_fields": len(missing_fields) > 0,
+            "missing_fields": missing_fields,
+            "company_name": "TricorBraun",
+        }
 
         return product_fields
 
@@ -320,7 +340,11 @@ def process_category(category_path):
     print(f"\n📂 Category: {os.path.basename(category_path)}")
 
     pages = sorted(
-        [f for f in os.listdir(category_path) if f.startswith("page_") and f.endswith(".json")]
+        [
+            f
+            for f in os.listdir(category_path)
+            if f.startswith("page_") and f.endswith(".json")
+        ]
     )
     if not pages:
         print("⚠️ No pages found.")
@@ -341,9 +365,7 @@ def process_category(category_path):
             with open(os.path.join(output_dir, file), "r", encoding="utf-8") as f:
                 try:
                     batch = json.load(f)
-                    scraped_urls.update(
-                        p.get("url") for p in batch if p.get("url")
-                    )
+                    scraped_urls.update(p.get("url") for p in batch if p.get("url"))
                 except json.JSONDecodeError:
                     pass
 
@@ -363,14 +385,18 @@ def process_category(category_path):
                 skipped_count += 1
                 continue
 
-            print(f"🚀 [{page_index}:{prod_index}] Scraping: {item.get('name', '')[:80]}")
+            print(
+                f"🚀 [{page_index}:{prod_index}] Scraping: {item.get('name', '')[:80]}"
+            )
             data = scrape_product(url)
             if data:
                 data["url"] = url
                 batch_data.append(data)
                 scraped_urls.add(url)
                 total_products += 1
-                print(f"✅ [{page_index}:{prod_index}] Scraped: {data.get('product_name', '(no name)')}")
+                print(
+                    f"✅ [{page_index}:{prod_index}] Scraped: {data.get('product_name', '(no name)')}"
+                )
 
             # Save every BATCH_SIZE items
             if len(batch_data) >= BATCH_SIZE:
@@ -391,7 +417,10 @@ def process_category(category_path):
         print(f"💾 Saved remaining {len(batch_data)} → {filename}")
 
     elapsed = round(time.time() - start_time, 2)
-    print(f"✅ Done {os.path.basename(category_path)} | {total_products} new | {skipped_count} skipped | {elapsed}s")
+    print(
+        f"✅ Done {os.path.basename(category_path)} | {total_products} new | {skipped_count} skipped | {elapsed}s"
+    )
+
 
 # ======================================================
 #              MASTER CATEGORY RUNNER

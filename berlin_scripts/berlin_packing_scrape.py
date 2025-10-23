@@ -6,6 +6,7 @@ from playwright.sync_api import sync_playwright
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from utils.normalize_to_ml import uom_to_ml
+
 DATA_DIR = "data/berlin_packing_data"
 os.makedirs(DATA_DIR, exist_ok=True)
 
@@ -13,8 +14,10 @@ os.makedirs(DATA_DIR, exist_ok=True)
 # HELPERS
 # -----------------------------------------------
 
+
 def valid_berlin_url(url: str) -> bool:
     return url.startswith("https://www.berlinpackaging.com/")
+
 
 def load_html_with_playwright(url: str) -> str:
     with sync_playwright() as p:
@@ -31,13 +34,16 @@ def load_html_with_playwright(url: str) -> str:
         browser.close()
         return html
 
+
 # -----------------------------------------------
 # FIELD EXTRACTORS
 # -----------------------------------------------
 
+
 def get_product_name(soup: BeautifulSoup) -> str | None:
     tag = soup.select_one("section.productView-details h1.productView-title")
     return tag.get_text(strip=True) if tag else None
+
 
 def get_product_id(soup: BeautifulSoup) -> str | None:
     tag = soup.select_one("p.productView-sku span")
@@ -46,13 +52,16 @@ def get_product_id(soup: BeautifulSoup) -> str | None:
     val = tag.get_text(strip=True)
     return val if val.startswith("#") else f"#{val}"
 
+
 def get_description(soup: BeautifulSoup) -> str | None:
     div = soup.select_one("div.product-description-accordion-half div.parent-desc")
     return div.get_text(separator="\n", strip=True) if div else None
 
+
 def get_product_notes(soup: BeautifulSoup) -> list[str]:
     ul = soup.select_one("div.productView-descriptionList ul")
     return [li.get_text(strip=True) for li in ul.find_all("li")] if ul else []
+
 
 def get_product_images(soup: BeautifulSoup) -> list[dict]:
     img_tag = soup.select_one("img.productView-image--default")
@@ -61,18 +70,23 @@ def get_product_images(soup: BeautifulSoup) -> list[dict]:
     img_url = img_tag.get("data-src") or img_tag.get("src")
     return [{"image_url": img_url}] if img_url else []
 
+
 def get_free_shipping(soup: BeautifulSoup) -> str | None:
     tag = soup.select_one("span.freeship-msg")
     return tag.get_text(strip=True) if tag else None
+
 
 def get_availability(soup: BeautifulSoup, free_shipping: str | None) -> dict:
     in_stock_tag = soup.select_one("span.availablity_status_val")
     expected_ship_tag = soup.select_one("span.expectedDate_status_val")
     return {
         "in_stock": in_stock_tag.get_text(strip=True) if in_stock_tag else None,
-        "expected_ship": expected_ship_tag.get_text(strip=True) if expected_ship_tag else None,
+        "expected_ship": (
+            expected_ship_tag.get_text(strip=True) if expected_ship_tag else None
+        ),
         "free_shipping": free_shipping,
     }
+
 
 def get_sell_uom(soup: BeautifulSoup) -> list[dict]:
     rows = soup.select("table#non-accordion tbody tr")
@@ -85,7 +99,11 @@ def get_sell_uom(soup: BeautifulSoup) -> list[dict]:
         max_qty = cols[0].select_one("span.max-qty")
         price_span = cols[1].select_one("span.reg-price span")
         per_unit_val = cols[1].find(string=True, recursive=False)
-        per_unit_val_normalized = per_unit_val.replace("(", "").replace(")", "").strip() if per_unit_val else None
+        per_unit_val_normalized = (
+            per_unit_val.replace("(", "").replace(")", "").strip()
+            if per_unit_val
+            else None
+        )
 
         min_val = min_qty.get_text(strip=True) if min_qty else None
         max_val = max_qty.get_text(strip=True) if max_qty else None
@@ -93,8 +111,15 @@ def get_sell_uom(soup: BeautifulSoup) -> list[dict]:
 
         if min_val:
             qty_range = f"{min_val}-{max_val}" if max_val else f"{min_val}+"
-            uom_list.append({"qty_range": qty_range, "price": f"${price_val}", "price_per_unit": per_unit_val_normalized})
+            uom_list.append(
+                {
+                    "qty_range": qty_range,
+                    "price": f"${price_val}",
+                    "price_per_unit": per_unit_val_normalized,
+                }
+            )
     return uom_list
+
 
 def get_product_specs(soup: BeautifulSoup) -> dict:
     specs = {}
@@ -115,13 +140,17 @@ def get_product_specs(soup: BeautifulSoup) -> dict:
             specs[key] = val
     return specs
 
+
 def get_capacity_and_uom(product_name: str | None) -> tuple[str | None, str | None]:
     if not product_name:
         return None, None
-    match = re.search(r"(\d+(?:\.\d+)?)\s*(oz|ml|L|gallon)", product_name, re.IGNORECASE)
+    match = re.search(
+        r"(\d+(?:\.\d+)?)\s*(oz|ml|L|gallon|dram|cc)", product_name, re.IGNORECASE
+    )
     if not match:
         return None, None
     return match.group(1), match.group(2).lower()
+
 
 def get_each_price(product_name: str | None, selluom: list[dict]) -> float | None:
     if not product_name or not selluom:
@@ -136,6 +165,7 @@ def get_each_price(product_name: str | None, selluom: list[dict]) -> float | Non
     except Exception:
         return None
 
+
 def is_cap_included(product_name, product_notes) -> bool:
     """Check only the product title for 'cap included' or 'cap not included'."""
     if not product_name and not product_notes:
@@ -145,10 +175,11 @@ def is_cap_included(product_name, product_notes) -> bool:
         return False
     if "cap included" in name:
         return True
-    notes = " ".join(product_notes).replace("*",'').replace("(",'').replace(")",'')
+    notes = " ".join(product_notes).replace("*", "").replace("(", "").replace(")", "")
     if "sold separately" in notes:
         return False
     return False
+
 
 def get_product_associated_accessories(soup: BeautifulSoup) -> list[dict]:
     accessories = []
@@ -181,19 +212,17 @@ def get_product_associated_accessories(soup: BeautifulSoup) -> list[dict]:
         if url and not str(url).startswith("http"):
             url = f"https://www.berlinpackaging.com{url}"
 
-        sku = name.rsplit('-', 1)[-1].strip()
+        sku = name.rsplit("-", 1)[-1].strip()
 
-        accessories.append({
-            "sku" : f"Item #{sku}",
-            "name": name,
-            "url": url
-        })
+        accessories.append({"sku": f"Item #{sku}", "name": name, "url": url})
 
     return accessories
+
 
 # -----------------------------------------------
 # MAIN SCRAPER
 # -----------------------------------------------
+
 
 def scrape_berlin(url: str) -> dict:
     start_time = time.time()
@@ -209,18 +238,20 @@ def scrape_berlin(url: str) -> dict:
     product_availability = get_availability(soup, free_shipping)
     product_selluom = get_sell_uom(soup)
     product_specs = get_product_specs(soup)
-    product_specs["is_cap_included"] = is_cap_included(product_name,product_notes)
+    product_specs["is_cap_included"] = is_cap_included(product_name, product_notes)
     product_capacity, product_uom = get_capacity_and_uom(product_name)
     product_accessory = get_product_associated_accessories(soup)
 
     print(product_capacity, product_uom)
 
     normalized_uom = {
-                    "product_capacity_uom": product_uom,
-                    "product_capacity_value":product_capacity ,
-                    "normalized_capacity_uom": "ml",
-                    "normalized_capacity_value": f"{uom_to_ml(product_uom,product_capacity)}" if product_capacity else None,
-                }
+        "product_capacity_uom": product_uom,
+        "product_capacity_value": product_capacity,
+        "normalized_capacity_uom": "ml",
+        "normalized_capacity_value": (
+            f"{uom_to_ml(product_uom,product_capacity)}" if product_capacity else None
+        ),
+    }
 
     all_fields = {
         "product_url": url,
@@ -234,8 +265,8 @@ def scrape_berlin(url: str) -> dict:
         "product_specs": product_specs,
         "product_capacity": product_capacity,
         "product_uom": product_uom,
-        "product_accessories" : product_accessory,
-        "product_normalised_value": normalized_uom
+        "product_accessories": product_accessory,
+        "product_normalised_value": normalized_uom,
     }
 
     missing_fields = [k for k, v in all_fields.items() if not v or v == [] or v == {}]
@@ -251,9 +282,11 @@ def scrape_berlin(url: str) -> dict:
 
     return {**all_fields, "product_metadata": product_metadata}
 
+
 # -----------------------------------------------
 # MAIN
 # -----------------------------------------------
+
 
 def check_data_dir():
     if not os.path.exists(DATA_DIR):
@@ -261,14 +294,17 @@ def check_data_dir():
         return False
     return True
 
+
 def main():
     if not check_data_dir():
-        print(f"Data directory '{DATA_DIR}' created. Please add product URLs to scrape.")
+        print(
+            f"Data directory '{DATA_DIR}' created. Please add product URLs to scrape."
+        )
         return
 
     product_link_dir = "data/berlin_packing_glass_product_links"
 
-    for i in range(1, 7):  # file index (page number)
+    for i in range(7, 8):  # file index (page number)
         product_urls = []
         file_path = f"{product_link_dir}/berlin_glassbottles_pg={i}.json"
         with open(file_path, "r", encoding="utf-8") as f:
@@ -299,7 +335,9 @@ def main():
         try:
             for idx, url in enumerate(product_urls, start=1):
                 if url in scraped_urls:
-                    print(f"⚠️  Skipping duplicate ({idx}/{len(product_urls)}) from page {i}: {url}")
+                    print(
+                        f"⚠️  Skipping duplicate ({idx}/{len(product_urls)}) from page {i}: {url}"
+                    )
                     continue
 
                 print(f"🚀 [{i}:{idx}] Scraping started for: {url}")
@@ -317,6 +355,7 @@ def main():
         except Exception as e:
             print(f"❌ Error during scraping (page {i}): {e}", file=sys.stderr)
             sys.exit(1)
+
 
 if __name__ == "__main__":
     main()

@@ -1,0 +1,655 @@
+[
+    {
+        "product_url": "https://www.berlinpackaging.com/4-oz-amber-glass-boston-round-bottles-bulk-pallet-yab4bulk/",
+        "product_id": "#YAB4BULK",
+        "product_name": "4 oz Amber Glass Boston Round Bottles *Bulk Pallet*",
+        "product_description": "4 oz Amber Glass Boston Round Bottles, Bulk Pallet\nA classic bottle shape in the packaging industry, the Boston Round Bottle (also known as a Winchester Bottle), can hold almost any liquid or solid. Traditionally used for pharmaceutical, chemical and laboratory applications, popular uses break the mold and extend across most markets today. Boston Round Bottles have a narrow neck size when compared to other container types, making them the ideal bottle shape for a variety of closure styles. Amber Glass provides UV filtering properties perfect for protecting light-sensitive materials.\nBulk Pallet:\nSubject to availability. Pallet and truckload quantities may require additional lead time.",
+        "product_notes": [
+            "4 oz Amber Glass Boston Round Bottles",
+            "24-400 (sold separately)",
+            "UV Resistant, FDA Food Contact Compliant"
+        ],
+        "product_images": [
+            {
+                "image_url": "https://cdn11.bigcommerce.com/s-neo29sbo9q/images/stencil/500x659/products/50679/48772/YAB4-24-WB__70307.1582580588.jpg?c=2"
+            }
+        ],
+        "product_availability": {
+            "in_stock": "",
+            "expected_ship": "Backordered: Expected to Ship 11/11/20251",
+            "free_shipping": "Free Shipping available for orders of $300+.See Terms."
+        },
+        "product_sell_uom": [
+            {
+                "qty_range": "1+",
+                "price": "$3,499.63",
+                "price_per_unit": "$0.38 ea."
+            }
+        ],
+        "product_specs": {
+            "Pallet Qty ": "9216",
+            "Capacity ": "4 oz (120 ml)",
+            "Material Group ": "Glass",
+            "Material Type ": "Glass - Type III",
+            "Color ": "Amber",
+            "Shape ": "Round",
+            "Neck Finish ": "Continuous Thread?A continuous thread (CT) closure has non-interrupted threads, and is closed by twisting on the threaded neck of the container. CT closures are recognized as two numbers separated by a dash (ex. 38-400).",
+            "Diameter ": "1.92 in",
+            "Height ": "4.46 in",
+            "Gram Weight ": "108",
+            "Label Panel Dimensions ": "5.779 w x 2.500 h",
+            "Label Panel Shape ": "Rectangular",
+            "Cap Size ": "24-400",
+            "is_cap_included": false
+        },
+        "product_capacity": "4",
+        "product_uom": "oz",
+        "product_accessories": [],
+        "product_normalised_value": {
+            "product_capacity_uom": "oz",
+            "product_capacity_value": "4",
+            "normalized_capacity_uom": "ml",
+            "normalized_capacity_value": "118.29"
+        },
+        "product_metadata": {
+            "scraped_at": "2025-10-23T08:12:07.281065",
+            "processing_time": 18.29,
+            "is_missing_fields": true,
+            "missing_fields": [
+                "product_accessories"
+            ],
+            "company_name": "Berlin Packaging"
+        },
+        "url": "https://www.berlinpackaging.com/4-oz-amber-glass-boston-round-bottles-bulk-pallet-yab4bulk/"
+    },
+    {
+        "product_url": "https://www.berlinpackaging.com/8-oz-cobalt-blue-glass-boston-round-bottles-bulk-pallet-ycb828bulk/",
+        "product_id": "#YCB828BULK",
+        "product_name": "8 oz Cobalt Blue Glass Boston Round Bottles *Bulk Pallet*",
+        "product_description": "8 oz Cobalt Blue Glass Boston Round Bottles\nA classic bottle shape in the packaging industry, the Boston Round Bottle (also known as a Winchester Bottle), can hold almost any liquid or solid. Traditionally used for pharmaceutical, chemical and laboratory applications, popular uses break the mold and extend across most markets today. Boston Round Bottles have a narrow neck size when compared to other container types, making them the ideal bottle shape for a variety of closure styles.  Cobalt blue glass is appreciated for its bright and appealing color. The blue shade of this glass is obtained by using cobalt oxide.\nBulk Pallet:\nSubject to availability. Pallet and truckload quantities may require additional lead time.",
+        "product_notes": [
+            "8 oz Cobalt Blue Glass Boston Round Bottles",
+            "Cap Size: 28-400 (sold separately)",
+            "UV Resistant"
+        ],
+        "product_images": [
+            {
+                "image_url": "https://cdn11.bigcommerce.com/s-neo29sbo9q/images/stencil/500x659/products/52051/50664/YCB828-24-WB__52933.1584630691.jpg?c=2"
+            }
+        ],
+        "product_availability": {
+            "in_stock": "In Stock",
+            "expected_ship": "Ships Within 2 - 3 Business Days",
+            "free_shipping": "Free Shipping available for orders of $300+.See Terms."
+        },
+        "product_sell_uom": [
+            {
+                "qty_range": "1+",
+                "price": "$3,366.65",
+                "price_per_unit": "$1.30 ea."
+            }
+        ],
+        "product_specs": {
+            "Pallet Qty ": "2592",
+            "Capacity ": "8 oz (236 ml)",
+            "Material Group ": "Glass",
+            "Material Type ": "Glass - Type III",
+            "Color ": "Blue",
+            "Shape ": "Round",
+            "Neck Finish ": "Continuous Thread?A continuous thread (CT) closure has non-interrupted threads, and is closed by twisting on the threaded neck of the container. CT closures are recognized as two numbers separated by a dash (ex. 38-400).",
+            "Diameter ": "2.374 in",
+            "Height ": "5.437 in",
+            "Gram Weight ": "175",
+            "Cap Size ": "28-400",
+            "is_cap_included": false
+        },
+        "product_capacity": "8",
+        "product_uom": "oz",
+        "product_accessories": [
+            {
+                "sku": "Item #400CR",
+                "name": "28-400 White PP Plastic Child-Resistant Capable Screw Top Caps with Pulp & Vinyl Liner - X28-400CR",
+                "url": "https://www.berlinpackaging.com/28-400-white-pp-plastic-child-resistant-capable-screw-top-caps-with-pulp-vinyl-liner-x28-400cr/"
+            },
+            {
+                "sku": "Item #400FS",
+                "name": "28-400 White PP Plastic Ribbed Screw Top Caps (Pressure Sensitive & Foam Liners) - X28-400FS",
+                "url": "https://www.berlinpackaging.com/x28-400fs-28-400-white-pp-plastic-ribbed-screw-top-caps-pressure-sensitive-foam-liners/"
+            },
+            {
+                "sku": "Item #4BFS",
+                "name": "28-400 Black PP Plastic Ribbed Screw Top Caps (Pressure Sensitive & Foam Liners) - X28-4BFS",
+                "url": "https://www.berlinpackaging.com/x28-4bfs-28-400-black-pp-plastic-ribbed-screw-top-caps-pressure-sensitive-foam-liners/"
+            },
+            {
+                "sku": "Item #1590C33",
+                "name": "28-400 White PP Plastic Ribbed Screw Top Caps (Foil Liner) - 1590C33",
+                "url": "https://www.berlinpackaging.com/1590c33-28-400-white-pp-plastic-ribbed-screw-top-caps-foil-liner/"
+            },
+            {
+                "sku": "Item #SBT281",
+                "name": "28 mm PVC 1in Shrink Bands with Tamper Message - SBT281",
+                "url": "https://www.berlinpackaging.com/sbt281-28-mm-pvc-1-shrink-bands-with-tamper-message/"
+            },
+            {
+                "sku": "Item #3300C09BLK",
+                "name": "28-400 Black PP Plastic Smooth Flat Screw Top Caps - 3300C09BLK",
+                "url": "https://www.berlinpackaging.com/28-400-black-pp-plastic-smooth-flat-screw-top-caps-3300c09blk-3300c09blk/"
+            },
+            {
+                "sku": "Item #8634C07",
+                "name": "28-400 Black PP Plastic Child-Resistant Capable Screw Top Caps with Pulp & Vinyl Liner - 8634C07",
+                "url": "https://www.berlinpackaging.com/28-400-black-pp-plastic-child-resistant-capable-screw-top-caps-with-pulp-vinyl-liner-8634c07/"
+            },
+            {
+                "sku": "Item #1590C62",
+                "name": "28-400 Black PP Plastic Ribbed Screw Top Caps (Foil Liner) - 1590C62",
+                "url": "https://www.berlinpackaging.com/1590c62-28-400-black-pp-plastic-ribbed-screw-top-caps-foil-liner/"
+            },
+            {
+                "sku": "Item #SBC281",
+                "name": "28 mm Clear PVC 1in Shrink Bands - SBC281",
+                "url": "https://www.berlinpackaging.com/sbc281-28-mm-clear-pvc-1-shrink-bands/"
+            },
+            {
+                "sku": "Item #400C",
+                "name": "28-400 Black Phenolic Caps with Polycone Liner - X28-400C",
+                "url": "https://www.berlinpackaging.com/x28-400c-28-400-black-phenolic-screw-top-caps-ldpe-liner/"
+            },
+            {
+                "sku": "Item #SBB281",
+                "name": "28 mm Black PVC 1in Shrink Bands - SBB281",
+                "url": "https://www.berlinpackaging.com/sbb281-28-mm-black-pvc-1-shrink-bands/"
+            },
+            {
+                "sku": "Item #400",
+                "name": "28-400 White PP Plastic Screw Top Cap (Foam Liner) - X28-400",
+                "url": "https://www.berlinpackaging.com/x28-400-28-400-white-pp-plastic-screw-top-cap-foam-liner/"
+            },
+            {
+                "sku": "Item #SBB282",
+                "name": "28 mm Black PVC 2in Shrink Bands - SBB282",
+                "url": "https://www.berlinpackaging.com/sbb282-28-mm-black-pvc-2-shrink-bands/"
+            },
+            {
+                "sku": "Item #400BLK",
+                "name": "28-400 Black PP Plastic Ribbed Screw Top Caps (Foam Liner) - X28-400BLK",
+                "url": "https://www.berlinpackaging.com/x28-400blk-28-400-black-pp-plastic-ribbed-screw-top-caps-foam-liner/"
+            },
+            {
+                "sku": "Item #400A",
+                "name": "28-400 Black Phenolic Screw Top Caps (Pulp & Vinyl Liner) - X28-400A",
+                "url": "https://www.berlinpackaging.com/x28-400a-28-400-black-phenolic-screw-top-caps-pulp-vinyl-liner/"
+            },
+            {
+                "sku": "Item #400AL",
+                "name": "28-400 Silver Brushed Aluminum Screw Top Caps (Foam Liner) - X28-400AL",
+                "url": "https://www.berlinpackaging.com/28-400-silver-brushed-aluminum-screw-top-caps-foam-liner-x28-400al/"
+            },
+            {
+                "sku": "Item #400CR",
+                "name": "28-400 White PP Plastic Child-Resistant Capable Screw Top Caps with Pulp & Vinyl Liner - X28-400CR",
+                "url": "https://www.berlinpackaging.com/28-400-white-pp-plastic-child-resistant-capable-screw-top-caps-with-pulp-vinyl-liner-x28-400cr/"
+            },
+            {
+                "sku": "Item #400FS",
+                "name": "28-400 White PP Plastic Ribbed Screw Top Caps (Pressure Sensitive & Foam Liners) - X28-400FS",
+                "url": "https://www.berlinpackaging.com/x28-400fs-28-400-white-pp-plastic-ribbed-screw-top-caps-pressure-sensitive-foam-liners/"
+            },
+            {
+                "sku": "Item #4BFS",
+                "name": "28-400 Black PP Plastic Ribbed Screw Top Caps (Pressure Sensitive & Foam Liners) - X28-4BFS",
+                "url": "https://www.berlinpackaging.com/x28-4bfs-28-400-black-pp-plastic-ribbed-screw-top-caps-pressure-sensitive-foam-liners/"
+            },
+            {
+                "sku": "Item #1590C33",
+                "name": "28-400 White PP Plastic Ribbed Screw Top Caps (Foil Liner) - 1590C33",
+                "url": "https://www.berlinpackaging.com/1590c33-28-400-white-pp-plastic-ribbed-screw-top-caps-foil-liner/"
+            },
+            {
+                "sku": "Item #SBT281",
+                "name": "28 mm PVC 1in Shrink Bands with Tamper Message - SBT281",
+                "url": "https://www.berlinpackaging.com/sbt281-28-mm-pvc-1-shrink-bands-with-tamper-message/"
+            },
+            {
+                "sku": "Item #3300C09BLK",
+                "name": "28-400 Black PP Plastic Smooth Flat Screw Top Caps - 3300C09BLK",
+                "url": "https://www.berlinpackaging.com/28-400-black-pp-plastic-smooth-flat-screw-top-caps-3300c09blk-3300c09blk/"
+            },
+            {
+                "sku": "Item #8634C07",
+                "name": "28-400 Black PP Plastic Child-Resistant Capable Screw Top Caps with Pulp & Vinyl Liner - 8634C07",
+                "url": "https://www.berlinpackaging.com/28-400-black-pp-plastic-child-resistant-capable-screw-top-caps-with-pulp-vinyl-liner-8634c07/"
+            },
+            {
+                "sku": "Item #1590C62",
+                "name": "28-400 Black PP Plastic Ribbed Screw Top Caps (Foil Liner) - 1590C62",
+                "url": "https://www.berlinpackaging.com/1590c62-28-400-black-pp-plastic-ribbed-screw-top-caps-foil-liner/"
+            },
+            {
+                "sku": "Item #SBC281",
+                "name": "28 mm Clear PVC 1in Shrink Bands - SBC281",
+                "url": "https://www.berlinpackaging.com/sbc281-28-mm-clear-pvc-1-shrink-bands/"
+            },
+            {
+                "sku": "Item #400C",
+                "name": "28-400 Black Phenolic Caps with Polycone Liner - X28-400C",
+                "url": "https://www.berlinpackaging.com/x28-400c-28-400-black-phenolic-screw-top-caps-ldpe-liner/"
+            },
+            {
+                "sku": "Item #SBB281",
+                "name": "28 mm Black PVC 1in Shrink Bands - SBB281",
+                "url": "https://www.berlinpackaging.com/sbb281-28-mm-black-pvc-1-shrink-bands/"
+            },
+            {
+                "sku": "Item #400",
+                "name": "28-400 White PP Plastic Screw Top Cap (Foam Liner) - X28-400",
+                "url": "https://www.berlinpackaging.com/x28-400-28-400-white-pp-plastic-screw-top-cap-foam-liner/"
+            },
+            {
+                "sku": "Item #SBB282",
+                "name": "28 mm Black PVC 2in Shrink Bands - SBB282",
+                "url": "https://www.berlinpackaging.com/sbb282-28-mm-black-pvc-2-shrink-bands/"
+            },
+            {
+                "sku": "Item #400BLK",
+                "name": "28-400 Black PP Plastic Ribbed Screw Top Caps (Foam Liner) - X28-400BLK",
+                "url": "https://www.berlinpackaging.com/x28-400blk-28-400-black-pp-plastic-ribbed-screw-top-caps-foam-liner/"
+            },
+            {
+                "sku": "Item #400A",
+                "name": "28-400 Black Phenolic Screw Top Caps (Pulp & Vinyl Liner) - X28-400A",
+                "url": "https://www.berlinpackaging.com/x28-400a-28-400-black-phenolic-screw-top-caps-pulp-vinyl-liner/"
+            },
+            {
+                "sku": "Item #400AL",
+                "name": "28-400 Silver Brushed Aluminum Screw Top Caps (Foam Liner) - X28-400AL",
+                "url": "https://www.berlinpackaging.com/28-400-silver-brushed-aluminum-screw-top-caps-foam-liner-x28-400al/"
+            },
+            {
+                "sku": "Item #400CR",
+                "name": "28-400 White PP Plastic Child-Resistant Capable Screw Top Caps with Pulp & Vinyl Liner - X28-400CR",
+                "url": "https://www.berlinpackaging.com/28-400-white-pp-plastic-child-resistant-capable-screw-top-caps-with-pulp-vinyl-liner-x28-400cr/"
+            },
+            {
+                "sku": "Item #400FS",
+                "name": "28-400 White PP Plastic Ribbed Screw Top Caps (Pressure Sensitive & Foam Liners) - X28-400FS",
+                "url": "https://www.berlinpackaging.com/x28-400fs-28-400-white-pp-plastic-ribbed-screw-top-caps-pressure-sensitive-foam-liners/"
+            },
+            {
+                "sku": "Item #4BFS",
+                "name": "28-400 Black PP Plastic Ribbed Screw Top Caps (Pressure Sensitive & Foam Liners) - X28-4BFS",
+                "url": "https://www.berlinpackaging.com/x28-4bfs-28-400-black-pp-plastic-ribbed-screw-top-caps-pressure-sensitive-foam-liners/"
+            },
+            {
+                "sku": "Item #1590C33",
+                "name": "28-400 White PP Plastic Ribbed Screw Top Caps (Foil Liner) - 1590C33",
+                "url": "https://www.berlinpackaging.com/1590c33-28-400-white-pp-plastic-ribbed-screw-top-caps-foil-liner/"
+            },
+            {
+                "sku": "Item #SBT281",
+                "name": "28 mm PVC 1in Shrink Bands with Tamper Message - SBT281",
+                "url": "https://www.berlinpackaging.com/sbt281-28-mm-pvc-1-shrink-bands-with-tamper-message/"
+            }
+        ],
+        "product_normalised_value": {
+            "product_capacity_uom": "oz",
+            "product_capacity_value": "8",
+            "normalized_capacity_uom": "ml",
+            "normalized_capacity_value": "236.59"
+        },
+        "product_metadata": {
+            "scraped_at": "2025-10-23T08:12:19.372165",
+            "processing_time": 10.09,
+            "is_missing_fields": false,
+            "missing_fields": [],
+            "company_name": "Berlin Packaging"
+        },
+        "url": "https://www.berlinpackaging.com/8-oz-cobalt-blue-glass-boston-round-bottles-bulk-pallet-ycb828bulk/"
+    },
+    {
+        "product_url": "https://www.berlinpackaging.com/4699b01-bclr-boston-round-glass-bottles-pvc-coated-0-5-oz-clear-case-of-48/",
+        "product_id": "#4699B01-BCLR",
+        "product_name": "0.5 oz Clear Glass Boston Round Bottles (Cap Not Included)",
+        "product_description": "0.5 oz Clear Glass Boston Round Bottles\nA classic bottle shape in the packaging industry, the Boston Round Bottle (also known as a Winchester Bottle), can hold almost any liquid or solid. Traditionally used for pharmaceutical, chemical and laboratory applications, popular uses break the mold and extend across most markets today. Boston Round Bottles have a narrow neck size when compared to other container types, making them the ideal bottle shape for a variety of closure styles.  Caps sold separately.\nBottles are packed in reusable reshipper cartons with internal corrugated dividers that protect from damage during storage and shipping.\n*Bisphenol A is a chemical sometimes used in the manufacture of certain plastics. Bisphenol A was not used in the manufacture of this item.",
+        "product_notes": [
+            "0.5 oz Clear Glass Boston Round Bottles",
+            "Cap Size: 18-400 (sold separately)",
+            "FDA Food Contact Compliant, BPA Free*"
+        ],
+        "product_images": [
+            {
+                "image_url": "https://cdn11.bigcommerce.com/s-neo29sbo9q/images/stencil/500x659/products/7614/23723/4699B01-BCLR-WB__09793.1537454525.jpg?c=2"
+            }
+        ],
+        "product_availability": {
+            "in_stock": "In Stock",
+            "expected_ship": "Ships Within 2 - 3 Business Days",
+            "free_shipping": "Free Shipping available for orders of $300+.See Terms."
+        },
+        "product_sell_uom": [
+            {
+                "qty_range": "1-4",
+                "price": "$11.45",
+                "price_per_unit": "$0.24 ea."
+            },
+            {
+                "qty_range": "5-199",
+                "price": "$11.24",
+                "price_per_unit": "$0.23 ea."
+            },
+            {
+                "qty_range": "200+",
+                "price": "$11.13",
+                "price_per_unit": "$0.23 ea."
+            }
+        ],
+        "product_specs": {
+            "Case Qty ": "48",
+            "Pallet Qty ": "9600",
+            "Capacity ": "0.5 oz",
+            "Material Group ": "Glass",
+            "Material Type ": "Glass - Type III",
+            "Color ": "Flint",
+            "Shape ": "Round",
+            "Lining ": "Unlined?Unlined means that the cap or closure may be designed for use with a liner, but does not come with a liner. Unlike an unlined closure, a linerless cap or closure does not require a liner because it has some sort of anti-leaking function built into the inside top of the cap or closure.",
+            "Neck Finish ": "Continuous Thread?A continuous thread (CT) closure has non-interrupted threads, and is closed by twisting on the threaded neck of the container. CT closures are recognized as two numbers separated by a dash (ex. 38-400).",
+            "Diameter ": "1 in",
+            "Height ": "2.7 in",
+            "Gram Weight ": "25",
+            "Cap Size ": "18-400",
+            "is_cap_included": false
+        },
+        "product_capacity": "0.5",
+        "product_uom": "oz",
+        "product_accessories": [
+            {
+                "sku": "Item #X766",
+                "name": "18-400 Black PP Plastic 2.6in Ribbed Dropper Caps - X766",
+                "url": "https://www.berlinpackaging.com/x766-18-400-black-pp-plastic-2-6-quot-ribbed-dropper-caps/"
+            },
+            {
+                "sku": "Item #X766W",
+                "name": "18-400 White PP Plastic 2.6in Ribbed Dropper Caps - X766W",
+                "url": "https://www.berlinpackaging.com/x766w-18-400-white-pp-plastic-2-6-quot-ribbed-dropper-caps/"
+            },
+            {
+                "sku": "Item #SBC181",
+                "name": "18 mm Clear PVC 1in Shrink Bands - SBC181",
+                "url": "https://www.berlinpackaging.com/sbc181-18-mm-clear-pvc-1-shrink-bands/"
+            },
+            {
+                "sku": "Item #X18400",
+                "name": "18-400 Black Phenolic Cap with Tri-Foil Liner - X18400",
+                "url": "https://www.berlinpackaging.com/x18400-18-400-black-phenolic-cap-with-tri-foil-liner/"
+            },
+            {
+                "sku": "Item #ORE3",
+                "name": "18 MM Orifice Reducer - ORE3",
+                "url": "https://www.berlinpackaging.com/ore3-18-mm-orifice-reducer/"
+            },
+            {
+                "sku": "Item #400BLK",
+                "name": "18-400 Black PP Plastic Ribbed Screw Top Caps (Foam Liner) - X18-400BLK",
+                "url": "https://www.berlinpackaging.com/x18-400blk-18-400-black-pp-plastic-ribbed-screw-top-caps-foam-liner/"
+            },
+            {
+                "sku": "Item #400A",
+                "name": "18-400 Black Phenolic Screw Top Caps (Pulp & Vinyl Liner) - X18-400A",
+                "url": "https://www.berlinpackaging.com/x18-400a-18-400-black-phenolic-screw-top-caps-pulp-vinyl-liner/"
+            },
+            {
+                "sku": "Item #400C",
+                "name": "18-400 Black Phenolic Caps with Polycone Liner - X18-400C",
+                "url": "https://www.berlinpackaging.com/x18-400c-18-400-black-phenolic-screw-top-caps-ldpe-liner/"
+            },
+            {
+                "sku": "Item #X766",
+                "name": "18-400 Black PP Plastic 2.6in Ribbed Dropper Caps - X766",
+                "url": "https://www.berlinpackaging.com/x766-18-400-black-pp-plastic-2-6-quot-ribbed-dropper-caps/"
+            },
+            {
+                "sku": "Item #X766W",
+                "name": "18-400 White PP Plastic 2.6in Ribbed Dropper Caps - X766W",
+                "url": "https://www.berlinpackaging.com/x766w-18-400-white-pp-plastic-2-6-quot-ribbed-dropper-caps/"
+            },
+            {
+                "sku": "Item #SBC181",
+                "name": "18 mm Clear PVC 1in Shrink Bands - SBC181",
+                "url": "https://www.berlinpackaging.com/sbc181-18-mm-clear-pvc-1-shrink-bands/"
+            },
+            {
+                "sku": "Item #X18400",
+                "name": "18-400 Black Phenolic Cap with Tri-Foil Liner - X18400",
+                "url": "https://www.berlinpackaging.com/x18400-18-400-black-phenolic-cap-with-tri-foil-liner/"
+            },
+            {
+                "sku": "Item #ORE3",
+                "name": "18 MM Orifice Reducer - ORE3",
+                "url": "https://www.berlinpackaging.com/ore3-18-mm-orifice-reducer/"
+            },
+            {
+                "sku": "Item #400BLK",
+                "name": "18-400 Black PP Plastic Ribbed Screw Top Caps (Foam Liner) - X18-400BLK",
+                "url": "https://www.berlinpackaging.com/x18-400blk-18-400-black-pp-plastic-ribbed-screw-top-caps-foam-liner/"
+            },
+            {
+                "sku": "Item #400A",
+                "name": "18-400 Black Phenolic Screw Top Caps (Pulp & Vinyl Liner) - X18-400A",
+                "url": "https://www.berlinpackaging.com/x18-400a-18-400-black-phenolic-screw-top-caps-pulp-vinyl-liner/"
+            },
+            {
+                "sku": "Item #400C",
+                "name": "18-400 Black Phenolic Caps with Polycone Liner - X18-400C",
+                "url": "https://www.berlinpackaging.com/x18-400c-18-400-black-phenolic-screw-top-caps-ldpe-liner/"
+            },
+            {
+                "sku": "Item #X766",
+                "name": "18-400 Black PP Plastic 2.6in Ribbed Dropper Caps - X766",
+                "url": "https://www.berlinpackaging.com/x766-18-400-black-pp-plastic-2-6-quot-ribbed-dropper-caps/"
+            },
+            {
+                "sku": "Item #X766W",
+                "name": "18-400 White PP Plastic 2.6in Ribbed Dropper Caps - X766W",
+                "url": "https://www.berlinpackaging.com/x766w-18-400-white-pp-plastic-2-6-quot-ribbed-dropper-caps/"
+            },
+            {
+                "sku": "Item #SBC181",
+                "name": "18 mm Clear PVC 1in Shrink Bands - SBC181",
+                "url": "https://www.berlinpackaging.com/sbc181-18-mm-clear-pvc-1-shrink-bands/"
+            },
+            {
+                "sku": "Item #X18400",
+                "name": "18-400 Black Phenolic Cap with Tri-Foil Liner - X18400",
+                "url": "https://www.berlinpackaging.com/x18400-18-400-black-phenolic-cap-with-tri-foil-liner/"
+            },
+            {
+                "sku": "Item #ORE3",
+                "name": "18 MM Orifice Reducer - ORE3",
+                "url": "https://www.berlinpackaging.com/ore3-18-mm-orifice-reducer/"
+            }
+        ],
+        "product_normalised_value": {
+            "product_capacity_uom": "oz",
+            "product_capacity_value": "0.5",
+            "normalized_capacity_uom": "ml",
+            "normalized_capacity_value": "14.79"
+        },
+        "product_metadata": {
+            "scraped_at": "2025-10-23T08:12:29.920694",
+            "processing_time": 8.55,
+            "is_missing_fields": false,
+            "missing_fields": [],
+            "company_name": "Berlin Packaging"
+        },
+        "url": "https://www.berlinpackaging.com/4699b01-bclr-boston-round-glass-bottles-pvc-coated-0-5-oz-clear-case-of-48/"
+    },
+    {
+        "product_url": "https://www.berlinpackaging.com/4225b07-b-4-oz-clear-glass-french-square-bottles-cap-not-included/",
+        "product_id": "#4225B07-B",
+        "product_name": "4 oz Clear Glass French Square Bottles (Cap Not Included)",
+        "product_description": "4 oz Clear Glass French Square Bottles (Cap Not Included)\nFrench Square bottles are space-saving glass bottles known for their thick-walled, durable construction and crystal clear appearance. French Squares are commonly used to house high viscosity products such as sauces, syrups and marinades. The ultra-clear appearance also makes French Square Bottles a perfect choice for herbs, spices and dairy products. French Square bottles feature four panels that allow for multiple labeling options.\nBottles are packed in reusable re-shipper cartons with internal corrugated dividers that protect from damage during storage and shipping.",
+        "product_notes": [
+            "4 oz Clear Glass French Square Bottles",
+            "Cap Size: 33-400 (sold separately)",
+            "FDA Food Contact Compliant"
+        ],
+        "product_images": [
+            {
+                "image_url": "https://cdn11.bigcommerce.com/s-neo29sbo9q/images/stencil/500x659/products/6992/23094/4225B07-B-WB__78732.1537454377.jpg?c=2"
+            }
+        ],
+        "product_availability": {
+            "in_stock": "",
+            "expected_ship": "Backordered: Expected to Ship 11/07/20251",
+            "free_shipping": "Free Shipping available for orders of $300+.See Terms."
+        },
+        "product_sell_uom": [
+            {
+                "qty_range": "1-9",
+                "price": "$23.41",
+                "price_per_unit": "$0.98 ea."
+            },
+            {
+                "qty_range": "10-159",
+                "price": "$21.06",
+                "price_per_unit": "$0.88 ea."
+            },
+            {
+                "qty_range": "160+",
+                "price": "$19.28",
+                "price_per_unit": "$0.80 ea."
+            }
+        ],
+        "product_specs": {
+            "Case Qty ": "24",
+            "Pallet Qty ": "3840",
+            "Capacity ": "4 oz",
+            "Material Group ": "Glass",
+            "Material Type ": "Glass - Type III",
+            "Color ": "Flint",
+            "Shape ": "Square",
+            "Neck Finish ": "Continuous Thread?A continuous thread (CT) closure has non-interrupted threads, and is closed by twisting on the threaded neck of the container. CT closures are recognized as two numbers separated by a dash (ex. 38-400).",
+            "Length ": "1.8 in",
+            "Width ": "1.8 in",
+            "Depth ": "1.8 in",
+            "Height ": "4.4 in",
+            "Gram Weight ": "128",
+            "Cap Size ": "33-400",
+            "is_cap_included": false
+        },
+        "product_capacity": "4",
+        "product_uom": "oz",
+        "product_accessories": [
+            {
+                "sku": "Item #400C",
+                "name": "33-400 Black Phenolic Caps with Polycone Liner - X33-400C",
+                "url": "https://www.berlinpackaging.com/x33-400c-33-400-black-phenolic-screw-top-caps-ldpe-liner/"
+            },
+            {
+                "sku": "Item #400BLK",
+                "name": "33-400 Black PP Plastic Ribbed Screw Top Caps (Foam Liner) - X33-400BLK",
+                "url": "https://www.berlinpackaging.com/x33-400blk-33-400-black-pp-plastic-ribbed-screw-top-caps-foam-liner/"
+            },
+            {
+                "sku": "Item #400CR",
+                "name": "33-400 White PP Plastic Child-Resistant Capable Screw Top Caps with Pulp & Vinyl Liner - X33-400CR",
+                "url": "https://www.berlinpackaging.com/33-400-white-pp-plastic-child-resistant-capable-screw-top-caps-with-pulp-vinyl-liner-x33-400cr/"
+            },
+            {
+                "sku": "Item #62X25",
+                "name": "62X25 PVC Shrink Bands - 62X25",
+                "url": "https://www.berlinpackaging.com/62x25-pvc-shrink-bands-62x25/"
+            },
+            {
+                "sku": "Item #SBC331",
+                "name": "33 mm Clear PVC 1in Shrink Bands - SBC331",
+                "url": "https://www.berlinpackaging.com/sbc331-33-mm-clear-pvc-1-shrink-bands/"
+            },
+            {
+                "sku": "Item #5200C03",
+                "name": "33-400 Black Phenolic Smooth Flat Caps - 5200C03",
+                "url": "https://www.berlinpackaging.com/5200c03-33-400-black-phenolic-flat-caps/"
+            },
+            {
+                "sku": "Item #400A",
+                "name": "33-400 Black Phenolic Screw Top Caps (Pulp & Vinyl Liner) - X33-400A",
+                "url": "https://www.berlinpackaging.com/x33-400a-33-400-black-phenolic-screw-top-caps-pulp-vinyl-liner/"
+            },
+            {
+                "sku": "Item #400C",
+                "name": "33-400 Black Phenolic Caps with Polycone Liner - X33-400C",
+                "url": "https://www.berlinpackaging.com/x33-400c-33-400-black-phenolic-screw-top-caps-ldpe-liner/"
+            },
+            {
+                "sku": "Item #400BLK",
+                "name": "33-400 Black PP Plastic Ribbed Screw Top Caps (Foam Liner) - X33-400BLK",
+                "url": "https://www.berlinpackaging.com/x33-400blk-33-400-black-pp-plastic-ribbed-screw-top-caps-foam-liner/"
+            },
+            {
+                "sku": "Item #400CR",
+                "name": "33-400 White PP Plastic Child-Resistant Capable Screw Top Caps with Pulp & Vinyl Liner - X33-400CR",
+                "url": "https://www.berlinpackaging.com/33-400-white-pp-plastic-child-resistant-capable-screw-top-caps-with-pulp-vinyl-liner-x33-400cr/"
+            },
+            {
+                "sku": "Item #62X25",
+                "name": "62X25 PVC Shrink Bands - 62X25",
+                "url": "https://www.berlinpackaging.com/62x25-pvc-shrink-bands-62x25/"
+            },
+            {
+                "sku": "Item #SBC331",
+                "name": "33 mm Clear PVC 1in Shrink Bands - SBC331",
+                "url": "https://www.berlinpackaging.com/sbc331-33-mm-clear-pvc-1-shrink-bands/"
+            },
+            {
+                "sku": "Item #5200C03",
+                "name": "33-400 Black Phenolic Smooth Flat Caps - 5200C03",
+                "url": "https://www.berlinpackaging.com/5200c03-33-400-black-phenolic-flat-caps/"
+            },
+            {
+                "sku": "Item #400A",
+                "name": "33-400 Black Phenolic Screw Top Caps (Pulp & Vinyl Liner) - X33-400A",
+                "url": "https://www.berlinpackaging.com/x33-400a-33-400-black-phenolic-screw-top-caps-pulp-vinyl-liner/"
+            },
+            {
+                "sku": "Item #400C",
+                "name": "33-400 Black Phenolic Caps with Polycone Liner - X33-400C",
+                "url": "https://www.berlinpackaging.com/x33-400c-33-400-black-phenolic-screw-top-caps-ldpe-liner/"
+            },
+            {
+                "sku": "Item #400BLK",
+                "name": "33-400 Black PP Plastic Ribbed Screw Top Caps (Foam Liner) - X33-400BLK",
+                "url": "https://www.berlinpackaging.com/x33-400blk-33-400-black-pp-plastic-ribbed-screw-top-caps-foam-liner/"
+            },
+            {
+                "sku": "Item #400CR",
+                "name": "33-400 White PP Plastic Child-Resistant Capable Screw Top Caps with Pulp & Vinyl Liner - X33-400CR",
+                "url": "https://www.berlinpackaging.com/33-400-white-pp-plastic-child-resistant-capable-screw-top-caps-with-pulp-vinyl-liner-x33-400cr/"
+            },
+            {
+                "sku": "Item #62X25",
+                "name": "62X25 PVC Shrink Bands - 62X25",
+                "url": "https://www.berlinpackaging.com/62x25-pvc-shrink-bands-62x25/"
+            },
+            {
+                "sku": "Item #SBC331",
+                "name": "33 mm Clear PVC 1in Shrink Bands - SBC331",
+                "url": "https://www.berlinpackaging.com/sbc331-33-mm-clear-pvc-1-shrink-bands/"
+            }
+        ],
+        "product_normalised_value": {
+            "product_capacity_uom": "oz",
+            "product_capacity_value": "4",
+            "normalized_capacity_uom": "ml",
+            "normalized_capacity_value": "118.29"
+        },
+        "product_metadata": {
+            "scraped_at": "2025-10-23T08:12:40.521940",
+            "processing_time": 8.6,
+            "is_missing_fields": false,
+            "missing_fields": [],
+            "company_name": "Berlin Packaging"
+        },
+        "url": "https://www.berlinpackaging.com/4225b07-b-4-oz-clear-glass-french-square-bottles-cap-not-included/"
+    }
+]
