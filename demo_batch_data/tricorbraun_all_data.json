@@ -9791,7 +9791,7 @@
             "product_capacity_uom": "l",
             "product_capacity_value": "1",
             "normalized_capacity_uom": "ml",
-            "normalized_capacity_value": "None"
+            "normalized_capacity_value": 1000
         },
         "product_metadata": {
             "scraped_at": "2025-10-22T20:40:10.835848",
@@ -9851,7 +9851,7 @@
             "product_capacity_uom": "l",
             "product_capacity_value": "1",
             "normalized_capacity_uom": "ml",
-            "normalized_capacity_value": "None"
+            "normalized_capacity_value": 1000
         },
         "product_metadata": {
             "scraped_at": "2025-10-22T20:40:13.536416",
@@ -9911,7 +9911,7 @@
             "product_capacity_uom": "l",
             "product_capacity_value": "1.75",
             "normalized_capacity_uom": "ml",
-            "normalized_capacity_value": "None"
+            "normalized_capacity_value": 1750
         },
         "product_metadata": {
             "scraped_at": "2025-10-22T20:40:16.105384",
@@ -9971,7 +9971,7 @@
             "product_capacity_uom": "l",
             "product_capacity_value": "1.75",
             "normalized_capacity_uom": "ml",
-            "normalized_capacity_value": "None"
+            "normalized_capacity_value": 1750
         },
         "product_metadata": {
             "scraped_at": "2025-10-22T20:40:18.660271",
@@ -10036,7 +10036,7 @@
             "product_capacity_uom": "l",
             "product_capacity_value": "1.75",
             "normalized_capacity_uom": "ml",
-            "normalized_capacity_value": "None"
+            "normalized_capacity_value": 1750
         },
         "product_metadata": {
             "scraped_at": "2025-10-22T20:40:23.771143",

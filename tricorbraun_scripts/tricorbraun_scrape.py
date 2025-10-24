@@ -10,8 +10,8 @@ import sys
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from utils.normalize_to_ml import uom_to_ml
-from berlin_scripts.berlin_packing_scrape import get_capacity_and_uom
+from utils.normalise_uom import normalize_uom_values
+
 
 ROOT_DIR = "data/tricorbraun_glass_product_links"
 DATA_DIR = "data/tricorbraun_data"
@@ -219,32 +219,6 @@ def extract_caps_closures(section):
     return related
 
 
-def normalize_uom(capacity, product_name):
-    normalized_uom_data = {}
-    if not capacity and not product_name:
-        return normalized_uom_data
-
-    if capacity:
-        product_capacity, product_uom = get_capacity_and_uom(capacity)
-
-    elif product_name:
-        product_capacity, product_uom = get_capacity_and_uom(product_name)
-
-    else:
-        return None, None
-
-    normalized_uom_data = {
-        "product_capacity_uom": product_uom,
-        "product_capacity_value": product_capacity,
-        "normalized_capacity_uom": "ml",
-        "normalized_capacity_value": (
-            f"{uom_to_ml(product_uom,product_capacity)}" if product_capacity else None
-        ),
-    }
-
-    return normalized_uom_data
-
-
 # ======================================================
 #                PRODUCT SCRAPER
 # ======================================================
@@ -294,7 +268,7 @@ def scrape_product(url):
 
         availability = get_availability(section)
 
-        normalized_capacity = normalize_uom(specs.get("Capacity", None), name)
+        normalized_capacity = normalize_uom_values(specs.get("Capacity", None), name)
         product_fields = {
             "product_url": url,
             "product_id": sku,

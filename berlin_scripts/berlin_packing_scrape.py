@@ -5,7 +5,7 @@ from playwright.sync_api import sync_playwright
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from utils.normalize_to_ml import uom_to_ml
+from utils.normalise_uom import normalize_uom_values
 
 DATA_DIR = "data/berlin_packing_data"
 os.makedirs(DATA_DIR, exist_ok=True)
@@ -137,7 +137,7 @@ def get_product_specs(soup: BeautifulSoup) -> dict:
         if title_el:
             key = title_el.find(string=True, recursive=False)
             val = value_el.get_text(strip=True) if value_el else None
-            specs[key] = val
+            specs[key.strip()] = val
     return specs
 
 
@@ -239,19 +239,11 @@ def scrape_berlin(url: str) -> dict:
     product_selluom = get_sell_uom(soup)
     product_specs = get_product_specs(soup)
     product_specs["is_cap_included"] = is_cap_included(product_name, product_notes)
-    product_capacity, product_uom = get_capacity_and_uom(product_name)
+    normalized_uom_data = normalize_uom_values(product_specs["Capacity "], product_name)
     product_accessory = get_product_associated_accessories(soup)
 
-    print(product_capacity, product_uom)
-
-    normalized_uom = {
-        "product_capacity_uom": product_uom,
-        "product_capacity_value": product_capacity,
-        "normalized_capacity_uom": "ml",
-        "normalized_capacity_value": (
-            f"{uom_to_ml(product_uom,product_capacity)}" if product_capacity else None
-        ),
-    }
+    product_uom = normalized_uom_data["product_capacity_uom"]
+    product_capacity = normalized_uom_data["product_capacity_value"]
 
     all_fields = {
         "product_url": url,
@@ -263,10 +255,10 @@ def scrape_berlin(url: str) -> dict:
         "product_availability": product_availability,
         "product_sell_uom": product_selluom,
         "product_specs": product_specs,
-        "product_capacity": product_capacity,
         "product_uom": product_uom,
+        "product_capacity": product_capacity,
         "product_accessories": product_accessory,
-        "product_normalised_value": normalized_uom,
+        "product_normalised_value": normalized_uom_data,
     }
 
     missing_fields = [k for k, v in all_fields.items() if not v or v == [] or v == {}]
