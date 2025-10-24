@@ -1,12 +1,11 @@
-from datetime import datetime
-import os
-from pathlib import Path
-import scrapy
-import time
-import json
-import re
+import os, scrapy, time, json, re, sys
 from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import Rule
+from pathlib import Path
+from datetime import datetime
+
+# sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from utils.normalise_uom import normalize_uom_values
 
 

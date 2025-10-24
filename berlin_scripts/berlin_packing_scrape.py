@@ -239,7 +239,9 @@ def scrape_berlin(url: str) -> dict:
     product_selluom = get_sell_uom(soup)
     product_specs = get_product_specs(soup)
     product_specs["is_cap_included"] = is_cap_included(product_name, product_notes)
-    normalized_uom_data = normalize_uom_values(product_specs["Capacity "], product_name)
+    normalized_uom_data = normalize_uom_values(
+        product_specs.get("Capacity", None), product_name
+    )
     product_accessory = get_product_associated_accessories(soup)
 
     product_uom = normalized_uom_data["product_capacity_uom"]

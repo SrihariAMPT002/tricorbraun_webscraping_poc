@@ -27,33 +27,33 @@
             }
         ],
         "product_specs": {
-            "Pallet Qty ": "9216",
-            "Capacity ": "4 oz (120 ml)",
-            "Material Group ": "Glass",
-            "Material Type ": "Glass - Type III",
-            "Color ": "Amber",
-            "Shape ": "Round",
-            "Neck Finish ": "Continuous Thread?A continuous thread (CT) closure has non-interrupted threads, and is closed by twisting on the threaded neck of the container. CT closures are recognized as two numbers separated by a dash (ex. 38-400).",
-            "Diameter ": "1.92 in",
-            "Height ": "4.46 in",
-            "Gram Weight ": "108",
-            "Label Panel Dimensions ": "5.779 w x 2.500 h",
-            "Label Panel Shape ": "Rectangular",
-            "Cap Size ": "24-400",
+            "Pallet Qty": "9216",
+            "Capacity": "4 oz (120 ml)",
+            "Material Group": "Glass",
+            "Material Type": "Glass - Type III",
+            "Color": "Amber",
+            "Shape": "Round",
+            "Neck Finish": "Continuous Thread?A continuous thread (CT) closure has non-interrupted threads, and is closed by twisting on the threaded neck of the container. CT closures are recognized as two numbers separated by a dash (ex. 38-400).",
+            "Diameter": "1.92 in",
+            "Height": "4.46 in",
+            "Gram Weight": "108",
+            "Label Panel Dimensions": "5.779 w x 2.500 h",
+            "Label Panel Shape": "Rectangular",
+            "Cap Size": "24-400",
             "is_cap_included": false
         },
-        "product_capacity": "4",
         "product_uom": "oz",
+        "product_capacity": "4",
         "product_accessories": [],
         "product_normalised_value": {
             "product_capacity_uom": "oz",
             "product_capacity_value": "4",
             "normalized_capacity_uom": "ml",
-            "normalized_capacity_value": "118.29"
+            "normalized_capacity_value": 118.29
         },
         "product_metadata": {
-            "scraped_at": "2025-10-23T08:12:07.281065",
-            "processing_time": 18.29,
+            "scraped_at": "2025-10-24T16:29:26.626785",
+            "processing_time": 10.53,
             "is_missing_fields": true,
             "missing_fields": [
                 "product_accessories"
@@ -90,21 +90,21 @@
             }
         ],
         "product_specs": {
-            "Pallet Qty ": "2592",
-            "Capacity ": "8 oz (236 ml)",
-            "Material Group ": "Glass",
-            "Material Type ": "Glass - Type III",
-            "Color ": "Blue",
-            "Shape ": "Round",
-            "Neck Finish ": "Continuous Thread?A continuous thread (CT) closure has non-interrupted threads, and is closed by twisting on the threaded neck of the container. CT closures are recognized as two numbers separated by a dash (ex. 38-400).",
-            "Diameter ": "2.374 in",
-            "Height ": "5.437 in",
-            "Gram Weight ": "175",
-            "Cap Size ": "28-400",
+            "Pallet Qty": "2592",
+            "Capacity": "8 oz (236 ml)",
+            "Material Group": "Glass",
+            "Material Type": "Glass - Type III",
+            "Color": "Blue",
+            "Shape": "Round",
+            "Neck Finish": "Continuous Thread?A continuous thread (CT) closure has non-interrupted threads, and is closed by twisting on the threaded neck of the container. CT closures are recognized as two numbers separated by a dash (ex. 38-400).",
+            "Diameter": "2.374 in",
+            "Height": "5.437 in",
+            "Gram Weight": "175",
+            "Cap Size": "28-400",
             "is_cap_included": false
         },
-        "product_capacity": "8",
         "product_uom": "oz",
+        "product_capacity": "8",
         "product_accessories": [
             {
                 "sku": "Item #400CR",
@@ -296,11 +296,11 @@
             "product_capacity_uom": "oz",
             "product_capacity_value": "8",
             "normalized_capacity_uom": "ml",
-            "normalized_capacity_value": "236.59"
+            "normalized_capacity_value": 236.59
         },
         "product_metadata": {
-            "scraped_at": "2025-10-23T08:12:19.372165",
-            "processing_time": 10.09,
+            "scraped_at": "2025-10-24T16:29:42.776138",
+            "processing_time": 14.15,
             "is_missing_fields": false,
             "missing_fields": [],
             "company_name": "Berlin Packaging"
@@ -345,23 +345,23 @@
             }
         ],
         "product_specs": {
-            "Case Qty ": "48",
-            "Pallet Qty ": "9600",
-            "Capacity ": "0.5 oz",
-            "Material Group ": "Glass",
-            "Material Type ": "Glass - Type III",
-            "Color ": "Flint",
-            "Shape ": "Round",
-            "Lining ": "Unlined?Unlined means that the cap or closure may be designed for use with a liner, but does not come with a liner. Unlike an unlined closure, a linerless cap or closure does not require a liner because it has some sort of anti-leaking function built into the inside top of the cap or closure.",
-            "Neck Finish ": "Continuous Thread?A continuous thread (CT) closure has non-interrupted threads, and is closed by twisting on the threaded neck of the container. CT closures are recognized as two numbers separated by a dash (ex. 38-400).",
-            "Diameter ": "1 in",
-            "Height ": "2.7 in",
-            "Gram Weight ": "25",
-            "Cap Size ": "18-400",
+            "Case Qty": "48",
+            "Pallet Qty": "9600",
+            "Capacity": "0.5 oz",
+            "Material Group": "Glass",
+            "Material Type": "Glass - Type III",
+            "Color": "Flint",
+            "Shape": "Round",
+            "Lining": "Unlined?Unlined means that the cap or closure may be designed for use with a liner, but does not come with a liner. Unlike an unlined closure, a linerless cap or closure does not require a liner because it has some sort of anti-leaking function built into the inside top of the cap or closure.",
+            "Neck Finish": "Continuous Thread?A continuous thread (CT) closure has non-interrupted threads, and is closed by twisting on the threaded neck of the container. CT closures are recognized as two numbers separated by a dash (ex. 38-400).",
+            "Diameter": "1 in",
+            "Height": "2.7 in",
+            "Gram Weight": "25",
+            "Cap Size": "18-400",
             "is_cap_included": false
         },
-        "product_capacity": "0.5",
         "product_uom": "oz",
+        "product_capacity": "0.5",
         "product_accessories": [
             {
                 "sku": "Item #X766",
@@ -473,11 +473,11 @@
             "product_capacity_uom": "oz",
             "product_capacity_value": "0.5",
             "normalized_capacity_uom": "ml",
-            "normalized_capacity_value": "14.79"
+            "normalized_capacity_value": 14.79
         },
         "product_metadata": {
-            "scraped_at": "2025-10-23T08:12:29.920694",
-            "processing_time": 8.55,
+            "scraped_at": "2025-10-24T16:29:55.971759",
+            "processing_time": 11.19,
             "is_missing_fields": false,
             "missing_fields": [],
             "company_name": "Berlin Packaging"
@@ -501,7 +501,7 @@
         ],
         "product_availability": {
             "in_stock": "",
-            "expected_ship": "Backordered: Expected to Ship 11/07/20251",
+            "expected_ship": "Backordered: Expected to Ship 11/10/20251",
             "free_shipping": "Free Shipping available for orders of $300+.See Terms."
         },
         "product_sell_uom": [
@@ -522,24 +522,24 @@
             }
         ],
         "product_specs": {
-            "Case Qty ": "24",
-            "Pallet Qty ": "3840",
-            "Capacity ": "4 oz",
-            "Material Group ": "Glass",
-            "Material Type ": "Glass - Type III",
-            "Color ": "Flint",
-            "Shape ": "Square",
-            "Neck Finish ": "Continuous Thread?A continuous thread (CT) closure has non-interrupted threads, and is closed by twisting on the threaded neck of the container. CT closures are recognized as two numbers separated by a dash (ex. 38-400).",
-            "Length ": "1.8 in",
-            "Width ": "1.8 in",
-            "Depth ": "1.8 in",
-            "Height ": "4.4 in",
-            "Gram Weight ": "128",
-            "Cap Size ": "33-400",
+            "Case Qty": "24",
+            "Pallet Qty": "3840",
+            "Capacity": "4 oz",
+            "Material Group": "Glass",
+            "Material Type": "Glass - Type III",
+            "Color": "Flint",
+            "Shape": "Square",
+            "Neck Finish": "Continuous Thread?A continuous thread (CT) closure has non-interrupted threads, and is closed by twisting on the threaded neck of the container. CT closures are recognized as two numbers separated by a dash (ex. 38-400).",
+            "Length": "1.8 in",
+            "Width": "1.8 in",
+            "Depth": "1.8 in",
+            "Height": "4.4 in",
+            "Gram Weight": "128",
+            "Cap Size": "33-400",
             "is_cap_included": false
         },
-        "product_capacity": "4",
         "product_uom": "oz",
+        "product_capacity": "4",
         "product_accessories": [
             {
                 "sku": "Item #400C",
@@ -641,11 +641,11 @@
             "product_capacity_uom": "oz",
             "product_capacity_value": "4",
             "normalized_capacity_uom": "ml",
-            "normalized_capacity_value": "118.29"
+            "normalized_capacity_value": 118.29
         },
         "product_metadata": {
-            "scraped_at": "2025-10-23T08:12:40.521940",
-            "processing_time": 8.6,
+            "scraped_at": "2025-10-24T16:30:13.208061",
+            "processing_time": 15.23,
             "is_missing_fields": false,
             "missing_fields": [],
             "company_name": "Berlin Packaging"

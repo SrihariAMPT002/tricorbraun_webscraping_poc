@@ -4,7 +4,7 @@ from fractions import Fraction
 from typing import Optional, Dict
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from find_non_products import get_non_products
+from utils.find_non_products import get_non_products
 
 
 def parse_capacity_with_ml(
@@ -128,7 +128,7 @@ def main():
     data = []
     all_invalid_products = []
 
-    with open("demo_batch_data/cary_all_data.json", "r") as f:
+    with open("demo_batch_data/tricorbraun_all_data_normalized.json", "r") as f:
         data = json.load(f)
         # results = get_non_products(data)
         # non_products = results["non_products"]
@@ -146,7 +146,7 @@ def main():
         # if item["product_url"] in all_invalid_products_links:
         #     print(f" Skipping URL: {item['product_url']}")
         #     continue
-        item["product_specs"] = item.pop("product_information_specs")
+        # item["product_specs"] = item.pop("product_information_specs")
 
         capacity = item["product_specs"].get("Capacity", None)
         product_name = item["product_name"]
@@ -161,12 +161,12 @@ def main():
             **item["product_metadata"],
             "reparsed_at": reparsed_at,
         }
-        new_dict = {k: v for k, v in item.items() if k != "product_normalized_uom"}
+        new_dict = {k: v for k, v in item.items() if k != "product_normalised_value"}
 
         repared_data.append(new_dict)
 
     # Save the updated data
-    output_file = "demo_batch_data/cary_all_data_normalized.json"
+    output_file = "demo_batch_data/tricorbraun_all_data_normalized.json"
     with open(output_file, "w") as f:
         json.dump(repared_data, f, indent=2)
 

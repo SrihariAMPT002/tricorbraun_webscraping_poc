@@ -59,10 +59,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.817538"
+      "reparsed_at": "2025-10-24T17:06:01.339511"
     },
     "url": "https://www.tricorbraun.com/64-oz-clear-glass-round-handleware-bottle-one-finger-handle-38-405-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "64",
       "normalized_capacity_uom": "ml",
@@ -114,10 +114,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.817591"
+      "reparsed_at": "2025-10-24T17:06:01.339539"
     },
     "url": "https://www.tricorbraun.com/64-oz-clear-glass-round-handleware-jug-38-405-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "64",
       "normalized_capacity_uom": "ml",
@@ -212,10 +212,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.817609"
+      "reparsed_at": "2025-10-24T17:06:01.339546"
     },
     "url": "https://www.tricorbraun.com/64-oz-clear-glass-round-jug-38-400-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "64",
       "normalized_capacity_uom": "ml",
@@ -288,10 +288,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.817623"
+      "reparsed_at": "2025-10-24T17:06:01.339552"
     },
     "url": "https://www.tricorbraun.com/0-5-oz-amber-glass-boston-round-bottle-18-400-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "0.5",
       "normalized_capacity_uom": "ml",
@@ -343,10 +343,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.817635"
+      "reparsed_at": "2025-10-24T17:06:01.339557"
     },
     "url": "https://www.tricorbraun.com/0-5-oz-clear-glass-boston-round-bottle-18-400-neck-finish-319987.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "0.5",
       "normalized_capacity_uom": "ml",
@@ -399,10 +399,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.817644"
+      "reparsed_at": "2025-10-24T17:06:01.339562"
     },
     "url": "https://www.tricorbraun.com/0-5-oz-clear-glass-boston-round-bottle-18-400-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "0.5",
       "normalized_capacity_uom": "ml",
@@ -478,10 +478,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.817654"
+      "reparsed_at": "2025-10-24T17:06:01.339566"
     },
     "url": "https://www.tricorbraun.com/0-5-oz-glass-boston-round-dropper-bottle-18-mm-special-neck-finish-clear.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "0.5",
       "normalized_capacity_uom": "ml",
@@ -547,10 +547,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.817663"
+      "reparsed_at": "2025-10-24T17:06:01.339570"
     },
     "url": "https://www.tricorbraun.com/0-5-oz-glass-boston-round-bottle-18-400-neck-finish-cobalt-blue.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "0.5",
       "normalized_capacity_uom": "ml",
@@ -626,10 +626,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.817673"
+      "reparsed_at": "2025-10-24T17:06:01.339574"
     },
     "url": "https://www.tricorbraun.com/0-5-oz-glass-boston-round-dropper-bottle-18-mm-special-neck-finish-green.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "0.5",
       "normalized_capacity_uom": "ml",
@@ -717,10 +717,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.817684"
+      "reparsed_at": "2025-10-24T17:06:01.339580"
     },
     "url": "https://www.tricorbraun.com/1-oz-amber-glass-boston-round-bottle-20-400-neck-finish-319289.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "1",
       "normalized_capacity_uom": "ml",
@@ -797,10 +797,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.817697"
+      "reparsed_at": "2025-10-24T17:06:01.339585"
     },
     "url": "https://www.tricorbraun.com/1-oz-glass-boston-round-dropper-bottle-18mm-special-neck-finish-amber.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "1",
       "normalized_capacity_uom": "ml",
@@ -852,10 +852,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.817710"
+      "reparsed_at": "2025-10-24T17:06:01.339589"
     },
     "url": "https://www.tricorbraun.com/1-oz-clear-glass-boston-round-bottle-20-400-neck-finish-319900.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "1",
       "normalized_capacity_uom": "ml",
@@ -933,10 +933,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.817722"
+      "reparsed_at": "2025-10-24T17:06:01.339593"
     },
     "url": "https://www.tricorbraun.com/1-oz-clear-glass-boston-round-bottle-20-400-neck-finish-267059.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "1",
       "normalized_capacity_uom": "ml",
@@ -989,10 +989,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.817731"
+      "reparsed_at": "2025-10-24T17:06:01.339597"
     },
     "url": "https://www.tricorbraun.com/1-oz-clear-glass-boston-round-bottle-20-400-neck-finish-052041.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "1",
       "normalized_capacity_uom": "ml",
@@ -1068,10 +1068,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.817740"
+      "reparsed_at": "2025-10-24T17:06:01.339603"
     },
     "url": "https://www.tricorbraun.com/1-oz-clear-glass-boston-round-bottle-20-400-neck-finish-011319.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "1",
       "normalized_capacity_uom": "ml",
@@ -1121,10 +1121,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.817749"
+      "reparsed_at": "2025-10-24T17:06:01.339607"
     },
     "url": "https://www.tricorbraun.com/1-oz-clear-glass-boston-round-bottle-20-400-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "1",
       "normalized_capacity_uom": "ml",
@@ -1212,10 +1212,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.817758"
+      "reparsed_at": "2025-10-24T17:06:01.339610"
     },
     "url": "https://www.tricorbraun.com/1-oz-cobalt-blue-glass-boston-round-bottle-20-400-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "1",
       "normalized_capacity_uom": "ml",
@@ -1289,10 +1289,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.817767"
+      "reparsed_at": "2025-10-24T17:06:01.339614"
     },
     "url": "https://www.tricorbraun.com/1-oz-glass-boston-round-bottle-20-400-neck-finish-cobalt-blue.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "1",
       "normalized_capacity_uom": "ml",
@@ -1360,14 +1360,14 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.817777"
+      "reparsed_at": "2025-10-24T17:06:01.339619"
     },
     "url": "https://www.tricorbraun.com/1-oz-glass-cylinder-bottle-20-410-silver-natural-fine-mist-sprayer-frosted-clear.html",
-    "product_normalised_value": {
-      "product_capacity_uom": "oz",
-      "product_capacity_value": "1",
+    "product_normalised_data": {
+      "product_capacity_uom": "ml",
+      "product_capacity_value": "30",
       "normalized_capacity_uom": "ml",
-      "normalized_capacity_value": 29.57
+      "normalized_capacity_value": 30.0
     }
   },
   {
@@ -1439,10 +1439,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.817788"
+      "reparsed_at": "2025-10-24T17:06:01.339623"
     },
     "url": "https://www.tricorbraun.com/10-ml-amber-glass-boston-round-dropper-bottle-18mm-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "10",
       "normalized_capacity_uom": "ml",
@@ -1537,10 +1537,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.817802"
+      "reparsed_at": "2025-10-24T17:06:01.339628"
     },
     "url": "https://www.tricorbraun.com/10-ml-glass-boston-round-dropper-bottle-18mm-neck-finish-cobalt-blue.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "10",
       "normalized_capacity_uom": "ml",
@@ -1603,10 +1603,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.817811"
+      "reparsed_at": "2025-10-24T17:06:01.339633"
     },
     "url": "https://www.tricorbraun.com/100-ml-glass-boston-round-dropper-bottle-18-din-neck-finish-cobalt-blue.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "100",
       "normalized_capacity_uom": "ml",
@@ -1685,10 +1685,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.817821"
+      "reparsed_at": "2025-10-24T17:06:01.339637"
     },
     "url": "https://www.tricorbraun.com/15-ml-glass-boston-round-bottle-18-410-neck-finish-amber.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "15",
       "normalized_capacity_uom": "ml",
@@ -1796,10 +1796,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.817830"
+      "reparsed_at": "2025-10-24T17:06:01.339641"
     },
     "url": "https://www.tricorbraun.com/16-oz-amber-glass-boston-round-bottle-28-400-neck-finish-319284.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "16",
       "normalized_capacity_uom": "ml",
@@ -1850,10 +1850,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.817839"
+      "reparsed_at": "2025-10-24T17:06:01.339645"
     },
     "url": "https://www.tricorbraun.com/16-oz-amber-glass-boston-round-bottle-28-400-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "16",
       "normalized_capacity_uom": "ml",
@@ -1971,10 +1971,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.817848"
+      "reparsed_at": "2025-10-24T17:06:01.339649"
     },
     "url": "https://www.tricorbraun.com/16-oz-glass-boston-round-bottle-28-400-neck-finish-amber.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "16",
       "normalized_capacity_uom": "ml",
@@ -2026,10 +2026,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.817857"
+      "reparsed_at": "2025-10-24T17:06:01.339653"
     },
     "url": "https://www.tricorbraun.com/16-oz-clear-glass-boston-round-bottle-28-400-gpi-neck-finish-012659.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "16",
       "normalized_capacity_uom": "ml",
@@ -2081,10 +2081,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.817869"
+      "reparsed_at": "2025-10-24T17:06:01.339656"
     },
     "url": "https://www.tricorbraun.com/16-oz-clear-glass-boston-round-bottle-28-400-gpi-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "16",
       "normalized_capacity_uom": "ml",
@@ -2135,10 +2135,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.817878"
+      "reparsed_at": "2025-10-24T17:06:01.339660"
     },
     "url": "https://www.tricorbraun.com/16-oz-clear-glass-boston-round-bottle-28-400-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "16",
       "normalized_capacity_uom": "ml",
@@ -2191,10 +2191,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.817887"
+      "reparsed_at": "2025-10-24T17:06:01.339664"
     },
     "url": "https://www.tricorbraun.com/16-oz-glass-boston-round-bottle-28-400-neck-finish-clear.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "16",
       "normalized_capacity_uom": "ml",
@@ -2292,10 +2292,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.817903"
+      "reparsed_at": "2025-10-24T17:06:01.339669"
     },
     "url": "https://www.tricorbraun.com/16-oz-glass-boston-round-bottle-28-400-neck-finish-cobalt-blue.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "16",
       "normalized_capacity_uom": "ml",
@@ -2349,10 +2349,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.817912"
+      "reparsed_at": "2025-10-24T17:06:01.339673"
     },
     "url": "https://www.tricorbraun.com/2-oz-amber-glass-boston-round-bottle-20-400-gpi-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "2",
       "normalized_capacity_uom": "ml",
@@ -2432,10 +2432,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.817921"
+      "reparsed_at": "2025-10-24T17:06:01.339677"
     },
     "url": "https://www.tricorbraun.com/2-oz-amber-glass-boston-round-bottle-20-400-neck-finish-319288.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "2",
       "normalized_capacity_uom": "ml",
@@ -2488,10 +2488,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.817930"
+      "reparsed_at": "2025-10-24T17:06:01.339681"
     },
     "url": "https://www.tricorbraun.com/2-oz-amber-glass-boston-round-bottle-20-400-neck-finish-051449.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "2",
       "normalized_capacity_uom": "ml",
@@ -2543,10 +2543,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.817939"
+      "reparsed_at": "2025-10-24T17:06:01.339685"
     },
     "url": "https://www.tricorbraun.com/2-oz-clear-glass-boston-round-bottle-20-400-gpi-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "2",
       "normalized_capacity_uom": "ml",
@@ -2624,10 +2624,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.817948"
+      "reparsed_at": "2025-10-24T17:06:01.339688"
     },
     "url": "https://www.tricorbraun.com/2-oz-clear-glass-boston-round-bottle-20-400-neck-finish-319892.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "2",
       "normalized_capacity_uom": "ml",
@@ -2705,10 +2705,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.817957"
+      "reparsed_at": "2025-10-24T17:06:01.339692"
     },
     "url": "https://www.tricorbraun.com/2-oz-cobalt-blue-glass-boston-round-bottle-20-400-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "2",
       "normalized_capacity_uom": "ml",
@@ -2765,14 +2765,14 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.817965"
+      "reparsed_at": "2025-10-24T17:06:01.339697"
     },
     "url": "https://www.tricorbraun.com/2-oz-frosted-amber-glass-boston-round-bottle-19-63-mm-special-neck-finish.html",
-    "product_normalised_value": {
-      "product_capacity_uom": "oz",
-      "product_capacity_value": "2",
+    "product_normalised_data": {
+      "product_capacity_uom": "ml",
+      "product_capacity_value": "60",
       "normalized_capacity_uom": "ml",
-      "normalized_capacity_value": 59.15
+      "normalized_capacity_value": 60.0
     }
   },
   {
@@ -2826,10 +2826,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.817973"
+      "reparsed_at": "2025-10-24T17:06:01.339701"
     },
     "url": "https://www.tricorbraun.com/2-oz-glass-boston-round-bottle-20-410-neck-finish-frosted-clear.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "2",
       "normalized_capacity_uom": "ml",
@@ -2884,10 +2884,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.817982"
+      "reparsed_at": "2025-10-24T17:06:01.339705"
     },
     "url": "https://www.tricorbraun.com/2-oz-white-opal-glass-boston-round-bottle-20-400-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "2",
       "normalized_capacity_uom": "ml",
@@ -2953,10 +2953,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.817993"
+      "reparsed_at": "2025-10-24T17:06:01.339710"
     },
     "url": "https://www.tricorbraun.com/20-ml-glass-boston-round-dropper-bottle-18-mm-special-neck-finish-amber.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "20",
       "normalized_capacity_uom": "ml",
@@ -3022,10 +3022,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818002"
+      "reparsed_at": "2025-10-24T17:06:01.339714"
     },
     "url": "https://www.tricorbraun.com/20-ml-glass-boston-round-dropper-bottle-18mm-neck-finish-clear.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "20",
       "normalized_capacity_uom": "ml",
@@ -3101,14 +3101,14 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818011"
+      "reparsed_at": "2025-10-24T17:06:01.339718"
     },
     "url": "https://www.tricorbraun.com/3-4-oz-glass-boston-round-dropper-bottle-18mm-neck-finish-amber.html",
-    "product_normalised_value": {
-      "product_capacity_uom": "oz",
-      "product_capacity_value": "3.4",
+    "product_normalised_data": {
+      "product_capacity_uom": "ml",
+      "product_capacity_value": "100",
       "normalized_capacity_uom": "ml",
-      "normalized_capacity_value": 100.55
+      "normalized_capacity_value": 100.0
     }
   },
   {
@@ -3154,10 +3154,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818020"
+      "reparsed_at": "2025-10-24T17:06:01.339722"
     },
     "url": "https://www.tricorbraun.com/30-cc-amber-glass-boston-round-bottle-28-400-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "cc",
       "product_capacity_value": "30",
       "normalized_capacity_uom": "ml",
@@ -3231,10 +3231,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818028"
+      "reparsed_at": "2025-10-24T17:06:01.339726"
     },
     "url": "https://www.tricorbraun.com/30-ml-glass-boston-round-dropper-bottle-18mm-neck-finish-cobalt-blue.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "30",
       "normalized_capacity_uom": "ml",
@@ -3308,10 +3308,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818037"
+      "reparsed_at": "2025-10-24T17:06:01.339730"
     },
     "url": "https://www.tricorbraun.com/30-ml-glass-round-dropper-bottle-18-mm-special-neck-finish-green.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "30",
       "normalized_capacity_uom": "ml",
@@ -3389,10 +3389,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818045"
+      "reparsed_at": "2025-10-24T17:06:01.339734"
     },
     "url": "https://www.tricorbraun.com/32-oz-amber-glass-boston-round-bottle-28-400-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "32",
       "normalized_capacity_uom": "ml",
@@ -3445,10 +3445,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818054"
+      "reparsed_at": "2025-10-24T17:06:01.339739"
     },
     "url": "https://www.tricorbraun.com/32-oz-amber-glass-boston-round-bottle-33-400-neck-finish-044303.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "32",
       "normalized_capacity_uom": "ml",
@@ -3501,10 +3501,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818063"
+      "reparsed_at": "2025-10-24T17:06:01.339743"
     },
     "url": "https://www.tricorbraun.com/32-oz-amber-glass-boston-round-bottle-33-400-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "32",
       "normalized_capacity_uom": "ml",
@@ -3557,10 +3557,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818071"
+      "reparsed_at": "2025-10-24T17:06:01.339747"
     },
     "url": "https://www.tricorbraun.com/32-oz-clear-glass-boston-round-bottle-33-400-neck-finish-052053.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "32",
       "normalized_capacity_uom": "ml",
@@ -3613,10 +3613,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818084"
+      "reparsed_at": "2025-10-24T17:06:01.339752"
     },
     "url": "https://www.tricorbraun.com/32-oz-clear-glass-boston-round-bottle-33-400-neck-finish-015095.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "32",
       "normalized_capacity_uom": "ml",
@@ -3669,10 +3669,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818094"
+      "reparsed_at": "2025-10-24T17:06:01.339756"
     },
     "url": "https://www.tricorbraun.com/32-oz-clear-glass-boston-round-bottle-33-400-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "32",
       "normalized_capacity_uom": "ml",
@@ -3753,10 +3753,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818103"
+      "reparsed_at": "2025-10-24T17:06:01.339760"
     },
     "url": "https://www.tricorbraun.com/32-oz-glass-boston-round-bottle-33-400-neck-finish-clear.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "32",
       "normalized_capacity_uom": "ml",
@@ -3833,10 +3833,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818112"
+      "reparsed_at": "2025-10-24T17:06:01.339764"
     },
     "url": "https://www.tricorbraun.com/4-oz-amber-glass-boston-round-bottle-22-400-neck-finish-319291.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "4",
       "normalized_capacity_uom": "ml",
@@ -3886,10 +3886,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818121"
+      "reparsed_at": "2025-10-24T17:06:01.339768"
     },
     "url": "https://www.tricorbraun.com/4-oz-amber-glass-boston-round-bottle-22-400-neck-finish-052046.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "4",
       "normalized_capacity_uom": "ml",
@@ -3941,10 +3941,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818129"
+      "reparsed_at": "2025-10-24T17:06:01.339772"
     },
     "url": "https://www.tricorbraun.com/4-oz-amber-glass-boston-round-bottle-22-400-neck-finish-011696.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "4",
       "normalized_capacity_uom": "ml",
@@ -4003,10 +4003,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818138"
+      "reparsed_at": "2025-10-24T17:06:01.339775"
     },
     "url": "https://www.tricorbraun.com/4-oz-amber-glass-boston-round-bottle-22-400-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "4",
       "normalized_capacity_uom": "ml",
@@ -4074,10 +4074,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818147"
+      "reparsed_at": "2025-10-24T17:06:01.339779"
     },
     "url": "https://www.tricorbraun.com/4-oz-clear-glass-boston-round-bottle-22-400-neck-finish-319893.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "4",
       "normalized_capacity_uom": "ml",
@@ -4148,10 +4148,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818155"
+      "reparsed_at": "2025-10-24T17:06:01.339783"
     },
     "url": "https://www.tricorbraun.com/4-oz-glass-boston-round-bottle-22-400-neck-finish-clear.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "4",
       "normalized_capacity_uom": "ml",
@@ -4228,10 +4228,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818167"
+      "reparsed_at": "2025-10-24T17:06:01.339787"
     },
     "url": "https://www.tricorbraun.com/4-oz-clear-glass-boston-round-bottle-24-400-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "4",
       "normalized_capacity_uom": "ml",
@@ -4308,10 +4308,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818177"
+      "reparsed_at": "2025-10-24T17:06:01.339792"
     },
     "url": "https://www.tricorbraun.com/4-oz-cobalt-blue-glass-boston-round-bottle-24-400-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "4",
       "normalized_capacity_uom": "ml",
@@ -4390,10 +4390,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818188"
+      "reparsed_at": "2025-10-24T17:06:01.339796"
     },
     "url": "https://www.tricorbraun.com/5-ml-glass-boston-round-dropper-bottle-18mm-neck-finish-cobalt-blue.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "5",
       "normalized_capacity_uom": "ml",
@@ -4467,10 +4467,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818199"
+      "reparsed_at": "2025-10-24T17:06:01.339800"
     },
     "url": "https://www.tricorbraun.com/5-ml-glass-boston-round-dropper-bottle-18mm-neck-finish-green.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "5",
       "normalized_capacity_uom": "ml",
@@ -4539,10 +4539,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818208"
+      "reparsed_at": "2025-10-24T17:06:01.339805"
     },
     "url": "https://www.tricorbraun.com/50-ml-glass-boston-round-dropper-bottle-18mm-neck-finish-amber.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "50",
       "normalized_capacity_uom": "ml",
@@ -4595,10 +4595,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818216"
+      "reparsed_at": "2025-10-24T17:06:01.339809"
     },
     "url": "https://www.tricorbraun.com/8-oz-amber-glass-boston-round-bottle-24-400-neck-finish-057277.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "8",
       "normalized_capacity_uom": "ml",
@@ -4665,10 +4665,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818226"
+      "reparsed_at": "2025-10-24T17:06:01.339813"
     },
     "url": "https://www.tricorbraun.com/8-oz-amber-glass-boston-round-bottle-24-400-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "8",
       "normalized_capacity_uom": "ml",
@@ -4745,10 +4745,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818234"
+      "reparsed_at": "2025-10-24T17:06:01.339817"
     },
     "url": "https://www.tricorbraun.com/8-oz-glass-boston-round-bottle-24-400-neck-finish-amber.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "8",
       "normalized_capacity_uom": "ml",
@@ -4859,10 +4859,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818243"
+      "reparsed_at": "2025-10-24T17:06:01.339821"
     },
     "url": "https://www.tricorbraun.com/8-oz-amber-glass-boston-round-bottle-28-400-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "8",
       "normalized_capacity_uom": "ml",
@@ -4915,10 +4915,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818251"
+      "reparsed_at": "2025-10-24T17:06:01.339825"
     },
     "url": "https://www.tricorbraun.com/8-oz-clear-glass-boston-round-bottle-24-400-gpi-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "8",
       "normalized_capacity_uom": "ml",
@@ -5001,10 +5001,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818261"
+      "reparsed_at": "2025-10-24T17:06:01.339829"
     },
     "url": "https://www.tricorbraun.com/8-oz-glass-boston-round-bottle-24-400-neck-finish-clear.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "8",
       "normalized_capacity_uom": "ml",
@@ -5098,10 +5098,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818272"
+      "reparsed_at": "2025-10-24T17:06:01.339834"
     },
     "url": "https://www.tricorbraun.com/8-oz-glass-boston-round-bottle-28-400-neck-finish-cobalt-blue.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "8",
       "normalized_capacity_uom": "ml",
@@ -5160,14 +5160,14 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818280"
+      "reparsed_at": "2025-10-24T17:06:01.339838"
     },
     "url": "https://www.tricorbraun.com/0-5-oz-glass-cylinder-bottle-20-mm-special-neck-finish-frosted-clear.html",
-    "product_normalised_value": {
-      "product_capacity_uom": "oz",
-      "product_capacity_value": "0.5",
+    "product_normalised_data": {
+      "product_capacity_uom": "ml",
+      "product_capacity_value": "15",
       "normalized_capacity_uom": "ml",
-      "normalized_capacity_value": 14.79
+      "normalized_capacity_value": 15.0
     }
   },
   {
@@ -5214,14 +5214,14 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818289"
+      "reparsed_at": "2025-10-24T17:06:01.339842"
     },
     "url": "https://www.tricorbraun.com/1-oz-30-ml-amber-glass-round-dropper-bottle-18mm-neck-finish.html",
-    "product_normalised_value": {
-      "product_capacity_uom": "oz",
-      "product_capacity_value": "1",
+    "product_normalised_data": {
+      "product_capacity_uom": "ml",
+      "product_capacity_value": "30",
       "normalized_capacity_uom": "ml",
-      "normalized_capacity_value": 29.57
+      "normalized_capacity_value": 30.0
     }
   },
   {
@@ -5272,10 +5272,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818297"
+      "reparsed_at": "2025-10-24T17:06:01.339846"
     },
     "url": "https://www.tricorbraun.com/1-oz-white-opal-glass-boston-round-bottle-20-400-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "1",
       "normalized_capacity_uom": "ml",
@@ -5357,10 +5357,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818312"
+      "reparsed_at": "2025-10-24T17:06:01.339850"
     },
     "url": "https://www.tricorbraun.com/10-ml-amber-glass-dropper-bottle-18-mm-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "10",
       "normalized_capacity_uom": "ml",
@@ -5410,10 +5410,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818320"
+      "reparsed_at": "2025-10-24T17:06:01.339854"
     },
     "url": "https://www.tricorbraun.com/10-ml-amber-glass-round-dropper-bottle-18mm-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "10",
       "normalized_capacity_uom": "ml",
@@ -5469,10 +5469,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818328"
+      "reparsed_at": "2025-10-24T17:06:01.339857"
     },
     "url": "https://www.tricorbraun.com/10-ml-glass-boston-round-dropper-bottle-18mm-neck-finish-clear.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "10",
       "normalized_capacity_uom": "ml",
@@ -5528,10 +5528,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818337"
+      "reparsed_at": "2025-10-24T17:06:01.339861"
     },
     "url": "https://www.tricorbraun.com/100-ml-blue-glass-round-dropper-bottle-18mm-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "100",
       "normalized_capacity_uom": "ml",
@@ -5586,10 +5586,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818345"
+      "reparsed_at": "2025-10-24T17:06:01.339866"
     },
     "url": "https://www.tricorbraun.com/100-ml-round-glass-green-dropper-bottle.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "100",
       "normalized_capacity_uom": "ml",
@@ -5671,10 +5671,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818354"
+      "reparsed_at": "2025-10-24T17:06:01.339870"
     },
     "url": "https://www.tricorbraun.com/15-ml-amber-glass-boston-round-dropper-bottle-18-mm-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "15",
       "normalized_capacity_uom": "ml",
@@ -5725,10 +5725,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818365"
+      "reparsed_at": "2025-10-24T17:06:01.339875"
     },
     "url": "https://www.tricorbraun.com/15-ml-amber-glass-round-dropper-bottle-18mm-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "15",
       "normalized_capacity_uom": "ml",
@@ -5780,10 +5780,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818373"
+      "reparsed_at": "2025-10-24T17:06:01.339879"
     },
     "url": "https://www.tricorbraun.com/15-ml-glass-boston-round-bottle-18-410-neck-finish-clear.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "15",
       "normalized_capacity_uom": "ml",
@@ -5834,10 +5834,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818382"
+      "reparsed_at": "2025-10-24T17:06:01.339883"
     },
     "url": "https://www.tricorbraun.com/15-ml-cobalt-blue-glass-round-dropper-bottle-18mm-din-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "15",
       "normalized_capacity_uom": "ml",
@@ -5892,10 +5892,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818391"
+      "reparsed_at": "2025-10-24T17:06:01.339886"
     },
     "url": "https://www.tricorbraun.com/15-ml-colbalt-blue-glass-dropper-bottle-18mm-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "15",
       "normalized_capacity_uom": "ml",
@@ -5980,10 +5980,10 @@
         "product_capacity"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818401"
+      "reparsed_at": "2025-10-24T17:06:01.339892"
     },
     "url": "https://www.tricorbraun.com/2-dram-type-1-glass-round-vial-15-425-neck-finish-amber.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "dram",
       "product_capacity_value": "2",
       "normalized_capacity_uom": "ml",
@@ -6033,10 +6033,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818411"
+      "reparsed_at": "2025-10-24T17:06:01.339896"
     },
     "url": "https://www.tricorbraun.com/2-oz-amber-glass-boston-round-bottle-20-400-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "2",
       "normalized_capacity_uom": "ml",
@@ -6091,10 +6091,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818420"
+      "reparsed_at": "2025-10-24T17:06:01.339900"
     },
     "url": "https://www.tricorbraun.com/20-ml-cobalt-blue-glass-round-dropper-bottle-18mm-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "20",
       "normalized_capacity_uom": "ml",
@@ -6182,10 +6182,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818428"
+      "reparsed_at": "2025-10-24T17:06:01.339904"
     },
     "url": "https://www.tricorbraun.com/30-ml-amber-glass-dropper-bottle-18-415-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "30",
       "normalized_capacity_uom": "ml",
@@ -6236,10 +6236,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818439"
+      "reparsed_at": "2025-10-24T17:06:01.339909"
     },
     "url": "https://www.tricorbraun.com/30-ml-cobalt-blue-glass-round-dropper-bottle-18mm-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "30",
       "normalized_capacity_uom": "ml",
@@ -6301,10 +6301,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818452"
+      "reparsed_at": "2025-10-24T17:06:01.339913"
     },
     "url": "https://www.tricorbraun.com/30-ml-glass-cylinder-bottle-with-19-9-mm-silver-button-dropper-and-glass-pipette-frosted-clear.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "30",
       "normalized_capacity_uom": "ml",
@@ -6366,10 +6366,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818463"
+      "reparsed_at": "2025-10-24T17:06:01.339918"
     },
     "url": "https://www.tricorbraun.com/30-ml-glass-cylinder-bottle-with-24-410-white-silicone-matte-silver-dropper-glass-pipette-frosted-clear.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "30",
       "normalized_capacity_uom": "ml",
@@ -6420,10 +6420,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818473"
+      "reparsed_at": "2025-10-24T17:06:01.339922"
     },
     "url": "https://www.tricorbraun.com/5-ml-glass-boston-round-dropper-bottle-18mm-neck-finish-amber.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "5",
       "normalized_capacity_uom": "ml",
@@ -6511,10 +6511,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818482"
+      "reparsed_at": "2025-10-24T17:06:01.339925"
     },
     "url": "https://www.tricorbraun.com/5-ml-amber-glass-round-dropper-bottle-18-415-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "5",
       "normalized_capacity_uom": "ml",
@@ -6569,10 +6569,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818490"
+      "reparsed_at": "2025-10-24T17:06:01.339929"
     },
     "url": "https://www.tricorbraun.com/5-ml-amber-glass-round-dropper-bottle-18mm-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "5",
       "normalized_capacity_uom": "ml",
@@ -6623,10 +6623,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818498"
+      "reparsed_at": "2025-10-24T17:06:01.339933"
     },
     "url": "https://www.tricorbraun.com/5-ml-glass-boston-round-dropper-bottle-18mm-neck-finish-clear.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "5",
       "normalized_capacity_uom": "ml",
@@ -6677,10 +6677,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818506"
+      "reparsed_at": "2025-10-24T17:06:01.339937"
     },
     "url": "https://www.tricorbraun.com/5-ml-cobalt-blue-glass-round-dropper-bottle-18mm-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "5",
       "normalized_capacity_uom": "ml",
@@ -6731,10 +6731,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818514"
+      "reparsed_at": "2025-10-24T17:06:01.339940"
     },
     "url": "https://www.tricorbraun.com/50-ml-amber-glass-round-dropper-bottle-18mm-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "50",
       "normalized_capacity_uom": "ml",
@@ -6810,10 +6810,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818522"
+      "reparsed_at": "2025-10-24T17:06:01.339944"
     },
     "url": "https://www.tricorbraun.com/50-ml-clear-glass-boston-round-dropper-bottle-18-mm-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "50",
       "normalized_capacity_uom": "ml",
@@ -6868,10 +6868,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818530"
+      "reparsed_at": "2025-10-24T17:06:01.339947"
     },
     "url": "https://www.tricorbraun.com/50-ml-blue-glass-round-dropper-bottle-18mm-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "50",
       "normalized_capacity_uom": "ml",
@@ -6923,10 +6923,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818538"
+      "reparsed_at": "2025-10-24T17:06:01.339951"
     },
     "url": "https://www.tricorbraun.com/50-ml-green-glass-round-dropper-bottle-18mm-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "50",
       "normalized_capacity_uom": "ml",
@@ -7031,12 +7031,12 @@
         "product_capacity"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818551"
+      "reparsed_at": "2025-10-24T17:06:01.339956"
     },
     "url": "https://www.tricorbraun.com/1-gallon-glass-handleware-jug-38-400-neck-finish-clear.html",
-    "product_normalised_value": {
-      "product_capacity_uom": "gallon",
-      "product_capacity_value": "1",
+    "product_normalised_data": {
+      "product_capacity_uom": "oz",
+      "product_capacity_value": "128",
       "normalized_capacity_uom": "ml",
       "normalized_capacity_value": 3785.41
     }
@@ -7132,14 +7132,14 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818562"
+      "reparsed_at": "2025-10-24T17:06:01.339961"
     },
     "url": "https://www.tricorbraun.com/1-liter-clear-glass-arizona-liquor-bottle-18-5-mm-bar-top-neck-finish.html",
-    "product_normalised_value": {
-      "product_capacity_uom": "liter",
-      "product_capacity_value": "1",
+    "product_normalised_data": {
+      "product_capacity_uom": null,
+      "product_capacity_value": null,
       "normalized_capacity_uom": "ml",
-      "normalized_capacity_value": 1000.0
+      "normalized_capacity_value": null
     }
   },
   {
@@ -7193,14 +7193,14 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818571"
+      "reparsed_at": "2025-10-24T17:06:01.339966"
     },
     "url": "https://www.tricorbraun.com/1-liter-clear-glass-california-long-neck-liquor-bottle-18-5-bar-top-neck-finish.html",
-    "product_normalised_value": {
-      "product_capacity_uom": "liter",
-      "product_capacity_value": "1",
+    "product_normalised_data": {
+      "product_capacity_uom": null,
+      "product_capacity_value": null,
       "normalized_capacity_uom": "ml",
-      "normalized_capacity_value": 1000.0
+      "normalized_capacity_value": null
     }
   },
   {
@@ -7254,14 +7254,14 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818581"
+      "reparsed_at": "2025-10-24T17:06:01.339972"
     },
     "url": "https://www.tricorbraun.com/1-75-liter-clear-glass-long-neck-round-chicago-liquor-bottle-21-5-mm-bar-top-finish.html",
-    "product_normalised_value": {
-      "product_capacity_uom": "liter",
-      "product_capacity_value": "1.75",
+    "product_normalised_data": {
+      "product_capacity_uom": null,
+      "product_capacity_value": null,
       "normalized_capacity_uom": "ml",
-      "normalized_capacity_value": 1750.0
+      "normalized_capacity_value": null
     }
   },
   {
@@ -7315,14 +7315,14 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818589"
+      "reparsed_at": "2025-10-24T17:06:01.339976"
     },
     "url": "https://www.tricorbraun.com/1-75-liter-clear-glass-nordic-pinch-liquor-bottle-21-5-bar-top-finish.html",
-    "product_normalised_value": {
-      "product_capacity_uom": "liter",
-      "product_capacity_value": "1.75",
+    "product_normalised_data": {
+      "product_capacity_uom": null,
+      "product_capacity_value": null,
       "normalized_capacity_uom": "ml",
-      "normalized_capacity_value": 1750.0
+      "normalized_capacity_value": null
     }
   },
   {
@@ -7383,14 +7383,14 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818598"
+      "reparsed_at": "2025-10-24T17:06:01.339980"
     },
     "url": "https://www.tricorbraun.com/1-75-liter-glass-tennessee-eco-base-liquor-bottle-21-5mm-bar-top-neck-finish.html",
-    "product_normalised_value": {
-      "product_capacity_uom": "liter",
-      "product_capacity_value": "1.75",
+    "product_normalised_data": {
+      "product_capacity_uom": null,
+      "product_capacity_value": null,
       "normalized_capacity_uom": "ml",
-      "normalized_capacity_value": 1750.0
+      "normalized_capacity_value": null
     }
   },
   {
@@ -7473,10 +7473,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818606"
+      "reparsed_at": "2025-10-24T17:06:01.339985"
     },
     "url": "https://www.tricorbraun.com/100-ml-glass-oblong-straight-sided-flask-28-350-neck-finish-clear.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "100",
       "normalized_capacity_uom": "ml",
@@ -7582,10 +7582,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818615"
+      "reparsed_at": "2025-10-24T17:06:01.339989"
     },
     "url": "https://www.tricorbraun.com/200-ml-clear-glass-antica-farmacia-round-liquor-bottle-18-5-mm-bar-top-neck-finish-by-vetroelite.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "200",
       "normalized_capacity_uom": "ml",
@@ -7686,11 +7686,11 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818627"
+      "reparsed_at": "2025-10-24T17:06:01.339993"
     },
     "url": "https://www.tricorbraun.com/200-ml-clear-glass-capri-liquor-bottle-18-5-mm-bar-top-neck-finish.html",
-    "product_normalised_value": {
-      "product_capacity_uom": "ml",
+    "product_normalised_data": {
+      "product_capacity_uom": "cc",
       "product_capacity_value": "200",
       "normalized_capacity_uom": "ml",
       "normalized_capacity_value": 200.0
@@ -7773,10 +7773,10 @@
         "product_capacity"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818636"
+      "reparsed_at": "2025-10-24T17:06:01.339998"
     },
     "url": "https://www.tricorbraun.com/3-gallon-glass-italian-carboy-30-mm-cork-neck-finish-clear.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "gallon",
       "product_capacity_value": "3",
       "normalized_capacity_uom": "ml",
@@ -7825,10 +7825,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818649"
+      "reparsed_at": "2025-10-24T17:06:01.340005"
     },
     "url": "https://www.tricorbraun.com/32-oz-clear-glass-boston-round-bottle-8-cork-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "32",
       "normalized_capacity_uom": "ml",
@@ -7886,10 +7886,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818658"
+      "reparsed_at": "2025-10-24T17:06:01.340009"
     },
     "url": "https://www.tricorbraun.com/750-ml-glass-swiss-liquor-bottle-21-5mm-bar-top-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -7996,10 +7996,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818667"
+      "reparsed_at": "2025-10-24T17:06:01.340013"
     },
     "url": "https://www.tricorbraun.com/375-ml-clear-glass-antica-farmacia-liquor-bottle-18-5-mm-bar-top-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "375",
       "normalized_capacity_uom": "ml",
@@ -8103,10 +8103,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818677"
+      "reparsed_at": "2025-10-24T17:06:01.340017"
     },
     "url": "https://www.tricorbraun.com/375-ml-glass-arizona-liquor-bottle-18-5-mm-bar-top-neck-finish-clear.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "375",
       "normalized_capacity_uom": "ml",
@@ -8164,10 +8164,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818685"
+      "reparsed_at": "2025-10-24T17:06:01.340021"
     },
     "url": "https://www.tricorbraun.com/375-ml-clear-glass-california-long-neck-bottle-18-5-bar-top-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "375",
       "normalized_capacity_uom": "ml",
@@ -8274,10 +8274,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818694"
+      "reparsed_at": "2025-10-24T17:06:01.340025"
     },
     "url": "https://www.tricorbraun.com/375-ml-clear-glass-king-liquor-bottle-18-5-mm-bar-top-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "375",
       "normalized_capacity_uom": "ml",
@@ -8335,10 +8335,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818702"
+      "reparsed_at": "2025-10-24T17:06:01.340029"
     },
     "url": "https://www.tricorbraun.com/375-ml-clear-glass-liberty-liquor-bottle-21-5-mm-bar-top-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "375",
       "normalized_capacity_uom": "ml",
@@ -8450,10 +8450,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818710"
+      "reparsed_at": "2025-10-24T17:06:01.340033"
     },
     "url": "https://www.tricorbraun.com/375-ml-glass-long-neck-dodge-city-bottle-18-5-mm-bar-top-neck-finish-clear.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "375",
       "normalized_capacity_uom": "ml",
@@ -8565,10 +8565,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818718"
+      "reparsed_at": "2025-10-24T17:06:01.340036"
     },
     "url": "https://www.tricorbraun.com/375-ml-glass-long-neck-jersey-bottle-18-5-mm-bar-top-neck-finish-clear.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "375",
       "normalized_capacity_uom": "ml",
@@ -8643,10 +8643,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818726"
+      "reparsed_at": "2025-10-24T17:06:01.340041"
     },
     "url": "https://www.tricorbraun.com/375-ml-glass-moonshine-jug-18-5-mm-bar-top-neck-finish-clear.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "375",
       "normalized_capacity_uom": "ml",
@@ -8722,10 +8722,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818738"
+      "reparsed_at": "2025-10-24T17:06:01.340049"
     },
     "url": "https://www.tricorbraun.com/375-ml-clear-glass-nordic-liquor-bottle-18-5-mm-bar-top-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "375",
       "normalized_capacity_uom": "ml",
@@ -8832,10 +8832,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818746"
+      "reparsed_at": "2025-10-24T17:06:01.340053"
     },
     "url": "https://www.tricorbraun.com/375-ml-clear-glass-outlaw-liquor-bottle-18-5-mm-bar-top-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "375",
       "normalized_capacity_uom": "ml",
@@ -8927,10 +8927,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818755"
+      "reparsed_at": "2025-10-24T17:06:01.340056"
     },
     "url": "https://www.tricorbraun.com/375-ml-clear-glass-round-fluted-tapered-jimmy-lee-liquor-bottle-18-5-mm-bar-top-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "375",
       "normalized_capacity_uom": "ml",
@@ -9008,10 +9008,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818769"
+      "reparsed_at": "2025-10-24T17:06:01.340060"
     },
     "url": "https://www.tricorbraun.com/375-ml-glass-round-ice-wine-niagara-bottle-18-5-mm-bar-top-neck-finish-clear.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "375",
       "normalized_capacity_uom": "ml",
@@ -9108,10 +9108,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818777"
+      "reparsed_at": "2025-10-24T17:06:01.340064"
     },
     "url": "https://www.tricorbraun.com/375-ml-clear-glass-sher-liquor-bottle-18-5-mm-bar-top-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "375",
       "normalized_capacity_uom": "ml",
@@ -9238,10 +9238,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818786"
+      "reparsed_at": "2025-10-24T17:06:01.340068"
     },
     "url": "https://www.tricorbraun.com/375-ml-glass-st-louis-oval-liquor-bottle-18-5-mm-bar-top-neck-finish-clear.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "375",
       "normalized_capacity_uom": "ml",
@@ -9348,10 +9348,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818795"
+      "reparsed_at": "2025-10-24T17:06:01.340072"
     },
     "url": "https://www.tricorbraun.com/375-ml-clear-glass-st-louis-oval-liquor-bottle-18-5-mm-bar-top-neck-finish-with-red-mahogany-wood-varnish-closure.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "375",
       "normalized_capacity_uom": "ml",
@@ -9409,10 +9409,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818804"
+      "reparsed_at": "2025-10-24T17:06:01.340076"
     },
     "url": "https://www.tricorbraun.com/375-ml-glass-nashville-liquor-bottle-18-5mm-bar-top-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "375",
       "normalized_capacity_uom": "ml",
@@ -9472,10 +9472,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818814"
+      "reparsed_at": "2025-10-24T17:06:01.340080"
     },
     "url": "https://www.tricorbraun.com/375-ml-glass-nordic-liquor-bottle-28-400-gpi-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "375",
       "normalized_capacity_uom": "ml",
@@ -9533,10 +9533,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818823"
+      "reparsed_at": "2025-10-24T17:06:01.340084"
     },
     "url": "https://www.tricorbraun.com/375-ml-glass-oregon-liquor-bottle-18-5mm-bar-top-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "375",
       "normalized_capacity_uom": "ml",
@@ -9594,10 +9594,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818833"
+      "reparsed_at": "2025-10-24T17:06:01.340089"
     },
     "url": "https://www.tricorbraun.com/375-ml-glass-springfield-liquor-bottle-18-5mm-bar-top-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "375",
       "normalized_capacity_uom": "ml",
@@ -9655,10 +9655,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818841"
+      "reparsed_at": "2025-10-24T17:06:01.340092"
     },
     "url": "https://www.tricorbraun.com/375-ml-glass-tapered-tennessee-liquor-bottle-18-5mm-bar-top-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "375",
       "normalized_capacity_uom": "ml",
@@ -9705,10 +9705,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818850"
+      "reparsed_at": "2025-10-24T17:06:01.340097"
     },
     "url": "https://www.tricorbraun.com/4-oz-clear-glass-cylinder-round-bottle-tapered-6-cork-included.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "4",
       "normalized_capacity_uom": "ml",
@@ -9758,10 +9758,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818858"
+      "reparsed_at": "2025-10-24T17:06:01.340102"
     },
     "url": "https://www.tricorbraun.com/4-oz-clear-glass-cylinder-round-bottle-tapered-cork-included.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "4",
       "normalized_capacity_uom": "ml",
@@ -9840,10 +9840,10 @@
         "product_capacity"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818867"
+      "reparsed_at": "2025-10-24T17:06:01.340106"
     },
     "url": "https://www.tricorbraun.com/5-gallon-glass-italian-carboy-30-mm-cork-neck-finish-clear.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "gallon",
       "product_capacity_value": "5",
       "normalized_capacity_uom": "ml",
@@ -9911,10 +9911,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818875"
+      "reparsed_at": "2025-10-24T17:06:01.340110"
     },
     "url": "https://www.tricorbraun.com/50-ml-glass-arizona-liquor-bottle-18-mm-ropp-neck-finish-clear.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "50",
       "normalized_capacity_uom": "ml",
@@ -9973,10 +9973,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818886"
+      "reparsed_at": "2025-10-24T17:06:01.340114"
     },
     "url": "https://www.tricorbraun.com/50-ml-glass-nordic-liquor-bottle-18mm-ropp-neck-finish-clear.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "50",
       "normalized_capacity_uom": "ml",
@@ -10034,10 +10034,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818895"
+      "reparsed_at": "2025-10-24T17:06:01.340118"
     },
     "url": "https://www.tricorbraun.com/50-ml-glass-nashville-liquor-bottle-18mm-ropp-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "50",
       "normalized_capacity_uom": "ml",
@@ -10110,10 +10110,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818903"
+      "reparsed_at": "2025-10-24T17:06:01.340122"
     },
     "url": "https://www.tricorbraun.com/500-ml-clear-glass-chiara-liquor-bottle-28-400-gpi-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "500",
       "normalized_capacity_uom": "ml",
@@ -10198,10 +10198,10 @@
         "product_capacity"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818911"
+      "reparsed_at": "2025-10-24T17:06:01.340126"
     },
     "url": "https://www.tricorbraun.com/6-gallon-glass-italian-carboy-30-mm-cork-neck-finish-clear.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "gallon",
       "product_capacity_value": "6",
       "normalized_capacity_uom": "ml",
@@ -10278,10 +10278,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818922"
+      "reparsed_at": "2025-10-24T17:06:01.340132"
     },
     "url": "https://www.tricorbraun.com/64-oz-clear-glass-round-jug-38-405-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "64",
       "normalized_capacity_uom": "ml",
@@ -10340,10 +10340,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818931"
+      "reparsed_at": "2025-10-24T17:06:01.340136"
     },
     "url": "https://www.tricorbraun.com/700-ml-clear-glass-quartz-liquor-bottle-23-mm-bar-top-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "700",
       "normalized_capacity_uom": "ml",
@@ -10450,10 +10450,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818939"
+      "reparsed_at": "2025-10-24T17:06:01.340141"
     },
     "url": "https://www.tricorbraun.com/750-ml-clear-glass-antica-farmacia-liquor-bottle-18-5-mm-bar-top-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -10553,10 +10553,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818947"
+      "reparsed_at": "2025-10-24T17:06:01.340145"
     },
     "url": "https://www.tricorbraun.com/750-ml-clear-glass-antica-farmacia-quadra-liquor-bottle-18-5-mm-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -10632,10 +10632,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818956"
+      "reparsed_at": "2025-10-24T17:06:01.340149"
     },
     "url": "https://www.tricorbraun.com/750-ml-glass-arizona-liquor-bottle-18-5-mm-bar-top-neck-finish-clear.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -10732,10 +10732,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818964"
+      "reparsed_at": "2025-10-24T17:06:01.340153"
     },
     "url": "https://www.tricorbraun.com/750-ml-clear-glass-avondale-liquor-bottle-18-5-mm-bar-top-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -10837,10 +10837,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818972"
+      "reparsed_at": "2025-10-24T17:06:01.340157"
     },
     "url": "https://www.tricorbraun.com/750-ml-clear-glass-bullet-2-liquor-bottle-18-5-mm-bar-top-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -10969,10 +10969,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818983"
+      "reparsed_at": "2025-10-24T17:06:01.340161"
     },
     "url": "https://www.tricorbraun.com/750-ml-glass-california-bar-top-liquor-bottle-18-5-mm-neck-finish-clear.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -11044,10 +11044,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818991"
+      "reparsed_at": "2025-10-24T17:06:01.340165"
     },
     "url": "https://www.tricorbraun.com/750-ml-clear-glass-chiara-alta-liquor-bottle-18-5-mm-bar-top-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -11120,10 +11120,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.818999"
+      "reparsed_at": "2025-10-24T17:06:01.340169"
     },
     "url": "https://www.tricorbraun.com/750-ml-clear-glass-chiara-liquor-bottle-28-400-gpi-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -11197,10 +11197,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819010"
+      "reparsed_at": "2025-10-24T17:06:01.340174"
     },
     "url": "https://www.tricorbraun.com/750-ml-clear-glass-chiara-quadra-liquor-bottle-28-400-gpi-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -11277,10 +11277,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819019"
+      "reparsed_at": "2025-10-24T17:06:01.340178"
     },
     "url": "https://www.tricorbraun.com/750-ml-clear-glass-cortese-round-liquor-bottle-21-5-mm-bar-top-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -11357,10 +11357,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819028"
+      "reparsed_at": "2025-10-24T17:06:01.340182"
     },
     "url": "https://www.tricorbraun.com/750-ml-clear-glass-denver-round-liquor-bottle-21-5-mm-bar-top-neck-finish-by-vetroelite.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -11458,10 +11458,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819036"
+      "reparsed_at": "2025-10-24T17:06:01.340186"
     },
     "url": "https://www.tricorbraun.com/750-ml-clear-glass-elite-liquor-bottle-18-5-mm-bar-top-neck-finish-by-vetroelite.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -11553,10 +11553,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819046"
+      "reparsed_at": "2025-10-24T17:06:01.340189"
     },
     "url": "https://www.tricorbraun.com/750-ml-clear-glass-finland-liquor-bottle-21-5-mm-bar-top-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -11671,10 +11671,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819055"
+      "reparsed_at": "2025-10-24T17:06:01.340193"
     },
     "url": "https://www.tricorbraun.com/750-ml-glass-fluted-tapered-jimmy-lee-liquor-bottle-18-5-mm-bar-top-neck-finish-clear.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -11752,10 +11752,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819063"
+      "reparsed_at": "2025-10-24T17:06:01.340197"
     },
     "url": "https://www.tricorbraun.com/750-ml-glass-handleware-moonshine-jug-21-5-mm-bar-top-neck-finish-clear.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -11858,10 +11858,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819072"
+      "reparsed_at": "2025-10-24T17:06:01.340201"
     },
     "url": "https://www.tricorbraun.com/750-ml-clear-glass-handleware-moonshine-jug-21-5-mm-bar-top-neck-finish-with-black-bar-top-closure.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -11965,10 +11965,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819080"
+      "reparsed_at": "2025-10-24T17:06:01.340205"
     },
     "url": "https://www.tricorbraun.com/750-ml-clear-glass-handleware-moonshine-jug-21-5-mm-bar-top-neck-finish-with-glossy-dark-wood-varnish-closure.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -12045,10 +12045,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819089"
+      "reparsed_at": "2025-10-24T17:06:01.340209"
     },
     "url": "https://www.tricorbraun.com/750-ml-clear-glass-king-liquor-bottle-21-5-mm-bar-top-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -12174,10 +12174,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819101"
+      "reparsed_at": "2025-10-24T17:06:01.340214"
     },
     "url": "https://www.tricorbraun.com/750-ml-clear-glass-long-neck-arizona-liquor-bottle-18-5-mm-bar-top-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -12269,10 +12269,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819110"
+      "reparsed_at": "2025-10-24T17:06:01.340218"
     },
     "url": "https://www.tricorbraun.com/750-ml-glass-long-neck-oregon-liquor-bottle-21-5-mm-bar-top-neck-clear.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -12373,10 +12373,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819120"
+      "reparsed_at": "2025-10-24T17:06:01.340221"
     },
     "url": "https://www.tricorbraun.com/750-ml-clear-glass-long-neck-oregon-liquor-bottle-21-5-mm-bar-top-neck-with-black-bar-top-closure.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -12478,10 +12478,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819128"
+      "reparsed_at": "2025-10-24T17:06:01.340225"
     },
     "url": "https://www.tricorbraun.com/750-ml-clear-glass-long-neck-oregon-liquor-bottle-21-5-mm-bar-top-neck-with-glossy-dark-wood-varnish-closure.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -12576,10 +12576,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819139"
+      "reparsed_at": "2025-10-24T17:06:01.340229"
     },
     "url": "https://www.tricorbraun.com/750-ml-clear-glass-long-neck-philadelphia-liquor-bottle-21-5-mm-bar-top-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -12652,10 +12652,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819147"
+      "reparsed_at": "2025-10-24T17:06:01.340235"
     },
     "url": "https://www.tricorbraun.com/750-ml-clear-glass-long-neck-rectangular-liberty-liquor-bottle-284579.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -12727,10 +12727,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819155"
+      "reparsed_at": "2025-10-24T17:06:01.340240"
     },
     "url": "https://www.tricorbraun.com/750-ml-clear-glass-long-neck-rectangular-michigan-liquor-bottle.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -12830,10 +12830,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819166"
+      "reparsed_at": "2025-10-24T17:06:01.340244"
     },
     "url": "https://www.tricorbraun.com/750-ml-clear-glass-long-neck-rosemont-liquor-bottle-18-5-mm-bar-top-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -12946,10 +12946,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819174"
+      "reparsed_at": "2025-10-24T17:06:01.340248"
     },
     "url": "https://www.tricorbraun.com/750-ml-clear-glass-long-neck-round-chicago-liquor-bottle-18-5-bar-top-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -13064,10 +13064,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819182"
+      "reparsed_at": "2025-10-24T17:06:01.340252"
     },
     "url": "https://www.tricorbraun.com/750-ml-clear-glass-long-neck-round-joliet-liquor-bottle-18-5-mm-bar-top-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -13135,10 +13135,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819193"
+      "reparsed_at": "2025-10-24T17:06:01.340257"
     },
     "url": "https://www.tricorbraun.com/750-ml-clear-glass-meili-quadra-liquor-bottle-21-5-mm-bar-top-neck-finish-by-vetroelite.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -13214,10 +13214,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819201"
+      "reparsed_at": "2025-10-24T17:06:01.340261"
     },
     "url": "https://www.tricorbraun.com/750-ml-clear-glass-nordic-liquor-bottle-21-5-mm-bar-top-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -13296,10 +13296,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819209"
+      "reparsed_at": "2025-10-24T17:06:01.340265"
     },
     "url": "https://www.tricorbraun.com/750-ml-glass-nordic-liquor-bottle-21-5-mm-bar-top-neck-finish-clear.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -13388,10 +13388,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819217"
+      "reparsed_at": "2025-10-24T17:06:01.340269"
     },
     "url": "https://www.tricorbraun.com/750-ml-glass-oblong-tapered-new-amsterdam-liquor-bottle-21-5-mm-bar-top-neck-finish-clear.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -13498,10 +13498,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819226"
+      "reparsed_at": "2025-10-24T17:06:01.340274"
     },
     "url": "https://www.tricorbraun.com/750-ml-clear-glass-outlaw-round-liquor-bottle-18-5-mm-bar-top-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -13559,10 +13559,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819234"
+      "reparsed_at": "2025-10-24T17:06:01.340278"
     },
     "url": "https://www.tricorbraun.com/750-ml-glass-oval-windsor-bar-top-bottle-21-5-mm-neck-finish-clear.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -13637,10 +13637,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819242"
+      "reparsed_at": "2025-10-24T17:06:01.340282"
     },
     "url": "https://www.tricorbraun.com/750-ml-glass-rectangle-dodge-city-bar-top-bottle-21-5mm-neck-finish-clear.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -13736,10 +13736,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819250"
+      "reparsed_at": "2025-10-24T17:06:01.340285"
     },
     "url": "https://www.tricorbraun.com/750-ml-clear-glass-round-jersey-liquor-bottle-21-5-mm-bar-top-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -13841,10 +13841,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819258"
+      "reparsed_at": "2025-10-24T17:06:01.340289"
     },
     "url": "https://www.tricorbraun.com/750-ml-clear-glass-round-jersey-liquor-bottle-21-5-mm-bar-top-neck-finish-with-glossy-dark-wood-varnish-closure.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -13957,10 +13957,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819269"
+      "reparsed_at": "2025-10-24T17:06:01.340294"
     },
     "url": "https://www.tricorbraun.com/750-ml-clear-glass-round-long-neck-memphis-liquor-bottle-18-5-mm-bar-top-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -14036,10 +14036,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819282"
+      "reparsed_at": "2025-10-24T17:06:01.340299"
     },
     "url": "https://www.tricorbraun.com/750-ml-clear-glass-round-long-neck-tennessee-liquor-bottle-18-5-mm-bar-top-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -14167,10 +14167,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819290"
+      "reparsed_at": "2025-10-24T17:06:01.340307"
     },
     "url": "https://www.tricorbraun.com/750-ml-clear-glass-round-oak-bar-top-bottle-18-5-mm-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -14297,10 +14297,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819297"
+      "reparsed_at": "2025-10-24T17:06:01.340314"
     },
     "url": "https://www.tricorbraun.com/750-ml-clear-glass-round-pine-bar-top-bottle-18-5-mm-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -14390,10 +14390,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819311"
+      "reparsed_at": "2025-10-24T17:06:01.340319"
     },
     "url": "https://www.tricorbraun.com/750-ml-clear-glass-round-princeton-liquor-bottle-21-5-mm-bar-top-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -14473,10 +14473,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819319"
+      "reparsed_at": "2025-10-24T17:06:01.340323"
     },
     "url": "https://www.tricorbraun.com/750-ml-glass-square-kentucky-bar-top-bottle-18-5mm-neck-finish-clear.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -14554,10 +14554,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819327"
+      "reparsed_at": "2025-10-24T17:06:01.340327"
     },
     "url": "https://www.tricorbraun.com/750-ml-glass-st-louis-oval-liquor-bottle-21-5-mm-bar-top-neck-finish-clear.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -14627,10 +14627,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819339"
+      "reparsed_at": "2025-10-24T17:06:01.340331"
     },
     "url": "https://www.tricorbraun.com/750-ml-clear-glass-sun-liquor-bottle-21-5-mm-bar-top-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -14737,10 +14737,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819347"
+      "reparsed_at": "2025-10-24T17:06:01.340335"
     },
     "url": "https://www.tricorbraun.com/750-ml-clear-glass-william-liquor-bottle-18-5-mm-bar-top-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -14798,10 +14798,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819355"
+      "reparsed_at": "2025-10-24T17:06:01.340339"
     },
     "url": "https://www.tricorbraun.com/750-ml-glass-charlotte-liquor-bottle-21-5mm-bar-top-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -14859,10 +14859,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819363"
+      "reparsed_at": "2025-10-24T17:06:01.340343"
     },
     "url": "https://www.tricorbraun.com/750-ml-glass-concord-liquor-bottle-18-5mm-bar-top-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -14920,10 +14920,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819373"
+      "reparsed_at": "2025-10-24T17:06:01.340348"
     },
     "url": "https://www.tricorbraun.com/750-ml-glass-dakota-liquor-bottle-21-5mm-bar-top-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -14981,10 +14981,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819381"
+      "reparsed_at": "2025-10-24T17:06:01.340352"
     },
     "url": "https://www.tricorbraun.com/750-ml-glass-essex-liquor-bottle-21-5mm-bar-top-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -15081,10 +15081,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819388"
+      "reparsed_at": "2025-10-24T17:06:01.340356"
     },
     "url": "https://www.tricorbraun.com/750-ml-glass-hickory-liquor-bottle-neck-18-5-mm-bar-top-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -15142,10 +15142,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819396"
+      "reparsed_at": "2025-10-24T17:06:01.340360"
     },
     "url": "https://www.tricorbraun.com/750-ml-glass-idaho-liquor-bottle-18-5mm-bar-top-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -15203,10 +15203,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819404"
+      "reparsed_at": "2025-10-24T17:06:01.340364"
     },
     "url": "https://www.tricorbraun.com/750-ml-glass-illinois-liquor-bottle-18-5mm-bar-top-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -15265,10 +15265,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819411"
+      "reparsed_at": "2025-10-24T17:06:01.340368"
     },
     "url": "https://www.tricorbraun.com/750-ml-glass-jim-henry-jar-70-450-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -15333,10 +15333,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819419"
+      "reparsed_at": "2025-10-24T17:06:01.340372"
     },
     "url": "https://www.tricorbraun.com/750-ml-glass-kansas-city-liquor-bottle-21-5mm-bar-top-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -15394,10 +15394,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819426"
+      "reparsed_at": "2025-10-24T17:06:01.340377"
     },
     "url": "https://www.tricorbraun.com/750-ml-glass-las-vegas-liquor-bottle-18-5mm-bar-top-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -15457,10 +15457,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819434"
+      "reparsed_at": "2025-10-24T17:06:01.340381"
     },
     "url": "https://www.tricorbraun.com/750-ml-glass-mayberry-jar-70-450-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -15519,10 +15519,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819442"
+      "reparsed_at": "2025-10-24T17:06:01.340384"
     },
     "url": "https://www.tricorbraun.com/750-ml-glass-morgantown-moonshine-jug-33-400-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -15580,10 +15580,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819452"
+      "reparsed_at": "2025-10-24T17:06:01.340389"
     },
     "url": "https://www.tricorbraun.com/750-ml-glass-nashville-liquor-bottle-21-5mm-bar-top-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -15655,10 +15655,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819460"
+      "reparsed_at": "2025-10-24T17:06:01.340393"
     },
     "url": "https://www.tricorbraun.com/750-ml-glass-norway-liquor-bottle-21-5mm-bar-top-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -15716,10 +15716,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819468"
+      "reparsed_at": "2025-10-24T17:06:01.340397"
     },
     "url": "https://www.tricorbraun.com/750-ml-glass-savannah-liquor-bottle-18-5mm-bar-top-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -15777,10 +15777,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819475"
+      "reparsed_at": "2025-10-24T17:06:01.340401"
     },
     "url": "https://www.tricorbraun.com/750-ml-glass-springfield-liquor-bottle-21-5mm-bar-top-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "750",
       "normalized_capacity_uom": "ml",
@@ -15898,10 +15898,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819484"
+      "reparsed_at": "2025-10-24T17:06:01.340405"
     },
     "url": "https://www.tricorbraun.com/100-cc-amber-glass-round-packer-bottle-38-400-neck-finish-319902.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "cc",
       "product_capacity_value": "100",
       "normalized_capacity_uom": "ml",
@@ -15962,10 +15962,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819492"
+      "reparsed_at": "2025-10-24T17:06:01.340411"
     },
     "url": "https://www.tricorbraun.com/100-cc-amber-glass-round-packer-bottle-38-400-neck-finish-267119.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "cc",
       "product_capacity_value": "100",
       "normalized_capacity_uom": "ml",
@@ -16016,10 +16016,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819502"
+      "reparsed_at": "2025-10-24T17:06:01.340415"
     },
     "url": "https://www.tricorbraun.com/100-cc-amber-glass-round-packer-bottle-38-400-neck-finish-011651.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "cc",
       "product_capacity_value": "100",
       "normalized_capacity_uom": "ml",
@@ -16074,10 +16074,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819510"
+      "reparsed_at": "2025-10-24T17:06:01.340420"
     },
     "url": "https://www.tricorbraun.com/100-cc-amber-glass-round-packer-bottle-38-400-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "cc",
       "product_capacity_value": "100",
       "normalized_capacity_uom": "ml",
@@ -16193,10 +16193,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819518"
+      "reparsed_at": "2025-10-24T17:06:01.340425"
     },
     "url": "https://www.tricorbraun.com/100-cc-glass-round-packer-bottle-38-400-neck-finish-cobalt-blue.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "cc",
       "product_capacity_value": "100",
       "normalized_capacity_uom": "ml",
@@ -16332,10 +16332,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819527"
+      "reparsed_at": "2025-10-24T17:06:01.340430"
     },
     "url": "https://www.tricorbraun.com/120-cc-amber-glass-round-packer-bottle-38-400-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "cc",
       "product_capacity_value": "120",
       "normalized_capacity_uom": "ml",
@@ -16390,10 +16390,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819538"
+      "reparsed_at": "2025-10-24T17:06:01.340435"
     },
     "url": "https://www.tricorbraun.com/120-cc-glass-round-packer-bottle-38-400-neck-finish-amber.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "cc",
       "product_capacity_value": "120",
       "normalized_capacity_uom": "ml",
@@ -16479,10 +16479,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819546"
+      "reparsed_at": "2025-10-24T17:06:01.340439"
     },
     "url": "https://www.tricorbraun.com/150-cc-amber-glass-round-packer-bottle-45-400-neck-finish-262861.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "cc",
       "product_capacity_value": "150",
       "normalized_capacity_uom": "ml",
@@ -16575,10 +16575,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819555"
+      "reparsed_at": "2025-10-24T17:06:01.340443"
     },
     "url": "https://www.tricorbraun.com/150-cc-amber-glass-round-packer-bottle-45-400-neck-finish-319904.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "cc",
       "product_capacity_value": "150",
       "normalized_capacity_uom": "ml",
@@ -16671,10 +16671,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819562"
+      "reparsed_at": "2025-10-24T17:06:01.340447"
     },
     "url": "https://www.tricorbraun.com/150-cc-amber-glass-round-packer-bottle-45-400-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "cc",
       "product_capacity_value": "150",
       "normalized_capacity_uom": "ml",
@@ -16755,10 +16755,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819570"
+      "reparsed_at": "2025-10-24T17:06:01.340451"
     },
     "url": "https://www.tricorbraun.com/150-cc-glass-packer-bottle-45-400-neck-finish-cobalt-blue.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "cc",
       "product_capacity_value": "150",
       "normalized_capacity_uom": "ml",
@@ -16851,10 +16851,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819578"
+      "reparsed_at": "2025-10-24T17:06:01.340455"
     },
     "url": "https://www.tricorbraun.com/200-cc-amber-glass-round-packer-bottle-45-400-neck-finish-319906.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "cc",
       "product_capacity_value": "200",
       "normalized_capacity_uom": "ml",
@@ -16935,10 +16935,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819590"
+      "reparsed_at": "2025-10-24T17:06:01.340459"
     },
     "url": "https://www.tricorbraun.com/200-cc-amber-glass-round-packer-bottle-45-400-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "cc",
       "product_capacity_value": "200",
       "normalized_capacity_uom": "ml",
@@ -17015,10 +17015,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819599"
+      "reparsed_at": "2025-10-24T17:06:01.340463"
     },
     "url": "https://www.tricorbraun.com/200-cc-cobalt-blue-glass-round-packer-bottle-45-400-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "cc",
       "product_capacity_value": "200",
       "normalized_capacity_uom": "ml",
@@ -17104,10 +17104,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819609"
+      "reparsed_at": "2025-10-24T17:06:01.340467"
     },
     "url": "https://www.tricorbraun.com/250-cc-amber-glass-round-packer-bottle-45-400-neck-finish-262863.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "cc",
       "product_capacity_value": "250",
       "normalized_capacity_uom": "ml",
@@ -17200,10 +17200,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819618"
+      "reparsed_at": "2025-10-24T17:06:01.340471"
     },
     "url": "https://www.tricorbraun.com/250-cc-amber-glass-round-packer-bottle-45-400-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "cc",
       "product_capacity_value": "250",
       "normalized_capacity_uom": "ml",
@@ -17274,10 +17274,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819628"
+      "reparsed_at": "2025-10-24T17:06:01.340477"
     },
     "url": "https://www.tricorbraun.com/250-cc-blue-glass-round-packer-bottle-45-400-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "cc",
       "product_capacity_value": "250",
       "normalized_capacity_uom": "ml",
@@ -17330,10 +17330,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819636"
+      "reparsed_at": "2025-10-24T17:06:01.340482"
     },
     "url": "https://www.tricorbraun.com/30-cc-glass-packer-bottle-28-400-neck-finish-amber.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "cc",
       "product_capacity_value": "30",
       "normalized_capacity_uom": "ml",
@@ -17401,10 +17401,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819647"
+      "reparsed_at": "2025-10-24T17:06:01.340486"
     },
     "url": "https://www.tricorbraun.com/300-cc-amber-glass-round-packer-bottle-53-400-neck-finish-319908.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "cc",
       "product_capacity_value": "300",
       "normalized_capacity_uom": "ml",
@@ -17454,10 +17454,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819655"
+      "reparsed_at": "2025-10-24T17:06:01.340490"
     },
     "url": "https://www.tricorbraun.com/300-cc-amber-glass-round-packer-bottle-53-400-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "cc",
       "product_capacity_value": "300",
       "normalized_capacity_uom": "ml",
@@ -17535,10 +17535,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819663"
+      "reparsed_at": "2025-10-24T17:06:01.340494"
     },
     "url": "https://www.tricorbraun.com/300-cc-cobalt-blue-glass-packer-bottle-53-400-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "cc",
       "product_capacity_value": "300",
       "normalized_capacity_uom": "ml",
@@ -17615,10 +17615,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819674"
+      "reparsed_at": "2025-10-24T17:06:01.340497"
     },
     "url": "https://www.tricorbraun.com/400-cc-amber-glass-round-packer-bottle-53-400-neck-finish-267161.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "cc",
       "product_capacity_value": "400",
       "normalized_capacity_uom": "ml",
@@ -17724,10 +17724,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819682"
+      "reparsed_at": "2025-10-24T17:06:01.340501"
     },
     "url": "https://www.tricorbraun.com/400-cc-glass-round-packer-bottle-53-400-neck-finish-amber.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "cc",
       "product_capacity_value": "400",
       "normalized_capacity_uom": "ml",
@@ -17813,10 +17813,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819691"
+      "reparsed_at": "2025-10-24T17:06:01.340505"
     },
     "url": "https://www.tricorbraun.com/500-cc-amber-glass-round-packer-bottle-53-400-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "cc",
       "product_capacity_value": "500",
       "normalized_capacity_uom": "ml",
@@ -17868,10 +17868,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819700"
+      "reparsed_at": "2025-10-24T17:06:01.340510"
     },
     "url": "https://www.tricorbraun.com/6-cc-amber-glass-round-packer-bottle-20-400-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "cc",
       "product_capacity_value": "6",
       "normalized_capacity_uom": "ml",
@@ -17932,10 +17932,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819708"
+      "reparsed_at": "2025-10-24T17:06:01.340515"
     },
     "url": "https://www.tricorbraun.com/625-cc-amber-glass-round-packer-bottle-53-400-neck-finish-319909.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "cc",
       "product_capacity_value": "625",
       "normalized_capacity_uom": "ml",
@@ -18021,10 +18021,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819719"
+      "reparsed_at": "2025-10-24T17:06:01.340520"
     },
     "url": "https://www.tricorbraun.com/75-cc-amber-glass-packer-bottle-38-400-neck-finish-267117.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "cc",
       "product_capacity_value": "75",
       "normalized_capacity_uom": "ml",
@@ -18142,10 +18142,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819727"
+      "reparsed_at": "2025-10-24T17:06:01.340524"
     },
     "url": "https://www.tricorbraun.com/75-cc-amber-glass-packer-bottle-38-400-neck-finish-319899.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "cc",
       "product_capacity_value": "75",
       "normalized_capacity_uom": "ml",
@@ -18263,10 +18263,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819735"
+      "reparsed_at": "2025-10-24T17:06:01.340528"
     },
     "url": "https://www.tricorbraun.com/75-cc-amber-glass-packer-bottle-38-400-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "cc",
       "product_capacity_value": "75",
       "normalized_capacity_uom": "ml",
@@ -18317,10 +18317,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819744"
+      "reparsed_at": "2025-10-24T17:06:01.340532"
     },
     "url": "https://www.tricorbraun.com/75-cc-blue-glass-round-packer-bottle-38-400-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "cc",
       "product_capacity_value": "75",
       "normalized_capacity_uom": "ml",
@@ -18372,10 +18372,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819753"
+      "reparsed_at": "2025-10-24T17:06:01.340536"
     },
     "url": "https://www.tricorbraun.com/0-5-oz-clear-glass-french-square-bottle-20-400-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "0.5",
       "normalized_capacity_uom": "ml",
@@ -18475,10 +18475,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819763"
+      "reparsed_at": "2025-10-24T17:06:01.340541"
     },
     "url": "https://www.tricorbraun.com/10-oz-glass-stout-decanter-bottle-38-405-neck-finish-clear.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "10",
       "normalized_capacity_uom": "ml",
@@ -18554,10 +18554,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819771"
+      "reparsed_at": "2025-10-24T17:06:01.340546"
     },
     "url": "https://www.tricorbraun.com/10-oz-glass-woozy-bottle-24-414-neck-finish-clear.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "10",
       "normalized_capacity_uom": "ml",
@@ -18686,88 +18686,14 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819780"
+      "reparsed_at": "2025-10-24T17:06:01.340551"
     },
     "url": "https://www.tricorbraun.com/10-oz-clear-glass-woozy-bottle-24-414-neck-finish-with-black-pp-plastic-continuous-thread-lined-closure-f-217-liner-and-ldpe-plastic-snapon-fitment-plug-orifice-reducer.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "10",
       "normalized_capacity_uom": "ml",
       "normalized_capacity_value": 295.74
-    }
-  },
-  {
-    "product_url": "https://www.tricorbraun.com/11-oz-clear-pet-plastic-long-neck-woozy-bottle-28-410-neck-finish.html",
-    "product_id": "337385",
-    "product_name": "11 oz Clear PET Plastic Long Neck Woozy Bottle 28-410 Neck Finish",
-    "product_uom": "oz",
-    "product_capacity": "11 oz",
-    "product_description": "This 11 oz clear PET plastic woozy bottle has a 28-410 neck finish and features a long neck. Perfect for packaging food items like hot sauce, salad dressings, oils and more. See related products below.\nPlease note: This item may require additional lead time or minimum order quantity. Request a Quote for the most current information.",
-    "product_notes": [
-      "Closures not included with bottles, unless otherwise specified."
-    ],
-    "product_images": [
-      {
-        "image_url": "https://www.tricorbraun.com/media/catalog/product/3/3/337385.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=75&width=75&canvas=75:75"
-      }
-    ],
-    "product_availability": {
-      "in_stock": "N/A"
-    },
-    "product_selluom": [],
-    "product_specs": {
-      "items_per_unit": null,
-      "Country of Origin": "Canada",
-      "Base Diameter": "2.30",
-      "Color": "Clear",
-      "Neck Height Dimension": "410",
-      "Neck Size (MM)": "28.000000",
-      "Total Height": "7.73",
-      "Capacity": "11 oz",
-      "Material": "PET",
-      "Neck Finish": "28-410",
-      "Sold By": "Case",
-      "Style": "Long Neck",
-      "is_cap_included": false
-    },
-    "product_accessories": [
-      {
-        "sku": "SKU#: 005678",
-        "name": "28-410 White PP Plastic Continuous Thread Lined Closure - F-217 Liner",
-        "url": "https://www.tricorbraun.com/28-410-pp-plastic-continuous-thread-lined-closure-white-005678.html"
-      },
-      {
-        "sku": "SKU#: 005644",
-        "name": "28-410 Black PP Plastic Continuous Thread Lined Closure - F-217 Liner",
-        "url": "https://www.tricorbraun.com/28-410-pp-plastic-continuous-thread-lined-closure-black.html"
-      },
-      {
-        "sku": "SKU#: 087376",
-        "name": "28-410 Black PP Plastic Continuous Thread Lined Closure - PE Foam Liner",
-        "url": "https://www.tricorbraun.com/28-410-black-continuous-thread-lined-p-p-plastic-closure-pe-foam-liner.html"
-      },
-      {
-        "sku": "SKU#: 005643",
-        "name": "28-410 White PP Plastic Continuous Thread Lined Closure - Plain SG75 Liner",
-        "url": "https://www.tricorbraun.com/28-410-continuous-thread-lined-white-pp-plastic-closure-sg75-plain-liner-2700-case.html"
-      }
-    ],
-    "product_metadata": {
-      "scraped_at": "2025-10-22T20:49:42.817856",
-      "processing_time_seconds": 4.8,
-      "is_missing_fields": true,
-      "missing_fields": [
-        "product_selluom"
-      ],
-      "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819790"
-    },
-    "url": "https://www.tricorbraun.com/11-oz-clear-pet-plastic-long-neck-woozy-bottle-28-410-neck-finish.html",
-    "product_normalised_value": {
-      "product_capacity_uom": "oz",
-      "product_capacity_value": "11",
-      "normalized_capacity_uom": "ml",
-      "normalized_capacity_value": 325.31
     }
   },
   {
@@ -18855,10 +18781,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819798"
+      "reparsed_at": "2025-10-24T17:06:01.340559"
     },
     "url": "https://www.tricorbraun.com/12-oz-glass-long-neck-bottle-38-2000-lug-neck-finish-clear.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "12",
       "normalized_capacity_uom": "ml",
@@ -18996,10 +18922,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819808"
+      "reparsed_at": "2025-10-24T17:06:01.340564"
     },
     "url": "https://www.tricorbraun.com/12-oz-glass-long-neck-sauce-bottle-38-400-neck-finish-clear-270128.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "12",
       "normalized_capacity_uom": "ml",
@@ -19054,10 +18980,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819818"
+      "reparsed_at": "2025-10-24T17:06:01.340569"
     },
     "url": "https://www.tricorbraun.com/12-oz-clear-glass-round-jar-82-2040-lug-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "12",
       "normalized_capacity_uom": "ml",
@@ -19109,10 +19035,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819826"
+      "reparsed_at": "2025-10-24T17:06:01.340572"
     },
     "url": "https://www.tricorbraun.com/12-oz-clear-glass-round-long-neck-beverage-bottle-38-2000-lug-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "12",
       "normalized_capacity_uom": "ml",
@@ -19195,10 +19121,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819834"
+      "reparsed_at": "2025-10-24T17:06:01.340576"
     },
     "url": "https://www.tricorbraun.com/12-oz-clear-glass-round-long-neck-bottle-38-405-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "12",
       "normalized_capacity_uom": "ml",
@@ -19250,10 +19176,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819841"
+      "reparsed_at": "2025-10-24T17:06:01.340580"
     },
     "url": "https://www.tricorbraun.com/12-oz-clear-glass-round-paragon-jar-63-2030-lug-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "12",
       "normalized_capacity_uom": "ml",
@@ -19306,10 +19232,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819852"
+      "reparsed_at": "2025-10-24T17:06:01.340584"
     },
     "url": "https://www.tricorbraun.com/12-oz-clear-glass-wide-mouth-paragon-jar-63-400-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "12",
       "normalized_capacity_uom": "ml",
@@ -19362,10 +19288,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819860"
+      "reparsed_at": "2025-10-24T17:06:01.340588"
     },
     "url": "https://www.tricorbraun.com/16-oz-amber-glass-ez-cap-beer-bottle-includes-swing-top-stopper.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "16",
       "normalized_capacity_uom": "ml",
@@ -19464,10 +19390,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819868"
+      "reparsed_at": "2025-10-24T17:06:01.340592"
     },
     "url": "https://www.tricorbraun.com/16-oz-glass-economy-jar-70-2030-neck-finish-clear.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "16",
       "normalized_capacity_uom": "ml",
@@ -19549,10 +19475,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819876"
+      "reparsed_at": "2025-10-24T17:06:01.340596"
     },
     "url": "https://www.tricorbraun.com/16-oz-glass-carafe-decanter-bottle-38-405-neck-finish-clear.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "16",
       "normalized_capacity_uom": "ml",
@@ -19605,10 +19531,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819884"
+      "reparsed_at": "2025-10-24T17:06:01.340600"
     },
     "url": "https://www.tricorbraun.com/16-oz-clear-glass-ez-cap-beer-bottle-includes-swing-top-stopper.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "16",
       "normalized_capacity_uom": "ml",
@@ -19661,10 +19587,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819896"
+      "reparsed_at": "2025-10-24T17:06:01.340606"
     },
     "url": "https://www.tricorbraun.com/16-oz-clear-glass-round-economy-jar-70-450-deep-skirt-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "16",
       "normalized_capacity_uom": "ml",
@@ -19716,10 +19642,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819904"
+      "reparsed_at": "2025-10-24T17:06:01.340610"
     },
     "url": "https://www.tricorbraun.com/16-oz-clear-glass-round-economy-jar-70-450-neck-finish-051491.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "16",
       "normalized_capacity_uom": "ml",
@@ -19771,10 +19697,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819912"
+      "reparsed_at": "2025-10-24T17:06:01.340614"
     },
     "url": "https://www.tricorbraun.com/16-oz-clear-glass-round-economy-jar-70-450-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "16",
       "normalized_capacity_uom": "ml",
@@ -19849,10 +19775,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819920"
+      "reparsed_at": "2025-10-24T17:06:01.340618"
     },
     "url": "https://www.tricorbraun.com/16-oz-clear-glass-round-carafe-decanter-bottle-38-405-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "16",
       "normalized_capacity_uom": "ml",
@@ -19905,10 +19831,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819928"
+      "reparsed_at": "2025-10-24T17:06:01.340621"
     },
     "url": "https://www.tricorbraun.com/16-oz-clear-glass-round-wide-mouth-jar-82-2040-lug-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "16",
       "normalized_capacity_uom": "ml",
@@ -19967,10 +19893,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819936"
+      "reparsed_at": "2025-10-24T17:06:01.340625"
     },
     "url": "https://www.tricorbraun.com/16-oz-glass-round-wide-mouth-jar-83-405-neck-finish-clear.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "16",
       "normalized_capacity_uom": "ml",
@@ -20083,10 +20009,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819944"
+      "reparsed_at": "2025-10-24T17:06:01.340629"
     },
     "url": "https://www.tricorbraun.com/16-oz-glass-stout-carafe-decanter-bottle-38-405-neck-finish-clear.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "16",
       "normalized_capacity_uom": "ml",
@@ -20140,10 +20066,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819952"
+      "reparsed_at": "2025-10-24T17:06:01.340634"
     },
     "url": "https://www.tricorbraun.com/190-ml-glass-6-sided-hexagon-jar-58-2020-lug-neck-finish-clear.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "ml",
       "product_capacity_value": "190",
       "normalized_capacity_uom": "ml",
@@ -20193,10 +20119,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819960"
+      "reparsed_at": "2025-10-24T17:06:01.340638"
     },
     "url": "https://www.tricorbraun.com/2-oz-clear-glass-french-square-bottle-28-400-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "2",
       "normalized_capacity_uom": "ml",
@@ -20274,10 +20200,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819968"
+      "reparsed_at": "2025-10-24T17:06:01.340642"
     },
     "url": "https://www.tricorbraun.com/20-oz-clear-glass-long-neck-woozy-bottle-28-400-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "20",
       "normalized_capacity_uom": "ml",
@@ -20330,10 +20256,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819982"
+      "reparsed_at": "2025-10-24T17:06:01.340648"
     },
     "url": "https://www.tricorbraun.com/32-oz-amber-glass-ez-cap-beer-bottle-includes-swing-top-stopper.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "32",
       "normalized_capacity_uom": "ml",
@@ -20460,10 +20386,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819990"
+      "reparsed_at": "2025-10-24T17:06:01.340652"
     },
     "url": "https://www.tricorbraun.com/32-oz-glass-economy-jar-70-450-neck-finish-clear.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "32",
       "normalized_capacity_uom": "ml",
@@ -20525,10 +20451,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.819998"
+      "reparsed_at": "2025-10-24T17:06:01.340656"
     },
     "url": "https://www.tricorbraun.com/32-oz-glass-decanter-bottle-38-405-neck-finish-clear.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "32",
       "normalized_capacity_uom": "ml",
@@ -20603,10 +20529,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.820007"
+      "reparsed_at": "2025-10-24T17:06:01.340660"
     },
     "url": "https://www.tricorbraun.com/32-oz-glass-fluted-utility-vinegar-bottle-28-405-neck-finish-clear.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "32",
       "normalized_capacity_uom": "ml",
@@ -20657,10 +20583,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.820017"
+      "reparsed_at": "2025-10-24T17:06:01.340664"
     },
     "url": "https://www.tricorbraun.com/32-oz-clear-glass-round-carafe-decanter-bottle-38-405-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "32",
       "normalized_capacity_uom": "ml",
@@ -20712,10 +20638,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.820025"
+      "reparsed_at": "2025-10-24T17:06:01.340667"
     },
     "url": "https://www.tricorbraun.com/32-oz-clear-glass-round-mayo-jar-70-450-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "32",
       "normalized_capacity_uom": "ml",
@@ -20766,10 +20692,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.820038"
+      "reparsed_at": "2025-10-24T17:06:01.340671"
     },
     "url": "https://www.tricorbraun.com/32-oz-clear-glass-round-sauce-jar-70-405-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "32",
       "normalized_capacity_uom": "ml",
@@ -20854,10 +20780,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.820046"
+      "reparsed_at": "2025-10-24T17:06:01.340675"
     },
     "url": "https://www.tricorbraun.com/32-oz-clear-glass-round-straight-sided-jar-89-400-neck-finish-015268.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "32",
       "normalized_capacity_uom": "ml",
@@ -20915,10 +20841,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.820055"
+      "reparsed_at": "2025-10-24T17:06:01.340679"
     },
     "url": "https://www.tricorbraun.com/32-oz-clear-glass-stout-decanter-bottle-48-405-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "32",
       "normalized_capacity_uom": "ml",
@@ -20970,10 +20896,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.820063"
+      "reparsed_at": "2025-10-24T17:06:01.340684"
     },
     "url": "https://www.tricorbraun.com/4-oz-clear-french-square-glass-bottle-33-400-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "4",
       "normalized_capacity_uom": "ml",
@@ -21024,10 +20950,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.820073"
+      "reparsed_at": "2025-10-24T17:06:01.340689"
     },
     "url": "https://www.tricorbraun.com/5-oz-glass-long-neck-woozy-bottle-24-490-neck-finish-clear.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "5",
       "normalized_capacity_uom": "ml",
@@ -21128,109 +21054,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.820080"
+      "reparsed_at": "2025-10-24T17:06:01.340693"
     },
     "url": "https://www.tricorbraun.com/5-oz-clear-glass-woozy-sauce-bottle-24-490-24-414-neck-finish-311610.html",
-    "product_normalised_value": {
-      "product_capacity_uom": "oz",
-      "product_capacity_value": "5",
-      "normalized_capacity_uom": "ml",
-      "normalized_capacity_value": 147.87
-    }
-  },
-  {
-    "product_url": "https://www.tricorbraun.com/5-oz-clear-pet-plastic-woozy-bottle-24-410-neck-finish.html",
-    "product_id": "319696",
-    "product_name": "5 oz Clear PET Plastic Woozy Bottle 24-410 Neck Finish",
-    "product_uom": "oz",
-    "product_capacity": "5 oz",
-    "product_description": "Our 5 oz clear PET plastic woozy bottle has a 24-410 neck finish and is made in the United States. It features a long neck and round shape making it great for showcasing and packaging food products like hot sauce, salad dressing, infused oil, and more. See related closures below.\nPlease note: This item may require additional lead time or minimum order quantity. Request a Quote for the most current information.",
-    "product_notes": [
-      "Closures not included with bottles, unless otherwise specified."
-    ],
-    "product_images": [
-      {
-        "image_url": "https://www.tricorbraun.com/media/catalog/product/3/1/319696.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=75&width=75&canvas=75:75"
-      }
-    ],
-    "product_availability": {
-      "in_stock": "N/A"
-    },
-    "product_selluom": [],
-    "product_specs": {
-      "items_per_unit": null,
-      "Country of Origin": "Canada",
-      "Base Diameter": "1.65",
-      "Color": "Clear",
-      "Neck Height Dimension": "410",
-      "Neck Size (MM)": "24.000000",
-      "Total Height": "6.5",
-      "Capacity": "5 oz",
-      "Material": "PET",
-      "Neck Finish": "24-410",
-      "Sold By": "Case",
-      "Style": "Long Neck",
-      "is_cap_included": false
-    },
-    "product_accessories": [
-      {
-        "sku": "SKU#: 004296",
-        "name": "24-410 White PP Plastic Continuous Thread Lined Closure - FSM-1 Liner",
-        "url": "https://www.tricorbraun.com/24-410-continuous-thread-pp-plastic-lined-closure-fsm-1-liner-white.html"
-      },
-      {
-        "sku": "SKU#: 145591",
-        "name": "24-410 Black LDPE Plastic Twist Open/Close Linerless Dispensing Spout Closure",
-        "url": "https://www.tricorbraun.com/24-410-black-ldpe-plastic-twist-open-close-linerless-dispensing-spout-closure.html"
-      },
-      {
-        "sku": "SKU#: 004457",
-        "name": "24-410 White PP Plastic Continuous Thread Lined Closure - F-217 Liner",
-        "url": "https://www.tricorbraun.com/24-410-pp-plastic-continuous-thread-lined-closure-white.html"
-      },
-      {
-        "sku": "SKU#: 101742",
-        "name": "24-410 Black PP Plastic Continuous Thread Lined Closure - SG-75 Plain Liner",
-        "url": "https://www.tricorbraun.com/24-410-black-continuous-thread-lined-p-p-plastic-closure-sg75-plain-liner.html"
-      },
-      {
-        "sku": "SKU#: 054541",
-        "name": "24-410 Black PP Plastic Continuous Thread Lined Closure - FS3-19 Plain Liner",
-        "url": "https://www.tricorbraun.com/24-410-black-continuous-thread-lined-pp-plastic-closure-fs3-19-plain-liner.html"
-      },
-      {
-        "sku": "SKU#: 053474",
-        "name": "24-410 Red PP Plastic Continuous Thread Lined Closure - FS3-19 Plain Liner",
-        "url": "https://www.tricorbraun.com/24-410-red-continuous-thread-lined-p-p-plastic-closure-fs3-19-plain-liner.html"
-      },
-      {
-        "sku": "SKU#: 041499",
-        "name": "24-410 Black PP Plastic Continuous Thread Lined Closure - F-217 Liner",
-        "url": "https://www.tricorbraun.com/24-410-pp-plastic-continuous-thread-lined-closure-black.html"
-      },
-      {
-        "sku": "SKU#: 004430",
-        "name": "24-410 Black PP Plastic Continuous Thread Lined Closure - PV020 Liner",
-        "url": "https://www.tricorbraun.com/24-410-black-continuous-thread-lined-pp-plastic-closure-pv020-liner.html"
-      },
-      {
-        "sku": "SKU#: 004265",
-        "name": "24-410 Green PP Plastic Continuous Thread Lined Closure - FS3-19 Plain Liner",
-        "url": "https://www.tricorbraun.com/24-410-green-continuous-thread-lined-pp-plastic-closure-fs3-19-plain-liner.html"
-      }
-    ],
-    "product_metadata": {
-      "scraped_at": "2025-10-22T20:52:26.546212",
-      "processing_time_seconds": 6.57,
-      "is_missing_fields": true,
-      "missing_fields": [
-        "product_selluom"
-      ],
-      "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.820088"
-    },
-    "url": "https://www.tricorbraun.com/5-oz-clear-pet-plastic-woozy-bottle-24-410-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "5",
       "normalized_capacity_uom": "ml",
@@ -21281,10 +21108,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.820096"
+      "reparsed_at": "2025-10-24T17:06:01.340701"
     },
     "url": "https://www.tricorbraun.com/8-oz-clear-glass-oval-maple-syrup-bottle-28-400-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "8",
       "normalized_capacity_uom": "ml",
@@ -21337,10 +21164,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.820104"
+      "reparsed_at": "2025-10-24T17:06:01.340704"
     },
     "url": "https://www.tricorbraun.com/8-oz-clear-glass-round-economy-jar-58-2020-lug-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "8",
       "normalized_capacity_uom": "ml",
@@ -21397,10 +21224,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.820112"
+      "reparsed_at": "2025-10-24T17:06:01.340708"
     },
     "url": "https://www.tricorbraun.com/8-oz-clear-glass-round-jar-58-400-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "8",
       "normalized_capacity_uom": "ml",
@@ -21458,10 +21285,10 @@
         "product_selluom"
       ],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.820119"
+      "reparsed_at": "2025-10-24T17:06:01.340712"
     },
     "url": "https://www.tricorbraun.com/8-oz-clear-glass-stout-decanter-bottle-38-405-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "8",
       "normalized_capacity_uom": "ml",
@@ -21539,10 +21366,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.820127"
+      "reparsed_at": "2025-10-24T17:06:01.340716"
     },
     "url": "https://www.tricorbraun.com/8-oz-glass-wide-mouth-jar-70-450-neck-finish-clear.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "8",
       "normalized_capacity_uom": "ml",
@@ -21640,10 +21467,10 @@
       "is_missing_fields": false,
       "missing_fields": [],
       "company_name": "TricorBraun",
-      "reparsed_at": "2025-10-24T15:48:02.820134"
+      "reparsed_at": "2025-10-24T17:06:01.340719"
     },
     "url": "https://www.tricorbraun.com/9-oz-clear-glass-straight-side-jar-70-2030-lug-neck-finish.html",
-    "product_normalised_value": {
+    "product_normalised_data": {
       "product_capacity_uom": "oz",
       "product_capacity_value": "9",
       "normalized_capacity_uom": "ml",
