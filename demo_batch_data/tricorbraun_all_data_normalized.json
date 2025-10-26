@@ -7136,10 +7136,10 @@
     },
     "url": "https://www.tricorbraun.com/1-liter-clear-glass-arizona-liquor-bottle-18-5-mm-bar-top-neck-finish.html",
     "product_normalised_data": {
-      "product_capacity_uom": null,
-      "product_capacity_value": null,
+      "product_capacity_uom": "liter",
+      "product_capacity_value": "1",
       "normalized_capacity_uom": "ml",
-      "normalized_capacity_value": null
+      "normalized_capacity_value": 1000
     }
   },
   {
@@ -7197,10 +7197,10 @@
     },
     "url": "https://www.tricorbraun.com/1-liter-clear-glass-california-long-neck-liquor-bottle-18-5-bar-top-neck-finish.html",
     "product_normalised_data": {
-      "product_capacity_uom": null,
-      "product_capacity_value": null,
+      "product_capacity_uom": "liter",
+      "product_capacity_value": "1",
       "normalized_capacity_uom": "ml",
-      "normalized_capacity_value": null
+      "normalized_capacity_value": 1750
     }
   },
   {
@@ -7258,10 +7258,10 @@
     },
     "url": "https://www.tricorbraun.com/1-75-liter-clear-glass-long-neck-round-chicago-liquor-bottle-21-5-mm-bar-top-finish.html",
     "product_normalised_data": {
-      "product_capacity_uom": null,
-      "product_capacity_value": null,
+      "product_capacity_uom": "liter",
+      "product_capacity_value": "1.75",
       "normalized_capacity_uom": "ml",
-      "normalized_capacity_value": null
+      "normalized_capacity_value": 1750
     }
   },
   {
@@ -7319,10 +7319,10 @@
     },
     "url": "https://www.tricorbraun.com/1-75-liter-clear-glass-nordic-pinch-liquor-bottle-21-5-bar-top-finish.html",
     "product_normalised_data": {
-      "product_capacity_uom": null,
-      "product_capacity_value": null,
+      "product_capacity_uom": "liter",
+      "product_capacity_value": "1.75",
       "normalized_capacity_uom": "ml",
-      "normalized_capacity_value": null
+      "normalized_capacity_value": 1750
     }
   },
   {
@@ -7387,10 +7387,10 @@
     },
     "url": "https://www.tricorbraun.com/1-75-liter-glass-tennessee-eco-base-liquor-bottle-21-5mm-bar-top-neck-finish.html",
     "product_normalised_data": {
-      "product_capacity_uom": null,
-      "product_capacity_value": null,
+      "product_capacity_uom": "liter",
+      "product_capacity_value": "1.75",
       "normalized_capacity_uom": "ml",
-      "normalized_capacity_value": null
+      "normalized_capacity_value": 1750
     }
   },
   {

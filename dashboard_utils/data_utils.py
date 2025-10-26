@@ -453,7 +453,21 @@ def get_capacity_analysis_data(companies_data):
     df_all["capacity_ml"] = df_all.apply(
         lambda x: normalize_capacity(x["capacity"], x["unit"]), axis=1
     )
-    df_all["price_per_ml"] = df_all["price"] / df_all["capacity_ml"]
+    df_all["price_per_100ml"] = df_all["price"] / df_all["capacity_ml"] * 100
+
+    # Create capacity ranges
+    df_all["capacity_range"] = pd.cut(
+        df_all["capacity_ml"],
+        bins=[0, 50, 100, 250, 500, 1000, float("inf")],
+        labels=[
+            "0-50ml",
+            "50-100ml",
+            "100-250ml",
+            "250-500ml",
+            "500-1000ml",
+            "1000ml+",
+        ],
+    )
 
     return df_all
 

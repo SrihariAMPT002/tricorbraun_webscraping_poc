@@ -21,7 +21,7 @@ load_dotenv()
 
 # ==== CONFIG =====
 INDEX_NAME = "products-index"
-PRODUCTS_JSON_PATH = "demo_batch_data/tricorbraun_all_data_normalized.json"
+PRODUCTS_JSON_PATH = "demo_batch_data/cary_all_data_normalized.json"
 BATCH_SIZE = 50
 
 

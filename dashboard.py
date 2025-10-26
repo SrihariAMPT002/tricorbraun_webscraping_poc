@@ -1,6 +1,6 @@
 import streamlit as st
-from utils.data_utils import load_data
-from utils.ui_utils import (
+from dashboard_utils.data_utils import load_data
+from dashboard_utils import (
     setup_page_config,
     apply_custom_styling,
     create_header,
@@ -35,7 +35,7 @@ def main():
     # Main content based on selected page
     if page == "Homepage":
         show_homepage(companies_data)
-    elif page == "Pricing Intelligence":
+    elif page == "Pricing Analysis":
         show_pricing_intelligence(companies_data)
     elif page == "Assortment & Market KPIs":
         show_assortment_kpis(companies_data)

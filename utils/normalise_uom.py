@@ -175,14 +175,14 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
-    # print(
-    #     "ml:",
-    #     normalize_uom(
-    #         "",
-    #         "375 ml Clear Glass California Long Neck Bottle - 18.5 Bar Top Neck Finish",
-    #     ),
-    # )
+    # main()
+    print(
+        "ml:",
+        normalize_uom_values(
+            "",
+            "1.75 Liter Glass Tennessee Eco Base Liquor Bottle 21.5mm Bar Top Neck Finish",
+        ),
+    )
 
     # print(
     #     normalize_uom(
