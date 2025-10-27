@@ -5,11 +5,9 @@ numpy
 rapidfuzz
 pint
 google-genai
+langchain
 langchain-community
-pinecone
 langchain-google-genai
-langchain 
-langchain-pinecone 
-langchain-openai 
-pinecone-client 
+langchain-pinecone
+pinecone-client
 tiktoken
