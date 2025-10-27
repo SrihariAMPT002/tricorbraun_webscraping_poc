@@ -5,19 +5,27 @@ This module contains Pinecone setup, page configuration, styling, and navigation
 
 import streamlit as st
 from dotenv import load_dotenv
-from langchain_community.vectorstores import Pinecone as LangPinecone
+from langchain_pinecone import PineconeVectorStore
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
+import os
+from typing import List, Dict
 
-# Load environment variables
 load_dotenv()
+
+
+PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
+INDEX_NAME = "products-index"
 
 
 @st.cache_resource
 def get_pinecone_vectorstore():
     """Initialize and cache the Pinecone vector store"""
     embeddings = GoogleGenerativeAIEmbeddings(model="models/gemini-embedding-001")
-    docsearch = LangPinecone.from_existing_index("products-index", embeddings)
-    return docsearch
+    return PineconeVectorStore(
+        index_name=INDEX_NAME,
+        embedding=embeddings,
+        pinecone_api_key=PINECONE_API_KEY,
+    )
 
 
 def setup_page_config():

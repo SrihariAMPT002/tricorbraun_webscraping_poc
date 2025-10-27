@@ -7,17 +7,12 @@ using Gemini Embedding model via LangChain + Google‐GenAI integration.
 import os
 import json
 from tqdm import tqdm
+from dotenv import load_dotenv
 
 # ==== Imports for embeddings + vector store ====
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
-from langchain_community.vectorstores import Pinecone as PineconeStore
-from pinecone import Pinecone as PineconeClient, ServerlessSpec
-
-from dotenv import load_dotenv
-
-# Load environment variables from .env file
-load_dotenv()
-
+from langchain_pinecone import PineconeVectorStore
+from pinecone import Pinecone, ServerlessSpec
 
 # ==== CONFIG =====
 INDEX_NAME = "products-index"
@@ -50,29 +45,31 @@ def json_to_text(product):
 
 # ==== Main script ====
 def main():
+    load_dotenv()
+
     # Load products
     with open(PRODUCTS_JSON_PATH, "r") as f:
         data = json.load(f)
     products = data[:BATCH_SIZE]
 
-    # Initialize Pinecone
-    pc = PineconeClient(api_key=os.environ["PINECONE_API_KEY"])
+    # Initialize Pinecone client
+    pc = Pinecone(api_key=os.environ["PINECONE_API_KEY"])
+
+    # Create index if it doesn't exist
     if INDEX_NAME not in [idx["name"] for idx in pc.list_indexes()]:
         pc.create_index(
             name=INDEX_NAME,
-            dimension=3072,  # For gemini-embedding-001
+            dimension=3072,  # gemini-embedding-001 vector size
             metric="cosine",
             spec=ServerlessSpec(cloud="aws", region="us-east-1"),
         )
         print(f"✅ Created Pinecone index: {INDEX_NAME}")
-    index = pc.Index(INDEX_NAME)
 
-    # Initialize Gemini embeddings wrapper
+    # Initialize Gemini embeddings
     embeddings = GoogleGenerativeAIEmbeddings(model="models/gemini-embedding-001")
 
     # Prepare documents
-    texts = []
-    metadatas = []
+    texts, metadatas = [], []
     for product in tqdm(products, desc="Preparing embeddings"):
         text = json_to_text(product)
         metadata = {
@@ -84,14 +81,16 @@ def main():
         texts.append(text)
         metadatas.append(metadata)
 
-    # Upload to Pinecone
+    # Upload embeddings to Pinecone
     print("🚀 Uploading to Pinecone…")
-    PineconeStore.from_texts(
+    vectorstore = PineconeVectorStore.from_texts(
         texts=texts,
         embedding=embeddings,
-        index_name=INDEX_NAME,
         metadatas=metadatas,
+        index_name=INDEX_NAME,
+        pinecone_api_key=os.environ["PINECONE_API_KEY"],
     )
+
     print(f"✅ Successfully uploaded {len(texts)} product embeddings to Pinecone!")
 
 

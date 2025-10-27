@@ -9,16 +9,7 @@ from .common import get_pinecone_vectorstore
 
 
 def query_products(query_text: str, k: int = 5) -> List[Dict]:
-    """
-    Query the Pinecone vector store for similar products
-
-    Args:
-        query_text: The search query
-        k: Number of results to return
-
-    Returns:
-        List of product dictionaries with metadata and content
-    """
+    """Query the Pinecone vector store for similar products"""
     try:
         docsearch = get_pinecone_vectorstore()
         results = docsearch.similarity_search(query_text, k=k)
@@ -29,7 +20,7 @@ def query_products(query_text: str, k: int = 5) -> List[Dict]:
                 {
                     "name": r.metadata.get("name", "Unknown"),
                     "url": r.metadata.get("url", "#"),
-                    "content": r.page_content,  # Limit content to 500 chars
+                    "content": r.page_content,
                     "metadata": r.metadata,
                 }
             )

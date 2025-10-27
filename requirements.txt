@@ -5,9 +5,12 @@ numpy
 rapidfuzz
 pint
 google-genai
-langchain
-langchain-community
+langchain>=0.3.0
+langchain-core>=0.3.71
+langchain-community>=0.3.0
+langchain-perplexity>=0.1.2
+pinecone==7.3.0
+langchain-pinecone==0.2.11
 langchain-google-genai
-langchain-pinecone
-pinecone>=7.3.0
-tiktoken
+tqdm
+python-dotenv
