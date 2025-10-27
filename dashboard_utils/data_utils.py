@@ -31,7 +31,7 @@ def load_data():
 
     # Load Cary Company data
     try:
-        with open("demo_batch_data/cary_all_data_normalized_new.json", "r") as f:
+        with open("demo_batch_data/cary_all_data_normalized.json", "r") as f:
             cary_data = json.load(f)
             companies["Cary Company"] = process_cary_data(cary_data)
     except FileNotFoundError:
