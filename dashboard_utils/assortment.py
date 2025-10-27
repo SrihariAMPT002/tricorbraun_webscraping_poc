@@ -99,7 +99,7 @@ def show_assortment_kpis(companies_data):
     st.plotly_chart(fig, width="stretch")
 
     # Competitor comparison matrix
-    st.subheader("🏢 Competitor Comparison Matrix")
+    st.subheader("🔀 Competitor Comparison Matrix")
 
     # Create comparison matrix
     comparison_matrix = (
@@ -138,7 +138,7 @@ def show_assortment_kpis(companies_data):
     coverage_df = pd.DataFrame(coverage_metrics)
     st.dataframe(coverage_df, width="stretch")
 
-    st.subheader("📈 SKU's by Country of Manufacture")
+    st.subheader("🗺 SKU's by Country of Manufacture")
     st.info("No SKU's by Country of Manufacture data for Berlin Packaging")
     # Count SKUs per country grouped by company
     country_company_records = []

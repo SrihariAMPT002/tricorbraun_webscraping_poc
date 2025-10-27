@@ -65,11 +65,19 @@ def show_homepage(companies_data):
         display_sell_uom_data(df, selected_company)
 
         # Comparison metrics across all companies
-        st.subheader("🏢 Cross-Company Comparison")
+        st.subheader("🔀 Cross-Company Comparison")
 
         comparison_data = []
         for company, data in companies_data.items():
             df_comp = pd.DataFrame(data)
+            in_stock_count = (
+                df_comp["stock"].str.contains("In stock", case=False, na=False).sum()
+            )
+            out_of_stock_count = (
+                df_comp["stock"]
+                .str.contains("Out of stock", case=False, na=False)
+                .sum()
+            )
             comparison_data.append(
                 {
                     "Company": company,
@@ -77,6 +85,10 @@ def show_homepage(companies_data):
                     "Avg Price": df_comp["price"].mean(),
                     "Categories": df_comp["category"].nunique(),
                     "Market Segments": df_comp["market_segment"].nunique(),
+                    "In Stock": in_stock_count,
+                    "Out of Stock": out_of_stock_count,
+                    "Uncertain Stock": len(df_comp)
+                    - (out_of_stock_count + in_stock_count),
                 }
             )
 

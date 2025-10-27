@@ -31,8 +31,12 @@ def show_pricing_intelligence(companies_data):
     # Average price by capacity range
     st.subheader("💰 Average Price by Capacity Range")
 
+    # Filter out rows with price <= 0 or price is null/NaN before averaging
+    df_valid_prices = df_all[
+        df_all["price"].notnull() & df_all["price"].notna() & (df_all["price"] > 0)
+    ]
     capacity_bin_prices = (
-        df_all.groupby(["company", "capacity_range"])["price"]
+        df_valid_prices.groupby(["company", "capacity_range"])["price"]
         .mean()
         .reset_index(name="avg_price")
     )

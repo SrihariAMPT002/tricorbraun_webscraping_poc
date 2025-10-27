@@ -29,7 +29,7 @@ def query_products(query_text: str, k: int = 5) -> List[Dict]:
                 {
                     "name": r.metadata.get("name", "Unknown"),
                     "url": r.metadata.get("url", "#"),
-                    "content": r.page_content[:500],  # Limit content to 500 chars
+                    "content": r.page_content,  # Limit content to 500 chars
                     "metadata": r.metadata,
                 }
             )
