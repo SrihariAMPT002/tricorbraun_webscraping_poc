@@ -4,7 +4,6 @@ This module contains Pinecone setup, page configuration, styling, and navigation
 """
 
 import streamlit as st
-import os
 from dotenv import load_dotenv
 from langchain_community.vectorstores import Pinecone as LangPinecone
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
