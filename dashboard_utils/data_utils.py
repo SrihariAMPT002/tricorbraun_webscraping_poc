@@ -159,6 +159,9 @@ def process_cary_data(data):
                 )
                 or "N/A",
                 "url": item.get("product_url", "") or "",
+                "product_origin": item.get("product_specs", {}).get(
+                    "Country of Manufacture", ""
+                ),
             }
         )
     return processed
@@ -214,6 +217,9 @@ def process_tricor_data(data):
                 or "N/A",
                 "url": item.get("product_url", "") or "",
                 "items_per_unit": items_per_unit_value,
+                "product_origin": item.get("product_specs", {}).get(
+                    "Country of Origin", ""
+                ),
             }
         )
     return processed

@@ -137,3 +137,33 @@ def show_assortment_kpis(companies_data):
 
     coverage_df = pd.DataFrame(coverage_metrics)
     st.dataframe(coverage_df, width="stretch")
+
+    st.subheader("📈 SKU's by Country of Manufacture")
+    st.info("No SKU's by Country of Manufacture data for Berlin Packaging")
+    # Count SKUs per country grouped by company
+    country_company_records = []
+    for company in companies_data.keys():
+        if company == "Berlin Packaging":
+            continue
+        for product in companies_data[company]:
+            country = product.get("product_origin") or "Not Specified"
+            country_company_records.append({"Company": company, "Country": country})
+
+    countries_df = pd.DataFrame(country_company_records)
+    sku_by_country_company = (
+        countries_df.groupby(["Company", "Country"])
+        .size()
+        .reset_index(name="SKU Count")
+    )
+
+    # Display as a grouped bar chart
+    fig = px.bar(
+        sku_by_country_company,
+        x="Country",
+        y="SKU Count",
+        color="Company",
+        barmode="group",
+        title="SKU Count by Country of Manufacture and Company",
+        text="SKU Count",
+    )
+    st.plotly_chart(fig, use_container_width=True)
