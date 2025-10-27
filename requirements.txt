@@ -8,3 +8,8 @@ google-genai
 langchain-community
 pinecone
 langchain-google-genai
+langchain 
+langchain-pinecone 
+langchain-openai 
+pinecone-client 
+tiktoken
