@@ -3,10 +3,129 @@ from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import Rule
 from pathlib import Path
 from datetime import datetime
+from fractions import Fraction
+from typing import Optional, Dict
 
 # sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from utils.normalise_uom import normalize_uom_values
+# from utils.normalise_uom import normalize_uom_values
+
+
+def parse_capacity_with_ml(
+    text: Optional[str],
+) -> Optional[Dict[str, Optional[str | float]]]:
+    """
+    Extract capacity (supports mixed numbers, fractions, decimals including leading-decimal)
+    and unit, then convert to milliliters.
+
+    Examples matched: "1 1/2 oz", "1/2 oz", ".5 oz", "0.5 oz", "2 oz", "250 ml"
+    """
+    if not text:
+        return None
+
+    text = text.strip().lower()
+
+    # Order matters: mixed numbers first, then fraction, then decimal (including leading .), then integer
+    num_unit_re = re.compile(
+        r"((?:\d+\s+\d+/\d+)|(?:\d+/\d+)|(?:\d*\.\d+)|(?:\d+))\s*"
+        r"(oz|ml|l|litre|liter|gallon|gal|dram|drams|cc)\b",
+        re.IGNORECASE,
+    )
+
+    m = num_unit_re.search(text)
+    if not m:
+        return None
+
+    num_str, uom = m.groups()
+    uom = uom.lower().replace(".", "")
+    if uom in ("gal", "gallons"):
+        uom = "gallon"
+    elif uom in ("l", "litre"):
+        uom = "liter"
+    elif uom in ("drams",):
+        uom = "dram"
+
+    # Parse numeric string to float, handling mixed numbers like "1 1/2"
+    value = None
+    try:
+        if " " in num_str and "/" in num_str:
+            # Mixed number like "1 1/2"
+            whole, frac = num_str.split()
+            value = float(int(whole) + Fraction(frac))
+        elif "/" in num_str:
+            # Simple fraction like "1/2"
+            value = float(Fraction(num_str))
+        else:
+            # Decimal or integer, supports leading decimal like ".5"
+            value = float(num_str)
+    except Exception:
+        return None
+
+    # Convert to ml (same conversion factors as before)
+    if uom in ("ml", "milliliter", "millilitre", "milli"):
+        ml_value = value
+    elif uom in ("l", "liter"):
+        ml_value = value * 1000
+    elif uom in ("cc",):
+        ml_value = value
+    elif uom in ("oz", "fl oz", "floz", "ounce", "ounces"):
+        ml_value = value * 29.5735
+    elif uom in ("gallon", "gal"):
+        ml_value = value * 3785.411784
+    elif uom in ("dram",):
+        ml_value = value * 3.6966911953125
+    else:
+        ml_value = None
+
+    return {
+        "value_raw": num_str,
+        "value": value,
+        "uom": uom,
+        "value_ml": round(ml_value, 2) if ml_value is not None else None,
+    }
+
+
+def normalize_uom_values(capacity: Optional[str], product_name: str | None) -> dict:
+    """
+    Normalize product capacity and UOM, automatically converting to milliliters (ml).
+
+    ```
+    Uses `parse_capacity_with_ml()` for extraction.
+    Prioritizes `capacity` field, falls back to `product_name`.
+
+    Returns:
+        {
+            "product_capacity_uom": str | None,
+            "product_capacity_value": str | None,
+            "normalized_capacity_uom": "ml",
+            "normalized_capacity_value": float | None
+        }
+    """
+    normalized_uom_data = {
+        "product_capacity_uom": None,
+        "product_capacity_value": None,
+        "normalized_capacity_uom": "ml",
+        "normalized_capacity_value": None,
+    }
+
+    # Determine source text
+    input_text = capacity or product_name
+    if not input_text:
+        return normalized_uom_data
+
+    parsed = parse_capacity_with_ml(input_text)
+    if not parsed:
+        return normalized_uom_data
+
+    normalized_uom_data.update(
+        {
+            "product_capacity_uom": parsed["uom"],
+            "product_capacity_value": parsed["value_raw"],
+            "normalized_capacity_value": parsed["value_ml"],
+        }
+    )
+
+    return normalized_uom_data
 
 
 class PkSpiderSpider(scrapy.Spider):
@@ -190,8 +309,14 @@ class PkSpiderSpider(scrapy.Spider):
                 .get(default="")
                 .strip()
             )
+            unit = (
+                li.xpath(".//span[contains(@class, 'ea')]/text()")
+                .get(default="")
+                .strip()
+            )
+
             if qty and price:
-                sell_uom_dict.append({"qty": qty, "price": price})
+                sell_uom_dict.append({"qty": qty, "price": price, "unit": unit})
         return sell_uom_dict
 
     def extract_metadata(self, start_time, product_object):
@@ -207,14 +332,14 @@ class PkSpiderSpider(scrapy.Spider):
         }
 
     def is_cap_included(
-        self, specifications, product_name, short_description, product_notes
+        self, specifications_notes, product_name, short_description, product_notes
     ) -> bool:
         if "cap not included" in product_name.lower():
             return False
         if "cap not included" in short_description.lower():
             return False
-        if specifications["Note:"]:
-            if "*Caps and closures sold separately" in specifications["Note:"]:
+        if specifications_notes:
+            if "*Caps and closures sold separately" in specifications_notes:
                 return False
         if product_notes:
             notes = " ".join(product_notes)
@@ -267,8 +392,13 @@ class PkSpiderSpider(scrapy.Spider):
                 price = (
                     li.xpath(".//span[@class='price']/text()").get(default="").strip()
                 )
+                unit = (
+                    li.xpath(".//span[@class='price']/span/text()")
+                    .get(default="")
+                    .strip()
+                )
                 if qty and price:
-                    price_tiers.append({"qty": qty, "price": price})
+                    price_tiers.append({"qty": qty, "price": price, "unit": unit})
 
             related_products.append(
                 {
@@ -302,7 +432,10 @@ class PkSpiderSpider(scrapy.Spider):
         packing_details = self.extract_packing_details(product_view)
         sell_uom = self.extract_sell_uom(product_view)
         specifications["is_cap_Included"] = self.is_cap_included(
-            specifications, product_name, short_description, special_msg
+            specifications.get("Note:", ""),
+            product_name,
+            short_description,
+            special_msg,
         )
         product_accessories = self.get_product_accessories(product_view)
 

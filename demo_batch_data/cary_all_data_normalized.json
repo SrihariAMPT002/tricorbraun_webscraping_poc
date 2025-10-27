@@ -11689,7 +11689,7 @@
       "in_stock": false
     },
     "product_packing_details": {
-      "Case Pack": "1 ea.",
+      "Case Pack": "12 ea.",
       "Pallet Pack": "75 ea."
     },
     "product_sell_uom": [
@@ -26203,7 +26203,7 @@
       "in_stock": false
     },
     "product_packing_details": {
-      "Case Pack": "1 ea.",
+      "Case Pack": "12 ea.",
       "Pallet Pack": "78 ea."
     },
     "product_sell_uom": [
@@ -34139,7 +34139,7 @@
       },
       {
         "qty": "5",
-        "price": "$56,389.000"
+        "price": "$56.389"
       },
       {
         "qty": "15",

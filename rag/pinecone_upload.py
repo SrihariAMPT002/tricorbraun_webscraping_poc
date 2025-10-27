@@ -21,7 +21,7 @@ load_dotenv()
 
 # ==== CONFIG =====
 INDEX_NAME = "products-index"
-PRODUCTS_JSON_PATH = "demo_batch_data/cary_all_data_normalized.json"
+PRODUCTS_JSON_PATH = "demo_batch_data/berlin_packing_all_data_normalized.json"
 BATCH_SIZE = 50
 
 
@@ -79,7 +79,7 @@ def main():
             "url": product.get("product_url"),
             "product_id": product.get("product_id"),
             "name": product.get("product_name"),
-            "capacity": product.get("product_specs", {}).get("Capacity"),
+            "capacity": product.get("product_specs", {}).get("Capacity "),
         }
         texts.append(text)
         metadatas.append(metadata)

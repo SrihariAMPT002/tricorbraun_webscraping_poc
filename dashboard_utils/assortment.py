@@ -69,25 +69,6 @@ def show_assortment_kpis(companies_data):
     )
     st.plotly_chart(fig, width="stretch")
 
-    # Average price by capacity range
-    st.subheader("💰 Average Price by Capacity Range")
-
-    capacity_price_avg = (
-        df_all.groupby(["company", "capacity_range"])["price"]
-        .mean()
-        .reset_index(name="avg_price")
-    )
-    fig_price = px.bar(
-        capacity_price_avg,
-        x="capacity_range",
-        y="avg_price",
-        color="company",
-        title="Average Price by Capacity Range",
-        barmode="group",
-        labels={"avg_price": "Average Price ($)", "capacity_range": "Capacity Range"},
-    )
-    st.plotly_chart(fig_price, width="stretch")
-
     # Combined capacity analysis table
     st.subheader("📊 Capacity Range Summary")
 

@@ -37,7 +37,7 @@ def main():
         show_homepage(companies_data)
     elif page == "Pricing Analysis":
         show_pricing_intelligence(companies_data)
-    elif page == "Assortment & Market KPIs":
+    elif page == "Assortment Analysis":
         show_assortment_kpis(companies_data)
     elif page == "Chatbot":
         show_chatbot()
