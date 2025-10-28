@@ -25,6 +25,10 @@ from .assortment import (
     show_assortment_kpis,
 )
 
+from .product_fuzzy_match import (
+    show_product_fuzzy_match,
+)
+
 from .chatbot import (
     show_chatbot,
     query_products,
@@ -45,6 +49,8 @@ __all__ = [
     "create_price_distribution_multiline_chart",
     # Assortment
     "show_assortment_kpis",
+    # Product Matching
+    "show_product_fuzzy_match",
     # Chatbot
     "show_chatbot",
     "query_products",

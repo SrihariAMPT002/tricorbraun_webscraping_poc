@@ -8,6 +8,7 @@ from dashboard_utils import (
     show_homepage,
     show_pricing_intelligence,
     show_assortment_kpis,
+    show_product_fuzzy_match,
     show_chatbot,
 )
 
@@ -39,6 +40,8 @@ def main():
         show_pricing_intelligence(companies_data)
     elif page == "Assortment Analysis":
         show_assortment_kpis(companies_data)
+    elif page == "Product Matching":
+        show_product_fuzzy_match(companies_data)
     elif page == "Chatbot":
         show_chatbot()
 

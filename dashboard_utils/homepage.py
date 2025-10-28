@@ -6,6 +6,12 @@ This module contains all functions related to the homepage display.
 import streamlit as st
 import pandas as pd
 from typing import Dict
+from dashboard_utils.utils import (
+    get_product_capacity_bins,
+    get_product_pricing_bins,
+    get_capacity_bin,
+    get_pricing_bin,
+)
 
 
 def show_homepage(companies_data):
@@ -27,18 +33,25 @@ def show_homepage(companies_data):
             st.metric(label="Total SKUs", value=len(df), delta=None)
 
         with col2:
-            avg_price = df["price"].mean()
+            df_nonzero_price = df[df["price"] > 0]
+            avg_price = df_nonzero_price["price"].mean()
             st.metric(label="Average Price", value=f"${avg_price:.2f}", delta=None)
+            st.caption(
+                f"Avg computed from {len(df_nonzero_price)} products (price > 0)"
+            )
 
         with col3:
             unique_categories = df["category"].nunique()
             st.metric(label="Categories (Glass)", value=unique_categories, delta=None)
 
         with col4:
-            in_stock_count = len(
-                df[df["stock"].str.contains("In stock", case=False, na=False)]
+            out_of_stock_count = len(
+                df[df["stock"].str.contains("out of stock", case=False, na=False)]
             )
-            st.metric(label="In Stock", value=f"{in_stock_count}/{len(df)}", delta=None)
+
+            st.metric(
+                label="In Stock", value=f"{len(df) - (out_of_stock_count)}", delta=None
+            )
 
         # Product table
         st.subheader(f"📋 {selected_company} Products")
@@ -70,6 +83,7 @@ def show_homepage(companies_data):
         comparison_data = []
         for company, data in companies_data.items():
             df_comp = pd.DataFrame(data)
+            df_comp_nonzero = df_comp[df_comp["price"] > 0]
             in_stock_count = (
                 df_comp["stock"].str.contains("In stock", case=False, na=False).sum()
             )
@@ -82,7 +96,8 @@ def show_homepage(companies_data):
                 {
                     "Company": company,
                     "Total SKUs": len(df_comp),
-                    "Avg Price": df_comp["price"].mean(),
+                    "Avg Price": df_comp_nonzero["price"].mean(),
+                    "Avg Count": len(df_comp_nonzero),
                     "Categories": df_comp["category"].nunique(),
                     "Market Segments": df_comp["market_segment"].nunique(),
                     "In Stock": in_stock_count,
@@ -127,6 +142,15 @@ def display_sell_uom_data(df, selected_company):
             f"Avg pricing tiers per product: {avg_pricing_per_product:.2f}"
         )
 
+    # Filter options
+    col1, col2 = st.columns(2)
+
+    with col1:
+        selected_capacity_bins = get_product_capacity_bins(selected_company)
+
+    with col2:
+        selected_pricing_bins = get_product_pricing_bins(selected_company)
+
     # Search functionality
     search_term = st.text_input(
         "🔍 Search by SKU, Product Name, or Quantity:",
@@ -134,12 +158,30 @@ def display_sell_uom_data(df, selected_company):
         key=f"search_uom_{selected_company}",
     )
 
-    # Filter products based on search
+    # Capacity and pricing bin helpers are imported from utils
+
+    # Filter products based on capacity, pricing, and search filters
     filtered_products = []
     for _, product in df.iterrows():
         if product.get("quantity_breaks") and len(product["quantity_breaks"]) > 0:
-            # Check if search term matches any relevant field
-            if not search_term or any(
+            # Check capacity filter
+            capacity_ml = product.get("normalised_capacity(ml)")
+            product_capacity_bin = get_capacity_bin(capacity_ml)
+            capacity_match = (
+                not selected_capacity_bins
+                or product_capacity_bin in selected_capacity_bins
+            )
+
+            # Check pricing filter
+            avg_price = product.get("avg_price_per_unit")
+            product_pricing_bin = get_pricing_bin(avg_price)
+            pricing_match = (
+                not selected_pricing_bins
+                or product_pricing_bin in selected_pricing_bins
+            )
+
+            # Check search filter
+            search_match = not search_term or any(
                 [
                     search_term.lower() in str(product.get("sku", "")).lower(),
                     search_term.lower() in str(product.get("name", "")).lower(),
@@ -149,7 +191,10 @@ def display_sell_uom_data(df, selected_company):
                         for break_item in product["quantity_breaks"]
                     ),
                 ]
-            ):
+            )
+
+            # All filters must pass
+            if capacity_match and pricing_match and search_match:
                 filtered_products.append(product)
 
     # Limit display to 10 products
@@ -194,6 +239,7 @@ def display_sell_uom_data(df, selected_company):
 
             st.divider()
 
+            items_per_unit = product.get("items_per_unit", "")
             # Display quantity breaks/pricing tiers
             if product.get("quantity_breaks"):
                 st.markdown("**📊 Pricing Tiers:**")
@@ -210,6 +256,7 @@ def display_sell_uom_data(df, selected_company):
                         {
                             "Quantity": quantity_field,
                             "Unit": "ea" if unit_field == "" else unit_field,
+                            "items_per_unit": items_per_unit,
                             "Price": price_field,
                             "Price/Unit": price_per_unit_field,
                         }

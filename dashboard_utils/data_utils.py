@@ -3,14 +3,10 @@ Data processing utilities for the packing competitor analysis dashboard.
 This module contains all data loading, processing, and analysis functions.
 """
 
-import json
-import re
-import pandas as pd
-import numpy as np
+import json, re, pandas as pd, pint, plotly.express as px
 from rapidfuzz import fuzz
-import pint
-from typing import Dict, List, Any, Optional
-import re
+from typing import Optional
+from .utils import build_product_record
 
 # Initialize unit registry for capacity normalization
 ureg = pint.UnitRegistry()
@@ -77,38 +73,42 @@ def process_berlin_data(data):
         pricing = extract_berlin_pricing(
             item.get("product_sell_uom", []), packing_unit_capacity
         )
-        zero_handled_pricing = round(pricing["base_price"], 2)
-
-        processed.append(
-            {
-                "company": "Berlin Packaging",
-                "sku": item.get("product_id", "") or "",
-                "name": item.get("product_name", "") or "",
-                "price": pricing["base_price"],
-                "avg_price_per_unit": zero_handled_pricing,
-                "normalised_capacity(ml)": round(normalised_value, 2),
-                "quantity_breaks": pricing["breaks"],
-                "sell_uom": item.get("product_sell_uom", []),  # Add raw sell_uom data
-                "original_uom": original_uom,
-                "original_capacity": original_capacity,
-                "normalised_uom": normalised_uom,
-                "normalised_capacity": normalised_value,
-                "capacity": normalised_value,  # Use normalized capacity for analysis
-                "unit": normalised_uom,  # Use normalized unit for analysis
-                "color": item.get("product_specs", {}).get("Color ", "") or "",
-                "material": item.get("product_specs", {}).get("Material Type ", "")
-                or "",
-                "shape": item.get("product_specs", {}).get("Shape ", "") or "",
-                "category": item.get("product_specs", {}).get("Material Group ", "")
-                or "",
-                "closure_type": item.get("product_specs", {}).get("Neck Finish ", "")
-                or "",
-                "market_segment": categorize_product(item.get("product_name", "")),
-                "stock": item.get("product_availability", {}).get("in_stock", "")
-                or "N/A",
-                "url": item.get("product_url", "") or "",
-            }
+        record = build_product_record(
+            company="Berlin Packaging",
+            item=item,
+            pricing=pricing,
+            normalised=(
+                original_uom,
+                original_capacity,
+                normalised_uom,
+                normalised_value,
+            ),
+            sell_uom_key="product_sell_uom",
+            spec_keys={
+                "color": "Color ",
+                "material": "Material Type ",
+                "shape": "Shape ",
+                "category": "Material Group ",
+                "closure_type": "Neck Finish ",
+            },
+            availability_keys=[
+                ("product_availability", "in_stock"),
+                ("product_availability", "expected_ship"),
+            ],
+            url_key="product_url",
+            extras={
+                "items_per_unit": item.get("product_specs", {}).get("Case Qty ", "")
+                or item.get("product_specs", {}).get("Pallet Qty", ""),
+            },
         )
+
+        # market segment override using categorization helper
+        record["market_segment"] = categorize_product(item.get("product_name", ""))
+        # default stock text if still empty
+        if not record.get("stock"):
+            record["stock"] = "Special Order Item"
+
+        processed.append(record)
     return processed
 
 
@@ -129,41 +129,32 @@ def process_cary_data(data):
         pricing = extract_cary_pricing(
             item.get("product_sell_uom", []), packing_details, product_notes
         )
-        zero_handled_pricing = round(pricing["base_price"], 2)
-
-        processed.append(
-            {
-                "company": "Cary Company",
-                "sku": item.get("product_id", "") or "",
-                "name": item.get("product_name", "") or "",
-                "price": pricing["base_price"],
-                "quantity_breaks": pricing["breaks"],
-                "avg_price_per_unit": zero_handled_pricing,
-                "normalised_capacity(ml)": round(normalised_value, 2),
-                "sell_uom": item.get("product_sell_uom", []),  # Add raw sell_uom data
-                "original_uom": original_uom,
-                "original_capacity": original_capacity,
-                "normalised_uom": normalised_uom,
-                "normalised_capacity": normalised_value,
-                "capacity": normalised_value,  # Use normalized capacity for analysis
-                "unit": normalised_uom,  # Use normalized unit for analysis
-                "color": item.get("product_specs", {}).get("Color", "") or "",
-                "material": item.get("product_specs", {}).get("Material", "") or "",
-                "shape": item.get("product_specs", {}).get("Style", "") or "",
-                "category": item.get("product_specs", {}).get("Material", "") or "",
-                "closure_type": item.get("product_specs", {}).get("Neck Finish", "")
-                or "",
-                "market_segment": categorize_product(item.get("product_name", "")),
-                "stock": item.get("product_availability", {}).get(
-                    "availability_text", ""
-                )
-                or "N/A",
-                "url": item.get("product_url", "") or "",
-                "product_origin": item.get("product_specs", {}).get(
-                    "Country of Manufacture", ""
-                ),
-            }
+        record = build_product_record(
+            company="Cary Company",
+            item=item,
+            pricing=pricing,
+            normalised=(
+                original_uom,
+                original_capacity,
+                normalised_uom,
+                normalised_value,
+            ),
+            sell_uom_key="product_sell_uom",
+            spec_keys={
+                "color": "Color",
+                "material": "Material",
+                "shape": "Style",
+                "category": "Material",
+                "closure_type": "Neck Finish",
+                "product_origin": "Country of Manufacture",
+            },
+            availability_keys=[("product_availability", "availability_text")],
+            url_key="product_url",
         )
+        record["market_segment"] = categorize_product(item.get("product_name", ""))
+        if not record.get("stock"):
+            record["stock"] = "N/A"
+        processed.append(record)
     return processed
 
 
@@ -187,41 +178,31 @@ def process_tricor_data(data):
             int(items_per_unit_match.group(1)) if items_per_unit_match else 1
         )
         pricing = extract_tricor_pricing(item.get("product_selluom", []))
-        zero_handled_pricing = round(pricing["base_price"], 2)
-        processed.append(
-            {
-                "company": "TricorBraun",
-                "sku": item.get("product_id", "") or "",
-                "name": item.get("product_name", "") or "",
-                "price": pricing["base_price"],
-                "quantity_breaks": pricing["breaks"],
-                "sell_uom": item.get(
-                    "product_selluom", []
-                ),  # Add raw sell_uom data (note: TricorBraun uses 'selluom')
-                "avg_price_per_unit": zero_handled_pricing,
-                "normalised_capacity(ml)": round(normalised_value, 2),
-                "original_uom": original_uom,
-                "original_capacity": original_capacity,
-                "normalised_uom": normalised_uom,
-                "normalised_capacity": normalised_value,
-                "capacity": normalised_value,  # Use normalized capacity for analysis
-                "unit": normalised_uom,  # Use normalized unit for analysis
-                "color": item.get("product_specs", {}).get("Color", "") or "",
-                "material": item.get("product_specs", {}).get("Material", "") or "",
-                "shape": item.get("product_specs", {}).get("Shape", "") or "",
-                "category": item.get("product_specs", {}).get("Material", "") or "",
-                "closure_type": item.get("product_specs", {}).get("Neck Finish", "")
-                or "",
-                "market_segment": categorize_product(item.get("product_name", "")),
-                "stock": item.get("product_availability", {}).get("in_stock", "")
-                or "N/A",
-                "url": item.get("product_url", "") or "",
-                "items_per_unit": items_per_unit_value,
-                "product_origin": item.get("product_specs", {}).get(
-                    "Country of Origin", ""
-                ),
-            }
+        record = build_product_record(
+            company="TricorBraun",
+            item=item,
+            pricing=pricing,
+            normalised=(
+                original_uom,
+                original_capacity,
+                normalised_uom,
+                normalised_value,
+            ),
+            sell_uom_key="product_selluom",
+            spec_keys={
+                "color": "Color",
+                "material": "Material",
+                "shape": "Shape",
+                "category": "Material",
+                "closure_type": "Neck Finish",
+                "product_origin": "Country of Origin",
+            },
+            availability_keys=[("product_availability", "in_stock")],
+            url_key="product_url",
+            extras={"items_per_unit": items_per_unit_value},
         )
+        record["market_segment"] = categorize_product(item.get("product_name", ""))
+        processed.append(record)
     return processed
 
 
@@ -469,7 +450,7 @@ def categorize_product(product_name):
         return "General"
 
 
-def normalize_capacity(value, unit):
+def normalize_capacity_fuzzy(value, unit):
     """Normalize capacity to milliliters"""
     try:
         return (value * ureg(unit)).to("milliliter").magnitude
@@ -481,8 +462,8 @@ def fuzzy_product_match(p1, p2):
     """Calculate fuzzy match score between two products"""
     name_score = fuzz.token_sort_ratio(p1["name"], p2["name"]) / 100
 
-    cap1 = normalize_capacity(p1["capacity"], p1["unit"])
-    cap2 = normalize_capacity(p2["capacity"], p2["unit"])
+    cap1 = normalize_capacity_fuzzy(p1["capacity"], p1["unit"])
+    cap2 = normalize_capacity_fuzzy(p2["capacity"], p2["unit"])
     cap_score = 1 - min(abs(cap1 - cap2) / max(cap1, cap2, 1), 1)
 
     price_score = 1 - min(
@@ -524,7 +505,7 @@ def get_capacity_analysis_data(companies_data):
 
     # Calculate normalized capacity in ml
     df_all["capacity_ml"] = df_all.apply(
-        lambda x: normalize_capacity(x["capacity"], x["unit"]), axis=1
+        lambda x: normalize_capacity_fuzzy(x["capacity"], x["unit"]), axis=1
     )
     df_all["price_per_100ml"] = df_all["price"] / df_all["capacity_ml"] * 100
 
@@ -555,7 +536,7 @@ def get_assortment_analysis_data(companies_data):
 
     # Create capacity ranges
     df_all["capacity_ml"] = df_all.apply(
-        lambda x: normalize_capacity(x["capacity"], x["unit"]), axis=1
+        lambda x: normalize_capacity_fuzzy(x["capacity"], x["unit"]), axis=1
     )
     df_all["capacity_range"] = pd.cut(
         df_all["capacity_ml"],
@@ -571,3 +552,153 @@ def get_assortment_analysis_data(companies_data):
     )
 
     return df_all
+
+
+def extract_case_prices(product):
+    """Extract all case-level prices from processed data (Berlin, Cary, TricorBraun)."""
+    prices = []
+    sell_uom = product.get("sell_uom") or []
+    company = product.get("company", "").lower()
+
+    for tier in sell_uom:
+        qty_range = str(tier.get("qty_range", "")).lower()
+        unit = str(tier.get("unit", "")).lower()
+        price_text = (
+            str(tier.get("price", "")).replace("$", "").replace(",", "").strip()
+        )
+        price_unit_text = (
+            str(tier.get("price_per_unit", ""))
+            .replace("$", "")
+            .replace(",", "")
+            .strip()
+        )
+
+        # ✅ Detect Berlin's Case Pricing
+        # Berlin: sometimes only first tier has 'Case', others are just ranges
+        if company == "berlin packaging":
+            # If first tier or small quantity tiers (<20 or with '1 -') treat as Case
+            if (
+                "case" in qty_range
+                or "case" in unit
+                or qty_range.startswith("1")
+                or "1 -" in qty_range
+            ):
+                if price_text.replace(".", "", 1).isdigit():
+                    prices.append(float(price_text))
+                elif price_unit_text.replace(".", "", 1).isdigit():
+                    prices.append(float(price_unit_text))
+            else:
+                # fallback for subsequent price tiers (even if 'case' not explicitly present)
+                if price_text.replace(".", "", 1).isdigit():
+                    prices.append(float(price_text))
+                elif price_unit_text.replace(".", "", 1).isdigit():
+                    prices.append(float(price_unit_text))
+        else:
+            # ✅ Cary & TricorBraun logic
+            if "case" in qty_range or "case" in unit:
+                if price_text.replace(".", "", 1).isdigit():
+                    prices.append(float(price_text))
+                elif price_unit_text.replace(".", "", 1).isdigit():
+                    prices.append(float(price_unit_text))
+
+    if not prices:
+        return None, None
+
+    return min(prices), max(prices)
+
+
+def get_case_price_bin_data(product_list):
+    """Aggregate min/max Case price per company grouped by capacity bins."""
+    import streamlit as st
+
+    records = []
+
+    for product in product_list:
+        company = product.get("company", "")
+        cap_ml = product.get("capacity")
+        if not cap_ml or not company:
+            continue
+
+        min_price, max_price = extract_case_prices(product)
+        if min_price is None:
+            continue
+
+        records.append(
+            {
+                "company": company,
+                "capacity_ml": float(cap_ml),
+                "min_price": min_price,
+                "max_price": max_price,
+            }
+        )
+
+    df = pd.DataFrame(records)
+    if df.empty:
+        st.warning("⚠️ No valid Case pricing data found.")
+        return df
+
+    df["capacity_bin"] = pd.cut(
+        df["capacity_ml"],
+        bins=[0, 50, 100, 250, 500, 1000, float("inf")],
+        labels=[
+            "0-50ml",
+            "50-100ml",
+            "100-250ml",
+            "250-500ml",
+            "500-1000ml",
+            "1000ml+",
+        ],
+        right=False,
+    )
+
+    df_summary = (
+        df.groupby(["company", "capacity_bin"])[["min_price", "max_price"]]
+        .mean()
+        .reset_index()
+    )
+
+    df_summary = df_summary.melt(
+        id_vars=["company", "capacity_bin"],
+        value_vars=["min_price", "max_price"],
+        var_name="Price Type",
+        value_name="Price ($)",
+    )
+
+    return df_summary
+
+
+def show_case_price_tier_chart(json_data):
+    import streamlit as st
+
+    """Render bar graph of Min/Max Case prices grouped by capacity bins."""
+    st.subheader("📦 Case Price Distribution by Capacity Range")
+
+    df_summary = get_case_price_bin_data(json_data)
+    if df_summary.empty:
+        return
+
+    fig = px.bar(
+        df_summary,
+        x="capacity_bin",
+        y="Price ($)",
+        color="Price Type",
+        barmode="group",
+        facet_col="company",
+        title="Case Price Tiers by Capacity Range (ml)",
+        labels={
+            "capacity_bin": "Capacity Range (ml)",
+            "Price ($)": "Average Case Price ($)",
+        },
+        text_auto=".2f",
+    )
+
+    fig.update_layout(
+        bargap=0.25,
+        xaxis_tickangle=-30,
+        plot_bgcolor="rgba(0,0,0,0)",
+        paper_bgcolor="rgba(0,0,0,0)",
+        legend_title_text="Price Type",
+        title_x=0.35,
+    )
+
+    st.plotly_chart(fig, use_container_width=True)

@@ -3,13 +3,13 @@ Pricing Analysis UI utilities.
 This module contains all functions related to pricing intelligence and analysis.
 """
 
-import streamlit as st
-import pandas as pd
-import plotly.express as px
+import streamlit as st, pandas as pd, plotly.express as px
 from typing import Dict
+import plotly.graph_objects as go
 from .data_utils import (
     get_capacity_analysis_data,
     fuzzy_product_match,
+    show_case_price_tier_chart,
 )
 
 
@@ -59,6 +59,94 @@ def show_pricing_intelligence(companies_data):
     )
     st.plotly_chart(fig_bins, width="stretch")
 
+    # --- 📈 Min–Max Price by Capacity Bin and Company ---
+    st.subheader("📈 Price Range (Min–Max) by Capacity Bin and Company")
+
+    # Define fixed capacity bins
+    capacity_bins = [
+        "0-50ml",
+        "50-100ml",
+        "100-250ml",
+        "250-500ml",
+        "500-1000ml",
+        "1000ml+",
+    ]
+
+    # Group to get min and max price for each company and capacity range
+    # Filter out rows where avg_price_per_unit is null/NaN or zero
+    df_filtered = df_all[
+        df_all["avg_price_per_unit"].notna() & (df_all["avg_price_per_unit"] != 0)
+    ]
+
+    minmax_df = (
+        df_filtered.groupby(["company", "capacity_range"])
+        .agg(
+            min_price=("avg_price_per_unit", "min"),
+            max_price=("avg_price_per_unit", "max"),
+        )
+        .reset_index()
+    )
+
+    # Ensure consistent capacity bin ordering
+    minmax_df["capacity_range"] = pd.Categorical(
+        minmax_df["capacity_range"], categories=capacity_bins, ordered=True
+    )
+
+    # # Optional: show the computed table
+    # st.dataframe(minmax_df.sort_values(["company", "capacity_range"]))
+
+    # --- Create Plotly figure (Error Bar Style) ---
+    fig_minmax = go.Figure()
+
+    for company in minmax_df["company"].unique():
+        company_df = minmax_df[minmax_df["company"] == company]
+
+        fig_minmax.add_trace(
+            go.Scatter(
+                x=company_df["capacity_range"],
+                y=(company_df["min_price"] + company_df["max_price"]) / 2,
+                error_y=dict(
+                    type="data",
+                    symmetric=False,
+                    array=company_df["max_price"]
+                    - ((company_df["min_price"] + company_df["max_price"]) / 2),
+                    arrayminus=((company_df["min_price"] + company_df["max_price"]) / 2)
+                    - company_df["min_price"],
+                    thickness=1.5,
+                    width=6,
+                ),
+                mode="markers+lines",
+                name=company,
+                line=dict(width=2),
+                marker=dict(size=8),
+                hovertemplate=(
+                    "<b>%{x}</b><br>"
+                    + "Company: %{text}<br>"
+                    + "Min Price: %{customdata[0]:.2f}<br>"
+                    + "Max Price: %{customdata[1]:.2f}<extra></extra>"
+                ),
+                text=[company] * len(company_df),
+                customdata=company_df[["min_price", "max_price"]].values,
+                marker_color={
+                    "Berlin Packaging": "#e01b22",
+                    "Cary Company": "#1c2e5c",
+                    "TricorBraun": "#282828",
+                }.get(company, "#666"),
+            )
+        )
+
+    fig_minmax.update_layout(
+        title="Min–Max Price Range by Capacity Bin and Company",
+        xaxis_title="Capacity Range",
+        yaxis_title="Price ($)",
+        legend_title="Company",
+        hovermode="x unified",
+        template="plotly_white",
+        height=500,
+    )
+
+    st.plotly_chart(fig_minmax, use_container_width=True)
+
     # Average price by category
     st.subheader("📊 Average Price by Category")
 
@@ -79,6 +167,9 @@ def show_pricing_intelligence(companies_data):
         barmode="group",
     )
     st.plotly_chart(fig, width="stretch")
+
+    st.markdown("### 🧮 Case Price Tiers (Min vs Max)")
+    show_case_price_tier_chart(all_data)  # ✅ FIXED: call inside function
 
     # Fuzzy matching demonstration
     st.subheader("🔍 Product Similarity Matching")

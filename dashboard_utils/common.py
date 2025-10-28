@@ -133,6 +133,10 @@ def create_navigation_menu():
             st.session_state.page = "Assortment Analysis"
             st.rerun()
 
+        if st.button("🔍 Product Matching", key="matching_btn", width="stretch"):
+            st.session_state.page = "Product Matching"
+            st.rerun()
+
         if st.button("🤖 Chatbot", key="chatbot_btn", width="stretch"):
             st.session_state.page = "Chatbot"
             st.rerun()
