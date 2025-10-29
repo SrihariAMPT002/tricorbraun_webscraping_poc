@@ -17,7 +17,6 @@ from st_aggrid import AgGrid, GridOptionsBuilder, GridUpdateMode
 
 def show_homepage(companies_data):
     """Display homepage with company overview"""
-    st.header("Company Overview")
 
     # Company selection
     company_names = list(companies_data.keys())

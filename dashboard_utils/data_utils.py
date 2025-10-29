@@ -31,7 +31,7 @@ def load_data():
 
     # Load Berlin Packaging data
     try:
-        with open("demo_batch_data/berlin_new_data_normalised.json", "r") as f:
+        with open("demo_batch_data/berlin_packing_data.json", "r") as f:
             berlin_data = json.load(f)
             companies["Berlin Packaging"] = process_berlin_data(berlin_data)
     except FileNotFoundError:
@@ -40,7 +40,7 @@ def load_data():
 
     # Load Cary Company data
     try:
-        with open("demo_batch_data/cary_all_data_normalized_filtered.json", "r") as f:
+        with open("demo_batch_data/cary_company_data.json", "r") as f:
             cary_data = json.load(f)
             companies["Cary Company"] = process_cary_data(cary_data)
     except FileNotFoundError:
@@ -49,7 +49,7 @@ def load_data():
 
     # Load TricorBraun data
     try:
-        with open("demo_batch_data/tricorbraun_new_data_normalized.json", "r") as f:
+        with open("demo_batch_data/tricorbraun_data.json", "r") as f:
             tricor_data = json.load(f)
             companies["TricorBraun"] = process_tricor_data(tricor_data)
     except FileNotFoundError:

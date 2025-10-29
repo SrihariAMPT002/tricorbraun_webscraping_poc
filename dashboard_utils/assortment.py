@@ -18,6 +18,11 @@ def show_sku_count_by_color(df_all):
         x="color",
         y="count",
         color="company",
+        color_discrete_map={
+            "Berlin Packaging": "#e01b22",
+            "Cary Company": "#1c2e5c",
+            "TricorBraun": "#282828",
+        },
         title="SKU Count by Color",
         barmode="group",
     )
@@ -37,6 +42,11 @@ def show_sku_count_by_material(df_all):
         x="material",
         y="count",
         color="company",
+        color_discrete_map={
+            "Berlin Packaging": "#e01b22",
+            "Cary Company": "#1c2e5c",
+            "TricorBraun": "#282828",
+        },
         title="SKU Count by Material",
         barmode="group",
     )
@@ -58,6 +68,11 @@ def show_sku_count_by_capacity_range(df_all):
         x="capacity_range",
         y="count",
         color="company",
+        color_discrete_map={
+            "Berlin Packaging": "#e01b22",
+            "Cary Company": "#1c2e5c",
+            "TricorBraun": "#282828",
+        },
         title="SKU Count by Capacity Range",
         barmode="group",
     )
@@ -95,6 +110,11 @@ def show_market_segment_distribution(df_all):
         values="count",
         names="market_segment",
         title="Market Segment Distribution",
+        color_discrete_map={
+            "Berlin Packaging": "#e01b22",
+            "Cary Company": "#1c2e5c",
+            "TricorBraun": "#282828",
+        },
         color_discrete_sequence=px.colors.qualitative.Set3,
     )
     st.plotly_chart(fig, config={"responsive": True})
@@ -164,6 +184,11 @@ def show_sku_by_country_of_manufacture(companies_data):
         x="Country",
         y="SKU Count",
         color="Company",
+        color_discrete_map={
+            "Berlin Packaging": "#e01b22",
+            "Cary Company": "#1c2e5c",
+            "TricorBraun": "#282828",
+        },
         barmode="group",
         title="SKU Count by Country of Manufacture and Company",
         text="SKU Count",
