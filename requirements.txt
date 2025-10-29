@@ -14,3 +14,4 @@ langchain-pinecone==0.2.11
 langchain-google-genai
 tqdm
 python-dotenv
+streamlit-aggrid

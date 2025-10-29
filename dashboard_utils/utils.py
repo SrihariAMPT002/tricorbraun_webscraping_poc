@@ -114,7 +114,7 @@ def get_product_capacity_bins(selected_company):
         "1000ml+",
     ]
     selected_capacity_bins = st.multiselect(
-        "📏 Filter by Capacity:",
+        "Filter by Capacity:",
         capacity_bins,
         default=[],
         key=f"capacity_bins_{selected_company}",
@@ -134,7 +134,7 @@ def get_product_pricing_bins(selected_company):
         "$5+",
     ]
     selected_pricing_bins = st.multiselect(
-        "💰 Filter by Avg Price per Unit:",
+        "Filter by Avg Price per Unit:",
         pricing_bins,
         default=[],
         key=f"pricing_bins_{selected_company}",

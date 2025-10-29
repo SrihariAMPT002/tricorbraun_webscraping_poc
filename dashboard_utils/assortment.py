@@ -3,61 +3,55 @@ Assortment & Market KPI UI utilities.
 This module contains all functions related to assortment analysis and market KPIs.
 """
 
+from dashboard_utils.fuzzy_matching import normalize_capacity_fuzzy
 import streamlit as st
 import pandas as pd
 import plotly.express as px
 from typing import Dict
-from .data_utils import get_assortment_analysis_data
 
 
-def show_assortment_kpis(companies_data):
-    """Display assortment and market KPI dashboard"""
-    st.header("📦 Assortment & Market KPI Dashboard")
+def show_sku_count_by_color(df_all):
+    """Display SKU count by color bar chart"""
+    color_counts = df_all.groupby(["company", "color"]).size().reset_index(name="count")
+    fig = px.bar(
+        color_counts,
+        x="color",
+        y="count",
+        color="company",
+        title="SKU Count by Color",
+        barmode="group",
+    )
+    st.plotly_chart(
+        fig,
+        config={"responsive": True},
+    )
 
-    # Get assortment analysis data
-    df_all = get_assortment_analysis_data(companies_data)
 
-    # Assortment statistics
-    st.subheader("📊 Assortment Statistics")
+def show_sku_count_by_material(df_all):
+    """Display SKU count by material bar chart"""
+    material_counts = (
+        df_all.groupby(["company", "material"]).size().reset_index(name="count")
+    )
+    fig = px.bar(
+        material_counts,
+        x="material",
+        y="count",
+        color="company",
+        title="SKU Count by Material",
+        barmode="group",
+    )
+    st.plotly_chart(
+        fig,
+        config={"responsive": True},
+    )
 
-    col1, col2 = st.columns(2)
 
-    with col1:
-        # SKU count by color
-        color_counts = (
-            df_all.groupby(["company", "color"]).size().reset_index(name="count")
-        )
-        fig = px.bar(
-            color_counts,
-            x="color",
-            y="count",
-            color="company",
-            title="SKU Count by Color",
-            barmode="group",
-        )
-        st.plotly_chart(fig, width="stretch")
-
-    with col2:
-        # SKU count by material
-        material_counts = (
-            df_all.groupby(["company", "material"]).size().reset_index(name="count")
-        )
-        fig = px.bar(
-            material_counts,
-            x="material",
-            y="count",
-            color="company",
-            title="SKU Count by Material",
-            barmode="group",
-        )
-        st.plotly_chart(fig, width="stretch")
-
-    # Capacity range analysis
-    st.subheader("📏 Capacity Range Analysis")
-
-    # SKU count by capacity range
+def show_sku_count_by_capacity_range(df_all):
+    """Display SKU count by capacity range bar chart"""
     capacity_counts = (
-        df_all.groupby(["company", "capacity_range"]).size().reset_index(name="count")
+        df_all.groupby(["company", "capacity_range"], observed=True)
+        .size()
+        .reset_index(name="count")
     )
     fig = px.bar(
         capacity_counts,
@@ -67,25 +61,32 @@ def show_assortment_kpis(companies_data):
         title="SKU Count by Capacity Range",
         barmode="group",
     )
-    st.plotly_chart(fig, width="stretch")
+    st.plotly_chart(
+        fig,
+        config={"responsive": True},
+    )
 
-    # Combined capacity analysis table
-    st.subheader("📊 Capacity Range Summary")
 
+def show_capacity_range_summary(df_all):
+    """Display capacity range summary table"""
     capacity_summary = (
-        df_all.groupby(["company", "capacity_range"])
+        df_all.groupby(["company", "capacity_range"], observed=True)
         .agg({"price": ["count", "mean"], "capacity_ml": "mean"})
         .round(2)
     )
 
     capacity_summary.columns = ["SKU Count", "Avg Price ($)", "Avg Capacity (ml)"]
-    capacity_summary = capacity_summary.reset_index()
+    capacity_summary = (
+        capacity_summary.sort_values(by="company", ascending=True)
+        .sort_values(by="Avg Capacity (ml)", ascending=False)
+        .reset_index()
+    )
 
     st.dataframe(capacity_summary, width="stretch")
 
-    # Market segment analysis
-    st.subheader("🎯 Market Segment Analysis")
 
+def show_market_segment_distribution(df_all):
+    """Display market segment distribution pie chart"""
     segment_counts = (
         df_all.groupby(["company", "market_segment"]).size().reset_index(name="count")
     )
@@ -96,12 +97,11 @@ def show_assortment_kpis(companies_data):
         title="Market Segment Distribution",
         color_discrete_sequence=px.colors.qualitative.Set3,
     )
-    st.plotly_chart(fig, width="stretch")
+    st.plotly_chart(fig, config={"responsive": True})
 
-    # Competitor comparison matrix
-    st.subheader("🔀 Competitor Comparison Matrix")
 
-    # Create comparison matrix
+def show_competitor_comparison_matrix(df_all):
+    """Display competitor comparison matrix heatmap"""
     comparison_matrix = (
         df_all.groupby(["company", "market_segment"]).size().unstack(fill_value=0)
     )
@@ -114,11 +114,11 @@ def show_assortment_kpis(companies_data):
         title="SKU Count by Company and Market Segment",
         color_continuous_scale="Blues",
     )
-    st.plotly_chart(fig, width="stretch")
+    st.plotly_chart(fig, config={"responsive": True})
 
-    # Assortment coverage metrics
-    st.subheader("📈 Assortment Coverage Metrics")
 
+def show_assortment_coverage_metrics(df_all, companies_data):
+    """Display assortment coverage metrics table"""
     coverage_metrics = []
     for company in companies_data.keys():
         company_df = df_all[df_all["company"] == company]
@@ -138,7 +138,9 @@ def show_assortment_kpis(companies_data):
     coverage_df = pd.DataFrame(coverage_metrics)
     st.dataframe(coverage_df, width="stretch")
 
-    st.subheader("🗺 SKU's by Country of Manufacture")
+
+def show_sku_by_country_of_manufacture(companies_data):
+    """Display SKU count by country of manufacture bar chart"""
     st.info("No SKU's by Country of Manufacture data for Berlin Packaging")
     # Count SKUs per country grouped by company
     country_company_records = []
@@ -166,4 +168,107 @@ def show_assortment_kpis(companies_data):
         title="SKU Count by Country of Manufacture and Company",
         text="SKU Count",
     )
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(
+        fig,
+        config={"responsive": True},
+    )
+
+    """Get assortment analysis data"""
+    all_data = []
+    for company, data in companies_data.items():
+        all_data.extend(data)
+
+    df_all = pd.DataFrame(all_data)
+
+    # Create capacity ranges
+    df_all["capacity_ml"] = df_all.apply(
+        lambda x: normalize_capacity_fuzzy(x["capacity"], x["unit"]), axis=1
+    )
+    df_all["capacity_range"] = pd.cut(
+        df_all["capacity_ml"],
+        bins=[0, 50, 100, 250, 500, 1000, float("inf")],
+        labels=[
+            "0-50ml",
+            "50-100ml",
+            "100-250ml",
+            "250-500ml",
+            "500-1000ml",
+            "1000ml+",
+        ],
+    )
+
+    return df_all
+
+
+def get_assortment_analysis_data(companies_data):
+    """Get assortment analysis data"""
+    all_data = []
+    for company, data in companies_data.items():
+        all_data.extend(data)
+
+    df_all = pd.DataFrame(all_data)
+
+    # Create capacity ranges
+    df_all["capacity_ml"] = df_all.apply(
+        lambda x: normalize_capacity_fuzzy(x["capacity"], x["unit"]), axis=1
+    )
+    df_all["capacity_range"] = pd.cut(
+        df_all["capacity_ml"],
+        bins=[0, 50, 100, 250, 500, 1000, float("inf")],
+        labels=[
+            "0-50ml",
+            "50-100ml",
+            "100-250ml",
+            "250-500ml",
+            "500-1000ml",
+            "1000ml+",
+        ],
+    )
+
+    return df_all
+
+
+def show_assortment_kpis(companies_data):
+    """Display assortment and market KPI dashboard"""
+    st.header("Assortment & Market KPI Dashboard")
+
+    # Get assortment analysis data
+    df_all = get_assortment_analysis_data(companies_data)
+
+    # SKU Count by Color
+    with st.expander("SKU Count by Color", expanded=True):
+        show_sku_count_by_color(df_all)
+
+    # SKU Count by Material
+    with st.expander("SKU Count by Material", expanded=False):
+        show_sku_count_by_material(df_all)
+
+    # Capacity Range Analysis
+    with st.expander("Capacity Range Analysis", expanded=False):
+        st.subheader("Capacity Range Analysis")
+        show_sku_count_by_capacity_range(df_all)
+
+    # Capacity Range Summary
+    with st.expander("Capacity Range Summary", expanded=False):
+        st.subheader("Capacity Range Summary")
+        show_capacity_range_summary(df_all)
+
+    # Market Segment Analysis
+    with st.expander("Market Segment Analysis", expanded=False):
+        st.subheader("Market Segment Analysis")
+        show_market_segment_distribution(df_all)
+
+    # Competitor Comparison Matrix
+    with st.expander("Competitor Comparison Matrix", expanded=False):
+        st.subheader("Competitor Comparison Matrix")
+        show_competitor_comparison_matrix(df_all)
+
+    # Assortment Coverage Metrics
+    with st.expander("Assortment Coverage Metrics", expanded=False):
+        st.subheader("Assortment Coverage Metrics")
+        show_assortment_coverage_metrics(df_all, companies_data)
+
+    # SKU's by Country of Manufacture
+    with st.expander("SKU's by Country of Manufacture", expanded=False):
+        st.subheader("SKU's by Country of Manufacture")
+        show_sku_by_country_of_manufacture(companies_data)

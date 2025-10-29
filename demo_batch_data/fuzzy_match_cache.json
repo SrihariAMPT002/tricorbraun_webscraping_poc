@@ -1,0 +1,441 @@
+{
+  "high_similarity_products": [
+    {
+      "company": "Cary Company",
+      "product": {
+        "company": "Cary Company",
+        "url": "https://www.thecarycompany.com/glass-milk-bottles-s-l24",
+        "sku": "Part#: 30WD1L",
+        "name": "34 oz. Liter Glass Milk Bottle, 48mm 48-Snap",
+        "price": 2.852,
+        "quantity_breaks": [
+          {
+            "quantity_of_packing": "24",
+            "type_of_packing": "case",
+            "unit_quantity": 12.0,
+            "price_per_packing": 46.68,
+            "price_per_item": 3.89
+          },
+          {
+            "quantity_of_packing": "120",
+            "type_of_packing": "case",
+            "unit_quantity": 12.0,
+            "price_per_packing": 39.0,
+            "price_per_item": 3.25
+          },
+          {
+            "quantity_of_packing": "240",
+            "type_of_packing": "case",
+            "unit_quantity": 12.0,
+            "price_per_packing": 34.8,
+            "price_per_item": 2.9
+          },
+          {
+            "quantity_of_packing": "1344",
+            "type_of_packing": "case",
+            "unit_quantity": 12.0,
+            "price_per_packing": 27.24,
+            "price_per_item": 2.27
+          },
+          {
+            "quantity_of_packing": "2688",
+            "type_of_packing": "case",
+            "unit_quantity": 12.0,
+            "price_per_packing": 23.4,
+            "price_per_item": 1.95
+          }
+        ],
+        "sell_uom": [
+          {
+            "qty": "Quantity",
+            "price": "Price",
+            "unit": "Quantity"
+          },
+          {
+            "qty": "24",
+            "price": "$3.890",
+            "unit": "ea."
+          },
+          {
+            "qty": "120",
+            "price": "$3.250",
+            "unit": "ea."
+          },
+          {
+            "qty": "240",
+            "price": "$2.900",
+            "unit": "ea."
+          },
+          {
+            "qty": "1344",
+            "price": "$2.270",
+            "unit": "ea."
+          },
+          {
+            "qty": "2688",
+            "price": "$1.950",
+            "unit": "ea."
+          }
+        ],
+        "avg_price_per_unit": 2.85,
+        "normalised_capacity(ml)": 1005.5,
+        "original_uom": "oz",
+        "original_capacity": "34",
+        "normalised_uom": "ml",
+        "normalised_capacity": 1005.5,
+        "capacity": 1005.5,
+        "unit": "ml",
+        "color": "Clear",
+        "material": "Glass",
+        "shape": "Beverage - Classic Dairy",
+        "category": "Glass",
+        "closure_type": "48-Snap",
+        "market_segment": "Food & Condiments",
+        "product_origin": "Canada",
+        "stock": "In Stock",
+        "product_industry": "Food & Beverage",
+        "product_description": " When you want a larger individual drink bottle, the 34 fl. oz. liter clear glass milk bottle is the perfect choice. Larger than a quart bottle but smaller than a half gallon, this liter bottle is just right for even Goldilocks. The bottle has a 48mm neck finish with a taller structure and square base, making it useful as a container for all types of juice, smoothies, sauces, cream, and decor projects. The Cary Company's 48mm tamper evident snap caps are compatible with these bottles. "
+      },
+      "similarity": 0.9218548963789345
+    },
+    {
+      "company": "Cary Company",
+      "product": {
+        "company": "Cary Company",
+        "url": "https://www.thecarycompany.com/glass-milk-bottles-s-rq24",
+        "sku": "Part#: 30WDR4",
+        "name": "32 oz. Round Quart Glass Milk Bottle, 48mm 48-Snap",
+        "price": 2.608,
+        "quantity_breaks": [
+          {
+            "quantity_of_packing": "12",
+            "type_of_packing": "case",
+            "unit_quantity": 12.0,
+            "price_per_packing": 41.04,
+            "price_per_item": 3.42
+          },
+          {
+            "quantity_of_packing": "120",
+            "type_of_packing": "case",
+            "unit_quantity": 12.0,
+            "price_per_packing": 34.2,
+            "price_per_item": 2.85
+          },
+          {
+            "quantity_of_packing": "360",
+            "type_of_packing": "case",
+            "unit_quantity": 12.0,
+            "price_per_packing": 31.08,
+            "price_per_item": 2.59
+          },
+          {
+            "quantity_of_packing": "1080",
+            "type_of_packing": "case",
+            "unit_quantity": 12.0,
+            "price_per_packing": 26.28,
+            "price_per_item": 2.19
+          },
+          {
+            "quantity_of_packing": "3240",
+            "type_of_packing": "case",
+            "unit_quantity": 12.0,
+            "price_per_packing": 23.88,
+            "price_per_item": 1.99
+          }
+        ],
+        "sell_uom": [
+          {
+            "qty": "Quantity",
+            "price": "Price",
+            "unit": "Quantity"
+          },
+          {
+            "qty": "12",
+            "price": "$3.420",
+            "unit": "ea."
+          },
+          {
+            "qty": "120",
+            "price": "$2.850",
+            "unit": "ea."
+          },
+          {
+            "qty": "360",
+            "price": "$2.590",
+            "unit": "ea."
+          },
+          {
+            "qty": "1080",
+            "price": "$2.190",
+            "unit": "ea."
+          },
+          {
+            "qty": "3240",
+            "price": "$1.990",
+            "unit": "ea."
+          }
+        ],
+        "avg_price_per_unit": 2.61,
+        "normalised_capacity(ml)": 946.35,
+        "original_uom": "oz",
+        "original_capacity": "32",
+        "normalised_uom": "ml",
+        "normalised_capacity": 946.35,
+        "capacity": 946.35,
+        "unit": "ml",
+        "color": "Clear",
+        "material": "Glass",
+        "shape": "Beverage - Classic Dairy",
+        "category": "Glass",
+        "closure_type": "48-Snap",
+        "market_segment": "Beverage",
+        "product_origin": "Canada",
+        "stock": "In Stock",
+        "product_industry": "Food & Beverage",
+        "product_description": " These 32 fl. oz. round quart clear glass milk bottles with a 48mm neck finish are hard to miss at any gathering. The bottles have a round base and taller neck, which make it perfect for not only drinks like juice, slushies, and alcohol but decoration. Pop some flowers or candy sticks into the bottles to make a great homemade centerpiece all your guests will be talking about. The Cary Company's 48mm tamper evident snap caps are compatible with these bottles. "
+      },
+      "similarity": 0.8748898541114059
+    },
+    {
+      "company": "Cary Company",
+      "product": {
+        "company": "Cary Company",
+        "url": "https://www.thecarycompany.com/glass-milk-bottles-s-sq24",
+        "sku": "Part#: 30WDS4",
+        "name": "32 oz. Square Quart Glass Milk Bottle, 48mm 48-Snap",
+        "price": 2.574,
+        "quantity_breaks": [
+          {
+            "quantity_of_packing": "24",
+            "type_of_packing": "case",
+            "unit_quantity": 24.0,
+            "price_per_packing": 84.48,
+            "price_per_item": 3.52
+          },
+          {
+            "quantity_of_packing": "240",
+            "type_of_packing": "case",
+            "unit_quantity": 24.0,
+            "price_per_packing": 67.92,
+            "price_per_item": 2.83
+          },
+          {
+            "quantity_of_packing": "744",
+            "type_of_packing": "case",
+            "unit_quantity": 24.0,
+            "price_per_packing": 56.4,
+            "price_per_item": 2.35
+          },
+          {
+            "quantity_of_packing": "1344",
+            "type_of_packing": "case",
+            "unit_quantity": 24.0,
+            "price_per_packing": 52.32,
+            "price_per_item": 2.18
+          },
+          {
+            "quantity_of_packing": "4032",
+            "type_of_packing": "case",
+            "unit_quantity": 24.0,
+            "price_per_packing": 47.76,
+            "price_per_item": 1.99
+          }
+        ],
+        "sell_uom": [
+          {
+            "qty": "Quantity",
+            "price": "Price",
+            "unit": "Quantity"
+          },
+          {
+            "qty": "24",
+            "price": "$3.520",
+            "unit": "ea."
+          },
+          {
+            "qty": "240",
+            "price": "$2.830",
+            "unit": "ea."
+          },
+          {
+            "qty": "744",
+            "price": "$2.350",
+            "unit": "ea."
+          },
+          {
+            "qty": "1344",
+            "price": "$2.180",
+            "unit": "ea."
+          },
+          {
+            "qty": "4032",
+            "price": "$1.990",
+            "unit": "ea."
+          }
+        ],
+        "avg_price_per_unit": 2.57,
+        "normalised_capacity(ml)": 946.35,
+        "original_uom": "oz",
+        "original_capacity": "32",
+        "normalised_uom": "ml",
+        "normalised_capacity": 946.35,
+        "capacity": 946.35,
+        "unit": "ml",
+        "color": "Clear",
+        "material": "Glass",
+        "shape": "Beverage - Classic Dairy",
+        "category": "Glass",
+        "closure_type": "48-Snap",
+        "market_segment": "Beverage",
+        "product_origin": "Canada",
+        "stock": "In Stock",
+        "product_industry": "Food & Beverage",
+        "product_description": " These 32 fl. oz. square clear glass milk bottles with a 48mm neck finish are the standard size for milk bottles. They have a square base for easy storage, so you can safely take it with you anywhere without all the added extra movement often associated with rounder bottles. These milk bottles can also hold sauce, juice, water, and alcoholic beverages like wine. The Cary Company stocks the 48mm tamper evident snap caps that are compatible with these bottles. "
+      },
+      "similarity": 0.8717023541114058
+    },
+    {
+      "company": "Cary Company",
+      "product": {
+        "company": "Cary Company",
+        "url": "https://www.thecarycompany.com/32-oz-amber-glass-beer-growler",
+        "sku": "Part#: 30W32A",
+        "name": "32 oz. Amber Glass Beer Growler, 38mm 38-405",
+        "price": 3.622,
+        "quantity_breaks": [
+          {
+            "quantity_of_packing": "12",
+            "type_of_packing": "case",
+            "unit_quantity": 6.0,
+            "price_per_packing": 24.84,
+            "price_per_item": 4.14
+          },
+          {
+            "quantity_of_packing": "96",
+            "type_of_packing": "case",
+            "unit_quantity": 6.0,
+            "price_per_packing": 22.68,
+            "price_per_item": 3.78
+          },
+          {
+            "quantity_of_packing": "540",
+            "type_of_packing": "case",
+            "unit_quantity": 6.0,
+            "price_per_packing": 21.54,
+            "price_per_item": 3.59
+          },
+          {
+            "quantity_of_packing": "1080",
+            "type_of_packing": "case",
+            "unit_quantity": 6.0,
+            "price_per_packing": 20.28,
+            "price_per_item": 3.38
+          },
+          {
+            "quantity_of_packing": "6480",
+            "type_of_packing": "case",
+            "unit_quantity": 6.0,
+            "price_per_packing": 19.32,
+            "price_per_item": 3.22
+          }
+        ],
+        "sell_uom": [
+          {
+            "qty": "Quantity",
+            "price": "Price",
+            "unit": "Quantity"
+          },
+          {
+            "qty": "12",
+            "price": "$4.140",
+            "unit": "ea."
+          },
+          {
+            "qty": "96",
+            "price": "$3.780",
+            "unit": "ea."
+          },
+          {
+            "qty": "540",
+            "price": "$3.590",
+            "unit": "ea."
+          },
+          {
+            "qty": "1080",
+            "price": "$3.380",
+            "unit": "ea."
+          },
+          {
+            "qty": "6480",
+            "price": "$3.220",
+            "unit": "ea."
+          }
+        ],
+        "avg_price_per_unit": 3.62,
+        "normalised_capacity(ml)": 946.35,
+        "original_uom": "oz",
+        "original_capacity": "32",
+        "normalised_uom": "ml",
+        "normalised_capacity": 946.35,
+        "capacity": 946.35,
+        "unit": "ml",
+        "color": "Amber",
+        "material": "Glass",
+        "shape": "Beer, Growler",
+        "category": "Glass",
+        "closure_type": "38-405",
+        "market_segment": "Beverage",
+        "product_origin": "United States",
+        "stock": "In Stock",
+        "product_industry": "Food & Beverage",
+        "product_description": " The 32 ounce beer growler uses a standard screw top closure and is made in the U.S. with amber glass and a flat bottom. "
+      },
+      "similarity": 0.8715552687281429
+    }
+  ],
+  "selected_product_data": {
+    "company": "TricorBraun",
+    "url": "https://www.tricorbraun.com/1-liter-clear-glass-arizona-liquor-bottle-18-5-mm-bar-top-neck-finish.html",
+    "sku": "284414",
+    "name": "1 Liter Clear Glass Arizona Liquor Bottle 18.5 mm Bar Top Neck Finish",
+    "price": 3.2,
+    "quantity_breaks": [
+      {
+        "quantity_of_packing": 1,
+        "type_of_packing": "Pallet",
+        "price_per_packing": 2535.64,
+        "price_per_item": 3.2
+      }
+    ],
+    "sell_uom": [
+      {
+        "qty_range": "1 Pallet",
+        "unit": "Pallet",
+        "price": "$2,535.64",
+        "price_per_unit": "$3.20"
+      }
+    ],
+    "avg_price_per_unit": 3.2,
+    "normalised_capacity(ml)": 1000.0,
+    "original_uom": "liter",
+    "original_capacity": "1",
+    "normalised_uom": "ml",
+    "normalised_capacity": 1000.0,
+    "capacity": 1000.0,
+    "unit": "ml",
+    "color": "Clear",
+    "material": "Glass",
+    "shape": "Round",
+    "category": "Glass",
+    "closure_type": "18.5mm",
+    "market_segment": "Beverage",
+    "product_origin": "India",
+    "stock": "Item is currently estimated to ship within 2 - 3 weeks.",
+    "items_per_unit": 792
+  },
+  "selected_companies": [
+    "Berlin Packaging",
+    "Cary Company"
+  ],
+  "exclude_zero_price": true
+}

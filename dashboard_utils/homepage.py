@@ -12,15 +12,20 @@ from dashboard_utils.utils import (
     get_capacity_bin,
     get_pricing_bin,
 )
+from st_aggrid import AgGrid, GridOptionsBuilder, GridUpdateMode
 
 
 def show_homepage(companies_data):
     """Display homepage with company overview"""
-    st.header("📊 Company Overview")
+    st.header("Company Overview")
 
     # Company selection
     company_names = list(companies_data.keys())
-    selected_company = st.selectbox("Select Company", company_names)
+    st.subheader("Select a Company:")
+    selected_company = st.selectbox(
+        "Select Company", company_names, label_visibility="collapsed"
+    )
+    st.info(f"Now viewing data of : ***{selected_company}***")
 
     if selected_company:
         company_data = companies_data[selected_company]
@@ -28,88 +33,86 @@ def show_homepage(companies_data):
 
         # Overview metrics
         col1, col2, col3, col4 = st.columns(4)
-
         with col1:
-            st.metric(label="Total SKUs", value=len(df), delta=None)
-
+            st.metric(label="Total SKUs", value=len(df))
         with col2:
-            df_nonzero_price = df[df["price"] > 0]
-            avg_price = df_nonzero_price["price"].mean()
-            st.metric(label="Average Price", value=f"${avg_price:.2f}", delta=None)
-            st.caption(
-                f"Avg computed from {len(df_nonzero_price)} products (price > 0)"
-            )
-
+            avg_price = df["price"].mean()
+            st.metric(label="Average Price", value=f"${avg_price:.2f}")
         with col3:
             unique_categories = df["category"].nunique()
-            st.metric(label="Categories (Glass)", value=unique_categories, delta=None)
-
+            st.metric(label="Categories (Glass)", value=unique_categories)
         with col4:
-            out_of_stock_count = len(
-                df[df["stock"].str.contains("out of stock", case=False, na=False)]
+            in_stock_count = len(
+                df[df["stock"].str.contains("In stock", case=False, na=False)]
             )
+            st.metric(label="In Stock", value=f"{in_stock_count}/{len(df)}")
 
-            st.metric(
-                label="In Stock", value=f"{len(df) - (out_of_stock_count)}", delta=None
-            )
+        display_product_table(df, selected_company)
 
-        # Product table
-        st.subheader(f"📋 {selected_company} Products")
-
-        # Display columns
-        display_columns = [
-            "sku",
-            "name",
-            "original_uom",
-            "original_capacity",
-            "normalised_capacity(ml)",
-            "avg_price_per_unit",
-            "color",
-            "category",
-            "material",
-            "shape",
-            "stock",
-        ]
-        display_df = df[display_columns].copy()
-        display_df.columns = [col for col in display_columns]
-
-        st.dataframe(display_df, width="stretch", hide_index=True)
-
-        # Sell UOM Data
         display_sell_uom_data(df, selected_company)
 
-        # Comparison metrics across all companies
-        st.subheader("🔀 Cross-Company Comparison")
+        display_cross_company_comparison(companies_data)
 
-        comparison_data = []
-        for company, data in companies_data.items():
-            df_comp = pd.DataFrame(data)
-            df_comp_nonzero = df_comp[df_comp["price"] > 0]
-            in_stock_count = (
-                df_comp["stock"].str.contains("In stock", case=False, na=False).sum()
-            )
-            out_of_stock_count = (
-                df_comp["stock"]
-                .str.contains("Out of stock", case=False, na=False)
-                .sum()
-            )
-            comparison_data.append(
-                {
-                    "Company": company,
-                    "Total SKUs": len(df_comp),
-                    "Avg Price": df_comp_nonzero["price"].mean(),
-                    "Avg Count": len(df_comp_nonzero),
-                    "Categories": df_comp["category"].nunique(),
-                    "Market Segments": df_comp["market_segment"].nunique(),
-                    "In Stock": in_stock_count,
-                    "Out of Stock": out_of_stock_count,
-                    "Uncertain Stock": len(df_comp)
-                    - (out_of_stock_count + in_stock_count),
-                }
-            )
 
-        comparison_df = pd.DataFrame(comparison_data)
-        st.dataframe(comparison_df, width="stretch")
+def display_product_table(df, selected_company):
+    """Display the product table with proper formatting."""
+    st.subheader(f"{selected_company} Products")
+
+    display_columns = [
+        "sku",
+        "name",
+        "original_uom",
+        "original_capacity",
+        "normalised_capacity(ml)",
+        "avg_price_per_unit",
+        "color",
+        "material",
+        "shape",
+        "stock",
+    ]
+    display_df = df[display_columns].copy()
+
+    # Capitalize & beautify column names
+    display_df.columns = [
+        col.replace("_", " ").replace("(", " (").title().replace(" )", ")")
+        for col in display_columns
+    ]
+
+    render_bold_table(display_df, height=500, key=f"product_table_{selected_company}")
+
+
+def display_cross_company_comparison(companies_data):
+    """Display comparison metrics across all companies."""
+    st.subheader("🏢 Cross-Company Comparison")
+
+    comparison_data = []
+
+    for company, data in companies_data.items():
+        df_comp = pd.DataFrame(data)
+        df_comp_nonzero = df_comp[df_comp["price"] > 0]
+        in_stock_count = (
+            df_comp["stock"].str.contains("In stock", case=False, na=False).sum()
+        )
+        out_of_stock_count = (
+            df_comp["stock"].str.contains("Out of stock", case=False, na=False).sum()
+        )
+        comparison_data.append(
+            {
+                "Company": company,
+                "Total SKUs": len(df_comp),
+                "Avg Price": round(df_comp_nonzero["price"].mean(), 4),
+                "Avg Count": len(df_comp_nonzero),
+                "Categories": df_comp["category"].nunique(),
+                "Market Segments": df_comp["market_segment"].nunique(),
+                "In Stock": in_stock_count,
+                "Out of Stock": out_of_stock_count,
+                "Uncertain Stock": len(df_comp) - (out_of_stock_count + in_stock_count),
+            }
+        )
+
+    comparison_df = pd.DataFrame(comparison_data)
+    comparison_df.columns = [col.title() for col in comparison_df.columns]
+    render_bold_table(comparison_df, height=150, key="cross_company_table")
 
 
 def display_sell_uom_data(df, selected_company):
@@ -119,7 +122,7 @@ def display_sell_uom_data(df, selected_company):
     """
     col1, col2 = st.columns(2)
     with col1:
-        st.subheader(f"💰 {selected_company} Pricing Data")
+        st.subheader(f"{selected_company} Pricing Data")
     with col2:
         # Count total pricing entries and products with pricing breaks
         total_products = len(df)
@@ -138,9 +141,9 @@ def display_sell_uom_data(df, selected_company):
         )
 
         st.info(
-            f"Total pricing tiers entries: {total_pricing_entries}  \n"
-            f"Products with pricing tiers: {total_products_with_pricing}  (out of {total_products})  \n"
-            f"Avg pricing tiers per product: {avg_pricing_per_product:.2f}"
+            f"Total pricing tiers entries: ***{total_pricing_entries}***     \n"
+            f"Products with pricing tiers: ***{total_products_with_pricing}***     (out of {total_products})  \n"
+            f"Avg pricing tiers per product: ***{avg_pricing_per_product:.2f}***"
         )
 
     # Filter options
@@ -154,7 +157,7 @@ def display_sell_uom_data(df, selected_company):
 
     # Search functionality
     search_term = st.text_input(
-        "🔍 Search by SKU, Product Name, or Quantity:",
+        "Search by SKU, Product Name, or Quantity:",
         placeholder="Enter SKU, product name, or quantity to filter...",
         key=f"search_uom_{selected_company}",
     )
@@ -222,9 +225,7 @@ def display_sell_uom_data(df, selected_company):
         quantity_breaks = len(product.get("quantity_breaks", []))
 
         # Create expander title
-        with st.expander(
-            f"📦 {product_name} → {quantity_breaks} tiers", expanded=False
-        ):
+        with st.expander(f"{product_name} → {quantity_breaks} tiers", expanded=False):
             # Product basic info
             # Refactored: Use 3 columns for basic info (Product, SKU, Avg Price), factored out repeated get
             col1, col2, col3 = st.columns([2, 1, 1])
@@ -242,7 +243,7 @@ def display_sell_uom_data(df, selected_company):
 
             # Display quantity breaks/pricing tiers
             if product.get("quantity_breaks"):
-                st.markdown("**📊 Pricing Tiers:**")
+                st.markdown("**Pricing Tiers:**")
 
                 # Create table for pricing tiers
                 tier_data = []
@@ -272,3 +273,71 @@ def display_sell_uom_data(df, selected_company):
                     st.info("No pricing tier data available for this product.")
             else:
                 st.info("No pricing data available for this product.")
+
+
+def render_bold_table(df: pd.DataFrame, height: int = 300, key: str = None):
+    """Render AgGrid table with bold headers and right-aligned filters."""
+    df.columns = [
+        col.replace("(Ml)", "(ml)").replace("(ML)", "(ml)") for col in df.columns
+    ]
+
+    gb = GridOptionsBuilder.from_dataframe(df)
+    gb.configure_default_column(
+        headerClass="bold-header",
+        resizable=True,
+        sortable=True,
+        filter=True,
+        wrapHeaderText=True,
+        autoHeaderHeight=True,
+    )
+
+    # Columns needing right-aligned filters
+    right_align_filter_cols = [
+        "Normalised Capacity (ml)",
+        "Avg Price Per Unit",
+        "Total Skus",
+        "Categories",
+        "Avg Price",
+        "Market Segments",
+    ]
+
+    for col in df.columns:
+        if col in right_align_filter_cols:
+            gb.configure_column(col, headerClass="right-filter-header")
+
+    grid_options = gb.build()
+
+    custom_css = {
+        ".ag-header-cell-text": {
+            "font-weight": "bold !important",
+            "color": "black !important",
+        },
+        ".ag-header-cell-label": {
+            "justify-content": "flex-start !important",
+        },
+        ".ag-header-cell.right-filter-header .ag-header-cell-label": {
+            "display": "flex !important",
+            "justify-content": "space-between !important",
+            "flex-direction": "row !important",
+        },
+        ".ag-header": {
+            "background-color": "#f7f7f7 !important",
+            "border-bottom": "1px solid #ddd !important",
+        },
+        ".ag-root-wrapper": {
+            "border": "1px solid #e0e0e0 !important",
+            "border-radius": "6px !important",
+        },
+    }
+
+    AgGrid(
+        df,
+        gridOptions=grid_options,
+        update_mode=GridUpdateMode.NO_UPDATE,
+        fit_columns_on_grid_load=True,
+        enable_enterprise_modules=False,
+        custom_css=custom_css,
+        theme="streamlit",
+        height=height,
+        key=key,
+    )

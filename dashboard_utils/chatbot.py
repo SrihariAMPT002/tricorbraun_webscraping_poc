@@ -33,14 +33,14 @@ def query_products(query_text: str, k: int = 5) -> List[Dict]:
 
 def show_chatbot():
     """Display chatbot interface with Pinecone search"""
-    st.header("🤖 AI Assistant")
+    st.header("AI Assistant")
 
     st.info(
-        "🔍 Ask questions about glass products and get instant results using semantic search powered by Google Gemini embeddings."
+        "Ask questions about glass products and get instant results using semantic search powered by Google Gemini embeddings."
     )
 
     # Sample usage cards
-    st.subheader("💡 Sample Usage Examples")
+    st.subheader("Sample Usage Examples")
 
     col1, col2 = st.columns(2)
 
@@ -48,7 +48,7 @@ def show_chatbot():
         st.markdown(
             """
         <div class="company-card">
-            <h4>🔍 Product Comparison</h4>
+            <h4> Product Comparison</h4>
             <p><strong>Example:</strong> "Compare prices for 500ml jars"</p>
             <p><strong>Response:</strong> Would analyze pricing across all companies for 500ml capacity products</p>
         </div>
@@ -59,7 +59,7 @@ def show_chatbot():
         st.markdown(
             """
         <div class="company-card">
-            <h4>📊 Market Analysis</h4>
+            <h4>Market Analysis</h4>
             <p><strong>Example:</strong> "Show SKUs under Pharma segment"</p>
             <p><strong>Response:</strong> Would filter and display all pharmaceutical products</p>
         </div>
@@ -71,7 +71,7 @@ def show_chatbot():
         st.markdown(
             """
         <div class="company-card">
-            <h4>💰 Pricing Insights</h4>
+            <h4>Pricing Insights</h4>
             <p><strong>Example:</strong> "What's the average price for amber bottles?"</p>
             <p><strong>Response:</strong> Would calculate and display pricing statistics for amber glass products</p>
         </div>
@@ -82,7 +82,7 @@ def show_chatbot():
         st.markdown(
             """
         <div class="company-card">
-            <h4>📈 Trend Analysis</h4>
+            <h4>Trend Analysis</h4>
             <p><strong>Example:</strong> "Which company has the most diverse assortment?"</p>
             <p><strong>Response:</strong> Would analyze and compare assortment diversity metrics</p>
         </div>
@@ -91,7 +91,7 @@ def show_chatbot():
         )
 
     # Chat interface
-    st.subheader("💬 Chat Interface")
+    st.subheader("Chat Interface")
 
     # Chat input
     user_input = st.text_input(
@@ -106,11 +106,11 @@ def show_chatbot():
                 results = query_products(user_input, k=5)
 
                 if results:
-                    st.success(f"🤖 **Found {len(results)} matching products:**")
+                    st.success(f"**Found {len(results)} matching products:**")
 
                     # Display results
                     for i, product in enumerate(results, 1):
-                        with st.expander(f"🧴 {i}. {product['name']}", expanded=False):
+                        with st.expander(f"{i}. {product['name']}", expanded=False):
                             st.markdown(
                                 f"**Product:** [{product['name']}]({product['url']})"
                             )

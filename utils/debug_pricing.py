@@ -78,8 +78,7 @@ def extract_berlin_pricing(sell_uom, packing_unit_quantity: Optional[str]):
 
 
 berlin_price = [
-    {"qty_range": "Pallet (Qty 9,216)", "price": "Price Per Pallet", "header": "true"},
-    {"qty_range": "1+", "price": "$3,499.63", "price_per_unit": "$0.38 ea."},
+    {"qty_range": "924", "price": "$1071.84", "price_per_unit": "$1.15 ea."}
 ]
 print(extract_berlin_pricing(berlin_price, "9,216"))
 

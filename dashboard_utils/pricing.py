@@ -3,19 +3,14 @@ Pricing Analysis UI utilities.
 This module contains all functions related to pricing intelligence and analysis.
 """
 
+from dashboard_utils.fuzzy_matching import normalize_capacity_fuzzy
 import streamlit as st, pandas as pd, plotly.express as px
-from typing import Dict
 import plotly.graph_objects as go
-from .data_utils import (
-    get_capacity_analysis_data,
-    show_case_price_tier_chart,
-)
-from .fuzzy_matching import fuzzy_product_match
 
 
 def show_pricing_intelligence(companies_data):
     """Display pricing intelligence dashboard"""
-    st.header("💰 Pricing Analysis Dashboard")
+    st.header("Pricing Analysis Dashboard")
 
     # Combine all data for analysis
     all_data = []
@@ -28,15 +23,193 @@ def show_pricing_intelligence(companies_data):
     # Calculate normalized prices
     df_all = get_capacity_analysis_data(companies_data)
 
-    # Average price by capacity range
-    st.subheader("💰 Average Price by Capacity Range")
+    with st.expander("Average Price by Capacity Range", expanded=True):
+        fig_bins = build_avg_price_by_capacity_range(df_all)
+        st.plotly_chart(fig_bins, config={"responsive": True})
 
-    # Filter out rows with price <= 0 or price is null/NaN before averaging
+    with st.expander("Min–Max Price Range by Capacity Bin", expanded=False):
+        fig_minmax = build_minmax_price_range_by_capacity_bin(df_all)
+        st.plotly_chart(fig_minmax, config={"responsive": True})
+
+    with st.expander("Average Price by Category and Company", expanded=False):
+        fig_category = build_avg_price_by_category(df_all)
+        st.plotly_chart(fig_category, config={"responsive": True})
+
+    with st.expander("Case Price Tiers (Min vs Max)", expanded=False):
+        show_case_price_tier_chart(all_data)
+
+
+def get_capacity_analysis_data(companies_data):
+    """Get capacity analysis data with normalized values"""
+    all_data = []
+    for company, data in companies_data.items():
+        all_data.extend(data)
+
+    df_all = pd.DataFrame(all_data)
+
+    # Calculate normalized capacity in ml
+    df_all["capacity_ml"] = df_all.apply(
+        lambda x: normalize_capacity_fuzzy(x["capacity"], x["unit"]), axis=1
+    )
+    df_all["price_per_100ml"] = df_all["price"] / df_all["capacity_ml"] * 100
+
+    # Create capacity ranges
+    df_all["capacity_range"] = pd.cut(
+        df_all["capacity_ml"],
+        bins=[0, 50, 100, 250, 500, 1000, float("inf")],
+        labels=[
+            "0-50ml",
+            "50-100ml",
+            "100-250ml",
+            "250-500ml",
+            "500-1000ml",
+            "1000ml+",
+        ],
+    )
+
+    return df_all
+
+
+def get_case_price_bin_data(product_list):
+    """Aggregate min/max Case price per company grouped by capacity bins."""
+    import streamlit as st
+
+    records = []
+
+    for product in product_list:
+        company = product.get("company", "")
+        cap_ml = product.get("capacity", "")
+        quantity_breaks = product.get("quantity_breaks", [])
+        if not cap_ml or not company:
+            continue
+        prices = []
+        min_price = 0
+        max_price = 0
+        for tier in quantity_breaks:
+            if tier.get("type_of_packing") == None:
+                print(product.get("sku"))
+                continue
+            if tier.get("type_of_packing", "").lower() == "case":
+                prices.append(tier.get("price_per_packing"))
+                min_price = min(prices)
+                max_price = max(prices)
+        records.append(
+            {
+                "company": company,
+                "capacity_ml": float(cap_ml),
+                "min_price": min_price,
+                "max_price": max_price,
+            }
+        )
+
+    df = pd.DataFrame(records)
+    if df.empty:
+        st.warning("⚠️ No valid Case pricing data found.")
+        return df
+
+    df["capacity_bin"] = pd.cut(
+        df["capacity_ml"],
+        bins=[0, 50, 100, 250, 500, 1000, float("inf")],
+        labels=[
+            "0-50ml",
+            "50-100ml",
+            "100-250ml",
+            "250-500ml",
+            "500-1000ml",
+            "1000ml+",
+        ],
+        right=False,
+    )
+
+    df_summary = (
+        df.groupby(["company", "capacity_bin"], observed=True)[
+            ["min_price", "max_price"]
+        ]
+        .mean()
+        .reset_index()
+    )
+
+    df_summary = df_summary.melt(
+        id_vars=["company", "capacity_bin"],
+        value_vars=["min_price", "max_price"],
+        var_name="Price Type",
+        value_name="Price ($)",
+    )
+
+    return df_summary
+
+
+def show_case_price_tier_chart(json_data):
+    import streamlit as st
+
+    """Render bar graph of Min/Max Case prices grouped by capacity bins."""
+    df_summary = get_case_price_bin_data(json_data)
+    if df_summary.empty:
+        return
+
+    fig = px.bar(
+        df_summary,
+        x="capacity_bin",
+        y="Price ($)",
+        color="Price Type",
+        barmode="group",
+        facet_col="company",
+        title="Case Price Tiers by Capacity Range (ml)",
+        labels={
+            "capacity_bin": "Capacity Range (ml)",
+            "Price ($)": "Average Case Price ($)",
+        },
+        text_auto=".2f",
+    )
+
+    fig.update_layout(
+        bargap=0.25,
+        xaxis_tickangle=-30,
+        plot_bgcolor="rgba(0,0,0,0)",
+        paper_bgcolor="rgba(0,0,0,0)",
+        legend_title_text="Price Type",
+        title_x=0.35,
+    )
+
+    st.plotly_chart(fig, use_container_width=True)
+
+
+def create_price_distribution_multiline_chart(pricing_df):
+    """Create a multi-line chart for price distribution by company"""
+    # Group by company and quantity to get average prices
+    company_price_trends = (
+        pricing_df.groupby(["Company", "Quantity"])["Price"].mean().reset_index()
+    )
+
+    # Create multi-line chart
+    fig = px.line(
+        company_price_trends,
+        x="Quantity",
+        y="Price",
+        color="Company",
+        title="Price Distribution by Company (Multi-line Chart)",
+        labels={"Quantity": "Quantity Tier", "Price": "Average Price ($)"},
+        markers=True,
+    )
+
+    # Update layout for better readability
+    fig.update_layout(
+        xaxis_title="Quantity Tier",
+        yaxis_title="Average Price ($)",
+        hovermode="x unified",
+        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
+    )
+
+    return fig
+
+
+def build_avg_price_by_capacity_range(df_all: pd.DataFrame):
+    """Build bar chart for average price by capacity range per company."""
     df_valid_prices = df_all[
         df_all["price"].notnull() & df_all["price"].notna() & (df_all["price"] > 0)
     ]
     capacity_bin_prices = (
-        df_valid_prices.groupby(["company", "capacity_range"])["price"]
+        df_valid_prices.groupby(["company", "capacity_range"], observed=True)["price"]
         .mean()
         .reset_index(name="avg_price")
     )
@@ -57,12 +230,11 @@ def show_pricing_intelligence(companies_data):
             "capacity_range": "Capacity Range",
         },
     )
-    st.plotly_chart(fig_bins, width="stretch")
+    return fig_bins
 
-    # --- 📈 Min–Max Price by Capacity Bin and Company ---
-    st.subheader("📈 Price Range (Min–Max) by Capacity Bin and Company")
 
-    # Define fixed capacity bins
+def build_minmax_price_range_by_capacity_bin(df_all: pd.DataFrame):
+    """Build min–max price range error-bar chart by capacity bin per company."""
     capacity_bins = [
         "0-50ml",
         "50-100ml",
@@ -72,14 +244,13 @@ def show_pricing_intelligence(companies_data):
         "1000ml+",
     ]
 
-    # Group to get min and max price for each company and capacity range
     # Filter out rows where avg_price_per_unit is null/NaN or zero
     df_filtered = df_all[
         df_all["avg_price_per_unit"].notna() & (df_all["avg_price_per_unit"] != 0)
     ]
 
     minmax_df = (
-        df_filtered.groupby(["company", "capacity_range"])
+        df_filtered.groupby(["company", "capacity_range"], observed=True)
         .agg(
             min_price=("avg_price_per_unit", "min"),
             max_price=("avg_price_per_unit", "max"),
@@ -92,10 +263,6 @@ def show_pricing_intelligence(companies_data):
         minmax_df["capacity_range"], categories=capacity_bins, ordered=True
     )
 
-    # # Optional: show the computed table
-    # st.dataframe(minmax_df.sort_values(["company", "capacity_range"]))
-
-    # --- Create Plotly figure (Error Bar Style) ---
     fig_minmax = go.Figure()
 
     for company in minmax_df["company"].unique():
@@ -136,7 +303,7 @@ def show_pricing_intelligence(companies_data):
         )
 
     fig_minmax.update_layout(
-        title="Min–Max Price Range by Capacity Bin and Company",
+        title="Min–Max Price Range by Capacity Bin",
         xaxis_title="Capacity Range",
         yaxis_title="Price ($)",
         legend_title="Company",
@@ -145,15 +312,17 @@ def show_pricing_intelligence(companies_data):
         height=500,
     )
 
-    st.plotly_chart(fig_minmax, use_container_width=True)
+    return fig_minmax
 
-    # Average price by category
-    st.subheader("📊 Average Price by Category")
 
+def build_avg_price_by_category(df_all: pd.DataFrame):
+    """Build bar chart for average price by category per company."""
     category_prices = (
-        df_all.groupby(["company", "category"])["price"].mean().reset_index()
+        df_all.groupby(["company", "category"], observed=True)["price"]
+        .mean()
+        .reset_index()
     )
-    fig = px.bar(
+    fig_category = px.bar(
         category_prices,
         x="category",
         y="price",
@@ -166,80 +335,4 @@ def show_pricing_intelligence(companies_data):
         title="Average Price by Category and Company",
         barmode="group",
     )
-    st.plotly_chart(fig, width="stretch")
-
-    st.markdown("### 🧮 Case Price Tiers (Min vs Max)")
-    show_case_price_tier_chart(all_data)  # ✅ FIXED: call inside function
-
-    # Fuzzy matching demonstration
-    st.subheader("🔍 Product Similarity Matching")
-
-    col1, col2 = st.columns(2)
-
-    with col1:
-        st.write("**Select Company 1:**")
-        company1 = st.selectbox("Company 1", list(companies_data.keys()), key="comp1")
-        if company1:
-            products1 = companies_data[company1]
-            product1 = st.selectbox(
-                "Product 1", [p["name"] for p in products1], key="prod1"
-            )
-
-    with col2:
-        st.write("**Select Company 2:**")
-        company2 = st.selectbox("Company 2", list(companies_data.keys()), key="comp2")
-        if company2:
-            products2 = companies_data[company2]
-            product2 = st.selectbox(
-                "Product 2", [p["name"] for p in products2], key="prod2"
-            )
-
-    if st.button("Calculate Similarity"):
-        if "product1" in locals() and "product2" in locals():
-            p1_data = next(p for p in products1 if p["name"] == product1)
-            p2_data = next(p for p in products2 if p["name"] == product2)
-
-            similarity_score = fuzzy_product_match(p1_data, p2_data)
-
-            st.success(f"**Similarity Score: {similarity_score:.2%}**")
-
-            # Display product details
-            col1, col2 = st.columns(2)
-            with col1:
-                st.write(f"**{product1}**")
-                st.write(f"Capacity: {p1_data['capacity']} {p1_data['unit']}")
-                st.write(f"Price: ${p1_data['price']:.2f}")
-
-            with col2:
-                st.write(f"**{product2}**")
-                st.write(f"Capacity: {p2_data['capacity']} {p2_data['unit']}")
-                st.write(f"Price: ${p2_data['price']:.2f}")
-
-
-def create_price_distribution_multiline_chart(pricing_df):
-    """Create a multi-line chart for price distribution by company"""
-    # Group by company and quantity to get average prices
-    company_price_trends = (
-        pricing_df.groupby(["Company", "Quantity"])["Price"].mean().reset_index()
-    )
-
-    # Create multi-line chart
-    fig = px.line(
-        company_price_trends,
-        x="Quantity",
-        y="Price",
-        color="Company",
-        title="Price Distribution by Company (Multi-line Chart)",
-        labels={"Quantity": "Quantity Tier", "Price": "Average Price ($)"},
-        markers=True,
-    )
-
-    # Update layout for better readability
-    fig.update_layout(
-        xaxis_title="Quantity Tier",
-        yaxis_title="Average Price ($)",
-        hovermode="x unified",
-        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
-    )
-
-    return fig
+    return fig_category

@@ -31,8 +31,8 @@ def get_pinecone_vectorstore():
 def setup_page_config():
     """Configure Streamlit page settings"""
     st.set_page_config(
-        page_title="Packing Competitor Analysis Dashboard",
-        page_icon="📦",
+        page_title="TricorBraun Packing Competitor Analysis Dashboard",
+        page_icon="",
         layout="wide",
         initial_sidebar_state="expanded",
     )
@@ -101,7 +101,7 @@ def apply_custom_styling():
 def create_header():
     """Create the main dashboard header"""
     st.markdown(
-        '<h1 class="main-header">📦 Packing Competitor Analysis Dashboard</h1>',
+        '<h1 class="main-header">TricorBraun Packing Competitor Analysis Dashboard</h1>',
         unsafe_allow_html=True,
     )
 
@@ -114,34 +114,28 @@ def create_navigation_menu():
 
     # Create sidebar navigation
     with st.sidebar:
-        st.markdown("##  Side Bar Navigation")
-        st.markdown("---")
-
-        if st.button("🏠 Homepage", key="homepage_btn", width="stretch"):
+        st.markdown("***Pages:***")
+        if st.button("Homepage", key="homepage_btn", width="stretch"):
             st.session_state.page = "Homepage"
             st.rerun()
 
-        if st.button("💰 Pricing Analysis", key="pricing_btn", width="stretch"):
+        if st.button("Pricing Analysis", key="pricing_btn", width="stretch"):
             st.session_state.page = "Pricing Analysis"
             st.rerun()
 
         if st.button(
-            "📦 Assortment Analysis",
+            "Assortment Analysis",
             key="assortment_btn",
             width="stretch",
         ):
             st.session_state.page = "Assortment Analysis"
             st.rerun()
 
-        if st.button("🔍 Product Matching", key="matching_btn", width="stretch"):
+        if st.button("Product Matching", key="matching_btn", width="stretch"):
             st.session_state.page = "Product Matching"
             st.rerun()
 
-        if st.button("🔍 All Similar Products", key="all_similar_btn", width="stretch"):
-            st.session_state.page = "All Similar Products"
-            st.rerun()
-
-        if st.button("🤖 Chatbot", key="chatbot_btn", width="stretch"):
+        if st.button("Chatbot", key="chatbot_btn", width="stretch"):
             st.session_state.page = "Chatbot"
             st.rerun()
 

@@ -4862,7 +4862,13 @@
       "expected_ship": "Ships In 3 - 4 Business Days",
       "free_shipping": "Free Shipping available for orders of $300+.See Terms."
     },
-    "product_sell_uom": [],
+    "product_sell_uom": [
+      {
+        "qty_range": "924",
+        "price": "$1071.84",
+        "price_per_unit": "$1.15 ea."
+      }
+    ],
     "product_specs": {
       "Pallet Qty": "924",
       "Capacity": "1 L",
