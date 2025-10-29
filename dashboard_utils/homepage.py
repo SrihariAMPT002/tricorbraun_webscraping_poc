@@ -4,7 +4,7 @@ This module contains all functions related to the homepage display.
 """
 
 import streamlit as st
-import pandas as pd
+import pandas as pd, numpy as np
 from typing import Dict
 from dashboard_utils.utils import (
     get_product_capacity_bins,
@@ -38,7 +38,7 @@ def show_homepage(companies_data):
             avg_price = df["price"].mean()
             st.metric(label="Average Price", value=f"${avg_price:.2f}")
         with col3:
-            unique_categories = df["category"].nunique()
+            unique_categories = df["category"].replace("", np.nan).nunique()
             st.metric(label="Categories (Glass)", value=unique_categories)
         with col4:
             in_stock_count = len(
@@ -101,7 +101,7 @@ def display_cross_company_comparison(companies_data):
                 "Total SKUs": len(df_comp),
                 "Avg Price": round(df_comp_nonzero["price"].mean(), 4),
                 "Avg Count": len(df_comp_nonzero),
-                "Categories": df_comp["category"].nunique(),
+                "Categories": df_comp["category"].replace("", np.nan).nunique(),
                 "Market Segments": df_comp["market_segment"].nunique(),
                 "In Stock": in_stock_count,
                 "Out of Stock": out_of_stock_count,

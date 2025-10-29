@@ -317,8 +317,12 @@ def build_minmax_price_range_by_capacity_bin(df_all: pd.DataFrame):
 
 def build_avg_price_by_category(df_all: pd.DataFrame):
     """Build bar chart for average price by category per company."""
+    import numpy as np
+
+    df_clean = df_all.copy()
+    df_clean["category"] = df_clean["category"].replace("", np.nan)
     category_prices = (
-        df_all.groupby(["company", "category"], observed=True)["price"]
+        df_clean.groupby(["company", "category"], observed=True)["price"]
         .mean()
         .reset_index()
     )
