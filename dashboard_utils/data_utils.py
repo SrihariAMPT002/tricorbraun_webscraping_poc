@@ -4,21 +4,34 @@ This module contains all data loading, processing, and analysis functions.
 """
 
 import json, re, pandas as pd, pint, plotly.express as px
+import streamlit as st
 from rapidfuzz import fuzz
 from typing import Optional
 from .utils import build_product_record
+from .fuzzy_matching import (
+    normalize_capacity_fuzzy,
+    fuzzy_product_match,
+    get_capacity_bracket,
+    group_products_by_capacity,
+    filter_products_by_price,
+    filter_products_by_search,
+    find_all_similar_products,
+    get_similarity_summary,
+    find_similar_products_with_capacity_binning,
+)
 
 # Initialize unit registry for capacity normalization
 ureg = pint.UnitRegistry()
 
 
+@st.cache_data
 def load_data():
     """Load and process all company data"""
     companies = {}
 
     # Load Berlin Packaging data
     try:
-        with open("demo_batch_data/berlin_packing_all_data_normalized.json", "r") as f:
+        with open("demo_batch_data/berlin_new_data_normalised.json", "r") as f:
             berlin_data = json.load(f)
             companies["Berlin Packaging"] = process_berlin_data(berlin_data)
     except FileNotFoundError:
@@ -36,7 +49,7 @@ def load_data():
 
     # Load TricorBraun data
     try:
-        with open("demo_batch_data/tricorbraun_all_data_normalized.json", "r") as f:
+        with open("demo_batch_data/tricorbraun_new_data_normalized.json", "r") as f:
             tricor_data = json.load(f)
             companies["TricorBraun"] = process_tricor_data(tricor_data)
     except FileNotFoundError:
@@ -68,10 +81,10 @@ def process_berlin_data(data):
         )
         # Extract pricing
         packing_unit_capacity = item.get("product_specs", {}).get(
-            "Case Qty "
-        ) or item.get("product_specs", {}).get("Pallet Qty ")
-        pricing = extract_berlin_pricing(
-            item.get("product_sell_uom", []), packing_unit_capacity
+            "Case Qty"
+        ) or item.get("product_specs", {}).get("Pallet Qty")
+        pricing = extract_pricing_data(
+            "berlin", item.get("product_sell_uom", []), packing_unit_capacity
         )
         record = build_product_record(
             company="Berlin Packaging",
@@ -85,11 +98,11 @@ def process_berlin_data(data):
             ),
             sell_uom_key="product_sell_uom",
             spec_keys={
-                "color": "Color ",
-                "material": "Material Type ",
-                "shape": "Shape ",
-                "category": "Material Group ",
-                "closure_type": "Neck Finish ",
+                "color": "Color",
+                "material": "Material Type",
+                "shape": "Shape",
+                "category": "Material Group",
+                "closure_type": "Neck Finish",
             },
             availability_keys=[
                 ("product_availability", "in_stock"),
@@ -97,7 +110,7 @@ def process_berlin_data(data):
             ],
             url_key="product_url",
             extras={
-                "items_per_unit": item.get("product_specs", {}).get("Case Qty ", "")
+                "items_per_unit": item.get("product_specs", {}).get("Case Qty", "")
                 or item.get("product_specs", {}).get("Pallet Qty", ""),
             },
         )
@@ -126,8 +139,8 @@ def process_cary_data(data):
         )
         packing_details = item.get("product_packing_details", {})
         product_notes = item.get("product_notes", [])
-        pricing = extract_cary_pricing(
-            item.get("product_sell_uom", []), packing_details, product_notes
+        pricing = extract_pricing_data(
+            "cary", item.get("product_sell_uom", []), packing_details, product_notes
         )
         record = build_product_record(
             company="Cary Company",
@@ -177,7 +190,7 @@ def process_tricor_data(data):
         items_per_unit_value = (
             int(items_per_unit_match.group(1)) if items_per_unit_match else 1
         )
-        pricing = extract_tricor_pricing(item.get("product_selluom", []))
+        pricing = extract_pricing_data("tricor", item.get("product_selluom", []))
         record = build_product_record(
             company="TricorBraun",
             item=item,
@@ -197,7 +210,7 @@ def process_tricor_data(data):
                 "closure_type": "Neck Finish",
                 "product_origin": "Country of Origin",
             },
-            availability_keys=[("product_availability", "in_stock")],
+            availability_keys=[("product_availability", "availability_text")],
             url_key="product_url",
             extras={"items_per_unit": items_per_unit_value},
         )
@@ -229,22 +242,31 @@ def get_normalised_data(product_normalised_data):
     return "N/A", 0, "N/A", 0
 
 
+# --- Shared Utilities ---
+def parse_float(value):
+    if not value:
+        return 0.0
+    value = re.sub(r"[^\d.]", "", str(value))
+    try:
+        return float(value)
+    except ValueError:
+        return 0.0
+
+
+def parse_count(value):
+    if not value:
+        return 0
+    try:
+        return float(re.sub(r"[^\d.]", "", str(value)))
+    except ValueError:
+        return 0
+
+
+# --- Berlin Packaging ---
 def extract_berlin_pricing(sell_uom, packing_unit_quantity: Optional[str]):
-    """Extract pricing from Berlin Packaging sell_uom data."""
     if not sell_uom:
         return {"base_price": 0, "breaks": []}
 
-    def parse_float(value):
-        """Safely extract float from a string like '$1,200.50' or 'N/A'."""
-        if not value:
-            return 0.0
-        value = re.sub(r"[^\d.]", "", str(value))
-        try:
-            return float(value)
-        except ValueError:
-            return 0.0
-
-    # Convert packing_unit_quantity (e.g., "12 ea.") → 12.0
     try:
         packing_unit_count = (
             float(re.sub(r"[^\d.]", "", packing_unit_quantity))
@@ -256,75 +278,70 @@ def extract_berlin_pricing(sell_uom, packing_unit_quantity: Optional[str]):
 
     breaks = []
     unit_prices = []
+    current_unit = None
+    current_unit_qty = None
 
     for tier in sell_uom:
         qty_range = tier.get("qty_range")
-        price_per_packing_str = tier.get("price")  # total case/pallet price
+        price_per_packing_str = tier.get("price")
         price_per_unit_str = tier.get("price_per_unit")
+        is_header = str(tier.get("header", "false")).lower() == "true"
+
+        if is_header:
+            match = re.match(
+                r"(\w+)\s*\(Qty\s*([\d,]+)\)", qty_range or "", re.IGNORECASE
+            )
+            if match:
+                current_unit = match.group(1).title()
+                current_unit_qty = float(match.group(2).replace(",", ""))
+            else:
+                current_unit = (qty_range or "").title()
+                current_unit_qty = 1.0
+            continue
 
         price_per_packing = parse_float(price_per_packing_str)
         price_per_unit = parse_float(price_per_unit_str)
 
-        # Case 1: Missing price_per_unit
         if not price_per_unit_str:
             if price_per_packing > 10 and packing_unit_count > 0:
                 price_per_unit = round(price_per_packing / packing_unit_count, 4)
             else:
                 price_per_unit = price_per_packing
 
-        # Case 2: Both present (explicit unit and packing prices)
-        # → we just ensure consistency and parsing
         if price_per_unit == 0 and price_per_packing > 0 and packing_unit_count > 0:
             price_per_unit = round(price_per_packing / packing_unit_count, 4)
 
         unit_prices.append(price_per_unit)
         breaks.append(
             {
-                "quantity": qty_range,
-                "price": price_per_packing,  # total case/pallet price
-                "price_per_unit": price_per_unit,
+                "quantity_of_packing": qty_range,
+                "type_of_packing": current_unit,
+                "price_per_packing": price_per_packing,
+                "price_per_item": price_per_unit,
+                "unit_quantity": current_unit_qty,
             }
         )
 
     base_price = round(sum(unit_prices) / len(unit_prices), 4) if unit_prices else 0
-
     return {"base_price": base_price, "breaks": breaks}
 
 
+# --- Cary Company ---
 def extract_cary_pricing(sell_uom, packing_details=None, product_notes=None):
-    """
-    Extract pricing from Cary Company sell_uom data.
-    - `price` is the total price per packing (case/pallet)
-    - `price_per_unit` is the derived price per single item
-    """
-
     if not sell_uom:
         return {"base_price": 0, "breaks": []}
 
-    def parse_count(value):
-        """Extract float count from text like '12 ea.' or '1,200 ea. (100 Cases)'."""
-        if not value:
-            return 0
-        try:
-            return float(re.sub(r"[^\d.]", "", str(value)))
-        except ValueError:
-            return 0
-
-    # --- Detect items per case/pallet ---
     items_per_case = 0
     items_per_pallet = 0
 
     if product_notes:
-        joined_notes = " ".join(product_notes).lower()
-        match_case_num = re.search(
-            r"(\d+)\s?(?:per\s?(?:case|box|carton))", joined_notes
-        )
-        if match_case_num:
-            items_per_case = float(match_case_num.group(1))
-
-        match_pallet_num = re.search(r"(\d+)\s?(?:per\s?pallet)", joined_notes)
-        if match_pallet_num:
-            items_per_pallet = float(match_pallet_num.group(1))
+        joined = " ".join(product_notes).lower()
+        case_match = re.search(r"(\d+)\s?(?:per\s?(?:case|box|carton))", joined)
+        pallet_match = re.search(r"(\d+)\s?(?:per\s?pallet)", joined)
+        if case_match:
+            items_per_case = float(case_match.group(1))
+        if pallet_match:
+            items_per_pallet = float(pallet_match.group(1))
 
     if not items_per_case and packing_details:
         items_per_case = parse_count(packing_details.get("Case Pack"))
@@ -340,42 +357,34 @@ def extract_cary_pricing(sell_uom, packing_details=None, product_notes=None):
             continue
 
         unit = (tier.get("unit") or "").strip().lower().rstrip(".")
-        price_str = tier.get("price") or ""
-        try:
-            price_value = float(re.sub(r"[^\d.]", "", price_str))
-        except ValueError:
-            continue
-
+        price_value = parse_float(tier.get("price"))
         price_per_unit = 0.0
 
-        # Case or pallet pricing → divide by quantity in that pack
         if unit == "case" and items_per_case > 0:
             price_per_unit = round(price_value / items_per_case, 4)
         elif unit == "pallet" and items_per_pallet > 0:
             price_per_unit = round(price_value / items_per_pallet, 4)
-        # If price is for single piece, then per-unit = same value
         elif unit in ["piece", "ea", "each", ""]:
             price_per_unit = round(price_value, 4)
         else:
-            continue  # skip unknown or unhandled units
+            continue
 
         unit_prices.append(price_per_unit)
         breaks.append(
             {
-                "quantity": qty_str,
-                "unit": unit,
-                "price": price_value,
-                "price_per_unit": price_per_unit,
+                "quantity_of_packing": qty_str,
+                "type_of_packing": unit,
+                "price_per_packing": price_value,
+                "price_per_item": price_per_unit,
             }
         )
 
-    base_price = round(sum(unit_prices) / len(unit_prices), 4) if unit_prices else 0.0
-
+    base_price = round(sum(unit_prices) / len(unit_prices), 4) if unit_prices else 0
     return {"base_price": base_price, "breaks": breaks}
 
 
+# --- TricorBraun ---
 def extract_tricor_pricing(selluom):
-    """Extract pricing from TricorBraun selluom data (handles 'Piece' units & nulls)."""
     if not selluom:
         return {"base_price": 0, "breaks": []}
 
@@ -383,30 +392,16 @@ def extract_tricor_pricing(selluom):
     unit_prices = []
 
     for item in selluom:
-        # Extract quantity (e.g., "110 Piece" → 110)
         qty_text = item.get("qty_range") or ""
         qty_match = re.search(r"(\d+)", qty_text)
         qty = int(qty_match.group(1)) if qty_match else 1
 
         unit = (item.get("unit") or "").strip()
-        price_text = item.get("price") or "$0"
-        price_match = re.search(r"([\d.,]+)", price_text)
-        price = float(price_match.group(1).replace(",", "")) if price_match else 0.0
+        price = parse_float(item.get("price"))
+        price_per_unit = parse_float(item.get("price_per_unit"))
 
-        # If price_per_unit exists and not null
-        price_per_unit_text = item.get("price_per_unit") or ""
-        price_per_unit_match = re.search(r"([\d.,]+)", price_per_unit_text)
-        price_per_unit = (
-            float(price_per_unit_match.group(1).replace(",", ""))
-            if price_per_unit_match
-            else 0.0
-        )
-
-        # If price_per_unit is missing/null and unit is "Piece", use price directly
         if unit.lower() == "piece" and not price_per_unit:
             price_per_unit = price
-
-        # If still 0 (fallback)
         if not price_per_unit and price > 0 and qty > 0:
             price_per_unit = round(price / qty, 4)
 
@@ -415,16 +410,27 @@ def extract_tricor_pricing(selluom):
 
         breaks.append(
             {
-                "quantity": qty,
-                "price": price,
-                "price_per_unit": price_per_unit,
-                "unit": unit or "Case",
+                "quantity_of_packing": qty,
+                "type_of_packing": unit,
+                "price_per_packing": price,
+                "price_per_item": price_per_unit,
             }
         )
 
-    base_price = round(sum(unit_prices) / len(unit_prices), 4) if unit_prices else 0.0
-
+    base_price = round(sum(unit_prices) / len(unit_prices), 4) if unit_prices else 0
     return {"base_price": base_price, "breaks": breaks}
+
+
+# --- Dispatcher ---
+def extract_pricing_data(company_name, *args, **kwargs):
+    name = company_name.lower()
+    if "berlin" in name:
+        return extract_berlin_pricing(*args, **kwargs)
+    elif "cary" in name:
+        return extract_cary_pricing(*args, **kwargs)
+    elif "tricor" in name:
+        return extract_tricor_pricing(*args, **kwargs)
+    return {"base_price": 0, "breaks": []}
 
 
 def categorize_product(product_name):
@@ -448,51 +454,6 @@ def categorize_product(product_name):
         return "Cosmetics"
     else:
         return "General"
-
-
-def normalize_capacity_fuzzy(value, unit):
-    """Normalize capacity to milliliters"""
-    try:
-        return (value * ureg(unit)).to("milliliter").magnitude
-    except:
-        return value
-
-
-def fuzzy_product_match(p1, p2):
-    """Calculate fuzzy match score between two products"""
-    name_score = fuzz.token_sort_ratio(p1["name"], p2["name"]) / 100
-
-    cap1 = normalize_capacity_fuzzy(p1["capacity"], p1["unit"])
-    cap2 = normalize_capacity_fuzzy(p2["capacity"], p2["unit"])
-    cap_score = 1 - min(abs(cap1 - cap2) / max(cap1, cap2, 1), 1)
-
-    price_score = 1 - min(
-        abs(p1["price"] - p2["price"]) / max(p1["price"], p2["price"], 1), 1
-    )
-
-    return 0.5 * name_score + 0.3 * cap_score + 0.2 * price_score
-
-
-def get_pricing_data_for_chart(companies_data):
-    """Extract pricing data for multi-line chart visualization"""
-    pricing_data = []
-
-    for company in companies_data.keys():
-        company_data = companies_data[company]
-        for product in company_data:
-            if product["quantity_breaks"]:
-                for break_item in product["quantity_breaks"]:
-                    pricing_data.append(
-                        {
-                            "Company": company,
-                            "SKU": product["sku"],
-                            "Product": product["name"],
-                            "Quantity": break_item["quantity"],
-                            "Price": break_item["price"],
-                        }
-                    )
-
-    return pricing_data
 
 
 def get_capacity_analysis_data(companies_data):

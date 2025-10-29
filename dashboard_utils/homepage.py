@@ -65,6 +65,7 @@ def show_homepage(companies_data):
             "normalised_capacity(ml)",
             "avg_price_per_unit",
             "color",
+            "category",
             "material",
             "shape",
             "stock",
@@ -187,7 +188,7 @@ def display_sell_uom_data(df, selected_company):
                     search_term.lower() in str(product.get("name", "")).lower(),
                     any(
                         search_term.lower()
-                        in str(break_item.get("quantity", "")).lower()
+                        in str(break_item.get("quantity_of_packing", "")).lower()
                         for break_item in product["quantity_breaks"]
                     ),
                 ]
@@ -239,7 +240,6 @@ def display_sell_uom_data(df, selected_company):
 
             st.divider()
 
-            items_per_unit = product.get("items_per_unit", "")
             # Display quantity breaks/pricing tiers
             if product.get("quantity_breaks"):
                 st.markdown("**📊 Pricing Tiers:**")
@@ -247,18 +247,21 @@ def display_sell_uom_data(df, selected_company):
                 # Create table for pricing tiers
                 tier_data = []
                 for break_item in product["quantity_breaks"]:
-                    quantity_field = break_item.get("quantity", "")
-                    unit_field = break_item.get("unit", "")
-                    price_field = break_item.get("price", "")
-                    price_per_unit_field = break_item.get("price_per_unit", "")
+                    quantity_field = break_item.get("quantity_of_packing", "")
+                    unit_field = break_item.get("type_of_packing", "")
+                    price_field = break_item.get("price_per_packing", "")
+                    price_per_unit_field = break_item.get("price_per_item", "")
+                    items_per_unit = break_item.get("unit_quantity", "") or product.get(
+                        "items_per_unit", ""
+                    )
 
                     tier_data.append(
                         {
                             "Quantity": quantity_field,
-                            "Unit": "ea" if unit_field == "" else unit_field,
-                            "items_per_unit": items_per_unit,
+                            "Unit": unit_field,
+                            "Unit Quantity": items_per_unit,
                             "Price": price_field,
-                            "Price/Unit": price_per_unit_field,
+                            "Price/Each": price_per_unit_field,
                         }
                     )
 

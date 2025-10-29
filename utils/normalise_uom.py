@@ -21,10 +21,14 @@ def parse_capacity_with_ml(
 
     text = text.strip().lower()
 
+    # Ignore clearly invalid capacity text
+    if text in {"none", "n/a", "na", "-", "no", "nil"}:
+        return None
+
     # Order matters: mixed numbers first, then fraction, then decimal (including leading .), then integer
     num_unit_re = re.compile(
         r"((?:\d+\s+\d+/\d+)|(?:\d+/\d+)|(?:\d*\.\d+)|(?:\d+))\s*"
-        r"(oz|ml|l|litre|liter|gallon|gal|dram|drams|cc)\b",
+        r"(oz|fl\s*oz|floz|ml|milliliter|millilitre|l|liter|litre|ltr|gallon|gal|dram|drams|cc|centiliter|centilitre|cl)\b",
         re.IGNORECASE,
     )
 
@@ -33,16 +37,28 @@ def parse_capacity_with_ml(
         return None
 
     num_str, uom = m.groups()
-    uom = uom.lower().replace(".", "")
-    if uom in ("gal", "gallons"):
-        uom = "gallon"
-    elif uom in ("l", "litre"):
-        uom = "liter"
-    elif uom in ("drams",):
-        uom = "dram"
+    uom = uom.lower().replace(".", "").replace(" ", "")
+
+    # Normalize unit variants
+    uom_map = {
+        "gal": "gallon",
+        "gallons": "gallon",
+        "l": "liter",
+        "litre": "liter",
+        "litres": "liter",
+        "ltr": "liter",
+        "drams": "dram",
+        "milliliter": "ml",
+        "millilitre": "ml",
+        "centiliter": "cl",
+        "centilitre": "cl",
+        "floz": "oz",
+        "floz": "oz",
+        "fl_oz": "oz",
+    }
+    uom = uom_map.get(uom, uom)
 
     # Parse numeric string to float, handling mixed numbers like "1 1/2"
-    value = None
     try:
         if " " in num_str and "/" in num_str:
             # Mixed number like "1 1/2"
@@ -57,21 +73,20 @@ def parse_capacity_with_ml(
     except Exception:
         return None
 
-    # Convert to ml (same conversion factors as before)
-    if uom in ("ml", "milliliter", "millilitre", "milli"):
-        ml_value = value
-    elif uom in ("l", "liter"):
-        ml_value = value * 1000
-    elif uom in ("cc",):
-        ml_value = value
-    elif uom in ("oz", "fl oz", "floz", "ounce", "ounces"):
-        ml_value = value * 29.5735
-    elif uom in ("gallon", "gal"):
-        ml_value = value * 3785.411784
-    elif uom in ("dram",):
-        ml_value = value * 3.6966911953125
-    else:
-        ml_value = None
+    # Convert to ml (same conversion factors)
+    conversion_factors = {
+        "ml": 1,
+        "cc": 1,
+        "cl": 10,
+        "liter": 1000,
+        "oz": 29.5735,
+        "gallon": 3785.411784,
+        "dram": 3.6966911953125,
+    }
+
+    ml_value = None
+    if uom in conversion_factors:
+        ml_value = value * conversion_factors[uom]
 
     return {
         "value_raw": num_str,
@@ -81,21 +96,11 @@ def parse_capacity_with_ml(
     }
 
 
-def normalize_uom_values(capacity: Optional[str], product_name: str | None) -> dict:
+def normalize_uom_values(capacity: Optional[str], product_name: Optional[str]) -> dict:
     """
     Normalize product capacity and UOM, automatically converting to milliliters (ml).
-
-    ```
     Uses `parse_capacity_with_ml()` for extraction.
     Prioritizes `capacity` field, falls back to `product_name`.
-
-    Returns:
-        {
-            "product_capacity_uom": str | None,
-            "product_capacity_value": str | None,
-            "normalized_capacity_uom": "ml",
-            "normalized_capacity_value": float | None
-        }
     """
     normalized_uom_data = {
         "product_capacity_uom": None,
@@ -105,11 +110,13 @@ def normalize_uom_values(capacity: Optional[str], product_name: str | None) -> d
     }
 
     # Determine source text
-    input_text = capacity or product_name
-    if not input_text:
-        return normalized_uom_data
-
+    input_text = (capacity or "").strip()
     parsed = parse_capacity_with_ml(input_text)
+
+    # If capacity field fails, fallback to product_name
+    if not parsed and product_name:
+        parsed = parse_capacity_with_ml(product_name)
+
     if not parsed:
         return normalized_uom_data
 
@@ -128,7 +135,7 @@ def main():
     data = []
     all_invalid_products = []
 
-    with open("demo_batch_data/tricorbraun_all_data_normalized.json", "r") as f:
+    with open("demo_batch_data/tricorbraun_all_data_normalized_new.json", "r") as f:
         data = json.load(f)
         # results = get_non_products(data)
         # non_products = results["non_products"]
@@ -151,7 +158,14 @@ def main():
         capacity = item["product_specs"].get("Capacity", None)
         product_name = item["product_name"]
 
+        # if item["product_id"] in ("284686", "097977", "284414", "110008"):
+        #     print("capacity:", capacity, "product_name:", product_name)
+
         normalised_uom_data = normalize_uom_values(capacity, product_name)
+
+        if item["product_id"] in ("284686", "097977", "284414", "110008"):
+            print("capacity:", capacity, "product_name:", product_name)
+            print(normalised_uom_data)
 
         item["product_normalised_data"] = normalised_uom_data
 
@@ -166,7 +180,7 @@ def main():
         repared_data.append(new_dict)
 
     # Save the updated data
-    output_file = "demo_batch_data/tricorbraun_all_data_normalized.json"
+    output_file = "demo_batch_data/tricorbraun_new_data_normalized.json"
     with open(output_file, "w") as f:
         json.dump(repared_data, f, indent=2)
 
@@ -175,14 +189,16 @@ def main():
 
 
 if __name__ == "__main__":
-    # main()
-    print(
-        "ml:",
-        normalize_uom_values(
-            "",
-            "1.75 Liter Glass Tennessee Eco Base Liquor Bottle 21.5mm Bar Top Neck Finish",
-        ),
-    )
+    main()
+    # return
+    # print("debug mode")
+    # print(
+    #     "ml:",
+    #     normalize_uom_values(
+    #         "none",
+    #         "1.75 Liter Clear Glass Nordic Pinch Liquor Bottle - 21.5 Bar Top Finish",
+    #     ),
+    # )
 
     # print(
     #     normalize_uom(

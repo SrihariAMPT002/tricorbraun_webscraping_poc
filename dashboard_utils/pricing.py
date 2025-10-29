@@ -8,9 +8,9 @@ from typing import Dict
 import plotly.graph_objects as go
 from .data_utils import (
     get_capacity_analysis_data,
-    fuzzy_product_match,
     show_case_price_tier_chart,
 )
+from .fuzzy_matching import fuzzy_product_match
 
 
 def show_pricing_intelligence(companies_data):

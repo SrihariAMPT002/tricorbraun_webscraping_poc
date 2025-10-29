@@ -137,6 +137,10 @@ def create_navigation_menu():
             st.session_state.page = "Product Matching"
             st.rerun()
 
+        if st.button("🔍 All Similar Products", key="all_similar_btn", width="stretch"):
+            st.session_state.page = "All Similar Products"
+            st.rerun()
+
         if st.button("🤖 Chatbot", key="chatbot_btn", width="stretch"):
             st.session_state.page = "Chatbot"
             st.rerun()

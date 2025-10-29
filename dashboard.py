@@ -11,6 +11,7 @@ from dashboard_utils import (
     show_product_fuzzy_match,
     show_chatbot,
 )
+from dashboard_utils.product_fuzzy_match import show_all_similar_products
 
 
 # Configure page
@@ -42,6 +43,8 @@ def main():
         show_assortment_kpis(companies_data)
     elif page == "Product Matching":
         show_product_fuzzy_match(companies_data)
+    elif page == "All Similar Products":
+        show_all_similar_products(companies_data)
     elif page == "Chatbot":
         show_chatbot()
 
