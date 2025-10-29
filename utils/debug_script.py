@@ -167,40 +167,40 @@
 import re
 
 
-def extract_cary_pricing(sell_uom, packing_details=None, product_notes=None):
-    """
-    Extract pricing from Cary Company sell_uom data.
-    - `price` is the total price per packing (case/pallet)
-    - `price_per_unit` is the derived price per single item
-    """
+def parse_float(value):
+    if not value:
+        return 0.0
+    value = re.sub(r"[^\d.]", "", str(value))
+    try:
+        return float(value)
+    except ValueError:
+        return 0.0
 
+
+def parse_count(value):
+    if not value:
+        return 0
+    try:
+        return float(re.sub(r"[^\d.]", "", str(value)))
+    except ValueError:
+        return 0
+
+
+def extract_cary_pricing(sell_uom, packing_details=None, product_notes=None):
     if not sell_uom:
         return {"base_price": 0, "breaks": []}
 
-    def parse_count(value):
-        """Extract float count from text like '12 ea.' or '1,200 ea. (100 Cases)'."""
-        if not value:
-            return 0
-        try:
-            return float(re.sub(r"[^\d.]", "", str(value)))
-        except ValueError:
-            return 0
-
-    # --- Detect items per case/pallet ---
     items_per_case = 0
     items_per_pallet = 0
 
     if product_notes:
-        joined_notes = " ".join(product_notes).lower()
-        match_case_num = re.search(
-            r"(\d+)\s?(?:per\s?(?:case|box|carton))", joined_notes
-        )
-        if match_case_num:
-            items_per_case = float(match_case_num.group(1))
-
-        match_pallet_num = re.search(r"(\d+)\s?(?:per\s?pallet)", joined_notes)
-        if match_pallet_num:
-            items_per_pallet = float(match_pallet_num.group(1))
+        joined = " ".join(product_notes).lower()
+        case_match = re.search(r"(\d+)\s?(?:per\s?(?:case|box|carton))", joined)
+        pallet_match = re.search(r"(\d+)\s?(?:per\s?pallet)", joined)
+        if case_match:
+            items_per_case = float(case_match.group(1))
+        if pallet_match:
+            items_per_pallet = float(pallet_match.group(1))
 
     if not items_per_case and packing_details:
         items_per_case = parse_count(packing_details.get("Case Pack"))
@@ -216,47 +216,41 @@ def extract_cary_pricing(sell_uom, packing_details=None, product_notes=None):
             continue
 
         unit = (tier.get("unit") or "").strip().lower().rstrip(".")
-        price_str = tier.get("price") or ""
-        try:
-            price_value = float(re.sub(r"[^\d.]", "", price_str))
-        except ValueError:
-            continue
-
+        price_value = parse_float(tier.get("price"))
         price_per_unit = 0.0
 
-        # Case or pallet pricing → divide by quantity in that pack
         if unit == "case" and items_per_case > 0:
             price_per_unit = round(price_value / items_per_case, 4)
         elif unit == "pallet" and items_per_pallet > 0:
             price_per_unit = round(price_value / items_per_pallet, 4)
-        # If price is for single piece, then per-unit = same value
         elif unit in ["piece", "ea", "each", ""]:
             price_per_unit = round(price_value, 4)
         else:
-            continue  # skip unknown or unhandled units
+            continue
 
         unit_prices.append(price_per_unit)
         breaks.append(
             {
-                "quantity": qty_str,
-                "unit": unit,
-                "price": price_value,
-                "price_per_unit": price_per_unit,
+                "quantity_of_packing": qty_str,
+                "type_of_packing": unit,
+                "price_per_packing": price_value,
+                "price_per_item": price_per_unit,
             }
         )
 
-    base_price = round(sum(unit_prices) / len(unit_prices), 4) if unit_prices else 0.0
-
+    base_price = round(sum(unit_prices) / len(unit_prices), 4) if unit_prices else 0
     return {"base_price": base_price, "breaks": breaks}
 
 
 # Example usage
 packing = {"Case Pack": "12 ea.", "Pallet Pack": "1,200 ea. (100 Cases)"}
 uom = [
-    {"qty": "1", "price": "$66.410", "unit": "case."},
-    {"qty": "5", "price": "$57.830", "unit": "case."},
-    {"qty": "15", "price": "$50.550", "unit": "case."},
-    {"qty": "100", "price": "$44.500", "unit": "case."},
+    {"qty": "Quantity", "price": "Price", "unit": "Quantity"},
+    {"qty": "12", "price": "$2.020", "unit": "ea."},
+    {"qty": "96", "price": "$1.620", "unit": "ea."},
+    {"qty": "672", "price": "$1.370", "unit": "ea."},
+    {"qty": "1344", "price": "$1.170", "unit": "ea."},
+    {"qty": "2688", "price": "$1.050", "unit": "ea."},
 ]
 product_notes = [
     "Packed in a 12x1 Re-Shipper Carton (12 per box)",

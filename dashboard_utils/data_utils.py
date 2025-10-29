@@ -326,7 +326,6 @@ def extract_berlin_pricing(sell_uom, packing_unit_quantity: Optional[str]):
     return {"base_price": base_price, "breaks": breaks}
 
 
-# --- Cary Company ---
 def extract_cary_pricing(sell_uom, packing_details=None, product_notes=None):
     if not sell_uom:
         return {"base_price": 0, "breaks": []}
@@ -334,6 +333,7 @@ def extract_cary_pricing(sell_uom, packing_details=None, product_notes=None):
     items_per_case = 0
     items_per_pallet = 0
 
+    # Extract counts from product_notes
     if product_notes:
         joined = " ".join(product_notes).lower()
         case_match = re.search(r"(\d+)\s?(?:per\s?(?:case|box|carton))", joined)
@@ -342,6 +342,18 @@ def extract_cary_pricing(sell_uom, packing_details=None, product_notes=None):
             items_per_case = float(case_match.group(1))
         if pallet_match:
             items_per_pallet = float(pallet_match.group(1))
+
+    # Fallback to packing_details
+    def parse_count(value):
+        if not value:
+            return 0
+        m = re.search(r"\d+", str(value))
+        return float(m.group()) if m else 0
+
+    def parse_float(value):
+        if not value:
+            return 0.0
+        return float(re.sub(r"[^\d.]", "", str(value)))
 
     if not items_per_case and packing_details:
         items_per_case = parse_count(packing_details.get("Case Pack"))
@@ -362,22 +374,52 @@ def extract_cary_pricing(sell_uom, packing_details=None, product_notes=None):
 
         if unit == "case" and items_per_case > 0:
             price_per_unit = round(price_value / items_per_case, 4)
+            unit_prices.append(price_per_unit)
+            breaks.append(
+                {
+                    "quantity_of_packing": qty_str,
+                    "type_of_packing": "case",
+                    "price_per_packing": price_value,
+                    "price_per_item": price_per_unit,
+                }
+            )
         elif unit == "pallet" and items_per_pallet > 0:
             price_per_unit = round(price_value / items_per_pallet, 4)
-        elif unit in ["piece", "ea", "each", ""]:
+            unit_prices.append(price_per_unit)
+            breaks.append(
+                {
+                    "quantity_of_packing": qty_str,
+                    "type_of_packing": "pallet",
+                    "price_per_packing": price_value,
+                    "price_per_item": price_per_unit,
+                }
+            )
+        elif unit in ["ea", "each", "piece", ""]:
             price_per_unit = round(price_value, 4)
-        else:
-            continue
-
-        unit_prices.append(price_per_unit)
-        breaks.append(
-            {
-                "quantity_of_packing": qty_str,
-                "type_of_packing": unit,
-                "price_per_packing": price_value,
-                "price_per_item": price_per_unit,
-            }
-        )
+            # Only return derived case or pallet entry
+            if items_per_case > 0:
+                breaks.append(
+                    {
+                        "quantity_of_packing": qty_str,
+                        "type_of_packing": "case",
+                        "unit_quantity": items_per_case,
+                        "price_per_packing": round(price_per_unit * items_per_case, 4),
+                        "price_per_item": price_per_unit,
+                    }
+                )
+            elif items_per_pallet > 0:
+                breaks.append(
+                    {
+                        "quantity_of_packing": qty_str,
+                        "type_of_packing": "pallet",
+                        "unit_quantity": items_per_pallet,
+                        "price_per_packing": round(
+                            price_per_unit * items_per_pallet, 4
+                        ),
+                        "price_per_item": price_per_unit,
+                    }
+                )
+            unit_prices.append(price_per_unit)
 
     base_price = round(sum(unit_prices) / len(unit_prices), 4) if unit_prices else 0
     return {"base_price": base_price, "breaks": breaks}
