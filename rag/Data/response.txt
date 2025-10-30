@@ -1,0 +1,136 @@
+
+📤 FINAL RESPONSE:
+----------------------------------------------------------------------------------------------------
+Here is a comparison of beverage market segment products by capacity and price:
+
+---
+
+**Capacity: 187 ml (approx. 6.3 oz)**
+
+*   **187 ml Clear Champagne Bottles, Pry-Off Crown, 26-609**
+    *   **SKU:** Part#: 30W187
+    *   **Company:** Cary Company
+    *   **Stock Status:** In Stock
+    *   **Pricing Tiers:**
+        *   24+ units: $1.34 per item (case)
+        *   96+ units: $1.07 per item (case)
+        *   1560+ units: $0.909 per item (case)
+        *   3240+ units: $0.777 per item (case)
+        *   6480+ units: $0.696 per item (case)
+    *   **URL:** https://www.thecarycompany.com/187-ml-clear-champagne-bottles
+
+---
+
+**Capacity: 12 oz (355 ml)**
+
+*   **12 oz. (355 ml) Amber Glass Long Neck Beer Bottle, Pry-Off Crown**
+    *   **SKU:** Part#: 30WAPD
+    *   **Company:** Cary Company
+    *   **Stock Status:** In Stock
+    *   **Pricing Tiers:**
+        *   72+ units: $1.18 per item (case)
+        *   240+ units: $1.06 per item (case)
+        *   1080+ units: $0.757 per item (case)
+        *   2160+ units: $0.674 per item (case)
+        *   6480+ units: $0.645 per item (case)
+    *   **URL:** https://www.thecarycompany.com/12-oz-355-ml-amber-glass-long-neck-beer-bottle-label-indent-crown-pry-off-24-case
+
+---
+
+**Capacity: 16 oz**
+
+*   **16 oz Clear Glass Juice Bottles (Cap Not Included)**
+    *   **SKU:** #3802B03-B
+    *   **Company:** Berlin Packaging
+    *   **Stock Status:** In Stock
+    *   **Pricing Tiers:**
+        *   1-19+ units: $1.1467 per item (Case)
+        *   20-197+ units: $1.1292 per item (Case)
+        *   198++ units: $1.1117 per item (Case)
+    *   **URL:** https://www.berlinpackaging.com/3802b03-b-16-oz-clear-glass-juice-bottles-cap-not-included/
+
+*   **16 oz Clear Glass Decanters**
+    *   **SKU:** #6001B29
+    *   **Company:** Berlin Packaging
+    *   **Stock Status:** In Stock
+    *   **Pricing Tiers:**
+        *   1-9+ units: $1.2467 per item (Case)
+        *   10-191+ units: $1.1 per item (Case)
+        *   192++ units: $0.9358 per item (Case)
+    *   **URL:** https://www.berlinpackaging.com/6001b29-16-oz-clear-glass-decanters/
+
+*   **16 oz. Squat Pint Glass Milk Bottle, 48mm 48-Snap**
+    *   **SKU:** Part#: 30WD16
+    *   **Company:** Cary Company
+    *   **Stock Status:** In Stock
+    *   **Pricing Tiers:**
+        *   24+ units: $2.86 per item (case)
+        *   240+ units: $2.16 per item (case)
+        *   576+ units: $1.82 per item (case)
+        *   1176+ units: $1.55 per item (case)
+        *   2352+ units: $1.51 per item (case)
+    *   **URL:** https://www.thecarycompany.com/glass-milk-bottles-s-p24
+
+*   **Custom Printed 16 oz. Squat Pint Glass Milk Bottle, 48mm 48-Snap**
+    *   **SKU:** Part#: S-30WD16-Printed
+    *   **Company:** Cary Company
+    *   **Stock Status:** 6 - 8 weeks after receipt of order and approval of artwork.
+    *   **Pricing Tiers:**
+        *   2352+ units: $1.777 per item (case)
+    *   **URL:** https://www.thecarycompany.com/16-oz-squat-glass-milk-bottles-printed
+
+*   **16 oz. Tall Pint Glass Milk Bottle, 48mm 48-Snap**
+    *   **SKU:** Part#: 30WD17
+    *   **Company:** Cary Company
+    *   **Stock Status:** In Stock
+    *   **Pricing Tiers:**
+        *   24+ units: $2.11 per item (case)
+        *   120+ units: $1.92 per item (case)
+        *   1200+ units: $1.75 per item (case)
+        *   2400+ units: $1.57 per item (case)
+        *   9600+ units: $1.5 per item (case)
+    *   **URL:** https://www.thecarycompany.com/glass-milk-bottles-s-hl24
+
+---
+
+**Capacity: 32 oz**
+
+*   **32 oz. Square Quart Glass Milk Bottle, 48mm 48-Snap**
+    *   **SKU:** Part#: 30WDS4
+    *   **Company:** Cary Company
+    *   **Stock Status:** In Stock
+    *   **Pricing Tiers:**
+        *   24+ units: $3.52 per item (case)
+        *   240+ units: $2.83 per item (case)
+        *   744+ units: $2.35 per item (case)
+        *   1344+ units: $2.18 per item (case)
+        *   4032+ units: $1.99 per item (case)
+    *   **URL:** https://www.thecarycompany.com/glass-milk-bottles-s-sq24
+
+*   **32 oz. Round Quart Glass Milk Bottle, 48mm 48-Snap**
+    *   **SKU:** Part#: 30WDR4
+    *   **Company:** Cary Company
+    *   **Stock Status:** In Stock
+    *   **Pricing Tiers:**
+        *   12+ units: $3.42 per item (case)
+        *   120+ units: $2.85 per item (case)
+        *   360+ units: $2.59 per item (case)
+        *   1080+ units: $2.19 per item (case)
+        *   3240+ units: $1.99 per item (case)
+    *   **URL:** https://www.thecarycompany.com/glass-milk-bottles-s-rq24
+
+---
+
+**Capacity: 64 oz**
+
+*   **64 oz. Half Gallon Glass Milk Bottle, 48mm 48-Snap**
+    *   **SKU:** Part#: 30WD64
+    *   **Company:** Cary Company
+    *   **Stock Status:** In Stock
+    *   **Pricing Tiers:**
+        *   9+ units: $6.23 per item (case)
+        *   90+ units: $4.86 per item (case)
+        *   270+ units: $4.17 per item (case)
+        *   792+ units: $3.76 per item (case)
+        *   2376+ units: $3.49 per item (case)
+    *   **URL:** https://www.thecarycompany.com/glass-milk-bottles-s-hg24

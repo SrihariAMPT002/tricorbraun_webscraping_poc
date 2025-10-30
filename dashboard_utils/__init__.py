@@ -31,7 +31,6 @@ from .product_fuzzy_match import (
 
 from .chatbot import (
     show_chatbot,
-    query_products,
 )
 
 __all__ = [
@@ -53,5 +52,4 @@ __all__ = [
     "show_product_fuzzy_match",
     # Chatbot
     "show_chatbot",
-    "query_products",
 ]

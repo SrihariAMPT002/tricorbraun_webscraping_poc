@@ -4,39 +4,21 @@ This module contains all functions related to the AI chatbot interface.
 """
 
 import streamlit as st
-from typing import List, Dict
-from .common import get_pinecone_vectorstore
+from dotenv import load_dotenv
+from rag.chatbot_production import HybridRAGChatbot
+import os
 
-
-def query_products(query_text: str, k: int = 5) -> List[Dict]:
-    """Query the Pinecone vector store for similar products"""
-    try:
-        docsearch = get_pinecone_vectorstore()
-        results = docsearch.similarity_search(query_text, k=k)
-
-        products = []
-        for r in results:
-            products.append(
-                {
-                    "name": r.metadata.get("name", "Unknown"),
-                    "url": r.metadata.get("url", "#"),
-                    "content": r.page_content,
-                    "metadata": r.metadata,
-                }
-            )
-
-        return products
-    except Exception as e:
-        st.error(f"Error querying products: {str(e)}")
-        return []
+# --- Load environment variables ---
+load_dotenv()
 
 
 def show_chatbot():
-    """Display chatbot interface with Pinecone search"""
+    """Display chatbot interface using the integrated HybridRAGChatbot"""
     st.header("AI Assistant")
 
     st.info(
-        "Ask questions about glass products and get instant results using semantic search powered by Google Gemini embeddings."
+        "Ask questions about glass products and get instant results using the TricorBraun Hybrid AI Chatbot "
+        "powered by Google Gemini, MongoDB, and Pinecone."
     )
 
     # Sample usage cards
@@ -49,8 +31,8 @@ def show_chatbot():
             """
         <div class="company-card">
             <h4> Product Comparison</h4>
-            <p><strong>Example:</strong> "Compare prices for 500ml jars"</p>
-            <p><strong>Response:</strong> Would analyze pricing across all companies for 500ml capacity products</p>
+            <p><strong>Example:</strong> "What product in the dataset has the highest capacity in milliliters?"</p>
+            <p><strong>Response:</strong> 6.5 Gallon Clear Italian Glass Carboy 53 mm Cork Neck Finish with 24,605.18 ml</p>
         </div>
         """,
             unsafe_allow_html=True,
@@ -60,8 +42,8 @@ def show_chatbot():
             """
         <div class="company-card">
             <h4>Market Analysis</h4>
-            <p><strong>Example:</strong> "Show SKUs under Pharma segment"</p>
-            <p><strong>Response:</strong> Would filter and display all pharmaceutical products</p>
+            <p><strong>Example:</strong> "How many products does Cary Company offer?"</p>
+            <p><strong>Response:</strong>  398 products</p>
         </div>
         """,
             unsafe_allow_html=True,
@@ -72,8 +54,8 @@ def show_chatbot():
             """
         <div class="company-card">
             <h4>Pricing Insights</h4>
-            <p><strong>Example:</strong> "What's the average price for amber bottles?"</p>
-            <p><strong>Response:</strong> Would calculate and display pricing statistics for amber glass products</p>
+            <p><strong>Example:</strong> "Which shape appears most frequently in the dataset?"</p>
+            <p><strong>Response:</strong> Round (452 occurrences)</p>
         </div>
         """,
             unsafe_allow_html=True,
@@ -83,8 +65,8 @@ def show_chatbot():
             """
         <div class="company-card">
             <h4>Trend Analysis</h4>
-            <p><strong>Example:</strong> "Which company has the most diverse assortment?"</p>
-            <p><strong>Response:</strong> Would analyze and compare assortment diversity metrics</p>
+            <p><strong>Example:</strong> "What is the minimum average price per unit (excluding zero) among TricorBraun products?"</p>
+            <p><strong>Response:</strong> $0.08</p>
         </div>
         """,
             unsafe_allow_html=True,
@@ -93,44 +75,50 @@ def show_chatbot():
     # Chat interface
     st.subheader("Chat Interface")
 
+    # Initialize the Hybrid RAG chatbot (once per Streamlit session)
+    if "hybrid_chat" not in st.session_state:
+        st.session_state.hybrid_chat = HybridRAGChatbot(
+            verbose=False,
+            log_file="rag/Logs/chatbot_activity.log",
+        )
+
     # Chat input
     user_input = st.text_input(
         "Ask me anything about the glass product data:",
         placeholder="e.g., show me 10oz beer bottles",
+        key="hybrid_query",
     )
 
+    # Response placeholder for dynamic updates
+    response_container = st.container()
+
     if st.button("Send"):
-        if user_input:
-            with st.spinner("Searching products..."):
-                # Query the Pinecone vector store
-                results = query_products(user_input, k=5)
+        if user_input.strip():
+            with st.spinner("Thinking..."):
+                try:
+                    response = st.session_state.hybrid_chat.query(user_input)
+                    st.session_state.hybrid_chat.export_logs("rag/Logs/query_logs.json")
 
-                if results:
-                    st.success(f"**Found {len(results)} matching products:**")
+                    # Display the response in a clean, styled chat card
+                    with response_container:
+                        st.markdown(
+                            f"""
+                            <div style="
+                                background-color: #f9f9fb;
+                                border: 1px solid #dcdcdc;
+                                border-radius: 10px;
+                                padding: 1rem;
+                                margin-top: 1rem;
+                                box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+                                ">
+                                <h4 style="color:#1c2e5c;">🤖 Chatbot Response</h4>
+                                <p style="font-size:16px; color:#222;">{response}</p>
+                            </div>
+                            """,
+                            unsafe_allow_html=True,
+                        )
 
-                    # Display results
-                    for i, product in enumerate(results, 1):
-                        with st.expander(f"{i}. {product['name']}", expanded=False):
-                            st.markdown(
-                                f"**Product:** [{product['name']}]({product['url']})"
-                            )
-                            st.markdown(f"**URL:** {product['url']}")
-                            st.divider()
-                            st.markdown("**Details:**")
-                            st.text(product["content"])
-
-                            # Show additional metadata if available
-                            if "company" in product["metadata"]:
-                                st.markdown(
-                                    f"**Company:** {product['metadata']['company']}"
-                                )
-                            if "price" in product["metadata"]:
-                                st.markdown(
-                                    f"**Price:** ${product['metadata']['price']}"
-                                )
-                else:
-                    st.warning(
-                        "No products found matching your query. Try rephrasing your search."
-                    )
+                except Exception as e:
+                    st.error(f"⚠️ Error: {str(e)}")
         else:
             st.warning("Please enter a question first.")
