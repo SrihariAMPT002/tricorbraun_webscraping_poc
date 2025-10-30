@@ -1,75 +1,94 @@
 [
   {
-    "timestamp": "2025-10-30T15:25:04.133019",
-    "user_query": "What product in the dataset has the highest capacity in milliliters?",
+    "timestamp": "2025-10-30T18:19:05.799592",
+    "user_query": "whats the count of in stock, out of stock, lead time, backordered, special order items for glass products for tricorbraun?",
     "query_type": "aggregation_query",
-    "intent": "find_extreme",
+    "intent": "aggregation",
     "retrieval_strategy": "Pinecone: False, MongoDB: True, Aggregation: True",
     "timing_metrics": [
       {
         "operation": "MongoDB Connection",
-        "start_time": 1761818082.4775283,
-        "end_time": 1761818082.664469,
-        "duration": 0.18694067001342773,
+        "start_time": 1761828503.1687086,
+        "end_time": 1761828503.4395642,
+        "duration": 0.2708556652069092,
         "details": null
       },
       {
         "operation": "Pinecone Connection",
-        "start_time": 1761818082.6646428,
-        "end_time": 1761818084.1796181,
-        "duration": 1.5149753093719482,
+        "start_time": 1761828503.4397156,
+        "end_time": 1761828505.2103035,
+        "duration": 1.7705879211425781,
         "details": null
       },
       {
         "operation": "Gemini Models Initialization",
-        "start_time": 1761818084.1801019,
-        "end_time": 1761818084.2536402,
-        "duration": 0.07353830337524414,
+        "start_time": 1761828505.2104514,
+        "end_time": 1761828505.2283545,
+        "duration": 0.01790308952331543,
         "details": null
       },
       {
         "operation": "Query Analysis & Routing",
-        "start_time": 1761818094.644473,
-        "end_time": 1761818101.4689565,
-        "duration": 6.824483394622803,
+        "start_time": 1761828527.5533714,
+        "end_time": 1761828536.1797657,
+        "duration": 8.626394271850586,
         "details": {
           "query_type": "aggregation_query",
-          "intent": "find_extreme",
+          "intent": "aggregation",
           "requires_aggregation": true,
-          "return_products": true
+          "aggregation_type": "group",
+          "group_by_field": "stock_status",
+          "return_products": false
         }
       },
       {
         "operation": "MongoDB Aggregation Query",
-        "start_time": 1761818101.4693336,
-        "end_time": 1761818101.719045,
-        "duration": 0.249711275100708,
+        "start_time": 1761828536.1799328,
+        "end_time": 1761828543.0692885,
+        "duration": 6.889355659484863,
         "details": {
-          "query_time": 0.24968171119689941,
-          "pipeline_stages": 3,
-          "results_count": 5,
-          "aggregation_type": "max",
-          "return_products": true
+          "query_time": 6.88905143737793,
+          "pipeline_stages": 5,
+          "results_count": 4,
+          "aggregation_type": "group",
+          "results": [
+            {
+              "_id": "Special Order",
+              "count": 160
+            },
+            {
+              "_id": "In Stock",
+              "count": 110
+            },
+            {
+              "_id": "Lead Time",
+              "count": 100
+            },
+            {
+              "_id": "Out of Stock",
+              "count": 7
+            }
+          ]
         }
       },
       {
         "operation": "Context Formatting",
-        "start_time": 1761818101.7193768,
-        "end_time": 1761818101.7195675,
-        "duration": 0.00019073486328125,
+        "start_time": 1761828543.069453,
+        "end_time": 1761828543.0694864,
+        "duration": 3.337860107421875e-05,
         "details": {
-          "aggregation_type": "max",
-          "return_products": true
+          "aggregation_type": "group",
+          "return_products": false
         }
       },
       {
         "operation": "Response Generation",
-        "start_time": 1761818101.7198257,
-        "end_time": 1761818104.1326962,
-        "duration": 2.412870407104492,
+        "start_time": 1761828543.0697393,
+        "end_time": 1761828545.7994537,
+        "duration": 2.7297143936157227,
         "details": {
-          "prompt_length": 2664,
-          "response_length": 174,
+          "prompt_length": 1140,
+          "response_length": 344,
           "query_type": "aggregation_query"
         }
       }
@@ -79,29 +98,87 @@
     "aggregation_pipeline": [
       {
         "$match": {
-          "normalised_capacity(ml)": {
-            "$ne": null,
-            "$exists": true,
-            "$type": "number"
+          "material": {
+            "$regex": "Glass",
+            "$options": "i"
+          },
+          "company": {
+            "$regex": "tricorbraun",
+            "$options": "i"
+          }
+        }
+      },
+      {
+        "$addFields": {
+          "stock_category": {
+            "$switch": {
+              "branches": [
+                {
+                  "case": {
+                    "$eq": [
+                      "$stock",
+                      "In stock"
+                    ]
+                  },
+                  "then": "In Stock"
+                },
+                {
+                  "case": {
+                    "$eq": [
+                      "$stock",
+                      "Out Of Stock"
+                    ]
+                  },
+                  "then": "Out of Stock"
+                },
+                {
+                  "case": {
+                    "$regexMatch": {
+                      "input": "$stock",
+                      "regex": "^Item is currently estimated"
+                    }
+                  },
+                  "then": "Lead Time"
+                },
+                {
+                  "case": {
+                    "$regexMatch": {
+                      "input": "$stock",
+                      "regex": "Special Order"
+                    }
+                  },
+                  "then": "Special Order"
+                }
+              ],
+              "default": "Other"
+            }
+          }
+        }
+      },
+      {
+        "$group": {
+          "_id": "$stock_category",
+          "count": {
+            "$sum": 1
           }
         }
       },
       {
         "$sort": {
-          "normalised_capacity(ml)": -1
+          "count": -1
         }
       },
       {
-        "$limit": 5
+        "$limit": 10
       }
     ],
-    "results_count": 5,
-    "response_length": 174,
+    "results_count": 1,
+    "response_length": 344,
     "guardrail_checks": {
       "scope_check": true,
       "response_validation": true
     },
-    "total_time": 9.488599300384521,
+    "total_time": 18.246243953704834,
     "errors": []
   }
 ]

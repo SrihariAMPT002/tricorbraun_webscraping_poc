@@ -30,7 +30,7 @@ def show_chatbot():
         st.markdown(
             """
         <div class="company-card">
-            <h4> Product Comparison</h4>
+            <h4> AI-powered Querying</h4>
             <p><strong>Example:</strong> "What product in the dataset has the highest capacity in milliliters?"</p>
             <p><strong>Response:</strong> 6.5 Gallon Clear Italian Glass Carboy 53 mm Cork Neck Finish with 24,605.18 ml</p>
         </div>
@@ -90,7 +90,6 @@ def show_chatbot():
     )
 
     # Response placeholder for dynamic updates
-    response_container = st.container()
 
     if st.button("Send"):
         if user_input.strip():
@@ -99,24 +98,12 @@ def show_chatbot():
                     response = st.session_state.hybrid_chat.query(user_input)
                     st.session_state.hybrid_chat.export_logs("rag/Logs/query_logs.json")
 
-                    # Display the response in a clean, styled chat card
-                    with response_container:
-                        st.markdown(
-                            f"""
-                            <div style="
-                                background-color: #f9f9fb;
-                                border: 1px solid #dcdcdc;
-                                border-radius: 10px;
-                                padding: 1rem;
-                                margin-top: 1rem;
-                                box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
-                                ">
-                                <h4 style="color:#1c2e5c;">Chatbot Response</h4>
-                                <p style="font-size:16px; color:#222;">{response}</p>
-                            </div>
-                            """,
-                            unsafe_allow_html=True,
-                        )
+                    # Remove asterisks from the response text for display
+                    clean_response = response.replace("*", "")
+
+                    # Display the response using proper markdown
+                    with st.container(border=True):
+                        st.markdown(f"**Chatbot Response:**\n\n{clean_response}")
 
                 except Exception as e:
                     st.error(f"⚠️ Error: {str(e)}")

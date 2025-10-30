@@ -70,26 +70,27 @@ def display_product_table(df, selected_company):
         "original_uom",
         "original_capacity",
         "normalised_capacity(ml)",
-        "avg_price_per_unit",
+        "avg_price_per_unit",  # Use the actual DataFrame key
         "color",
         "material",
         "shape",
         "stock",
     ]
     display_df = df[display_columns].copy()
+    renamed_df = display_df.rename(columns={"avg_price_per_unit": "Avg Price Per Item"})
 
     # Capitalize & beautify column names
-    display_df.columns = [
+    renamed_df.columns = [
         col.replace("_", " ").replace("(", " (").title().replace(" )", ")")
-        for col in display_columns
+        for col in renamed_df
     ]
 
-    render_bold_table(display_df, height=500, key=f"product_table_{selected_company}")
+    render_bold_table(renamed_df, height=500, key=f"product_table_{selected_company}")
 
 
 def display_cross_company_comparison(companies_data):
     """Display comparison metrics across all companies."""
-    st.subheader("🏢 Cross-Company Comparison")
+    st.subheader("Cross-Company Comparison")
 
     comparison_data = []
 
@@ -102,6 +103,16 @@ def display_cross_company_comparison(companies_data):
         out_of_stock_count = (
             df_comp["stock"].str.contains("Out of stock", case=False, na=False).sum()
         )
+        # Group both backordered and lead time stocks into "backordered/lead time"
+        backordered_leadtime_count = (
+            df_comp["stock"]
+            .str.contains(
+                "backordered|lead time|leadtime|lead-times|weeks|days|week|day",
+                case=False,
+                na=False,
+            )
+            .sum()
+        )
         comparison_data.append(
             {
                 "Company": company,
@@ -112,7 +123,7 @@ def display_cross_company_comparison(companies_data):
                 "Market Segments": df_comp["market_segment"].nunique(),
                 "In Stock": in_stock_count,
                 "Out of Stock": out_of_stock_count,
-                "Uncertain Stock": len(df_comp) - (out_of_stock_count + in_stock_count),
+                "Backordered / Lead Times Stock": backordered_leadtime_count,
             }
         )
 
@@ -300,7 +311,7 @@ def render_bold_table(df: pd.DataFrame, height: int = 300, key: str = None):
     # Columns needing right-aligned filters
     right_align_filter_cols = [
         "Normalised Capacity (ml)",
-        "Avg Price Per Unit",
+        "Avg Price Per Item",
         "Total Skus",
         "Categories",
         "Avg Price",
