@@ -135,7 +135,7 @@ def main():
     data = []
     all_invalid_products = []
 
-    with open("demo_batch_data/tricorbraun_all_data_normalized_new.json", "r") as f:
+    with open("demo_batch_data/berlin_products_pg=8.json", "r") as f:
         data = json.load(f)
         # results = get_non_products(data)
         # non_products = results["non_products"]
@@ -163,9 +163,9 @@ def main():
 
         normalised_uom_data = normalize_uom_values(capacity, product_name)
 
-        if item["product_id"] in ("284686", "097977", "284414", "110008"):
-            print("capacity:", capacity, "product_name:", product_name)
-            print(normalised_uom_data)
+        # if item["product_id"] in ("284686", "097977", "284414", "110008"):
+        #     print("capacity:", capacity, "product_name:", product_name)
+        #     print(normalised_uom_data)
 
         item["product_normalised_data"] = normalised_uom_data
 
@@ -180,7 +180,7 @@ def main():
         repared_data.append(new_dict)
 
     # Save the updated data
-    output_file = "demo_batch_data/tricorbraun_new_data_normalized.json"
+    output_file = "demo_batch_data/berlin_products_data_pg=8.json"
     with open(output_file, "w") as f:
         json.dump(repared_data, f, indent=2)
 

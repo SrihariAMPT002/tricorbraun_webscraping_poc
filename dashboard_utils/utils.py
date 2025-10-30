@@ -1,6 +1,7 @@
 import streamlit as st
 from typing import Dict, List, Optional, Tuple
 import pandas as pd
+import re
 
 
 def build_product_record(
@@ -13,6 +14,7 @@ def build_product_record(
     spec_keys: Dict[str, str],
     availability_keys: Optional[List[Tuple[str, str]]] = None,
     url_key: str = "product_url",
+    description_key: str = "product_description",
     extras: Optional[Dict] = None,
 ) -> Dict:
     """Create a standardized product record across sources.
@@ -27,6 +29,7 @@ def build_product_record(
       Expected keys in mapping: color, material, shape, category, closure_type, product_origin (optional)
     - availability_keys: Optional list of (path1, path2) to try for stock text (first non-empty wins)
     - url_key: Key in raw item that contains the product URL
+    - description_key: Key in raw item that contains the product description
     - extras: Any additional fields to merge, e.g., { 'items_per_unit': 12 }
 
     Returns
@@ -61,7 +64,12 @@ def build_product_record(
                 break
 
     base_price = pricing.get("base_price", 0)
-    zero_handled_pricing = round(base_price, 2)
+    zero_handled_pricing = base_price
+
+    raw_shape = specs.get(shape_key, "") if shape_key else ""
+    product_name = item.get("name", "") or ""
+    product_description = item.get(description_key, "") or ""
+    normalized_shape = normalize_shape(product_name, product_description, raw_shape)
 
     record = {
         "company": company,
@@ -81,7 +89,7 @@ def build_product_record(
         "unit": normalised_uom,  # used for analysis
         "color": specs.get(color_key, "") if color_key else "",
         "material": specs.get(material_key, "") if material_key else "",
-        "shape": specs.get(shape_key, "") if shape_key else "",
+        "shape": normalized_shape,
         "category": specs.get(category_key, "") if category_key else "",
         "closure_type": specs.get(closure_key, "") if closure_key else "",
         "market_segment": item.get("product_name", ""),  # caller can post-process
@@ -183,3 +191,39 @@ def get_pricing_bin(price):
             return "$5+"
     except:
         return None
+
+
+def normalize_shape(product_name: str, description: str, shape: str) -> str:
+    """Normalizes product shape based on name, description, and shape fields."""
+
+    # Prioritize shape field, then name, then description
+    text_to_check = f"{shape} {product_name} {description}".lower()
+
+    # More specific shapes first
+    shape_map = {
+        "Boston Round": ["boston round"],
+        "Cosmo Round": ["cosmo round"],
+        "Straight Sided": ["straight sided"],
+        "Bordeaux": ["bordeaux"],
+        "Bullet": ["bullet", "rocket"],
+        "Square": ["square", "f-style"],
+        "Cylinder": ["cylinder", "cylindrical"],
+        "Jar": ["jar"],
+        "Bottle": ["bottle"],
+        "Tube": ["tube"],
+        "Tottle": ["tottle"],
+        "Oval": ["oval"],
+        "Oblong": ["oblong"],
+        "Rectangle": ["rectangle", "rectangular"],
+        "Hexagonal": ["hexagonal", "hexagon"],
+        "Round": ["round", "circle", "circular"],
+        "Packer": ["packer"],
+    }
+
+    for unified_shape, keywords in shape_map.items():
+        for keyword in keywords:
+            # Use word boundaries to avoid partial matches, e.g., 'rounding'
+            if re.search(r"\b" + re.escape(keyword) + r"\b", text_to_check):
+                return unified_shape
+
+    return "Other"

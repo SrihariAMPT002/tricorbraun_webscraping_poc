@@ -132,7 +132,7 @@ def show_competitor_comparison_matrix(df_all):
         x=comparison_matrix.columns,
         y=comparison_matrix.index,
         title="SKU Count by Company and Market Segment",
-        color_continuous_scale="Blues",
+        color_continuous_scale="Reds",
     )
     st.plotly_chart(fig, config={"responsive": True})
 
@@ -154,9 +154,81 @@ def show_assortment_coverage_metrics(df_all, companies_data):
                 "Capacity Ranges": company_df["capacity_range"].nunique(),
             }
         )
+    # st.write("Unique Shapes:", company_df["shape"].unique())
 
     coverage_df = pd.DataFrame(coverage_metrics)
     st.dataframe(coverage_df, width="stretch")
+
+
+def show_stock_availability_chart(df_all):
+    """
+    Display a bar chart showing stock availability by company.
+    Expects df_all to have columns 'company' and 'stock' (or 'availability').
+    """
+    import streamlit as st
+    import plotly.express as px
+
+    if "stock" not in df_all.columns:
+        st.warning("⚠️ No stock information available to show chart.")
+        return
+
+    # Group by company and count number of in-stock SKUs
+    # Assuming 'stock' is a boolean or string indicating availability
+    # Group all 'backordered item' under a single category label
+    df_all_mod = df_all.copy()
+
+    def classify_stock(x):
+        if isinstance(x, str):
+            x_lower = x.lower()
+            if "backordered" in x_lower:
+                return "Backordered"
+            elif (
+                "week" in x_lower
+                or "day" in x_lower
+                or "lead time" in x_lower
+                or "leadtime" in x_lower
+                or "lead-times" in x_lower
+            ):
+                return "Lead Time"
+            elif x_lower.strip() == "in stock":
+                return "In Stock"
+            elif x_lower.strip() == "out of stock":
+                return "Out of Stock"
+            elif "special order item" in x_lower:
+                return "Special Order Item"
+        return x
+
+    df_all_mod["stock_status"] = df_all_mod["stock"].apply(classify_stock)
+    stock_labels = df_all_mod["stock_status"].unique()
+
+    # Make stock grouping ignore case by normalizing "stock_status" just in case, but plot on the canonical labels
+    stock_summary = (
+        df_all_mod.groupby(["company", "stock_status"])
+        .size()
+        .reset_index(name="SKU Count")
+    )
+
+    fig = px.bar(
+        stock_summary,
+        x="company",
+        y="SKU Count",
+        color="stock_status",
+        barmode="group",
+        title="Stock Availability by Company",
+        labels={
+            "company": "Company",
+            "SKU Count": "Number of SKUs",
+            "stock": "Stock Status",
+        },
+        color_discrete_map={
+            "In Stock": "green",
+            "Out of Stock": "red",
+            "Low Stock": "orange",
+        },
+    )
+    st.dataframe(stock_summary, width="stretch")
+
+    st.plotly_chart(fig, config={"responsive": True})
 
 
 def show_sku_by_country_of_manufacture(companies_data):
@@ -261,39 +333,43 @@ def show_assortment_kpis(companies_data):
     df_all = get_assortment_analysis_data(companies_data)
 
     # SKU Count by Color
-    with st.expander("SKU Count by Color", expanded=True):
+    with st.expander("***SKU Count by Color***", expanded=True):
         show_sku_count_by_color(df_all)
 
     # SKU Count by Material
-    with st.expander("SKU Count by Material", expanded=False):
+    with st.expander("***SKU Count by Material***", expanded=False):
         show_sku_count_by_material(df_all)
 
     # Capacity Range Analysis
-    with st.expander("Capacity Range Analysis", expanded=False):
-        st.subheader("Capacity Range Analysis")
+    with st.expander("***Capacity Range Analysis***", expanded=False):
+        # st.subheader("Capacity Range Analysis")
         show_sku_count_by_capacity_range(df_all)
 
     # Capacity Range Summary
-    with st.expander("Capacity Range Summary", expanded=False):
-        st.subheader("Capacity Range Summary")
+    with st.expander("***Capacity Range Summary***", expanded=False):
+        # st.subheader("Capacity Range Summary")
         show_capacity_range_summary(df_all)
 
     # Market Segment Analysis
-    with st.expander("Market Segment Analysis", expanded=False):
-        st.subheader("Market Segment Analysis")
+    with st.expander("***Market Segment Analysis***", expanded=False):
+        # st.subheader("Market Segment Analysis")
         show_market_segment_distribution(df_all)
 
     # Competitor Comparison Matrix
-    with st.expander("Competitor Comparison Matrix", expanded=False):
-        st.subheader("Competitor Comparison Matrix")
+    with st.expander("***Competitor Comparison Matrix***", expanded=False):
+        # st.subheader("Competitor Comparison Matrix")
         show_competitor_comparison_matrix(df_all)
 
     # Assortment Coverage Metrics
-    with st.expander("Assortment Coverage Metrics", expanded=False):
+    with st.expander("***Assortment Coverage Metrics***", expanded=False):
         st.subheader("Assortment Coverage Metrics")
         show_assortment_coverage_metrics(df_all, companies_data)
 
     # SKU's by Country of Manufacture
-    with st.expander("SKU's by Country of Manufacture", expanded=False):
-        st.subheader("SKU's by Country of Manufacture")
+    with st.expander("***SKU's by Country of Manufacture***", expanded=False):
+        # st.subheader("SKU's by Country of Manufacture")
         show_sku_by_country_of_manufacture(companies_data)
+
+    with st.expander("***Stock Availability Details***", expanded=False):
+        st.subheader("Stock Availability by Company")
+        show_stock_availability_chart(df_all)
