@@ -27,50 +27,34 @@ def show_chatbot():
     col1, col2 = st.columns(2)
 
     with col1:
-        st.markdown(
-            """
-        <div class="company-card">
-            <h4> AI-powered Querying</h4>
-            <p><strong>Example:</strong> "What product in the dataset has the highest capacity in milliliters?"</p>
-            <p><strong>Response:</strong> 6.5 Gallon Clear Italian Glass Carboy 53 mm Cork Neck Finish with 24,605.18 ml</p>
-        </div>
-        """,
-            unsafe_allow_html=True,
-        )
+        with st.container(border=True):
+            st.subheader("AI-powered Querying")
+            st.write(
+                '**Example:** "What product in the dataset has the highest capacity in milliliters?"'
+            )
+            st.write(
+                "**Response:** 6.5 Gallon Clear Italian Glass Carboy 53 mm Cork Neck Finish with 24,605.18 ml"
+            )
 
-        st.markdown(
-            """
-        <div class="company-card">
-            <h4>Market Analysis</h4>
-            <p><strong>Example:</strong> "How many products does Cary Company offer?"</p>
-            <p><strong>Response:</strong>  398 products</p>
-        </div>
-        """,
-            unsafe_allow_html=True,
-        )
+        with st.container(border=True):
+            st.subheader("Market Analysis")
+            st.write('**Example:** "How many products does Cary Company offer?"')
+            st.write("**Response:**  398 products")
 
     with col2:
-        st.markdown(
-            """
-        <div class="company-card">
-            <h4>Pricing Insights</h4>
-            <p><strong>Example:</strong> "Which shape appears most frequently in the dataset?"</p>
-            <p><strong>Response:</strong> Round (452 occurrences)</p>
-        </div>
-        """,
-            unsafe_allow_html=True,
-        )
+        with st.container(border=True):
+            st.subheader("Pricing Insights")
+            st.write(
+                '**Example:** "Which shape appears most frequently in the dataset?"'
+            )
+            st.write("**Response:** Round (452 occurrences)")
 
-        st.markdown(
-            """
-        <div class="company-card">
-            <h4>Trend Analysis</h4>
-            <p><strong>Example:</strong> "What is the minimum average price per unit (excluding zero) among TricorBraun products?"</p>
-            <p><strong>Response:</strong> $0.08</p>
-        </div>
-        """,
-            unsafe_allow_html=True,
-        )
+        with st.container(border=True):
+            st.subheader("Trend Analysis")
+            st.write(
+                '**Example:** "What is the minimum average price per unit (excluding zero) among TricorBraun products?"'
+            )
+            st.write("**Response:** $0.08")
 
     # Chat interface
     st.subheader("Chat Interface")
