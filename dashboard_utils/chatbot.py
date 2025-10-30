@@ -111,7 +111,7 @@ def show_chatbot():
                                 margin-top: 1rem;
                                 box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
                                 ">
-                                <h4 style="color:#1c2e5c;">🤖 Chatbot Response</h4>
+                                <h4 style="color:#1c2e5c;">Chatbot Response</h4>
                                 <p style="font-size:16px; color:#222;">{response}</p>
                             </div>
                             """,
