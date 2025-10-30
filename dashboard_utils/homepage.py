@@ -5,14 +5,12 @@ This module contains all functions related to the homepage display.
 
 import streamlit as st
 import pandas as pd, numpy as np
-from typing import Dict
 from dashboard_utils.utils import (
     get_product_capacity_bins,
     get_product_pricing_bins,
     get_capacity_bin,
     get_pricing_bin,
 )
-from st_aggrid import AgGrid, GridOptionsBuilder, GridUpdateMode
 
 
 def show_homepage(companies_data):
@@ -96,14 +94,40 @@ def display_cross_company_comparison(companies_data):
 
     for company, data in companies_data.items():
         df_comp = pd.DataFrame(data)
+
+        if df_comp.empty:
+            comparison_data.append(
+                {
+                    "Company": company,
+                    "Total SKUs": 0,
+                    "Avg Price": "N/A",
+                    "Avg Count": 0,
+                    "Categories": 0,
+                    "Market Segments": 0,
+                    "In Stock": 0,
+                    "Out of Stock": 0,
+                    "Backordered / Lead Times Stock": 0,
+                }
+            )
+            continue
+
+        # Handle price column safely
+        if "price" not in df_comp.columns:
+            df_comp["price"] = 0
+
+        df_comp["price"] = pd.to_numeric(df_comp["price"], errors="coerce").fillna(0)
         df_comp_nonzero = df_comp[df_comp["price"] > 0]
+
         in_stock_count = (
             df_comp["stock"].str.contains("In stock", case=False, na=False).sum()
+            if "stock" in df_comp.columns
+            else 0
         )
         out_of_stock_count = (
             df_comp["stock"].str.contains("Out of stock", case=False, na=False).sum()
+            if "stock" in df_comp.columns
+            else 0
         )
-        # Group both backordered and lead time stocks into "backordered/lead time"
         backordered_leadtime_count = (
             df_comp["stock"]
             .str.contains(
@@ -112,15 +136,32 @@ def display_cross_company_comparison(companies_data):
                 na=False,
             )
             .sum()
+            if "stock" in df_comp.columns
+            else 0
         )
+
+        avg_price = (
+            round(df_comp_nonzero["price"].mean(), 4)
+            if not df_comp_nonzero.empty
+            else "N/A"
+        )
+
         comparison_data.append(
             {
                 "Company": company,
                 "Total SKUs": len(df_comp),
-                "Avg Price": round(df_comp_nonzero["price"].mean(), 4),
+                "Avg Price": avg_price,
                 "Avg Count": len(df_comp_nonzero),
-                "Categories": df_comp["category"].replace("", np.nan).nunique(),
-                "Market Segments": df_comp["market_segment"].nunique(),
+                "Categories": (
+                    df_comp["category"].replace("", np.nan).nunique()
+                    if "category" in df_comp.columns
+                    else 0
+                ),
+                "Market Segments": (
+                    df_comp["market_segment"].nunique()
+                    if "market_segment" in df_comp.columns
+                    else 0
+                ),
                 "In Stock": in_stock_count,
                 "Out of Stock": out_of_stock_count,
                 "Backordered / Lead Times Stock": backordered_leadtime_count,
@@ -129,6 +170,7 @@ def display_cross_company_comparison(companies_data):
 
     comparison_df = pd.DataFrame(comparison_data)
     comparison_df.columns = [col.title() for col in comparison_df.columns]
+
     render_bold_table(comparison_df, height=150, key="cross_company_table")
 
 
@@ -293,11 +335,38 @@ def display_sell_uom_data(df, selected_company):
 
 
 def render_bold_table(df: pd.DataFrame, height: int = 300, key: str = None):
-    """Render AgGrid table with bold headers and right-aligned filters."""
+    """Render AgGrid table with bold headers and correctly typed numeric columns."""
+    import pandas as pd
+    from st_aggrid import AgGrid, GridOptionsBuilder, GridUpdateMode
+
+    # --- 1. Clean column names (optional normalization) ---
     df.columns = [
-        col.replace("(Ml)", "(ml)").replace("(ML)", "(ml)") for col in df.columns
+        col.strip().replace("(Ml)", "(ml)").replace("(ML)", "(ml)")
+        for col in df.columns
     ]
 
+    # --- 2. Detect & coerce likely numeric columns ---
+    likely_numeric = [
+        col
+        for col in df.columns
+        if df[col]
+        .dropna()
+        .astype(str)
+        .str.replace(r"[.,\d]", "", regex=True)
+        .str.strip()
+        .eq("")
+        .all()
+        or df[col].dtype in ("int64", "float64")
+    ]
+
+    for col in likely_numeric:
+        df[col] = pd.to_numeric(df[col], errors="coerce")
+
+    # --- 3. Replace NaN with 0 for numeric columns only ---
+    numeric_cols = df.select_dtypes(include=["number"]).columns.tolist()
+    df[numeric_cols] = df[numeric_cols].fillna(0)
+
+    # --- 4. Build AgGrid configuration ---
     gb = GridOptionsBuilder.from_dataframe(df)
     gb.configure_default_column(
         headerClass="bold-header",
@@ -308,30 +377,24 @@ def render_bold_table(df: pd.DataFrame, height: int = 300, key: str = None):
         autoHeaderHeight=True,
     )
 
-    # Columns needing right-aligned filters
-    right_align_filter_cols = [
-        "Normalised Capacity (ml)",
-        "Avg Price Per Item",
-        "Total Skus",
-        "Categories",
-        "Avg Price",
-        "Market Segments",
-    ]
-
-    for col in df.columns:
-        if col in right_align_filter_cols:
-            gb.configure_column(col, headerClass="right-filter-header")
+    # Configure numeric columns for proper filtering
+    for col in numeric_cols:
+        gb.configure_column(
+            col,
+            type=["numericColumn", "numberColumnFilter", "customNumericFormat"],
+            precision=2,
+            headerClass="right-filter-header",
+        )
 
     grid_options = gb.build()
 
+    # --- 5. Custom styling for headers ---
     custom_css = {
         ".ag-header-cell-text": {
             "font-weight": "bold !important",
             "color": "black !important",
         },
-        ".ag-header-cell-label": {
-            "justify-content": "flex-start !important",
-        },
+        ".ag-header-cell-label": {"justify-content": "flex-start !important"},
         ".ag-header-cell.right-filter-header .ag-header-cell-label": {
             "display": "flex !important",
             "justify-content": "space-between !important",
@@ -347,6 +410,7 @@ def render_bold_table(df: pd.DataFrame, height: int = 300, key: str = None):
         },
     }
 
+    # --- 6. Render table ---
     AgGrid(
         df,
         gridOptions=grid_options,
