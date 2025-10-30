@@ -8,37 +8,6 @@ import streamlit as st, pandas as pd, plotly.express as px
 import plotly.graph_objects as go
 
 
-def show_pricing_intelligence(companies_data):
-    """Display pricing intelligence dashboard"""
-    st.header("Pricing Analysis Dashboard")
-
-    # Combine all data for analysis
-    all_data = []
-    for company, data in companies_data.items():
-        all_data.extend(data)
-
-    df_all = pd.DataFrame(all_data)
-
-    # Normalized price per capacity
-    # Calculate normalized prices
-    df_all = get_capacity_analysis_data(companies_data)
-
-    with st.expander("Average Price by Capacity Range", expanded=True):
-        fig_bins = build_avg_price_by_capacity_range(df_all)
-        st.plotly_chart(fig_bins, config={"responsive": True})
-
-    with st.expander("Min–Max Price Range by Capacity Bin", expanded=False):
-        fig_minmax = build_minmax_price_range_by_capacity_bin(df_all)
-        st.plotly_chart(fig_minmax, config={"responsive": True})
-
-    with st.expander("Average Price by Category and Company", expanded=False):
-        fig_category = build_avg_price_by_category(df_all)
-        st.plotly_chart(fig_category, config={"responsive": True})
-
-    with st.expander("Case Price Tiers (Min vs Max)", expanded=False):
-        show_case_price_tier_chart(all_data)
-
-
 def get_capacity_analysis_data(companies_data):
     """Get capacity analysis data with normalized values"""
     all_data = []
@@ -72,8 +41,6 @@ def get_capacity_analysis_data(companies_data):
 
 def get_case_price_bin_data(product_list):
     """Aggregate min/max Case price per company grouped by capacity bins."""
-    import streamlit as st
-
     records = []
 
     for product in product_list:
@@ -85,22 +52,34 @@ def get_case_price_bin_data(product_list):
         prices = []
         min_price = 0
         max_price = 0
+        prices = []
         for tier in quantity_breaks:
-            if tier.get("type_of_packing") == None:
+            # Only interested in "case" pricing; skip entries without this info
+            type_of_packing = tier.get("type_of_packing")
+            if type_of_packing is None:
                 print(product.get("sku"))
                 continue
-            if tier.get("type_of_packing", "").lower() == "case":
-                prices.append(tier.get("price_per_packing"))
-                min_price = min(prices)
-                max_price = max(prices)
-        records.append(
-            {
-                "company": company,
-                "capacity_ml": float(cap_ml),
-                "min_price": min_price,
-                "max_price": max_price,
-            }
-        )
+            if type_of_packing.lower() == "case":
+                price = tier.get("price_per_packing")
+                if price is not None:
+                    try:
+                        price = float(price)
+                        prices.append(price)
+                    except (TypeError, ValueError):
+                        continue
+
+        # Only append if we found any valid "case" prices
+        if prices:
+            min_price = min(prices)
+            max_price = max(prices)
+            records.append(
+                {
+                    "company": company,
+                    "capacity_ml": float(cap_ml),
+                    "min_price": min_price,
+                    "max_price": max_price,
+                }
+            )
 
     df = pd.DataFrame(records)
     if df.empty:
@@ -139,11 +118,9 @@ def get_case_price_bin_data(product_list):
     return df_summary
 
 
-def show_case_price_tier_chart(json_data):
-    import streamlit as st
-
+def show_case_price_tier_chart(product_list):
     """Render bar graph of Min/Max Case prices grouped by capacity bins."""
-    df_summary = get_case_price_bin_data(json_data)
+    df_summary = get_case_price_bin_data(product_list)
     if df_summary.empty:
         return
 
@@ -171,7 +148,7 @@ def show_case_price_tier_chart(json_data):
         title_x=0.35,
     )
 
-    st.plotly_chart(fig, use_container_width=True)
+    return fig
 
 
 def create_price_distribution_multiline_chart(pricing_df):
@@ -340,3 +317,35 @@ def build_avg_price_by_category(df_all: pd.DataFrame):
         barmode="group",
     )
     return fig_category
+
+
+def show_pricing_intelligence(companies_data):
+    """Display pricing intelligence dashboard"""
+    st.header("Pricing Analysis Dashboard")
+
+    # Combine all data for analysis
+    all_data = []
+    for company, data in companies_data.items():
+        all_data.extend(data)
+
+    df_all = pd.DataFrame(all_data)
+
+    # Normalized price per capacity
+    # Calculate normalized prices
+    df_all = get_capacity_analysis_data(companies_data)
+
+    with st.expander("***Average Price by Capacity Range***", expanded=True):
+        fig_bins = build_avg_price_by_capacity_range(df_all)
+        st.plotly_chart(fig_bins, config={"responsive": True})
+
+    with st.expander("***Min–Max Price Range by Capacity Bin***", expanded=False):
+        fig_minmax = build_minmax_price_range_by_capacity_bin(df_all)
+        st.plotly_chart(fig_minmax, config={"responsive": True})
+
+    with st.expander("***Average Price by Category and Company***", expanded=False):
+        fig_category = build_avg_price_by_category(df_all)
+        st.plotly_chart(fig_category, config={"responsive": True})
+
+    with st.expander("***Case Price Tiers (Min vs Max)***", expanded=False):
+        fig_case_tier = show_case_price_tier_chart(all_data)
+        st.plotly_chart(fig_case_tier, config={"responsive": True})

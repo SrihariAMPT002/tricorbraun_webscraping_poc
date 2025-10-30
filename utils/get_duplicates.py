@@ -3,7 +3,7 @@ import json
 
 def find_duplicates():
     try:
-        with open("demo_batch_data/tricorbraun_all_data.json", "r") as f:
+        with open("demo_batch_data/berlin_new_data_normalised.json", "r") as f:
             berlin_data = json.load(f)
     except Exception as e:
         print(f"Error loading data: {e}")
@@ -28,8 +28,8 @@ def find_duplicates():
     # For visualization/debugging, print the number of duplicates removed:
     print(f"Duplicates removed: {len(berlin_data) - len(unique_products)}")
 
-    with open("demo_batch_data/tricorbraun_all_data_deduped.json", "w") as f:
+    with open("demo_batch_data/berlin_new_data_normalised_deduped.json", "w") as f:
         json.dump(unique_products, f, indent=2)
 
 
-# find_duplicates()
+find_duplicates()

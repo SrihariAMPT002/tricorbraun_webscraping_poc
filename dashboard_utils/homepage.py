@@ -35,16 +35,23 @@ def show_homepage(companies_data):
         with col1:
             st.metric(label="Total SKUs", value=len(df))
         with col2:
-            avg_price = df["price"].mean()
-            st.metric(label="Average Price", value=f"${avg_price:.2f}")
+            df_nonzero_price = df[df["price"] > 0]
+            avg_price = df_nonzero_price["price"].mean()
+            st.metric(label="Average Price", value=f"${avg_price:.2f}", delta=None)
+            st.write(
+                f"Avg computed from ***{len(df_nonzero_price)}*** products (price > 0)"
+            )
         with col3:
             unique_categories = df["category"].replace("", np.nan).nunique()
             st.metric(label="Categories (Glass)", value=unique_categories)
         with col4:
-            in_stock_count = len(
-                df[df["stock"].str.contains("In stock", case=False, na=False)]
+            out_of_stock_count = len(
+                df[df["stock"].str.contains("out of stock", case=False, na=False)]
             )
-            st.metric(label="In Stock", value=f"{in_stock_count}/{len(df)}")
+
+            st.metric(
+                label="In Stock", value=f"{len(df) - (out_of_stock_count)}", delta=None
+            )
 
         display_product_table(df, selected_company)
 

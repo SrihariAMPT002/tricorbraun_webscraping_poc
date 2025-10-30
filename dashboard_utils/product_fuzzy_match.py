@@ -86,260 +86,6 @@ def filter_products_by_bins(products, capacity_bins, pricing_bins):
     return filtered_products
 
 
-def show_all_similar_products(companies_data):
-    """Display all similar products for TricorBraun products with 80%+ similarity"""
-
-    st.subheader("All TricorBraun Product Similarities")
-    st.write(
-        "Find all similar products (80%+ match) for TricorBraun products across all companies"
-    )
-
-    # Check if TricorBraun exists
-    if "TricorBraun" not in companies_data:
-        st.error("TricorBraun data not found in the dataset")
-        return
-
-    # Add controls
-    st.subheader("Filters & Controls")
-
-    col1, col2, col3 = st.columns([1, 1, 1])
-
-    with col1:
-        similarity_threshold = st.slider(
-            "Similarity Threshold:",
-            min_value=0.70,
-            max_value=0.95,
-            value=0.80,
-            step=0.05,
-            help="Minimum similarity score to show matches",
-        )
-
-    with col2:
-        max_products_display = st.number_input(
-            "Max Products to Display:",
-            min_value=10,
-            max_value=100,
-            value=50,
-            help="Maximum number of TricorBraun products to show",
-        )
-
-    with col3:
-        exclude_zero_price = st.checkbox(
-            "Exclude Zero Price Products",
-            value=True,
-            help="Filter out products with price <= $0.00",
-        )
-
-    # Run the analysis
-    if st.button("Find All Similar Products", key="find_all_similar"):
-        with st.spinner("Analyzing all TricorBraun products..."):
-            # Get original count for summary
-            original_tricorbraun_count = len(companies_data["TricorBraun"])
-
-            all_matches = find_similar_products_with_capacity_binning(
-                companies_data, similarity_threshold, exclude_zero_price
-            )
-            summary = get_similarity_summary(all_matches, original_tricorbraun_count)
-
-            # Store results in session state
-            st.session_state.all_similar_products_matches = all_matches
-            st.session_state.all_similar_products_summary = summary
-            st.session_state.all_similar_products_params = {
-                "similarity_threshold": similarity_threshold,
-                "exclude_zero_price": exclude_zero_price,
-                "max_products_display": max_products_display,
-            }
-
-        if not all_matches:
-            st.warning(
-                f"No products found with {similarity_threshold:.0%} or above similarity"
-            )
-            return
-
-    # Display results from session state if available
-    if "all_similar_products_matches" in st.session_state:
-        all_matches = st.session_state.all_similar_products_matches
-        summary = st.session_state.all_similar_products_summary
-        params = st.session_state.all_similar_products_params
-
-        # Show filter information
-        st.subheader("Applied Filters")
-        filter_info = []
-        if params["exclude_zero_price"]:
-            filter_info.append("Excluding products with price ≤ $0.00")
-        if not filter_info:
-            filter_info.append("No filters applied")
-
-        st.info(" | ".join(filter_info))
-
-        # Display summary statistics
-        st.subheader("Summary Statistics")
-
-        col1, col2, col3, col4, col5 = st.columns(5)
-        with col1:
-            st.metric("Total TricorBraun Products", summary["total_tricor_products"])
-        with col2:
-            st.metric("Filtered Products", summary["filtered_products"])
-        with col3:
-            st.metric("Products with Matches", summary["products_with_matches"])
-        with col4:
-            st.metric("Total Similar Products", summary["total_matches"])
-        with col5:
-            st.metric("Match Rate", f"{summary['match_rate']:.1%}")
-
-        # Company breakdown
-        st.subheader("Similar Products by Company")
-        company_df_data = []
-        for company, stats in summary["company_stats"].items():
-            company_df_data.append(
-                {
-                    "Company": company,
-                    "Similar Products": stats["count"],
-                    "Average Similarity": f"{stats['avg_similarity']:.1%}",
-                }
-            )
-
-        if company_df_data:
-            company_df = pd.DataFrame(company_df_data)
-            st.dataframe(company_df, use_container_width=True)
-
-        # Display individual product matches
-        st.subheader("Detailed Product Matches")
-
-        # Add search filter for matched products
-        search_matched_products = st.text_input(
-            "Filter Matched Products:",
-            placeholder="Search within matched products by name, SKU, or price",
-            help="Filter the matched products by product name, SKU, or price",
-            key="search_matched_products",
-        )
-
-        # Apply search filter to matched products if provided
-        filtered_matches = all_matches
-        if search_matched_products:
-            filtered_matches = {}
-            for tricor_product_name, match_data in all_matches.items():
-                tricor_product = match_data["tricorbraun_product"]
-                similar_products = match_data["similar_products"]
-
-                # Check if TricorBraun product matches search
-                tricor_matches = (
-                    search_matched_products.lower() in tricor_product["name"].lower()
-                    or search_matched_products.lower()
-                    in str(tricor_product.get("sku", "")).lower()
-                    or search_matched_products.lower()
-                    in f"${tricor_product['price']:.2f}"
-                )
-
-                # Check if any similar products match search
-                filtered_similar = []
-                for match in similar_products:
-                    product = match["product"]
-                    if (
-                        search_matched_products.lower() in product["name"].lower()
-                        or search_matched_products.lower()
-                        in str(product.get("sku", "")).lower()
-                        or search_matched_products.lower() in f"${product['price']:.2f}"
-                    ):
-                        filtered_similar.append(match)
-
-                # Include this match if TricorBraun product matches or if any similar products match
-                if tricor_matches or filtered_similar:
-                    filtered_matches[tricor_product_name] = {
-                        "tricorbraun_product": tricor_product,
-                        "similar_products": (
-                            filtered_similar if filtered_similar else similar_products
-                        ),
-                        "capacity_bracket": match_data.get(
-                            "capacity_bracket", "Unknown"
-                        ),
-                    }
-
-        # Limit the number of products displayed
-        displayed_products = list(filtered_matches.items())[
-            : params["max_products_display"]
-        ]
-
-        for i, (tricor_product_name, match_data) in enumerate(displayed_products, 1):
-            tricor_product = match_data["tricorbraun_product"]
-            similar_products = match_data["similar_products"]
-
-            # Create expandable section for each TricorBraun product
-            capacity_bracket = match_data.get("capacity_bracket", "Unknown")
-            with st.expander(
-                f"#{i} {tricor_product_name} - {len(similar_products)} matches ({capacity_bracket})"
-            ):
-                # Display TricorBraun product details
-                st.write("**TricorBraun Product:**")
-                col1, col2, col3 = st.columns(3)
-
-                with col1:
-                    st.write(f"**Name:** {tricor_product['name']}")
-                    st.write(
-                        f"**Capacity:** {tricor_product['capacity']} {tricor_product['unit']}"
-                    )
-                with col2:
-                    st.write(f"**Price:** ${tricor_product['price']:.2f}")
-                    st.write(f"**Material:** {tricor_product.get('material', 'N/A')}")
-                with col3:
-                    st.write(f"**Color:** {tricor_product.get('color', 'N/A')}")
-                    st.write(f"**Shape:** {tricor_product.get('shape', 'N/A')}")
-
-                # Display similar products
-                st.write(f"**Similar Products ({len(similar_products)} matches):**")
-
-                # Group by company
-                products_by_company = {}
-                for match in similar_products:
-                    company = match["company"]
-                    if company not in products_by_company:
-                        products_by_company[company] = []
-                    products_by_company[company].append(match)
-
-                # Display products by company
-                for company, matches in products_by_company.items():
-                    st.write(f"**{company} ({len(matches)} products):**")
-
-                    for j, match in enumerate(matches, 1):
-                        product = match["product"]
-                        similarity = match["similarity"]
-
-                        with st.container():
-                            col1, col2, col3, col4 = st.columns(4)
-
-                            with col1:
-                                st.write(f"**{j}.** {product['name']}")
-                                st.write(f"**Similarity:** {similarity:.1%}")
-
-                            with col2:
-                                st.write(
-                                    f"**Capacity:** {product['capacity']} {product['unit']}"
-                                )
-                                st.write(f"**Diff:** {match['capacity_diff_ml']:.1f}ml")
-
-                            with col3:
-                                st.write(f"**Price:** ${product['price']:.2f}")
-                                st.write(f"**Diff:** ${match['price_diff']:.2f}")
-
-                            with col4:
-                                st.write(
-                                    f"**Material:** {product.get('material', 'N/A')}"
-                                )
-                                st.write(f"**Color:** {product.get('color', 'N/A')}")
-
-                        st.divider()
-
-        # Show if there are more products
-        if len(filtered_matches) > params["max_products_display"]:
-            st.info(
-                f"Showing first {params['max_products_display']} products. Total filtered TricorBraun products with matches: {len(filtered_matches)}"
-            )
-        elif search_matched_products and len(filtered_matches) != len(all_matches):
-            st.info(
-                f"Filtered results: {len(filtered_matches)} out of {len(all_matches)} total matches"
-            )
-
-
 def show_product_fuzzy_match(companies_data):
     """Product matching with two tabs (Per Item, All Products) and pagination."""
 
@@ -368,10 +114,12 @@ def show_product_fuzzy_match(companies_data):
             st.error("TricorBraun data not found in the dataset")
             return
 
-        col1_pi, col2_pi = st.columns([1, 1])
+        col1_pi, col_divider, col2_pi = st.columns(
+            [1, 0.1, 1]
+        )  # Adjust the ratio for the divider width
 
         with col1_pi:
-            st.write("**TricorBraun Products**")
+            st.write("**Filters**")
             tricorbraun_products = companies_data["TricorBraun"]
             filtered_tricorbraun = filter_products_by_price(
                 tricorbraun_products, exclude_zero_price_item
@@ -387,24 +135,6 @@ def show_product_fuzzy_match(companies_data):
             if not filtered_tricorbraun:
                 st.warning("No products match the selected filters")
                 st.stop()
-            selected_product = st.selectbox(
-                "Select TricorBraun Product:",
-                [p["name"] for p in filtered_tricorbraun],
-                key="tricorbraun_product",
-            )
-            selected_product_data = None
-            if selected_product:
-                selected_product_data = next(
-                    p for p in filtered_tricorbraun if p["name"] == selected_product
-                )
-                st.write("**Selected Product Details:**")
-                st.write(f"**Name:** {selected_product_data['name']}")
-                st.write(
-                    f"**Capacity:** {selected_product_data['capacity']} {selected_product_data['unit']}"
-                )
-                st.write(f"**Price:** ${selected_product_data['price']:.2f}")
-
-        with col2_pi:
             st.write("**Compare With Other Companies**")
             other_companies = [name for name in company_names if name != "TricorBraun"]
             if not other_companies:
@@ -424,8 +154,42 @@ def show_product_fuzzy_match(companies_data):
                 st.info("Please select at least one company to compare")
                 st.stop()
 
+        with col_divider:
+            st.html(
+                """
+                <div class="divider-vertical-line"></div>
+                <style>
+                    .divider-vertical-line {
+                        border-left: 1px solid rgba(49, 51, 63, 0.2);
+                        height: 320px;
+                        margin: auto;
+                    }
+                </style>
+            """
+            )
+
+        with col2_pi:
+            st.write("**TricorBraun Products**")
+            selected_product = st.selectbox(
+                "Select TricorBraun Product:",
+                [p["name"] for p in filtered_tricorbraun],
+                key="tricorbraun_product",
+            )
+            selected_product_data = None
+            if selected_product:
+                selected_product_data = next(
+                    p for p in filtered_tricorbraun if p["name"] == selected_product
+                )
+                with st.container(border=True):
+                    st.write("**Selected Product Details:**")
+                    st.write(f"**Name:** {selected_product_data['name']}")
+                    st.write(
+                        f"**Capacity:** {selected_product_data['capacity']} {selected_product_data['unit']}"
+                    )
+                    st.write(f"**Avg Price:** ${selected_product_data['price']:.2f}")
+
         if (
-            st.button("Find Similar Products", key="find_similar")
+            st.button("Find Similar Products", key="find_similar", type="primary")
             and selected_product_data
         ):
             similar_products = []
@@ -472,7 +236,7 @@ def show_product_fuzzy_match(companies_data):
             try:
                 with open(CACHE_FILE, "r", encoding="utf-8") as f:
                     st.session_state.fuzzy_match_results = json.load(f)
-                st.info("Loaded previous fuzzy match results from cache.")
+                # st.info("Loaded previous fuzzy match results from cache.")
             except Exception as e:
                 st.warning(f"Could not load cache file: {e}")
 
@@ -480,6 +244,7 @@ def show_product_fuzzy_match(companies_data):
             results = st.session_state.fuzzy_match_results
             high_similarity_products = results["high_similarity_products"]
             selected_product_data = results["selected_product_data"]
+            st.divider()
             st.subheader("High Similarity Products Found (85%+)")
             search_matched_products = st.text_input(
                 "Filter Matched Products:",
@@ -499,11 +264,14 @@ def show_product_fuzzy_match(companies_data):
                     ):
                         filtered_similar_products.append(item)
             total = len(filtered_similar_products)
-            per_page = st.number_input(
-                "Items per page", 5, 100, 20, key="per_item_per_page"
-            )
+            col_per_item, col_total_page = st.columns([1, 1])
+            with col_per_item:
+                per_page = st.number_input(
+                    "Items per page", 5, 100, 20, key="per_item_per_page"
+                )
             total_pages = max(1, (total + per_page - 1) // per_page)
-            page = st.number_input("Page", 1, total_pages, 1, key="per_item_page")
+            with col_total_page:
+                page = st.number_input("Page", 1, total_pages, 1, key="per_item_page")
             start = (page - 1) * per_page
             end = start + per_page
             page_items = filtered_similar_products[start:end]
@@ -557,15 +325,8 @@ def show_product_fuzzy_match(companies_data):
         st.write(
             "Find similar products for all TricorBraun items using capacity-binned fuzzy matching (85%+)."
         )
-        col1_b, col2_b = st.columns([1, 1])
+        col1_b, col2_b = st.columns([1, 1], vertical_alignment="center")
         with col1_b:
-            exclude_zero_price_batch = st.checkbox(
-                "Exclude Zero Price Products",
-                value=True,
-                help="Filter out products with price <= $0.00",
-                key="exclude_zero_price_batch",
-            )
-        with col2_b:
             batch_similarity_threshold = st.slider(
                 "Batch Similarity Threshold",
                 min_value=0.85,
@@ -574,6 +335,14 @@ def show_product_fuzzy_match(companies_data):
                 step=0.05,
                 help="Threshold for batch matching of all TricorBraun products",
                 key="batch_similarity_threshold",
+            )
+
+        with col2_b:
+            exclude_zero_price_batch = st.checkbox(
+                "Exclude Zero Price Products",
+                value=True,
+                help="Filter out products with price <= $0.00",
+                key="exclude_zero_price_batch",
             )
         if st.button("Find All Similar Products (Batch)", key="find_all_similar_batch"):
             with st.spinner("Finding similar products for all TricorBraun items..."):
@@ -635,19 +404,24 @@ def show_product_fuzzy_match(companies_data):
             batch = st.session_state.all_similar_batch
             summary = batch.get("summary", {})
             all_matches = batch.get("matches", {})
-            st.subheader("Summary")
-            if summary:
-                col1, col2, col3, col4 = st.columns(4)
-                with col1:
-                    st.metric(
-                        "Total TricorBraun", summary.get("total_tricor_products", 0)
-                    )
-                with col2:
-                    st.metric("Filtered Products", summary.get("filtered_products", 0))
-                with col3:
-                    st.metric("With Matches", summary.get("products_with_matches", 0))
-                with col4:
-                    st.metric("Total Matches", summary.get("total_matches", 0))
+            with st.container(border=True):
+                st.subheader("Summary")
+                if summary:
+                    col1, col2, col3, col4 = st.columns(4)
+                    with col1:
+                        st.metric(
+                            "Total TricorBraun", summary.get("total_tricor_products", 0)
+                        )
+                    with col2:
+                        st.metric(
+                            "Filtered Products", summary.get("filtered_products", 0)
+                        )
+                    with col3:
+                        st.metric(
+                            "With Matches", summary.get("products_with_matches", 0)
+                        )
+                    with col4:
+                        st.metric("Total Matches", summary.get("total_matches", 0))
             st.subheader("Results grouped by normalized capacity (ml)")
             capacity_groups = {}
             for tricor_name, match_data in all_matches.items():
@@ -656,15 +430,18 @@ def show_product_fuzzy_match(companies_data):
                 capacity_groups.setdefault(cap_ml, []).append((tricor_name, match_data))
             sorted_caps = sorted(capacity_groups.keys())
             groups_total = len(sorted_caps)
-            groups_per_page = st.number_input(
-                "Capacity groups per page", 1, 50, 5, key="batch_groups_per_page"
-            )
+            col_capacity, col_total_page = st.columns([1, 1])
+            with col_capacity:
+                groups_per_page = st.number_input(
+                    "Capacity groups per page", 1, 50, 5, key="batch_groups_per_page"
+                )
             groups_total_pages = max(
                 1, (groups_total + groups_per_page - 1) // groups_per_page
             )
-            groups_page = st.number_input(
-                "Page", 1, groups_total_pages, 1, key="batch_groups_page"
-            )
+            with col_total_page:
+                groups_page = st.number_input(
+                    "Page", 1, groups_total_pages, 1, key="batch_groups_page"
+                )
             gstart = (groups_page - 1) * groups_per_page
             gend = gstart + groups_per_page
             page_caps = sorted_caps[gstart:gend]
@@ -694,7 +471,10 @@ def show_product_fuzzy_match(companies_data):
                                 match
                             )
                         for company, matches in products_by_company.items():
-                            st.write(f"**{company} ({len(matches)} products):**")
+                            st.subheader(
+                                f"**{company} ({len(matches)} products):**",
+                                divider="gray",
+                            )
                             for j, match in enumerate(matches, 1):
                                 product = match["product"]
                                 similarity = match["similarity"]

@@ -20,17 +20,15 @@ def extract_berlin_pricing(sell_uom, packing_unit_quantity: Optional[str]):
         packing_unit_count = (
             float(re.sub(r"[^\d.]", "", packing_unit_quantity))
             if packing_unit_quantity
-            else 1.0
+            else None
         )
     except ValueError:
-        packing_unit_count = 1.0
+        packing_unit_count = None
 
     breaks = []
     unit_prices = []
     current_unit = None
     current_unit_qty = None
-
-    print(packing_unit_count)
 
     for tier in sell_uom:
         qty_range = tier.get("qty_range")
@@ -45,6 +43,8 @@ def extract_berlin_pricing(sell_uom, packing_unit_quantity: Optional[str]):
             if match:
                 current_unit = match.group(1).title()
                 current_unit_qty = float(match.group(2).replace(",", ""))
+                if not packing_unit_count:
+                    packing_unit_count = current_unit_qty
             else:
                 current_unit = (qty_range or "").title()
                 current_unit_qty = 1.0
@@ -78,73 +78,9 @@ def extract_berlin_pricing(sell_uom, packing_unit_quantity: Optional[str]):
 
 
 berlin_price = [
-    {"qty_range": "924", "price": "$1071.84", "price_per_unit": "$1.15 ea."}
+    {"qty_range": "Pack (Qty 144)", "price": "Price Per Pack", "header": "true"},
+    {"qty_range": "1-5", "price": "$89.42", "price_per_unit": "$0.62 ea."},
+    {"qty_range": "6-9", "price": "$70.81", "price_per_unit": "$0.49 ea."},
+    {"qty_range": "10+", "price": "$56.64", "price_per_unit": "$0.39 ea."},
 ]
-print(extract_berlin_pricing(berlin_price, "9,216"))
-
-
-def extract_tricor_pricing(selluom):
-    if not selluom:
-        return {"base_price": 0, "breaks": []}
-
-    breaks = []
-    unit_prices = []
-
-    for item in selluom:
-        qty_text = item.get("qty_range") or ""
-        qty_match = re.search(r"(\d+)", qty_text)
-        qty = int(qty_match.group(1)) if qty_match else 1
-
-        unit = (item.get("unit") or "").strip()
-        price = parse_float(item.get("price"))
-        price_per_unit = parse_float(item.get("price_per_unit"))
-
-        if unit.lower() == "piece" and not price_per_unit:
-            price_per_unit = price
-        if not price_per_unit and price > 0 and qty > 0:
-            price_per_unit = round(price / qty, 4)
-
-        if price_per_unit > 0:
-            unit_prices.append(price_per_unit)
-
-        breaks.append(
-            {
-                "quantity_of_packing": qty,
-                "type_of_packing": unit,
-                "price_per_packing": price,
-                "price_per_item": price_per_unit,
-            }
-        )
-
-    base_price = round(sum(unit_prices) / len(unit_prices), 4) if unit_prices else 0
-    return {"base_price": base_price, "breaks": breaks}
-
-
-tricor_price = [
-    {
-        "qty_range": "1 Case",
-        "unit": "Case",
-        "price": "$17.21",
-        "price_per_unit": "$1.43",
-    },
-    {
-        "qty_range": "12 Case",
-        "unit": "Case",
-        "price": "$15.49",
-        "price_per_unit": "$1.29",
-    },
-    {
-        "qty_range": "18 Case",
-        "unit": "Case",
-        "price": "$13.01",
-        "price_per_unit": "$1.08",
-    },
-    {
-        "qty_range": "160 Case",
-        "unit": "Case",
-        "price": "$11.06",
-        "price_per_unit": "$0.92",
-    },
-]
-
-# print(extract_tricor_pricing(tricor_price))
+print(extract_berlin_pricing(berlin_price, ""))

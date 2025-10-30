@@ -15,7 +15,6 @@ from .fuzzy_matching import (
     group_products_by_capacity,
     filter_products_by_price,
     filter_products_by_search,
-    find_all_similar_products,
     get_similarity_summary,
     find_similar_products_with_capacity_binning,
 )
@@ -284,10 +283,10 @@ def extract_berlin_pricing(sell_uom, packing_unit_quantity: Optional[str]):
         packing_unit_count = (
             float(re.sub(r"[^\d.]", "", packing_unit_quantity))
             if packing_unit_quantity
-            else 1.0
+            else None
         )
     except ValueError:
-        packing_unit_count = 1.0
+        packing_unit_count = None
 
     breaks = []
     unit_prices = []
@@ -307,6 +306,8 @@ def extract_berlin_pricing(sell_uom, packing_unit_quantity: Optional[str]):
             if match:
                 current_unit = match.group(1).title()
                 current_unit_qty = float(match.group(2).replace(",", ""))
+                if not packing_unit_count:
+                    packing_unit_count = current_unit_qty
             else:
                 current_unit = (qty_range or "").title()
                 current_unit_qty = 1.0
