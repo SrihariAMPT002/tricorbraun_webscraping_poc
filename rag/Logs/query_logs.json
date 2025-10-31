@@ -1,94 +1,77 @@
 [
   {
-    "timestamp": "2025-10-30T18:19:05.799592",
-    "user_query": "whats the count of in stock, out of stock, lead time, backordered, special order items for glass products for tricorbraun?",
+    "timestamp": "2025-10-31T09:41:42.805995",
+    "user_query": "What product in the dataset has the highest capacity in milliliters?",
     "query_type": "aggregation_query",
-    "intent": "aggregation",
+    "intent": "find_extreme",
     "retrieval_strategy": "Pinecone: False, MongoDB: True, Aggregation: True",
     "timing_metrics": [
       {
         "operation": "MongoDB Connection",
-        "start_time": 1761828503.1687086,
-        "end_time": 1761828503.4395642,
-        "duration": 0.2708556652069092,
+        "start_time": 1761883696.3141255,
+        "end_time": 1761883696.5840566,
+        "duration": 0.2699310779571533,
         "details": null
       },
       {
         "operation": "Pinecone Connection",
-        "start_time": 1761828503.4397156,
-        "end_time": 1761828505.2103035,
-        "duration": 1.7705879211425781,
+        "start_time": 1761883696.5846915,
+        "end_time": 1761883697.9054275,
+        "duration": 1.3207359313964844,
         "details": null
       },
       {
         "operation": "Gemini Models Initialization",
-        "start_time": 1761828505.2104514,
-        "end_time": 1761828505.2283545,
-        "duration": 0.01790308952331543,
+        "start_time": 1761883697.9055283,
+        "end_time": 1761883697.926558,
+        "duration": 0.02102971076965332,
         "details": null
       },
       {
         "operation": "Query Analysis & Routing",
-        "start_time": 1761828527.5533714,
-        "end_time": 1761828536.1797657,
-        "duration": 8.626394271850586,
+        "start_time": 1761883895.8536167,
+        "end_time": 1761883900.143265,
+        "duration": 4.2896482944488525,
         "details": {
           "query_type": "aggregation_query",
-          "intent": "aggregation",
+          "intent": "find_extreme",
           "requires_aggregation": true,
-          "aggregation_type": "group",
-          "group_by_field": "stock_status",
-          "return_products": false
+          "aggregation_type": "max",
+          "group_by_field": null,
+          "return_products": true
         }
       },
       {
         "operation": "MongoDB Aggregation Query",
-        "start_time": 1761828536.1799328,
-        "end_time": 1761828543.0692885,
-        "duration": 6.889355659484863,
+        "start_time": 1761883900.1434426,
+        "end_time": 1761883900.7581174,
+        "duration": 0.6146748065948486,
         "details": {
-          "query_time": 6.88905143737793,
-          "pipeline_stages": 5,
-          "results_count": 4,
-          "aggregation_type": "group",
-          "results": [
-            {
-              "_id": "Special Order",
-              "count": 160
-            },
-            {
-              "_id": "In Stock",
-              "count": 110
-            },
-            {
-              "_id": "Lead Time",
-              "count": 100
-            },
-            {
-              "_id": "Out of Stock",
-              "count": 7
-            }
-          ]
+          "query_time": 0.6138434410095215,
+          "pipeline_stages": 3,
+          "results_count": 5,
+          "aggregation_type": "max",
+          "return_products": true
         }
       },
       {
         "operation": "Context Formatting",
-        "start_time": 1761828543.069453,
-        "end_time": 1761828543.0694864,
-        "duration": 3.337860107421875e-05,
+        "start_time": 1761883900.7581556,
+        "end_time": 1761883900.7581887,
+        "duration": 3.314018249511719e-05,
         "details": {
-          "aggregation_type": "group",
-          "return_products": false
+          "aggregation_type": "max",
+          "return_products": true
         }
       },
       {
         "operation": "Response Generation",
-        "start_time": 1761828543.0697393,
-        "end_time": 1761828545.7994537,
-        "duration": 2.7297143936157227,
+        "start_time": 1761883900.7582178,
+        "end_time": 1761883902.8058867,
+        "duration": 2.047668933868408,
         "details": {
-          "prompt_length": 1140,
-          "response_length": 344,
+          "prompt_length": 2531,
+          "response_length": 191,
           "query_type": "aggregation_query"
         }
       }
@@ -98,87 +81,135 @@
     "aggregation_pipeline": [
       {
         "$match": {
-          "material": {
-            "$regex": "Glass",
-            "$options": "i"
-          },
-          "company": {
-            "$regex": "tricorbraun",
-            "$options": "i"
-          }
-        }
-      },
-      {
-        "$addFields": {
-          "stock_category": {
-            "$switch": {
-              "branches": [
-                {
-                  "case": {
-                    "$eq": [
-                      "$stock",
-                      "In stock"
-                    ]
-                  },
-                  "then": "In Stock"
-                },
-                {
-                  "case": {
-                    "$eq": [
-                      "$stock",
-                      "Out Of Stock"
-                    ]
-                  },
-                  "then": "Out of Stock"
-                },
-                {
-                  "case": {
-                    "$regexMatch": {
-                      "input": "$stock",
-                      "regex": "^Item is currently estimated"
-                    }
-                  },
-                  "then": "Lead Time"
-                },
-                {
-                  "case": {
-                    "$regexMatch": {
-                      "input": "$stock",
-                      "regex": "Special Order"
-                    }
-                  },
-                  "then": "Special Order"
-                }
-              ],
-              "default": "Other"
-            }
-          }
-        }
-      },
-      {
-        "$group": {
-          "_id": "$stock_category",
-          "count": {
-            "$sum": 1
+          "normalised_capacity(ml)": {
+            "$ne": null,
+            "$exists": true,
+            "$type": "number"
           }
         }
       },
       {
         "$sort": {
-          "count": -1
+          "normalised_capacity(ml)": -1
         }
       },
       {
-        "$limit": 10
+        "$limit": 5
       }
     ],
-    "results_count": 1,
-    "response_length": 344,
+    "results_count": 5,
+    "response_length": 191,
     "guardrail_checks": {
       "scope_check": true,
       "response_validation": true
     },
-    "total_time": 18.246243953704834,
+    "total_time": 6.952395915985107,
+    "errors": []
+  },
+  {
+    "timestamp": "2025-10-31T09:42:48.459593",
+    "user_query": "What is the minimum average price per unit (excluding zero) among TricorBraun products",
+    "query_type": "aggregation_query",
+    "intent": "find_extreme",
+    "retrieval_strategy": "Pinecone: False, MongoDB: True, Aggregation: True",
+    "timing_metrics": [
+      {
+        "operation": "Query Analysis & Routing",
+        "start_time": 1761883945.9134793,
+        "end_time": 1761883965.9886897,
+        "duration": 20.075210332870483,
+        "details": {
+          "query_type": "aggregation_query",
+          "intent": "find_extreme",
+          "requires_aggregation": true,
+          "aggregation_type": "min",
+          "group_by_field": null,
+          "return_products": false
+        }
+      },
+      {
+        "operation": "MongoDB Aggregation Query",
+        "start_time": 1761883965.9888375,
+        "end_time": 1761883966.08681,
+        "duration": 0.09797263145446777,
+        "details": {
+          "query_time": 0.09761500358581543,
+          "pipeline_stages": 3,
+          "results_count": 1,
+          "aggregation_type": "min",
+          "results": [
+            {
+              "_id": null,
+              "result": 0.0775,
+              "count": 217
+            }
+          ]
+        }
+      },
+      {
+        "operation": "Context Formatting",
+        "start_time": 1761883966.0869243,
+        "end_time": 1761883966.0869823,
+        "duration": 5.793571472167969e-05,
+        "details": {
+          "aggregation_type": "min",
+          "return_products": false
+        }
+      },
+      {
+        "operation": "Response Generation",
+        "start_time": 1761883966.087023,
+        "end_time": 1761883968.4594283,
+        "duration": 2.3724052906036377,
+        "details": {
+          "prompt_length": 1084,
+          "response_length": 130,
+          "query_type": "aggregation_query"
+        }
+      }
+    ],
+    "pinecone_query": null,
+    "mongodb_query": null,
+    "aggregation_pipeline": [
+      {
+        "$match": {
+          "company": {
+            "$regex": "TricorBraun",
+            "$options": "i"
+          },
+          "avg_price_per_unit": {
+            "$gte": 1e-06
+          }
+        }
+      },
+      {
+        "$match": {
+          "avg_price_per_unit": {
+            "$ne": null,
+            "$exists": true,
+            "$type": "number"
+          }
+        }
+      },
+      {
+        "$group": {
+          "_id": null,
+          "result": {
+            "$min": "$avg_price_per_unit"
+          },
+          "count": {
+            "$sum": 1
+          }
+        }
+      }
+    ],
+    "results_count": 1,
+    "response_length": 130,
+    "guardrail_checks": {
+      "scope_check": true,
+      "response_validation": true
+    },
+    "total_time": 22.546140670776367,
     "errors": []
   }
 ]
