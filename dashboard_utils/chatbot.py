@@ -6,7 +6,7 @@ This module contains all functions related to the AI chatbot interface.
 import streamlit as st
 from dotenv import load_dotenv
 from rag.chatbot_production import HybridRAGChatbot
-import os
+import os, redis
 
 # --- Load environment variables ---
 load_dotenv()
@@ -79,11 +79,32 @@ def show_chatbot():
         if user_input.strip():
             with st.spinner("Thinking..."):
                 try:
-                    response = st.session_state.hybrid_chat.query(user_input)
-                    st.session_state.hybrid_chat.export_logs("rag/Logs/query_logs.json")
 
-                    # Remove asterisks from the response text for display
-                    clean_response = response.replace("*", "")
+                    # Get REDIS_URL from environment (or fallback to localhost)
+                    REDIS_URL = os.getenv("REDIS_URL", "redis://localhost:6379/0")
+                    r = redis.Redis.from_url(REDIS_URL)
+
+                    chat_key = "chatbot:session:{}".format(
+                        st.session_state.get("session_id", "default")
+                    )
+
+                    # Check Redis for existing answer before running RAG
+                    cached_response = r.hget(f"{chat_key}:responses", user_input)
+                    if cached_response:
+                        clean_response = cached_response.decode("utf-8")
+                    else:
+                        # Save user query to Redis (optionally for logging)
+                        r.rpush(f"{chat_key}:user_queries", user_input)
+
+                        response = st.session_state.hybrid_chat.query(user_input)
+                        st.session_state.hybrid_chat.export_logs(
+                            "rag/Logs/query_logs.json"
+                        )
+
+                        clean_response = response.replace("*", "")
+
+                        # Save response to Redis hash for future retrieval
+                        r.hset(f"{chat_key}:responses", user_input, clean_response)
 
                     # Display the response using proper markdown
                     with st.container(border=True):

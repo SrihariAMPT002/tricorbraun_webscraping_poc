@@ -17,3 +17,4 @@ python-dotenv
 streamlit-aggrid
 pymongo
 PyYAML>=6.0.2
+redis

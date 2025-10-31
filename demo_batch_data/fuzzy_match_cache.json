@@ -1,1224 +1,1187 @@
 {
   "high_similarity_products": [
     {
-      "company": "Berlin Packaging",
+      "company": "Cary Company",
       "product": {
-        "company": "Berlin Packaging",
-        "url": "https://www.berlinpackaging.com/1-oz-amber-glass-boston-round-bottles-with-child-resistant-capable-dropper-cap-4699b34abr/",
-        "sku": "#4699B34ABR",
-        "name": "1 oz Amber Glass Boston Round Bottles with Child-Resistant Capable Dropper Cap",
-        "price": 0.5804,
+        "company": "Cary Company",
+        "url": "https://www.thecarycompany.com/glass-economy-jars-30w238",
+        "sku": "Part#: 30W238",
+        "name": "2 oz. Glass Jar, 38mm 38-405",
+        "price": 0.61,
         "quantity_breaks": [
           {
-            "quantity_of_packing": "1-9",
-            "type_of_packing": "Case",
-            "price_per_packing": 35.83,
-            "price_per_item": 0.7465,
-            "unit_quantity": 48.0
+            "quantity_of_packing": "288",
+            "type_of_packing": "case",
+            "unit_quantity": 288.0,
+            "price_per_packing": 221.184,
+            "price_per_item": 0.768
           },
           {
-            "quantity_of_packing": "10-199",
-            "type_of_packing": "Case",
-            "price_per_packing": 26.14,
-            "price_per_item": 0.5446,
-            "unit_quantity": 48.0
+            "quantity_of_packing": "1152",
+            "type_of_packing": "case",
+            "unit_quantity": 288.0,
+            "price_per_packing": 203.904,
+            "price_per_item": 0.708
           },
           {
-            "quantity_of_packing": "200+",
-            "type_of_packing": "Case",
-            "price_per_packing": 21.61,
-            "price_per_item": 0.4502,
-            "unit_quantity": 48.0
+            "quantity_of_packing": "2304",
+            "type_of_packing": "case",
+            "unit_quantity": 288.0,
+            "price_per_packing": 160.416,
+            "price_per_item": 0.557
+          },
+          {
+            "quantity_of_packing": "5760",
+            "type_of_packing": "case",
+            "unit_quantity": 288.0,
+            "price_per_packing": 149.76,
+            "price_per_item": 0.52
+          },
+          {
+            "quantity_of_packing": "12096",
+            "type_of_packing": "case",
+            "unit_quantity": 288.0,
+            "price_per_packing": 143.136,
+            "price_per_item": 0.497
           }
         ],
         "sell_uom": [
           {
-            "qty_range": "Case (Qty 48)",
-            "price": "Price Per Case",
-            "header": "true"
+            "qty": "Quantity",
+            "price": "Price",
+            "unit": "Quantity"
           },
           {
-            "qty_range": "1-9",
-            "price": "$35.83",
-            "price_per_unit": "$0.75 ea."
+            "qty": "288",
+            "price": "$0.768",
+            "unit": "ea."
           },
           {
-            "qty_range": "10-199",
-            "price": "$26.14",
-            "price_per_unit": "$0.54 ea."
+            "qty": "1152",
+            "price": "$0.708",
+            "unit": "ea."
           },
           {
-            "qty_range": "200+",
-            "price": "$21.61",
-            "price_per_unit": "$0.45 ea."
+            "qty": "2304",
+            "price": "$0.557",
+            "unit": "ea."
+          },
+          {
+            "qty": "5760",
+            "price": "$0.520",
+            "unit": "ea."
+          },
+          {
+            "qty": "12096",
+            "price": "$0.497",
+            "unit": "ea."
           }
         ],
-        "avg_price_per_unit": 0.58,
-        "normalised_capacity(ml)": 29.57,
+        "avg_price_per_unit": 0.61,
+        "normalised_capacity(ml)": 59.15,
         "original_uom": "oz",
-        "original_capacity": "1",
+        "original_capacity": "2",
         "normalised_uom": "ml",
-        "normalised_capacity": 29.57,
-        "capacity": 29.57,
+        "normalised_capacity": 59.15,
+        "capacity": 59.15,
         "unit": "ml",
-        "color": "Amber",
-        "material": "Glass - Type III",
-        "shape": "Round",
+        "color": "Clear",
+        "material": "Glass",
+        "shape": "Jar",
         "category": "Glass",
-        "closure_type": "Continuous Thread?A continuous thread (CT) closure has non-interrupted threads, and is closed by twisting on the threaded neck of the container. CT closures are recognized as two numbers separated by a dash (ex. 38-400).",
-        "market_segment": "Pharmaceutical",
+        "closure_type": "38-405",
+        "market_segment": "Food & Condiments",
+        "product_origin": "",
         "stock": "In Stock",
-        "items_per_unit": "48"
+        "product_industry": "Food & Beverage",
+        "product_description": " The 30W238 is a 2 fl. oz. economy glass jar with a 38mm (38-405) neck size. It has a wide mouth opening and popular profile, applicable for use across industries. This jar is excellent for food and useful for products that need a wide opening for dispensing. Glass offers excellent strength, weight and compatibility for materials that cannot use plastic containers. (38-400 caps fit 38-405 neck finishes.) "
       },
-      "similarity": 0.8950325258799173
+      "similarity": 0.9423333333333334
     },
     {
-      "company": "Berlin Packaging",
+      "company": "Cary Company",
       "product": {
-        "company": "Berlin Packaging",
-        "url": "https://www.berlinpackaging.com/1-oz-frosted-glass-boston-round-bottles-value-pack-4700b03valfrst/",
-        "sku": "#4700B03VALFRST",
-        "name": "1 oz Frosted Glass Boston Round Bottles *Value Pack*",
-        "price": 0.5992,
+        "company": "Cary Company",
+        "url": "https://www.thecarycompany.com/2-oz-amber-frosted-boston-round-glass-bottle-20mm-20-400",
+        "sku": "Part#: 30WFA2",
+        "name": "2 oz. Frosted Amber Boston Round Glass Bottle, 20mm 20-400",
+        "price": 0.4248,
         "quantity_breaks": [
           {
-            "quantity_of_packing": "1-79",
-            "type_of_packing": "Case",
-            "price_per_packing": 202.73,
-            "price_per_item": 0.6257,
-            "unit_quantity": 324.0
+            "quantity_of_packing": "240",
+            "type_of_packing": "case",
+            "unit_quantity": 240.0,
+            "price_per_packing": 133.2,
+            "price_per_item": 0.555
           },
           {
-            "quantity_of_packing": "80+",
-            "type_of_packing": "Case",
-            "price_per_packing": 185.55,
-            "price_per_item": 0.5727,
-            "unit_quantity": 324.0
+            "quantity_of_packing": "960",
+            "type_of_packing": "case",
+            "unit_quantity": 240.0,
+            "price_per_packing": 110.88,
+            "price_per_item": 0.462
+          },
+          {
+            "quantity_of_packing": "2400",
+            "type_of_packing": "case",
+            "unit_quantity": 240.0,
+            "price_per_packing": 99.84,
+            "price_per_item": 0.416
+          },
+          {
+            "quantity_of_packing": "4800",
+            "type_of_packing": "case",
+            "unit_quantity": 240.0,
+            "price_per_packing": 88.56,
+            "price_per_item": 0.369
+          },
+          {
+            "quantity_of_packing": "15120",
+            "type_of_packing": "case",
+            "unit_quantity": 240.0,
+            "price_per_packing": 77.28,
+            "price_per_item": 0.322
           }
         ],
         "sell_uom": [
           {
-            "qty_range": "Case (Qty 324)",
-            "price": "Price Per Case",
-            "header": "true"
+            "qty": "Quantity",
+            "price": "Price",
+            "unit": "Quantity"
           },
           {
-            "qty_range": "1-79",
-            "price": "$202.73",
-            "price_per_unit": "$0.63 ea."
+            "qty": "240",
+            "price": "$0.555",
+            "unit": "ea."
           },
           {
-            "qty_range": "80+",
-            "price": "$185.55",
-            "price_per_unit": "$0.57 ea."
+            "qty": "960",
+            "price": "$0.462",
+            "unit": "ea."
+          },
+          {
+            "qty": "2400",
+            "price": "$0.416",
+            "unit": "ea."
+          },
+          {
+            "qty": "4800",
+            "price": "$0.369",
+            "unit": "ea."
+          },
+          {
+            "qty": "15120",
+            "price": "$0.322",
+            "unit": "ea."
           }
         ],
-        "avg_price_per_unit": 0.6,
-        "normalised_capacity(ml)": 29.57,
+        "avg_price_per_unit": 0.4248,
+        "normalised_capacity(ml)": 59.15,
         "original_uom": "oz",
-        "original_capacity": "1",
+        "original_capacity": "2",
         "normalised_uom": "ml",
-        "normalised_capacity": 29.57,
-        "capacity": 29.57,
+        "normalised_capacity": 59.15,
+        "capacity": 59.15,
         "unit": "ml",
-        "color": "Flint",
-        "material": "Glass - Type III",
-        "shape": "Round",
+        "color": "Frosted Amber",
+        "material": "Glass",
+        "shape": "Boston Round",
         "category": "Glass",
-        "closure_type": "Continuous Thread?A continuous thread (CT) closure has non-interrupted threads, and is closed by twisting on the threaded neck of the container. CT closures are recognized as two numbers separated by a dash (ex. 38-400).",
+        "closure_type": "20-400",
+        "market_segment": "Cosmetics",
+        "product_origin": "",
+        "product_industry": "",
+        "product_description": " This 2 fl. oz. (60 ml) amber frosted Boston round glass bottle features a 20mm (20-400) neck finish. With a classic rounded shoulder and base, this container is an ideal vehicle for personal care products such as essential oils, skincare formulations and chemical products. Glass offers excellent strength, weight and compatibility for materials that cannot use plastic containers. The amber (brown) glass is able to filter out ultraviolet (UV) light and is primarily used for UV-sensitive products.  ",
+        "stock": "N/A"
+      },
+      "similarity": 0.9294399999999999
+    },
+    {
+      "company": "Cary Company",
+      "product": {
+        "company": "Cary Company",
+        "url": "https://www.thecarycompany.com/2-oz-clear-flint-glass-cylinder-bottle-20mm",
+        "sku": "Part#: 30W2CG",
+        "name": "2 oz. Clear Glass Cylinder Round Bottle, 20mm 20-410",
+        "price": 0.5673,
+        "quantity_breaks": [
+          {
+            "quantity_of_packing": "144",
+            "type_of_packing": "case",
+            "unit_quantity": 144.0,
+            "price_per_packing": 96.48,
+            "price_per_item": 0.67
+          },
+          {
+            "quantity_of_packing": "1008",
+            "type_of_packing": "case",
+            "unit_quantity": 144.0,
+            "price_per_packing": 82.08,
+            "price_per_item": 0.57
+          },
+          {
+            "quantity_of_packing": "4320",
+            "type_of_packing": "case",
+            "unit_quantity": 144.0,
+            "price_per_packing": 76.464,
+            "price_per_item": 0.531
+          },
+          {
+            "quantity_of_packing": "9504",
+            "type_of_packing": "case",
+            "unit_quantity": 144.0,
+            "price_per_packing": 71.712,
+            "price_per_item": 0.498
+          }
+        ],
+        "sell_uom": [
+          {
+            "qty": "Quantity",
+            "price": "Price",
+            "unit": "Quantity"
+          },
+          {
+            "qty": "144",
+            "price": "$0.670",
+            "unit": "ea."
+          },
+          {
+            "qty": "1008",
+            "price": "$0.570",
+            "unit": "ea."
+          },
+          {
+            "qty": "4320",
+            "price": "$0.531",
+            "unit": "ea."
+          },
+          {
+            "qty": "9504",
+            "price": "$0.498",
+            "unit": "ea."
+          }
+        ],
+        "avg_price_per_unit": 0.5673,
+        "normalised_capacity(ml)": 59.15,
+        "original_uom": "oz",
+        "original_capacity": "2",
+        "normalised_uom": "ml",
+        "normalised_capacity": 59.15,
+        "capacity": 59.15,
+        "unit": "ml",
+        "color": "Clear",
+        "material": "Glass",
+        "shape": "Cylinder",
+        "category": "Glass",
+        "closure_type": "20-410",
+        "market_segment": "Pharmaceutical",
+        "product_origin": "",
+        "stock": "In Stock",
+        "product_industry": "Health & Beauty",
+        "product_description": " Elevate your product’s appearance with this sleek, high-quality 2 oz. clear glass cylinder round bottle. It features a 20mm, 410 neck finish, making it compatible with dropper caps and fine mist sprayers. Ideal for serums, perfumes, shampoos, lotions and other cosmetic and personal care items. Elevate your product presentation with this high-end bottle so that your container reflects your product quality. "
+      },
+      "similarity": 0.9272645454545455
+    },
+    {
+      "company": "Cary Company",
+      "product": {
+        "company": "Cary Company",
+        "url": "https://www.thecarycompany.com/boston-round-glass-bottles-30wbr2",
+        "sku": "Part#: 30WBR2",
+        "name": "2 oz. Clear Boston Round Glass Bottle, 20mm 20-400",
+        "price": 0.2774,
+        "quantity_breaks": [
+          {
+            "quantity_of_packing": "132",
+            "type_of_packing": "case",
+            "unit_quantity": 132.0,
+            "price_per_packing": 43.164,
+            "price_per_item": 0.327
+          },
+          {
+            "quantity_of_packing": "792",
+            "type_of_packing": "case",
+            "unit_quantity": 132.0,
+            "price_per_packing": 39.072,
+            "price_per_item": 0.296
+          },
+          {
+            "quantity_of_packing": "2376",
+            "type_of_packing": "case",
+            "unit_quantity": 132.0,
+            "price_per_packing": 35.904,
+            "price_per_item": 0.272
+          },
+          {
+            "quantity_of_packing": "7128",
+            "type_of_packing": "case",
+            "unit_quantity": 132.0,
+            "price_per_packing": 33.528,
+            "price_per_item": 0.254
+          },
+          {
+            "quantity_of_packing": "14256",
+            "type_of_packing": "case",
+            "unit_quantity": 132.0,
+            "price_per_packing": 31.416,
+            "price_per_item": 0.238
+          }
+        ],
+        "sell_uom": [
+          {
+            "qty": "Quantity",
+            "price": "Price",
+            "unit": "Quantity"
+          },
+          {
+            "qty": "132",
+            "price": "$0.327",
+            "unit": "ea."
+          },
+          {
+            "qty": "792",
+            "price": "$0.296",
+            "unit": "ea."
+          },
+          {
+            "qty": "2376",
+            "price": "$0.272",
+            "unit": "ea."
+          },
+          {
+            "qty": "7128",
+            "price": "$0.254",
+            "unit": "ea."
+          },
+          {
+            "qty": "14256",
+            "price": "$0.238",
+            "unit": "ea."
+          }
+        ],
+        "avg_price_per_unit": 0.2774,
+        "normalised_capacity(ml)": 59.15,
+        "original_uom": "oz",
+        "original_capacity": "2",
+        "normalised_uom": "ml",
+        "normalised_capacity": 59.15,
+        "capacity": 59.15,
+        "unit": "ml",
+        "color": "Clear",
+        "material": "Glass",
+        "shape": "Boston Round",
+        "category": "Glass",
+        "closure_type": "20-400",
         "market_segment": "General",
+        "product_origin": "",
         "stock": "In Stock",
-        "items_per_unit": "324"
+        "product_industry": "Food & Beverage, Health & Beauty, Nutraceuticals, Pharmaceutical",
+        "product_description": " The 30WBR2 is a 2 fl. oz. (60 ml.) clear glass Boston Round bottle with a 20 mm (20-400) neck finish. Boston Rounds have a rounded shoulder and rounded base, making them popular in personal care packaging but also appropriate for applications in other industries.  "
       },
-      "similarity": 0.8866525258799173
+      "similarity": 0.9185533333333333
     },
     {
-      "company": "Berlin Packaging",
+      "company": "Cary Company",
       "product": {
-        "company": "Berlin Packaging",
-        "url": "https://www.berlinpackaging.com/1-oz-clear-glass-boston-round-bottles-with-child-resistant-capable-dropper-cap-4699b34clr/",
-        "sku": "#4699B34CLR",
-        "name": "1 oz Clear Glass Boston Round Bottles with Child-Resistant Capable Dropper Cap",
-        "price": 0.5827,
+        "company": "Cary Company",
+        "url": "https://www.thecarycompany.com/glass-packer-bottles-30wa60",
+        "sku": "Part#: 30WA60",
+        "name": "2 oz. (60 cc) Amber Glass Packer Bottle, 33mm 33-400",
+        "price": 0.398,
         "quantity_breaks": [
           {
-            "quantity_of_packing": "1-9",
-            "type_of_packing": "Case",
-            "price_per_packing": 35.97,
-            "price_per_item": 0.7494,
-            "unit_quantity": 48.0
+            "quantity_of_packing": "192",
+            "type_of_packing": "case",
+            "unit_quantity": 192.0,
+            "price_per_packing": 97.92,
+            "price_per_item": 0.51
           },
           {
-            "quantity_of_packing": "10-199",
-            "type_of_packing": "Case",
-            "price_per_packing": 26.23,
-            "price_per_item": 0.5465,
-            "unit_quantity": 48.0
+            "quantity_of_packing": "384",
+            "type_of_packing": "case",
+            "unit_quantity": 192.0,
+            "price_per_packing": 88.32,
+            "price_per_item": 0.46
           },
           {
-            "quantity_of_packing": "200+",
-            "type_of_packing": "Case",
-            "price_per_packing": 21.7,
-            "price_per_item": 0.4521,
-            "unit_quantity": 48.0
+            "quantity_of_packing": "1152",
+            "type_of_packing": "case",
+            "unit_quantity": 192.0,
+            "price_per_packing": 74.88,
+            "price_per_item": 0.39
+          },
+          {
+            "quantity_of_packing": "5184",
+            "type_of_packing": "case",
+            "unit_quantity": 192.0,
+            "price_per_packing": 65.28,
+            "price_per_item": 0.34
+          },
+          {
+            "quantity_of_packing": "15552",
+            "type_of_packing": "case",
+            "unit_quantity": 192.0,
+            "price_per_packing": 55.68,
+            "price_per_item": 0.29
           }
         ],
         "sell_uom": [
           {
-            "qty_range": "Case (Qty 48)",
-            "price": "Price Per Case",
-            "header": "true"
+            "qty": "Quantity",
+            "price": "Price",
+            "unit": "Quantity"
           },
           {
-            "qty_range": "1-9",
-            "price": "$35.97",
-            "price_per_unit": "$0.75 ea."
+            "qty": "192",
+            "price": "$0.510",
+            "unit": "ea."
           },
           {
-            "qty_range": "10-199",
-            "price": "$26.23",
-            "price_per_unit": "$0.55 ea."
+            "qty": "384",
+            "price": "$0.460",
+            "unit": "ea."
           },
           {
-            "qty_range": "200+",
-            "price": "$21.70",
-            "price_per_unit": "$0.45 ea."
+            "qty": "1152",
+            "price": "$0.390",
+            "unit": "ea."
+          },
+          {
+            "qty": "5184",
+            "price": "$0.340",
+            "unit": "ea."
+          },
+          {
+            "qty": "15552",
+            "price": "$0.290",
+            "unit": "ea."
           }
         ],
-        "avg_price_per_unit": 0.58,
-        "normalised_capacity(ml)": 29.57,
-        "original_uom": "oz",
-        "original_capacity": "1",
+        "avg_price_per_unit": 0.398,
+        "normalised_capacity(ml)": 60.0,
+        "original_uom": "cc",
+        "original_capacity": "60",
         "normalised_uom": "ml",
-        "normalised_capacity": 29.57,
-        "capacity": 29.57,
-        "unit": "ml",
-        "color": "Flint",
-        "material": "Glass - Type III",
-        "shape": "Round",
-        "category": "Glass",
-        "closure_type": "Continuous Thread?A continuous thread (CT) closure has non-interrupted threads, and is closed by twisting on the threaded neck of the container. CT closures are recognized as two numbers separated by a dash (ex. 38-400).",
-        "market_segment": "Pharmaceutical",
-        "stock": "In Stock",
-        "items_per_unit": "48"
-      },
-      "similarity": 0.8857225258799172
-    },
-    {
-      "company": "Berlin Packaging",
-      "product": {
-        "company": "Berlin Packaging",
-        "url": "https://www.berlinpackaging.com/0-5-oz-amber-glass-boston-round-bottles-controlled-dropper-cap-4699b32abr/",
-        "sku": "#4699B32ABR",
-        "name": "0.5 oz Amber Glass Boston Round Bottles (Controlled Dropper Cap)",
-        "price": 0.5467,
-        "quantity_breaks": [
-          {
-            "quantity_of_packing": "1-9",
-            "type_of_packing": "Case",
-            "price_per_packing": 33.75,
-            "price_per_item": 0.7031,
-            "unit_quantity": 48.0
-          },
-          {
-            "quantity_of_packing": "10-199",
-            "type_of_packing": "Case",
-            "price_per_packing": 24.61,
-            "price_per_item": 0.5127,
-            "unit_quantity": 48.0
-          },
-          {
-            "quantity_of_packing": "200+",
-            "type_of_packing": "Case",
-            "price_per_packing": 20.37,
-            "price_per_item": 0.4244,
-            "unit_quantity": 48.0
-          }
-        ],
-        "sell_uom": [
-          {
-            "qty_range": "Case (Qty 48)",
-            "price": "Price Per Case",
-            "header": "true"
-          },
-          {
-            "qty_range": "1-9",
-            "price": "$33.75",
-            "price_per_unit": "$0.70 ea."
-          },
-          {
-            "qty_range": "10-199",
-            "price": "$24.61",
-            "price_per_unit": "$0.51 ea."
-          },
-          {
-            "qty_range": "200+",
-            "price": "$20.37",
-            "price_per_unit": "$0.42 ea."
-          }
-        ],
-        "avg_price_per_unit": 0.55,
-        "normalised_capacity(ml)": 29.57,
-        "original_uom": "oz",
-        "original_capacity": "1",
-        "normalised_uom": "ml",
-        "normalised_capacity": 29.57,
-        "capacity": 29.57,
+        "normalised_capacity": 60.0,
+        "capacity": 60.0,
         "unit": "ml",
         "color": "Amber",
-        "material": "Glass - Type III",
-        "shape": "Round",
+        "material": "Glass",
+        "shape": "Bottle",
         "category": "Glass",
-        "closure_type": "Continuous Thread?A continuous thread (CT) closure has non-interrupted threads, and is closed by twisting on the threaded neck of the container. CT closures are recognized as two numbers separated by a dash (ex. 38-400).",
+        "closure_type": "33-400",
         "market_segment": "Pharmaceutical",
-        "stock": "Out of Stock",
-        "items_per_unit": "48"
+        "product_origin": "",
+        "stock": "In Stock",
+        "product_industry": "Food & Beverage, Nutraceuticals, Pharmaceutical",
+        "product_description": " The 30WA60 is a 2 fl. oz. (60 cc) amber glass packer bottle with a 33 mm (33-400) neck finish. Packer bottles, also known as pill packers or vitamin bottles are commonly used in the pharmaceutical and nutraceutical industries for pill and capsule packaging. The amber (brown) glass is able to filter out ultraviolet (UV) light and is primarily used for UV-sensitive products.  "
       },
-      "similarity": 0.8849225258799173
+      "similarity": 0.9169833333333334
     },
     {
-      "company": "Berlin Packaging",
+      "company": "Cary Company",
       "product": {
-        "company": "Berlin Packaging",
-        "url": "https://www.berlinpackaging.com/4699b03abr-1-oz-amber-glass-boston-round-bottles-black-phenolic-cap/",
-        "sku": "#4699B03ABR",
-        "name": "1 oz Amber Glass Boston Round Bottles (Black Phenolic Cap)",
-        "price": 0.5451,
+        "company": "Cary Company",
+        "url": "https://www.thecarycompany.com/boston-round-glass-bottles-30wu02",
+        "sku": "Part#: 30WU02",
+        "name": "2 oz. Cobalt Blue Boston Round Glass Bottle, 20mm 20-400",
+        "price": 0.5098,
         "quantity_breaks": [
           {
-            "quantity_of_packing": "1-9",
-            "type_of_packing": "Case",
-            "price_per_packing": 33.66,
-            "price_per_item": 0.7012,
-            "unit_quantity": 48.0
+            "quantity_of_packing": "240",
+            "type_of_packing": "case",
+            "unit_quantity": 240.0,
+            "price_per_packing": 138.24,
+            "price_per_item": 0.576
           },
           {
-            "quantity_of_packing": "10-199",
-            "type_of_packing": "Case",
-            "price_per_packing": 24.54,
-            "price_per_item": 0.5112,
-            "unit_quantity": 48.0
+            "quantity_of_packing": "1920",
+            "type_of_packing": "case",
+            "unit_quantity": 240.0,
+            "price_per_packing": 132.0,
+            "price_per_item": 0.55
           },
           {
-            "quantity_of_packing": "200+",
-            "type_of_packing": "Case",
-            "price_per_packing": 20.3,
-            "price_per_item": 0.4229,
-            "unit_quantity": 48.0
+            "quantity_of_packing": "3840",
+            "type_of_packing": "case",
+            "unit_quantity": 240.0,
+            "price_per_packing": 127.2,
+            "price_per_item": 0.53
+          },
+          {
+            "quantity_of_packing": "7200",
+            "type_of_packing": "case",
+            "unit_quantity": 240.0,
+            "price_per_packing": 110.64,
+            "price_per_item": 0.461
+          },
+          {
+            "quantity_of_packing": "15120",
+            "type_of_packing": "case",
+            "unit_quantity": 240.0,
+            "price_per_packing": 103.68,
+            "price_per_item": 0.432
           }
         ],
         "sell_uom": [
           {
-            "qty_range": "Case (Qty 48)",
-            "price": "Price Per Case",
-            "header": "true"
+            "qty": "Quantity",
+            "price": "Price",
+            "unit": "Quantity"
           },
           {
-            "qty_range": "1-9",
-            "price": "$33.66",
-            "price_per_unit": "$0.70 ea."
+            "qty": "240",
+            "price": "$0.576",
+            "unit": "ea."
           },
           {
-            "qty_range": "10-199",
-            "price": "$24.54",
-            "price_per_unit": "$0.51 ea."
+            "qty": "1920",
+            "price": "$0.550",
+            "unit": "ea."
           },
           {
-            "qty_range": "200+",
-            "price": "$20.30",
-            "price_per_unit": "$0.42 ea."
+            "qty": "3840",
+            "price": "$0.530",
+            "unit": "ea."
+          },
+          {
+            "qty": "7200",
+            "price": "$0.461",
+            "unit": "ea."
+          },
+          {
+            "qty": "15120",
+            "price": "$0.432",
+            "unit": "ea."
           }
         ],
-        "avg_price_per_unit": 0.55,
-        "normalised_capacity(ml)": 29.57,
+        "avg_price_per_unit": 0.5098,
+        "normalised_capacity(ml)": 59.15,
         "original_uom": "oz",
-        "original_capacity": "1",
+        "original_capacity": "2",
         "normalised_uom": "ml",
-        "normalised_capacity": 29.57,
-        "capacity": 29.57,
+        "normalised_capacity": 59.15,
+        "capacity": 59.15,
         "unit": "ml",
-        "color": "Amber",
-        "material": "Glass - Type III",
-        "shape": "Round",
+        "color": "Cobalt Blue",
+        "material": "Glass",
+        "shape": "Boston Round",
         "category": "Glass",
-        "closure_type": "Continuous Thread?A continuous thread (CT) closure has non-interrupted threads, and is closed by twisting on the threaded neck of the container. CT closures are recognized as two numbers separated by a dash (ex. 38-400).",
+        "closure_type": "20-400",
         "market_segment": "General",
+        "product_origin": "",
         "stock": "In Stock",
-        "items_per_unit": "48"
+        "product_industry": "Food & Beverage, Health & Beauty, Nutraceuticals, Pharmaceutical",
+        "product_description": " The 30WU02 is a 2 fl. oz. (60 ml.) cobalt blue Boston Round glass bottle with a 20 mm (20-400) neck finish. Boston Rounds have a rounded shoulder and rounded base, making them popular in personal care packaging but also appropriate for applications in other industries.  "
       },
-      "similarity": 0.8844425258799172
+      "similarity": 0.9151433333333333
+    },
+    {
+      "company": "Cary Company",
+      "product": {
+        "company": "Cary Company",
+        "url": "https://www.thecarycompany.com/2-oz-cobalt-blue-frosted-boston-round-glass-bottle-20mm-20-400",
+        "sku": "Part#: 30WFU2",
+        "name": "2 oz. Frosted Cobalt Blue Boston Round Glass Bottle, 20mm 20-400",
+        "price": 0.4978,
+        "quantity_breaks": [
+          {
+            "quantity_of_packing": "240",
+            "type_of_packing": "case",
+            "unit_quantity": 240.0,
+            "price_per_packing": 159.6,
+            "price_per_item": 0.665
+          },
+          {
+            "quantity_of_packing": "960",
+            "type_of_packing": "case",
+            "unit_quantity": 240.0,
+            "price_per_packing": 133.2,
+            "price_per_item": 0.555
+          },
+          {
+            "quantity_of_packing": "2400",
+            "type_of_packing": "case",
+            "unit_quantity": 240.0,
+            "price_per_packing": 114.24,
+            "price_per_item": 0.476
+          },
+          {
+            "quantity_of_packing": "5040",
+            "type_of_packing": "case",
+            "unit_quantity": 240.0,
+            "price_per_packing": 102.48,
+            "price_per_item": 0.427
+          },
+          {
+            "quantity_of_packing": "15120",
+            "type_of_packing": "case",
+            "unit_quantity": 240.0,
+            "price_per_packing": 87.84,
+            "price_per_item": 0.366
+          }
+        ],
+        "sell_uom": [
+          {
+            "qty": "Quantity",
+            "price": "Price",
+            "unit": "Quantity"
+          },
+          {
+            "qty": "240",
+            "price": "$0.665",
+            "unit": "ea."
+          },
+          {
+            "qty": "960",
+            "price": "$0.555",
+            "unit": "ea."
+          },
+          {
+            "qty": "2400",
+            "price": "$0.476",
+            "unit": "ea."
+          },
+          {
+            "qty": "5040",
+            "price": "$0.427",
+            "unit": "ea."
+          },
+          {
+            "qty": "15120",
+            "price": "$0.366",
+            "unit": "ea."
+          }
+        ],
+        "avg_price_per_unit": 0.4978,
+        "normalised_capacity(ml)": 59.15,
+        "original_uom": "oz",
+        "original_capacity": "2",
+        "normalised_uom": "ml",
+        "normalised_capacity": 59.15,
+        "capacity": 59.15,
+        "unit": "ml",
+        "color": "Frosted Cobalt Blue",
+        "material": "Glass",
+        "shape": "Boston Round",
+        "category": "Glass",
+        "closure_type": "20-400",
+        "market_segment": "Cosmetics",
+        "product_origin": "",
+        "stock": "In Stock",
+        "product_industry": "",
+        "product_description": " This 2 fl. oz. (60 ml) cobalt blue frosted Boston round glass bottle features a 20mm (20-400) neck finish. With a classic rounded shoulder and base, this container is an ideal vehicle for personal care products such as essential oils, skincare formulations and chemical products. Glass offers excellent strength, weight and compatibility for materials that cannot use plastic containers. Striking cobalt blue color helps your product stand out on store shelves.  "
+      },
+      "similarity": 0.9124933333333332
+    },
+    {
+      "company": "Cary Company",
+      "product": {
+        "company": "Cary Company",
+        "url": "https://www.thecarycompany.com/glass-straight-sided-jars-30w371",
+        "sku": "Part#: 30W371",
+        "name": "2 oz. Straight Sided Glass Jar, 53mm 53-400, 24/cs",
+        "price": 0.6486,
+        "quantity_breaks": [
+          {
+            "quantity_of_packing": "24",
+            "type_of_packing": "case",
+            "unit_quantity": 24.0,
+            "price_per_packing": 18.624,
+            "price_per_item": 0.776
+          },
+          {
+            "quantity_of_packing": "1008",
+            "type_of_packing": "case",
+            "unit_quantity": 24.0,
+            "price_per_packing": 16.992,
+            "price_per_item": 0.708
+          },
+          {
+            "quantity_of_packing": "2304",
+            "type_of_packing": "case",
+            "unit_quantity": 24.0,
+            "price_per_packing": 15.384,
+            "price_per_item": 0.641
+          },
+          {
+            "quantity_of_packing": "4608",
+            "type_of_packing": "case",
+            "unit_quantity": 24.0,
+            "price_per_packing": 13.752,
+            "price_per_item": 0.573
+          },
+          {
+            "quantity_of_packing": "9216",
+            "type_of_packing": "case",
+            "unit_quantity": 24.0,
+            "price_per_packing": 13.08,
+            "price_per_item": 0.545
+          }
+        ],
+        "sell_uom": [
+          {
+            "qty": "Quantity",
+            "price": "Price",
+            "unit": "Quantity"
+          },
+          {
+            "qty": "24",
+            "price": "$0.776",
+            "unit": "ea."
+          },
+          {
+            "qty": "1008",
+            "price": "$0.708",
+            "unit": "ea."
+          },
+          {
+            "qty": "2304",
+            "price": "$0.641",
+            "unit": "ea."
+          },
+          {
+            "qty": "4608",
+            "price": "$0.573",
+            "unit": "ea."
+          },
+          {
+            "qty": "9216",
+            "price": "$0.545",
+            "unit": "ea."
+          }
+        ],
+        "avg_price_per_unit": 0.6486,
+        "normalised_capacity(ml)": 59.15,
+        "original_uom": "oz",
+        "original_capacity": "2",
+        "normalised_uom": "ml",
+        "normalised_capacity": 59.15,
+        "capacity": 59.15,
+        "unit": "ml",
+        "color": "Clear",
+        "material": "Glass",
+        "shape": "Straight Sided",
+        "category": "Glass",
+        "closure_type": "53-400",
+        "market_segment": "Food & Condiments",
+        "product_origin": "",
+        "stock": "In Stock",
+        "product_industry": "Food & Beverage",
+        "product_description": " The 30W371 is a 2 fl. oz. 53 mm clear straight sided glass jar. This Glass Jar has a straight profile that can be used across industries. It can be used to pack food products, but also appropriate for packaging creams and body and hair care products. Glass offers excellent strength, weight and compatibility for materials that cannot use plastic containers. "
+      },
+      "similarity": 0.9109494117647059
+    },
+    {
+      "company": "Cary Company",
+      "product": {
+        "company": "Cary Company",
+        "url": "https://www.thecarycompany.com/2-oz-frosted-boston-round-glass-bottle-20mm-20-400",
+        "sku": "Part#: 30WFB2",
+        "name": "2 oz. Frosted Boston Round Glass Bottle, 20mm 20-400",
+        "price": 0.5094,
+        "quantity_breaks": [
+          {
+            "quantity_of_packing": "240",
+            "type_of_packing": "case",
+            "unit_quantity": 240.0,
+            "price_per_packing": 173.76,
+            "price_per_item": 0.724
+          },
+          {
+            "quantity_of_packing": "720",
+            "type_of_packing": "case",
+            "unit_quantity": 240.0,
+            "price_per_packing": 124.56,
+            "price_per_item": 0.519
+          },
+          {
+            "quantity_of_packing": "2160",
+            "type_of_packing": "case",
+            "unit_quantity": 240.0,
+            "price_per_packing": 115.92,
+            "price_per_item": 0.483
+          },
+          {
+            "quantity_of_packing": "4320",
+            "type_of_packing": "case",
+            "unit_quantity": 240.0,
+            "price_per_packing": 104.4,
+            "price_per_item": 0.435
+          },
+          {
+            "quantity_of_packing": "12240",
+            "type_of_packing": "case",
+            "unit_quantity": 240.0,
+            "price_per_packing": 92.64,
+            "price_per_item": 0.386
+          }
+        ],
+        "sell_uom": [
+          {
+            "qty": "Quantity",
+            "price": "Price",
+            "unit": "Quantity"
+          },
+          {
+            "qty": "240",
+            "price": "$0.724",
+            "unit": "ea."
+          },
+          {
+            "qty": "720",
+            "price": "$0.519",
+            "unit": "ea."
+          },
+          {
+            "qty": "2160",
+            "price": "$0.483",
+            "unit": "ea."
+          },
+          {
+            "qty": "4320",
+            "price": "$0.435",
+            "unit": "ea."
+          },
+          {
+            "qty": "12240",
+            "price": "$0.386",
+            "unit": "ea."
+          }
+        ],
+        "avg_price_per_unit": 0.5094,
+        "normalised_capacity(ml)": 59.15,
+        "original_uom": "oz",
+        "original_capacity": "2",
+        "normalised_uom": "ml",
+        "normalised_capacity": 59.15,
+        "capacity": 59.15,
+        "unit": "ml",
+        "color": "Frosted White",
+        "material": "Glass",
+        "shape": "Boston Round",
+        "category": "Glass",
+        "closure_type": "20-400",
+        "market_segment": "Cosmetics",
+        "product_origin": "",
+        "stock": "In Stock",
+        "product_industry": "Health & Beauty, Household Chemicals, Nutraceuticals, Pharmaceutical",
+        "product_description": " This 2 fl. oz. (60 ml) frosted Boston round flint glass bottle features a 20mm (20-400) neck finish. With a classic rounded shoulder and base, this container is an ideal vehicle for personal care products such as essential oils, skincare formulations and chemical products. Glass offers excellent strength, weight and compatibility for materials that cannot use plastic containers.  "
+      },
+      "similarity": 0.9020688888888888
+    },
+    {
+      "company": "Cary Company",
+      "product": {
+        "company": "Cary Company",
+        "url": "https://www.thecarycompany.com/glass-french-square-jars-30wfs2",
+        "sku": "Part#: 30WFS2",
+        "name": "2 oz. French Square Glass Jar, 28mm 28-400",
+        "price": 0.7258,
+        "quantity_breaks": [
+          {
+            "quantity_of_packing": "240",
+            "type_of_packing": "case",
+            "unit_quantity": 240.0,
+            "price_per_packing": 216.0,
+            "price_per_item": 0.9
+          },
+          {
+            "quantity_of_packing": "480",
+            "type_of_packing": "case",
+            "unit_quantity": 240.0,
+            "price_per_packing": 192.72,
+            "price_per_item": 0.803
+          },
+          {
+            "quantity_of_packing": "960",
+            "type_of_packing": "case",
+            "unit_quantity": 240.0,
+            "price_per_packing": 167.76,
+            "price_per_item": 0.699
+          },
+          {
+            "quantity_of_packing": "1440",
+            "type_of_packing": "case",
+            "unit_quantity": 240.0,
+            "price_per_packing": 150.48,
+            "price_per_item": 0.627
+          },
+          {
+            "quantity_of_packing": "2880",
+            "type_of_packing": "case",
+            "unit_quantity": 240.0,
+            "price_per_packing": 144.0,
+            "price_per_item": 0.6
+          }
+        ],
+        "sell_uom": [
+          {
+            "qty": "Quantity",
+            "price": "Price",
+            "unit": "Quantity"
+          },
+          {
+            "qty": "240",
+            "price": "$0.900",
+            "unit": "ea."
+          },
+          {
+            "qty": "480",
+            "price": "$0.803",
+            "unit": "ea."
+          },
+          {
+            "qty": "960",
+            "price": "$0.699",
+            "unit": "ea."
+          },
+          {
+            "qty": "1440",
+            "price": "$0.627",
+            "unit": "ea."
+          },
+          {
+            "qty": "2880",
+            "price": "$0.600",
+            "unit": "ea."
+          }
+        ],
+        "avg_price_per_unit": 0.7258,
+        "normalised_capacity(ml)": 59.15,
+        "original_uom": "oz",
+        "original_capacity": "2",
+        "normalised_uom": "ml",
+        "normalised_capacity": 59.15,
+        "capacity": 59.15,
+        "unit": "ml",
+        "color": "Clear",
+        "material": "Glass",
+        "shape": "Square",
+        "category": "Glass",
+        "closure_type": "28-400",
+        "market_segment": "Food & Condiments",
+        "product_origin": "",
+        "stock": "In Stock",
+        "product_industry": "Food & Beverage",
+        "product_description": " The 30WFS2 is a 2 fl. oz. 28 mm clear French square glass jar. This jar has a distinctive rectangular profile, a great choice for unique bottling. It is also applicable for use across industries. This jar is excellent for food and useful for products that need a wide opening for dispensing. "
+      },
+      "similarity": 0.8909266666666666
+    },
+    {
+      "company": "Cary Company",
+      "product": {
+        "company": "Cary Company",
+        "url": "https://www.thecarycompany.com/boston-round-glass-bottles-30wabr",
+        "sku": "Part#: 30WABR",
+        "name": "2 oz. Amber Boston Round Glass Bottle, 20mm 20-400",
+        "price": 0.267,
+        "quantity_breaks": [
+          {
+            "quantity_of_packing": "240",
+            "type_of_packing": "case",
+            "unit_quantity": 240.0,
+            "price_per_packing": 73.92,
+            "price_per_item": 0.308
+          },
+          {
+            "quantity_of_packing": "960",
+            "type_of_packing": "case",
+            "unit_quantity": 240.0,
+            "price_per_packing": 68.4,
+            "price_per_item": 0.285
+          },
+          {
+            "quantity_of_packing": "2400",
+            "type_of_packing": "case",
+            "unit_quantity": 240.0,
+            "price_per_packing": 63.36,
+            "price_per_item": 0.264
+          },
+          {
+            "quantity_of_packing": "4800",
+            "type_of_packing": "case",
+            "unit_quantity": 240.0,
+            "price_per_packing": 59.28,
+            "price_per_item": 0.247
+          },
+          {
+            "quantity_of_packing": "15120",
+            "type_of_packing": "case",
+            "unit_quantity": 240.0,
+            "price_per_packing": 55.44,
+            "price_per_item": 0.231
+          }
+        ],
+        "sell_uom": [
+          {
+            "qty": "Quantity",
+            "price": "Price",
+            "unit": "Quantity"
+          },
+          {
+            "qty": "240",
+            "price": "$0.308",
+            "unit": "ea."
+          },
+          {
+            "qty": "960",
+            "price": "$0.285",
+            "unit": "ea."
+          },
+          {
+            "qty": "2400",
+            "price": "$0.264",
+            "unit": "ea."
+          },
+          {
+            "qty": "4800",
+            "price": "$0.247",
+            "unit": "ea."
+          },
+          {
+            "qty": "15120",
+            "price": "$0.231",
+            "unit": "ea."
+          }
+        ],
+        "avg_price_per_unit": 0.267,
+        "normalised_capacity(ml)": 59.15,
+        "original_uom": "oz",
+        "original_capacity": "2",
+        "normalised_uom": "ml",
+        "normalised_capacity": 59.15,
+        "capacity": 59.15,
+        "unit": "ml",
+        "color": "Amber",
+        "material": "Glass",
+        "shape": "Boston Round",
+        "category": "Glass",
+        "closure_type": "20-400",
+        "market_segment": "Pharmaceutical",
+        "product_origin": "",
+        "stock": "In Stock",
+        "product_industry": "Food & Beverage, Health & Beauty, Nutraceuticals, Pharmaceutical",
+        "product_description": " The 30WABR is a 2 fl. oz. (60 ml.) amber glass Boston Round bottle with a 20 mm (20-400) neck finish. The amber (brown) glass is able to filter out ultraviolet (UV) light and is primarily used for UV-sensitive products such as beer and some pharmaceuticals. Boston Rounds have a rounded shoulder and rounded base, making them popular in personal care packaging but also appropriate for applications in other industries.  "
+      },
+      "similarity": 0.8854333333333333
     },
     {
       "company": "Berlin Packaging",
       "product": {
         "company": "Berlin Packaging",
-        "url": "https://www.berlinpackaging.com/4999b03-1-oz-cobalt-blue-glass-boston-round-bottles-black-phenolic-cap/",
-        "sku": "#4999B03",
-        "name": "1 oz Cobalt Blue Glass Boston Round Bottles (Black Phenolic Cap)",
-        "price": 0.6372,
+        "url": "https://www.berlinpackaging.com/4699b05-babr-boston-round-glass-bottles-2-oz-amber-case-of-24/",
+        "sku": "#4699B05-BABR",
+        "name": "2 oz Amber Glass Boston Round Bottles (Cap Not Included)",
+        "price": 0.474,
         "quantity_breaks": [
           {
             "quantity_of_packing": "1-9",
             "type_of_packing": "Case",
-            "price_per_packing": 39.33,
-            "price_per_item": 0.8194,
-            "unit_quantity": 48.0
+            "price_per_packing": 11.64,
+            "price_per_item": 0.485,
+            "unit_quantity": 24.0
           },
           {
-            "quantity_of_packing": "10-199",
+            "quantity_of_packing": "10-269",
             "type_of_packing": "Case",
-            "price_per_packing": 28.68,
-            "price_per_item": 0.5975,
-            "unit_quantity": 48.0
+            "price_per_packing": 11.38,
+            "price_per_item": 0.4742,
+            "unit_quantity": 24.0
           },
           {
-            "quantity_of_packing": "200+",
+            "quantity_of_packing": "270+",
             "type_of_packing": "Case",
-            "price_per_packing": 23.75,
-            "price_per_item": 0.4948,
-            "unit_quantity": 48.0
+            "price_per_packing": 11.11,
+            "price_per_item": 0.4629,
+            "unit_quantity": 24.0
           }
         ],
         "sell_uom": [
           {
-            "qty_range": "Case (Qty 48)",
+            "qty_range": "Case (Qty 24)",
             "price": "Price Per Case",
             "header": "true"
           },
           {
             "qty_range": "1-9",
-            "price": "$39.33",
-            "price_per_unit": "$0.82 ea."
-          },
-          {
-            "qty_range": "10-199",
-            "price": "$28.68",
-            "price_per_unit": "$0.60 ea."
-          },
-          {
-            "qty_range": "200+",
-            "price": "$23.75",
+            "price": "$11.64",
             "price_per_unit": "$0.49 ea."
-          }
-        ],
-        "avg_price_per_unit": 0.64,
-        "normalised_capacity(ml)": 29.57,
-        "original_uom": "oz",
-        "original_capacity": "1",
-        "normalised_uom": "ml",
-        "normalised_capacity": 29.57,
-        "capacity": 29.57,
-        "unit": "ml",
-        "color": "Cobalt Blue",
-        "material": "Glass - Type III",
-        "shape": "Round",
-        "category": "Glass",
-        "closure_type": "Continuous Thread?A continuous thread (CT) closure has non-interrupted threads, and is closed by twisting on the threaded neck of the container. CT closures are recognized as two numbers separated by a dash (ex. 38-400).",
-        "market_segment": "General",
-        "stock": "In Stock",
-        "items_per_unit": "48"
-      },
-      "similarity": 0.8840025258799172
-    },
-    {
-      "company": "Berlin Packaging",
-      "product": {
-        "company": "Berlin Packaging",
-        "url": "https://www.berlinpackaging.com/ab1aw-48-1-oz-amber-glass-boston-round-bottles-white-hdpe-atomizer/",
-        "sku": "#AB1AW-48",
-        "name": "1 oz Amber Glass Boston Round Bottles (White PP Fine Mist Sprayer)",
-        "price": 0.6616,
-        "quantity_breaks": [
-          {
-            "quantity_of_packing": "1-9",
-            "type_of_packing": "Case",
-            "price_per_packing": 40.85,
-            "price_per_item": 0.851,
-            "unit_quantity": 48.0
           },
           {
-            "quantity_of_packing": "10-199",
-            "type_of_packing": "Case",
-            "price_per_packing": 29.78,
-            "price_per_item": 0.6204,
-            "unit_quantity": 48.0
-          },
-          {
-            "quantity_of_packing": "200+",
-            "type_of_packing": "Case",
-            "price_per_packing": 24.64,
-            "price_per_item": 0.5133,
-            "unit_quantity": 48.0
-          }
-        ],
-        "sell_uom": [
-          {
-            "qty_range": "Case (Qty 48)",
-            "price": "Price Per Case",
-            "header": "true"
-          },
-          {
-            "qty_range": "1-9",
-            "price": "$40.85",
-            "price_per_unit": "$0.85 ea."
-          },
-          {
-            "qty_range": "10-199",
-            "price": "$29.78",
-            "price_per_unit": "$0.62 ea."
-          },
-          {
-            "qty_range": "200+",
-            "price": "$24.64",
-            "price_per_unit": "$0.51 ea."
-          }
-        ],
-        "avg_price_per_unit": 0.66,
-        "normalised_capacity(ml)": 29.57,
-        "original_uom": "oz",
-        "original_capacity": "1",
-        "normalised_uom": "ml",
-        "normalised_capacity": 29.57,
-        "capacity": 29.57,
-        "unit": "ml",
-        "color": "Amber",
-        "material": "Glass - Type III",
-        "shape": "Round",
-        "category": "Glass",
-        "closure_type": "Continuous Thread?A continuous thread (CT) closure has non-interrupted threads, and is closed by twisting on the threaded neck of the container. CT closures are recognized as two numbers separated by a dash (ex. 38-400).",
-        "market_segment": "General",
-        "stock": "Out of Stock",
-        "items_per_unit": "48"
-      },
-      "similarity": 0.8779325258799172
-    },
-    {
-      "company": "Berlin Packaging",
-      "product": {
-        "company": "Berlin Packaging",
-        "url": "https://www.berlinpackaging.com/1-oz-cobalt-blue-glass-boston-round-bottles-with-child-resistant-capable-dropper-cap-4998b84blk/",
-        "sku": "#4998B84BLK",
-        "name": "1 oz Cobalt Blue Glass Boston Round Bottles with Child-Resistant Capable Dropper Cap",
-        "price": 0.6767,
-        "quantity_breaks": [
-          {
-            "quantity_of_packing": "1-9",
-            "type_of_packing": "Case",
-            "price_per_packing": 41.76,
-            "price_per_item": 0.87,
-            "unit_quantity": 48.0
-          },
-          {
-            "quantity_of_packing": "10-199",
-            "type_of_packing": "Case",
-            "price_per_packing": 30.45,
-            "price_per_item": 0.6344,
-            "unit_quantity": 48.0
-          },
-          {
-            "quantity_of_packing": "200+",
-            "type_of_packing": "Case",
-            "price_per_packing": 25.23,
-            "price_per_item": 0.5256,
-            "unit_quantity": 48.0
-          }
-        ],
-        "sell_uom": [
-          {
-            "qty_range": "Case (Qty 48)",
-            "price": "Price Per Case",
-            "header": "true"
-          },
-          {
-            "qty_range": "1-9",
-            "price": "$41.76",
-            "price_per_unit": "$0.87 ea."
-          },
-          {
-            "qty_range": "10-199",
-            "price": "$30.45",
-            "price_per_unit": "$0.63 ea."
-          },
-          {
-            "qty_range": "200+",
-            "price": "$25.23",
-            "price_per_unit": "$0.53 ea."
-          }
-        ],
-        "avg_price_per_unit": 0.68,
-        "normalised_capacity(ml)": 29.57,
-        "original_uom": "oz",
-        "original_capacity": "1",
-        "normalised_uom": "ml",
-        "normalised_capacity": 29.57,
-        "capacity": 29.57,
-        "unit": "ml",
-        "color": "Cobalt Blue",
-        "material": "Glass - Type III",
-        "shape": "Round",
-        "category": "Glass",
-        "closure_type": "Continuous Thread?A continuous thread (CT) closure has non-interrupted threads, and is closed by twisting on the threaded neck of the container. CT closures are recognized as two numbers separated by a dash (ex. 38-400).",
-        "market_segment": "Pharmaceutical",
-        "stock": "In Stock",
-        "items_per_unit": "48"
-      },
-      "similarity": 0.8721525258799173
-    },
-    {
-      "company": "Berlin Packaging",
-      "product": {
-        "company": "Berlin Packaging",
-        "url": "https://www.berlinpackaging.com/4998b33-1-oz-cobalt-blue-glass-boston-round-bottles-black-phenolic-cap/",
-        "sku": "#4998B33",
-        "name": "1 oz Cobalt Blue Glass Boston Round Bottles (Black Phenolic Cap)",
-        "price": 0.5021,
-        "quantity_breaks": [
-          {
-            "quantity_of_packing": "1-9",
-            "type_of_packing": "Case",
-            "price_per_packing": 25.15,
-            "price_per_item": 0.524,
-            "unit_quantity": 48.0
-          },
-          {
-            "quantity_of_packing": "10-199",
-            "type_of_packing": "Case",
-            "price_per_packing": 24.1,
-            "price_per_item": 0.5021,
-            "unit_quantity": 48.0
-          },
-          {
-            "quantity_of_packing": "200+",
-            "type_of_packing": "Case",
-            "price_per_packing": 23.05,
-            "price_per_item": 0.4802,
-            "unit_quantity": 48.0
-          }
-        ],
-        "sell_uom": [
-          {
-            "qty_range": "Case (Qty 48)",
-            "price": "Price Per Case",
-            "header": "true"
-          },
-          {
-            "qty_range": "1-9",
-            "price": "$25.15",
-            "price_per_unit": "$0.52 ea."
-          },
-          {
-            "qty_range": "10-199",
-            "price": "$24.10",
-            "price_per_unit": "$0.50 ea."
-          },
-          {
-            "qty_range": "200+",
-            "price": "$23.05",
-            "price_per_unit": "$0.48 ea."
-          }
-        ],
-        "avg_price_per_unit": 0.5,
-        "normalised_capacity(ml)": 29.57,
-        "original_uom": "oz",
-        "original_capacity": "1",
-        "normalised_uom": "ml",
-        "normalised_capacity": 29.57,
-        "capacity": 29.57,
-        "unit": "ml",
-        "color": "Cobalt Blue",
-        "material": "Glass - Type III",
-        "shape": "Round",
-        "category": "Glass",
-        "closure_type": "Continuous Thread?A continuous thread (CT) closure has non-interrupted threads, and is closed by twisting on the threaded neck of the container. CT closures are recognized as two numbers separated by a dash (ex. 38-400).",
-        "market_segment": "General",
-        "stock": "In Stock",
-        "items_per_unit": "48"
-      },
-      "similarity": 0.8702925258799173
-    },
-    {
-      "company": "Berlin Packaging",
-      "product": {
-        "company": "Berlin Packaging",
-        "url": "https://www.berlinpackaging.com/cb1w-48-1-oz-cobalt-blue-glass-boston-round-bottles-white-pp-cap/",
-        "sku": "#CB1W-48",
-        "name": "1 oz Cobalt Blue Glass Boston Round Bottles (White PP Cap)",
-        "price": 0.4996,
-        "quantity_breaks": [
-          {
-            "quantity_of_packing": "1-9",
-            "type_of_packing": "Case",
-            "price_per_packing": 30.83,
-            "price_per_item": 0.6423,
-            "unit_quantity": 48.0
-          },
-          {
-            "quantity_of_packing": "10-199",
-            "type_of_packing": "Case",
-            "price_per_packing": 22.49,
-            "price_per_item": 0.4685,
-            "unit_quantity": 48.0
-          },
-          {
-            "quantity_of_packing": "200+",
-            "type_of_packing": "Case",
-            "price_per_packing": 18.62,
-            "price_per_item": 0.3879,
-            "unit_quantity": 48.0
-          }
-        ],
-        "sell_uom": [
-          {
-            "qty_range": "Case (Qty 48)",
-            "price": "Price Per Case",
-            "header": "true"
-          },
-          {
-            "qty_range": "1-9",
-            "price": "$30.83",
-            "price_per_unit": "$0.64 ea."
-          },
-          {
-            "qty_range": "10-199",
-            "price": "$22.49",
+            "qty_range": "10-269",
+            "price": "$11.38",
             "price_per_unit": "$0.47 ea."
           },
           {
-            "qty_range": "200+",
-            "price": "$18.62",
-            "price_per_unit": "$0.39 ea."
-          }
-        ],
-        "avg_price_per_unit": 0.5,
-        "normalised_capacity(ml)": 29.57,
-        "original_uom": "oz",
-        "original_capacity": "1",
-        "normalised_uom": "ml",
-        "normalised_capacity": 29.57,
-        "capacity": 29.57,
-        "unit": "ml",
-        "color": "Cobalt Blue",
-        "material": "Glass - Type III",
-        "shape": "Round",
-        "category": "Glass",
-        "closure_type": "Continuous Thread?A continuous thread (CT) closure has non-interrupted threads, and is closed by twisting on the threaded neck of the container. CT closures are recognized as two numbers separated by a dash (ex. 38-400).",
-        "market_segment": "General",
-        "stock": "Backordered: Expected to Ship 12/15/2025",
-        "items_per_unit": "48"
-      },
-      "similarity": 0.8695425258799173
-    },
-    {
-      "company": "Berlin Packaging",
-      "product": {
-        "company": "Berlin Packaging",
-        "url": "https://www.berlinpackaging.com/4699b33abrblk-1-oz-amber-glass-boston-round-bottles-black-dropper-cap/",
-        "sku": "#4699B33ABRBLK",
-        "name": "1 oz Amber Glass Boston Round Bottles (Black Dropper Cap)",
-        "price": 0.706,
-        "quantity_breaks": [
-          {
-            "quantity_of_packing": "1-9",
-            "type_of_packing": "Case",
-            "price_per_packing": 36.01,
-            "price_per_item": 0.7502,
-            "unit_quantity": 48.0
-          },
-          {
-            "quantity_of_packing": "10-199",
-            "type_of_packing": "Case",
-            "price_per_packing": 33.89,
-            "price_per_item": 0.706,
-            "unit_quantity": 48.0
-          },
-          {
-            "quantity_of_packing": "200+",
-            "type_of_packing": "Case",
-            "price_per_packing": 31.77,
-            "price_per_item": 0.6619,
-            "unit_quantity": 48.0
-          }
-        ],
-        "sell_uom": [
-          {
-            "qty_range": "Case (Qty 48)",
-            "price": "Price Per Case",
-            "header": "true"
-          },
-          {
-            "qty_range": "1-9",
-            "price": "$36.01",
-            "price_per_unit": "$0.75 ea."
-          },
-          {
-            "qty_range": "10-199",
-            "price": "$33.89",
-            "price_per_unit": "$0.71 ea."
-          },
-          {
-            "qty_range": "200+",
-            "price": "$31.77",
-            "price_per_unit": "$0.66 ea."
-          }
-        ],
-        "avg_price_per_unit": 0.71,
-        "normalised_capacity(ml)": 29.57,
-        "original_uom": "oz",
-        "original_capacity": "1",
-        "normalised_uom": "ml",
-        "normalised_capacity": 29.57,
-        "capacity": 29.57,
-        "unit": "ml",
-        "color": "Amber",
-        "material": "Glass - Type III",
-        "shape": "Round",
-        "category": "Glass",
-        "closure_type": "Continuous Thread?A continuous thread (CT) closure has non-interrupted threads, and is closed by twisting on the threaded neck of the container. CT closures are recognized as two numbers separated by a dash (ex. 38-400).",
-        "market_segment": "Pharmaceutical",
-        "stock": "In Stock",
-        "items_per_unit": "48"
-      },
-      "similarity": 0.8646125258799172
-    },
-    {
-      "company": "Berlin Packaging",
-      "product": {
-        "company": "Berlin Packaging",
-        "url": "https://www.berlinpackaging.com/ab1ab-48-1-oz-amber-glass-boston-round-bottles-black-hdpe-atomizer/",
-        "sku": "#AB1AB-48",
-        "name": "1 oz Amber Glass Boston Round Bottles (Black PP Fine Mist Sprayer)",
-        "price": 0.7061,
-        "quantity_breaks": [
-          {
-            "quantity_of_packing": "1-9",
-            "type_of_packing": "Case",
-            "price_per_packing": 43.58,
-            "price_per_item": 0.9079,
-            "unit_quantity": 48.0
-          },
-          {
-            "quantity_of_packing": "10-199",
-            "type_of_packing": "Case",
-            "price_per_packing": 31.79,
-            "price_per_item": 0.6623,
-            "unit_quantity": 48.0
-          },
-          {
-            "quantity_of_packing": "200+",
-            "type_of_packing": "Case",
-            "price_per_packing": 26.31,
-            "price_per_item": 0.5481,
-            "unit_quantity": 48.0
-          }
-        ],
-        "sell_uom": [
-          {
-            "qty_range": "Case (Qty 48)",
-            "price": "Price Per Case",
-            "header": "true"
-          },
-          {
-            "qty_range": "1-9",
-            "price": "$43.58",
-            "price_per_unit": "$0.91 ea."
-          },
-          {
-            "qty_range": "10-199",
-            "price": "$31.79",
-            "price_per_unit": "$0.66 ea."
-          },
-          {
-            "qty_range": "200+",
-            "price": "$26.31",
-            "price_per_unit": "$0.55 ea."
-          }
-        ],
-        "avg_price_per_unit": 0.71,
-        "normalised_capacity(ml)": 29.57,
-        "original_uom": "oz",
-        "original_capacity": "1",
-        "normalised_uom": "ml",
-        "normalised_capacity": 29.57,
-        "capacity": 29.57,
-        "unit": "ml",
-        "color": "Amber",
-        "material": "Glass - Type III",
-        "shape": "Round",
-        "category": "Glass",
-        "closure_type": "Continuous Thread?A continuous thread (CT) closure has non-interrupted threads, and is closed by twisting on the threaded neck of the container. CT closures are recognized as two numbers separated by a dash (ex. 38-400).",
-        "market_segment": "General",
-        "stock": "In Stock",
-        "items_per_unit": "48"
-      },
-      "similarity": 0.8645825258799172
-    },
-    {
-      "company": "Berlin Packaging",
-      "product": {
-        "company": "Berlin Packaging",
-        "url": "https://www.berlinpackaging.com/4699b03clr-1-oz-clear-glass-boston-round-bottles-black-phenolic-cap/",
-        "sku": "#4699B03CLR",
-        "name": "1 oz Clear Glass Boston Round Bottles (Black Phenolic Cap)",
-        "price": 0.5021,
-        "quantity_breaks": [
-          {
-            "quantity_of_packing": "1-9",
-            "type_of_packing": "Case",
-            "price_per_packing": 25.15,
-            "price_per_item": 0.524,
-            "unit_quantity": 48.0
-          },
-          {
-            "quantity_of_packing": "10-199",
-            "type_of_packing": "Case",
-            "price_per_packing": 24.1,
-            "price_per_item": 0.5021,
-            "unit_quantity": 48.0
-          },
-          {
-            "quantity_of_packing": "200+",
-            "type_of_packing": "Case",
-            "price_per_packing": 23.05,
-            "price_per_item": 0.4802,
-            "unit_quantity": 48.0
-          }
-        ],
-        "sell_uom": [
-          {
-            "qty_range": "Case (Qty 48)",
-            "price": "Price Per Case",
-            "header": "true"
-          },
-          {
-            "qty_range": "1-9",
-            "price": "$25.15",
-            "price_per_unit": "$0.52 ea."
-          },
-          {
-            "qty_range": "10-199",
-            "price": "$24.10",
-            "price_per_unit": "$0.50 ea."
-          },
-          {
-            "qty_range": "200+",
-            "price": "$23.05",
-            "price_per_unit": "$0.48 ea."
-          }
-        ],
-        "avg_price_per_unit": 0.5,
-        "normalised_capacity(ml)": 29.57,
-        "original_uom": "oz",
-        "original_capacity": "1",
-        "normalised_uom": "ml",
-        "normalised_capacity": 29.57,
-        "capacity": 29.57,
-        "unit": "ml",
-        "color": "Flint",
-        "material": "Glass - Type III",
-        "shape": "Round",
-        "category": "Glass",
-        "closure_type": "Continuous Thread?A continuous thread (CT) closure has non-interrupted threads, and is closed by twisting on the threaded neck of the container. CT closures are recognized as two numbers separated by a dash (ex. 38-400).",
-        "market_segment": "General",
-        "stock": "In Stock",
-        "items_per_unit": "48"
-      },
-      "similarity": 0.8615425258799173
-    },
-    {
-      "company": "Berlin Packaging",
-      "product": {
-        "company": "Berlin Packaging",
-        "url": "https://www.berlinpackaging.com/4699b03-babr-1-oz-amber-boston-round-glass-bottles-cap-not-included/",
-        "sku": "#4699B03-BABR",
-        "name": "1 oz Amber Boston Round Glass Bottles (Cap Not Included)",
-        "price": 0.4621,
-        "quantity_breaks": [
-          {
-            "quantity_of_packing": "1-29",
-            "type_of_packing": "Case",
-            "price_per_packing": 23.19,
-            "price_per_item": 0.4831,
-            "unit_quantity": 48.0
-          },
-          {
-            "quantity_of_packing": "30-79",
-            "type_of_packing": "Case",
-            "price_per_packing": 22.18,
-            "price_per_item": 0.4621,
-            "unit_quantity": 48.0
-          },
-          {
-            "quantity_of_packing": "80+",
-            "type_of_packing": "Case",
-            "price_per_packing": 21.17,
-            "price_per_item": 0.441,
-            "unit_quantity": 48.0
-          }
-        ],
-        "sell_uom": [
-          {
-            "qty_range": "Case (Qty 48)",
-            "price": "Price Per Case",
-            "header": "true"
-          },
-          {
-            "qty_range": "1-29",
-            "price": "$23.19",
-            "price_per_unit": "$0.48 ea."
-          },
-          {
-            "qty_range": "30-79",
-            "price": "$22.18",
+            "qty_range": "270+",
+            "price": "$11.11",
             "price_per_unit": "$0.46 ea."
-          },
-          {
-            "qty_range": "80+",
-            "price": "$21.17",
-            "price_per_unit": "$0.44 ea."
           }
         ],
-        "avg_price_per_unit": 0.46,
-        "normalised_capacity(ml)": 29.57,
+        "avg_price_per_unit": 0.474,
+        "normalised_capacity(ml)": 59.15,
         "original_uom": "oz",
-        "original_capacity": "1",
+        "original_capacity": "2",
         "normalised_uom": "ml",
-        "normalised_capacity": 29.57,
-        "capacity": 29.57,
+        "normalised_capacity": 59.15,
+        "capacity": 59.15,
         "unit": "ml",
         "color": "Amber",
         "material": "Glass - Type III",
-        "shape": "Round",
+        "shape": "Boston Round",
         "category": "Glass",
         "closure_type": "Continuous Thread?A continuous thread (CT) closure has non-interrupted threads, and is closed by twisting on the threaded neck of the container. CT closures are recognized as two numbers separated by a dash (ex. 38-400).",
         "market_segment": "General",
-        "stock": "In Stock",
-        "items_per_unit": "48"
+        "stock": "Backordered: Expected to Ship 11/04/2025",
+        "items_per_unit": "24"
       },
-      "similarity": 0.8595425258799173
-    },
-    {
-      "company": "Berlin Packaging",
-      "product": {
-        "company": "Berlin Packaging",
-        "url": "https://www.berlinpackaging.com/4699b01abr-0-5-oz-amber-glass-boston-round-bottles-black-phenolic-cap/",
-        "sku": "#4699B01ABR",
-        "name": "0.5 oz Amber Glass Boston Round Bottles (Black Phenolic Cap)",
-        "price": 0.4454,
-        "quantity_breaks": [
-          {
-            "quantity_of_packing": "1-9",
-            "type_of_packing": "Case",
-            "price_per_packing": 22.4,
-            "price_per_item": 0.4667,
-            "unit_quantity": 48.0
-          },
-          {
-            "quantity_of_packing": "10-199",
-            "type_of_packing": "Case",
-            "price_per_packing": 21.38,
-            "price_per_item": 0.4454,
-            "unit_quantity": 48.0
-          },
-          {
-            "quantity_of_packing": "200+",
-            "type_of_packing": "Case",
-            "price_per_packing": 20.36,
-            "price_per_item": 0.4242,
-            "unit_quantity": 48.0
-          }
-        ],
-        "sell_uom": [
-          {
-            "qty_range": "Case (Qty 48)",
-            "price": "Price Per Case",
-            "header": "true"
-          },
-          {
-            "qty_range": "1-9",
-            "price": "$22.40",
-            "price_per_unit": "$0.47 ea."
-          },
-          {
-            "qty_range": "10-199",
-            "price": "$21.38",
-            "price_per_unit": "$0.45 ea."
-          },
-          {
-            "qty_range": "200+",
-            "price": "$20.36",
-            "price_per_unit": "$0.42 ea."
-          }
-        ],
-        "avg_price_per_unit": 0.45,
-        "normalised_capacity(ml)": 29.57,
-        "original_uom": "oz",
-        "original_capacity": "1",
-        "normalised_uom": "ml",
-        "normalised_capacity": 29.57,
-        "capacity": 29.57,
-        "unit": "ml",
-        "color": "Amber",
-        "material": "Glass - Type III",
-        "shape": "Round",
-        "category": "Glass",
-        "closure_type": "Continuous Thread?A continuous thread (CT) closure has non-interrupted threads, and is closed by twisting on the threaded neck of the container. CT closures are recognized as two numbers separated by a dash (ex. 38-400).",
-        "market_segment": "General",
-        "stock": "Out of Stock",
-        "items_per_unit": "48"
-      },
-      "similarity": 0.8545325258799173
-    },
-    {
-      "company": "Berlin Packaging",
-      "product": {
-        "company": "Berlin Packaging",
-        "url": "https://www.berlinpackaging.com/4699b33clrblk-1-oz-clear-glass-boston-round-bottles-black-dropper-cap/",
-        "sku": "#4699B33CLRBLK",
-        "name": "1 oz Clear Glass Boston Round Bottles (Black Dropper Cap)",
-        "price": 0.7129,
-        "quantity_breaks": [
-          {
-            "quantity_of_packing": "1-9",
-            "type_of_packing": "Case",
-            "price_per_packing": 44.02,
-            "price_per_item": 0.9171,
-            "unit_quantity": 48.0
-          },
-          {
-            "quantity_of_packing": "10-199",
-            "type_of_packing": "Case",
-            "price_per_packing": 32.09,
-            "price_per_item": 0.6685,
-            "unit_quantity": 48.0
-          },
-          {
-            "quantity_of_packing": "200+",
-            "type_of_packing": "Case",
-            "price_per_packing": 26.55,
-            "price_per_item": 0.5531,
-            "unit_quantity": 48.0
-          }
-        ],
-        "sell_uom": [
-          {
-            "qty_range": "Case (Qty 48)",
-            "price": "Price Per Case",
-            "header": "true"
-          },
-          {
-            "qty_range": "1-9",
-            "price": "$44.02",
-            "price_per_unit": "$0.92 ea."
-          },
-          {
-            "qty_range": "10-199",
-            "price": "$32.09",
-            "price_per_unit": "$0.67 ea."
-          },
-          {
-            "qty_range": "200+",
-            "price": "$26.55",
-            "price_per_unit": "$0.55 ea."
-          }
-        ],
-        "avg_price_per_unit": 0.71,
-        "normalised_capacity(ml)": 29.57,
-        "original_uom": "oz",
-        "original_capacity": "1",
-        "normalised_uom": "ml",
-        "normalised_capacity": 29.57,
-        "capacity": 29.57,
-        "unit": "ml",
-        "color": "Flint",
-        "material": "Glass - Type III",
-        "shape": "Round",
-        "category": "Glass",
-        "closure_type": "Continuous Thread?A continuous thread (CT) closure has non-interrupted threads, and is closed by twisting on the threaded neck of the container. CT closures are recognized as two numbers separated by a dash (ex. 38-400).",
-        "market_segment": "Pharmaceutical",
-        "stock": "In Stock",
-        "items_per_unit": "48"
-      },
-      "similarity": 0.8525425258799172
+      "similarity": 0.8623040033712601
     }
   ],
   "selected_product_data": {
     "company": "TricorBraun",
-    "url": "https://www.tricorbraun.com/1-oz-glass-straight-sided-jar-38-400-neck-finish-clear.html",
-    "sku": "011382",
-    "name": "1 oz Clear Glass Straight Sided Jar 38-400 Neck Finish",
-    "price": 0.5925,
+    "url": "https://www.tricorbraun.com/2-oz-glass-heavy-wall-squat-jar-53-400-neck-finish-clear.html",
+    "sku": "263201",
+    "name": "2 oz Clear Glass Heavy Wall Squat Jar 53-400 Neck Finish",
+    "price": 0.44,
     "quantity_breaks": [
       {
         "quantity_of_packing": 1,
-        "type_of_packing": "Case",
-        "price_per_packing": 60.25,
-        "price_per_item": 0.72
-      },
-      {
-        "quantity_of_packing": 12,
-        "type_of_packing": "Case",
-        "price_per_packing": 54.23,
-        "price_per_item": 0.65
-      },
-      {
-        "quantity_of_packing": 18,
-        "type_of_packing": "Case",
-        "price_per_packing": 45.55,
-        "price_per_item": 0.54
-      },
-      {
-        "quantity_of_packing": 128,
-        "type_of_packing": "Case",
-        "price_per_packing": 38.72,
-        "price_per_item": 0.46
+        "type_of_packing": "Pallet",
+        "price_per_packing": 3100.0,
+        "price_per_item": 0.44
       }
     ],
     "sell_uom": [
       {
-        "qty_range": "1 Case",
-        "unit": "Case",
-        "price": "$60.25",
-        "price_per_unit": "$0.72"
-      },
-      {
-        "qty_range": "12 Case",
-        "unit": "Case",
-        "price": "$54.23",
-        "price_per_unit": "$0.65"
-      },
-      {
-        "qty_range": "18 Case",
-        "unit": "Case",
-        "price": "$45.55",
-        "price_per_unit": "$0.54"
-      },
-      {
-        "qty_range": "128 Case",
-        "unit": "Case",
-        "price": "$38.72",
-        "price_per_unit": "$0.46"
+        "qty_range": "1 Pallet",
+        "unit": "Pallet",
+        "price": "$3,100.00",
+        "price_per_unit": "$0.44"
       }
     ],
-    "avg_price_per_unit": 0.59,
-    "normalised_capacity(ml)": 29.57,
+    "avg_price_per_unit": 0.44,
+    "normalised_capacity(ml)": 59.15,
     "original_uom": "oz",
-    "original_capacity": "1",
+    "original_capacity": "2",
     "normalised_uom": "ml",
-    "normalised_capacity": 29.57,
-    "capacity": 29.57,
+    "normalised_capacity": 59.15,
+    "capacity": 59.15,
     "unit": "ml",
     "color": "Clear",
     "material": "Glass",
-    "shape": "Round",
+    "shape": "Jar",
     "category": "Glass",
-    "closure_type": "38-400 GPI",
+    "closure_type": "53-400",
     "market_segment": "General",
-    "product_origin": "India",
-    "stock": "In stock",
-    "items_per_unit": 84
+    "product_origin": "China",
+    "stock": "Item is currently estimated to ship within 7 - 10 business days.",
+    "items_per_unit": 7000
   },
   "selected_companies": [
-    "Berlin Packaging"
+    "Berlin Packaging",
+    "Cary Company"
   ],
   "exclude_zero_price": true
 }

@@ -517,10 +517,12 @@ class HybridRAGChatbot:
             "berlin packaging": "Berlin Packaging",
             "cary": "Cary Company",
             "cary company": "Cary Company",
-            "tricor": "TricorBrawn",
-            "tricorbrawn": "TricorBrawn",
-            "tricor brawn": "TricorBrawn",
-            "tricor-brawn": "TricorBrawn",
+            "the cary company": "Cary Company",
+            "tricor": "TricorBraun",
+            "tricorbraun": "TricorBraun",
+            "tricorbraun packaging": "TricorBraun",
+            "tricor braun": "TricorBraun",
+            "tricor-braun": "TricorBraun",
         }
 
         exact_match = company_mapping.get(normalized)

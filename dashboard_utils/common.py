@@ -101,7 +101,7 @@ def apply_custom_styling():
 def create_header():
     """Create the main dashboard header"""
     st.markdown(
-        '<h1 class="main-header">TricorBraun Packing Competitor Analysis Dashboard</h1>',
+        '<h1 class="main-header">TricorBraun Packaging Competitor Analysis</h1>',
         unsafe_allow_html=True,
     )
 
