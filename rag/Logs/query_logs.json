@@ -1,37 +1,137 @@
 [
   {
-    "timestamp": "2025-10-31T09:41:42.805995",
-    "user_query": "What product in the dataset has the highest capacity in milliliters?",
+    "timestamp": "2025-10-31T11:23:56.386579",
+    "user_query": "For 8 oz Cobalt Blue Glass Boston Round Bottles *Bulk Pallet*, show me the pricing tiers?",
+    "query_type": "structured_query",
+    "intent": "pricing_query",
+    "retrieval_strategy": "Pinecone: False, MongoDB: True, Aggregation: False",
+    "timing_metrics": [
+      {
+        "operation": "MongoDB Connection",
+        "start_time": 1761889982.4021409,
+        "end_time": 1761889982.5737803,
+        "duration": 0.17163944244384766,
+        "details": null
+      },
+      {
+        "operation": "Pinecone Connection",
+        "start_time": 1761889982.573981,
+        "end_time": 1761889983.5717335,
+        "duration": 0.9977524280548096,
+        "details": null
+      },
+      {
+        "operation": "Gemini Models Initialization",
+        "start_time": 1761889983.5718966,
+        "end_time": 1761889983.596998,
+        "duration": 0.025101423263549805,
+        "details": null
+      },
+      {
+        "operation": "Query Analysis & Routing",
+        "start_time": 1761890009.867271,
+        "end_time": 1761890025.8319647,
+        "duration": 15.964693784713745,
+        "details": {
+          "query_type": "structured_query",
+          "intent": "pricing_query",
+          "requires_aggregation": false,
+          "aggregation_type": null,
+          "group_by_field": null,
+          "return_products": false
+        }
+      },
+      {
+        "operation": "MongoDB Structured Query",
+        "start_time": 1761890025.832111,
+        "end_time": 1761890026.070479,
+        "duration": 0.23836803436279297,
+        "details": {
+          "query_time": 0.23777461051940918,
+          "results_count": 4,
+          "query": {
+            "color": {
+              "$regex": "Cobalt Blue",
+              "$options": "i"
+            },
+            "material": {
+              "$regex": "Glass",
+              "$options": "i"
+            },
+            "shape": {
+              "$regex": "Boston Round",
+              "$options": "i"
+            },
+            "normalised_capacity(ml)": {
+              "$gte": 236.59,
+              "$lte": 236.59
+            }
+          }
+        }
+      },
+      {
+        "operation": "Context Formatting",
+        "start_time": 1761890026.07057,
+        "end_time": 1761890026.0706115,
+        "duration": 4.1484832763671875e-05,
+        "details": {
+          "products_formatted": 4,
+          "context_length": 1896
+        }
+      },
+      {
+        "operation": "Response Generation",
+        "start_time": 1761890026.070708,
+        "end_time": 1761890036.3864422,
+        "duration": 10.315734148025513,
+        "details": {
+          "prompt_length": 2545,
+          "response_length": 910,
+          "query_type": "structured_query"
+        }
+      }
+    ],
+    "pinecone_query": null,
+    "mongodb_query": {
+      "color": {
+        "$regex": "Cobalt Blue",
+        "$options": "i"
+      },
+      "material": {
+        "$regex": "Glass",
+        "$options": "i"
+      },
+      "shape": {
+        "$regex": "Boston Round",
+        "$options": "i"
+      },
+      "normalised_capacity(ml)": {
+        "$gte": 236.59,
+        "$lte": 236.59
+      }
+    },
+    "aggregation_pipeline": null,
+    "results_count": 4,
+    "response_length": 910,
+    "guardrail_checks": {
+      "scope_check": true,
+      "response_validation": true
+    },
+    "total_time": 26.519327878952026,
+    "errors": []
+  },
+  {
+    "timestamp": "2025-10-31T11:24:33.431948",
+    "user_query": "Which Berlin Packaging item has the largest capacity?",
     "query_type": "aggregation_query",
     "intent": "find_extreme",
     "retrieval_strategy": "Pinecone: False, MongoDB: True, Aggregation: True",
     "timing_metrics": [
       {
-        "operation": "MongoDB Connection",
-        "start_time": 1761883696.3141255,
-        "end_time": 1761883696.5840566,
-        "duration": 0.2699310779571533,
-        "details": null
-      },
-      {
-        "operation": "Pinecone Connection",
-        "start_time": 1761883696.5846915,
-        "end_time": 1761883697.9054275,
-        "duration": 1.3207359313964844,
-        "details": null
-      },
-      {
-        "operation": "Gemini Models Initialization",
-        "start_time": 1761883697.9055283,
-        "end_time": 1761883697.926558,
-        "duration": 0.02102971076965332,
-        "details": null
-      },
-      {
         "operation": "Query Analysis & Routing",
-        "start_time": 1761883895.8536167,
-        "end_time": 1761883900.143265,
-        "duration": 4.2896482944488525,
+        "start_time": 1761890063.6257563,
+        "end_time": 1761890068.8814538,
+        "duration": 5.25569748878479,
         "details": {
           "query_type": "aggregation_query",
           "intent": "find_extreme",
@@ -43,12 +143,12 @@
       },
       {
         "operation": "MongoDB Aggregation Query",
-        "start_time": 1761883900.1434426,
-        "end_time": 1761883900.7581174,
-        "duration": 0.6146748065948486,
+        "start_time": 1761890068.8816056,
+        "end_time": 1761890068.9108655,
+        "duration": 0.029259920120239258,
         "details": {
-          "query_time": 0.6138434410095215,
-          "pipeline_stages": 3,
+          "query_time": 0.028736591339111328,
+          "pipeline_stages": 4,
           "results_count": 5,
           "aggregation_type": "max",
           "return_products": true
@@ -56,9 +156,9 @@
       },
       {
         "operation": "Context Formatting",
-        "start_time": 1761883900.7581556,
-        "end_time": 1761883900.7581887,
-        "duration": 3.314018249511719e-05,
+        "start_time": 1761890068.9109395,
+        "end_time": 1761890068.9110098,
+        "duration": 7.033348083496094e-05,
         "details": {
           "aggregation_type": "max",
           "return_products": true
@@ -66,12 +166,12 @@
       },
       {
         "operation": "Response Generation",
-        "start_time": 1761883900.7582178,
-        "end_time": 1761883902.8058867,
-        "duration": 2.047668933868408,
+        "start_time": 1761890068.9110794,
+        "end_time": 1761890073.4318035,
+        "duration": 4.520724058151245,
         "details": {
-          "prompt_length": 2531,
-          "response_length": 191,
+          "prompt_length": 2641,
+          "response_length": 455,
           "query_type": "aggregation_query"
         }
       }
@@ -79,6 +179,14 @@
     "pinecone_query": null,
     "mongodb_query": null,
     "aggregation_pipeline": [
+      {
+        "$match": {
+          "company": {
+            "$regex": "Berlin Packaging",
+            "$options": "i"
+          }
+        }
+      },
       {
         "$match": {
           "normalised_capacity(ml)": {
@@ -98,118 +206,12 @@
       }
     ],
     "results_count": 5,
-    "response_length": 191,
+    "response_length": 455,
     "guardrail_checks": {
       "scope_check": true,
       "response_validation": true
     },
-    "total_time": 6.952395915985107,
-    "errors": []
-  },
-  {
-    "timestamp": "2025-10-31T09:42:48.459593",
-    "user_query": "What is the minimum average price per unit (excluding zero) among TricorBraun products",
-    "query_type": "aggregation_query",
-    "intent": "find_extreme",
-    "retrieval_strategy": "Pinecone: False, MongoDB: True, Aggregation: True",
-    "timing_metrics": [
-      {
-        "operation": "Query Analysis & Routing",
-        "start_time": 1761883945.9134793,
-        "end_time": 1761883965.9886897,
-        "duration": 20.075210332870483,
-        "details": {
-          "query_type": "aggregation_query",
-          "intent": "find_extreme",
-          "requires_aggregation": true,
-          "aggregation_type": "min",
-          "group_by_field": null,
-          "return_products": false
-        }
-      },
-      {
-        "operation": "MongoDB Aggregation Query",
-        "start_time": 1761883965.9888375,
-        "end_time": 1761883966.08681,
-        "duration": 0.09797263145446777,
-        "details": {
-          "query_time": 0.09761500358581543,
-          "pipeline_stages": 3,
-          "results_count": 1,
-          "aggregation_type": "min",
-          "results": [
-            {
-              "_id": null,
-              "result": 0.0775,
-              "count": 217
-            }
-          ]
-        }
-      },
-      {
-        "operation": "Context Formatting",
-        "start_time": 1761883966.0869243,
-        "end_time": 1761883966.0869823,
-        "duration": 5.793571472167969e-05,
-        "details": {
-          "aggregation_type": "min",
-          "return_products": false
-        }
-      },
-      {
-        "operation": "Response Generation",
-        "start_time": 1761883966.087023,
-        "end_time": 1761883968.4594283,
-        "duration": 2.3724052906036377,
-        "details": {
-          "prompt_length": 1084,
-          "response_length": 130,
-          "query_type": "aggregation_query"
-        }
-      }
-    ],
-    "pinecone_query": null,
-    "mongodb_query": null,
-    "aggregation_pipeline": [
-      {
-        "$match": {
-          "company": {
-            "$regex": "TricorBraun",
-            "$options": "i"
-          },
-          "avg_price_per_unit": {
-            "$gte": 1e-06
-          }
-        }
-      },
-      {
-        "$match": {
-          "avg_price_per_unit": {
-            "$ne": null,
-            "$exists": true,
-            "$type": "number"
-          }
-        }
-      },
-      {
-        "$group": {
-          "_id": null,
-          "result": {
-            "$min": "$avg_price_per_unit"
-          },
-          "count": {
-            "$sum": 1
-          }
-        }
-      }
-    ],
-    "results_count": 1,
-    "response_length": 130,
-    "guardrail_checks": {
-      "scope_check": true,
-      "response_validation": true
-    },
-    "total_time": 22.546140670776367,
+    "total_time": 9.806213855743408,
     "errors": []
   }
 ]
