@@ -5,7 +5,6 @@ This module contains Pinecone setup, page configuration, styling, and navigation
 
 import streamlit as st
 
-
 def setup_page_config():
     """Configure Streamlit page settings"""
     st.set_page_config(
@@ -14,7 +13,6 @@ def setup_page_config():
         layout="wide",
         initial_sidebar_state="expanded",
     )
-
 
 def get_custom_css():
     """Return custom CSS for styling"""
