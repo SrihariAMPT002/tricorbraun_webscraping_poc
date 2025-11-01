@@ -9,7 +9,7 @@ langchain>=0.3
 langchain-core>=0.3
 langchain-community>=0.3
 langchain-perplexity
-pinecone
+pinecone-client
 langchain-pinecone
 langchain-google-genai
 tqdm
