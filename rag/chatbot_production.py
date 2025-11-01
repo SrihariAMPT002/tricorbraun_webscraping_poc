@@ -179,90 +179,90 @@ class QueryRouter:
 
         analysis_prompt = f"""Analyze this user query about glass bottles and jars.
 
-Query: "{user_query}"
+        Query: "{user_query}"
 
-Classify into ONE type:
+        Classify into ONE type:
 
-1. SEMANTIC_SEARCH: Conceptual product description
-   Examples: "bottles for essential oils", "elegant wine bottles"
+        1. SEMANTIC_SEARCH: Conceptual product description
+        Examples: "bottles for essential oils", "elegant wine bottles"
 
-2. STRUCTURED_QUERY: Specific filters, wants product list
-   Examples: "500ml bottles under $2", "show amber bottles"
+        2. STRUCTURED_QUERY: Specific filters, wants product list
+        Examples: "500ml bottles under $2", "show amber bottles"
 
-3. AGGREGATION_QUERY: Statistics/calculations OR finding products by extreme values
-   Examples:
-   - "average capacity of Cobalt Blue products" (compute statistic)
-   - "how many amber bottles in stock" (count)
-   - "Which product has the largest capacity?" (find product with max)
-   - "What's the smallest bottle?" (find product with min)
-   - "Most expensive wine bottle?" (find product with max price)
-   - "which company has the most products" (group by company and count)
-   - "count products by color" (group by color)
+        3. AGGREGATION_QUERY: Statistics/calculations OR finding products by extreme values
+        Examples:
+        - "average capacity of Cobalt Blue products" (compute statistic)
+        - "how many amber bottles in stock" (count)
+        - "Which product has the largest capacity?" (find product with max)
+        - "What's the smallest bottle?" (find product with min)
+        - "Most expensive wine bottle?" (find product with max price)
+        - "which company has the most products" (group by company and count)
+        - "count products by color" (group by color)
 
-   Keywords: average, mean, count, total, sum, max, min, largest, smallest, biggest, which product, what product, which company, count by, group by
+        Keywords: average, mean, count, total, sum, max, min, largest, smallest, biggest, which product, what product, which company, count by, group by
 
-4. HYBRID: Semantic description + specific filters
-   Examples: "modern bottles in 750ml size"
+        4. HYBRID: Semantic description + specific filters
+        Examples: "modern bottles in 750ml size"
 
-5. OUT_OF_SCOPE: Not about products
+        5. OUT_OF_SCOPE: Not about products
 
-CRITICAL:
-- "Which/What product has [largest/smallest/most/least]" → AGGREGATION_QUERY with return_products=true
-- "What is the average/count/total" → AGGREGATION_QUERY with return_products=false
-- "which company has the most" → AGGREGATION_QUERY with aggregation_type="group", group_by_field="company"
-- "count by [color/material/shape/company]" → AGGREGATION_QUERY with aggregation_type="group", group_by_field=[field]
+        CRITICAL:
+        - "Which/What product has [largest/smallest/most/least]" → AGGREGATION_QUERY with return_products=true
+        - "What is the average/count/total" → AGGREGATION_QUERY with return_products=false
+        - "which company has the most" → AGGREGATION_QUERY with aggregation_type="group", group_by_field="company"
+        - "count by [color/material/shape/company]" → AGGREGATION_QUERY with aggregation_type="group", group_by_field=[field]
 
-GROUP BY QUERIES (queries that count/aggregate BY a category):
-- "which company has the most products" → aggregation_type="group", group_by_field="company", aggregation_field=null
-- "count products by color" → aggregation_type="group", group_by_field="color", aggregation_field=null
-- "how many products per material" → aggregation_type="group", group_by_field="material", aggregation_field=null
-- "which color has the highest average capacity" → aggregation_type="group", group_by_field="color", aggregation_field="capacity"
+        GROUP BY QUERIES (queries that count/aggregate BY a category):
+        - "which company has the most products" → aggregation_type="group", group_by_field="company", aggregation_field=null
+        - "count products by color" → aggregation_type="group", group_by_field="color", aggregation_field=null
+        - "how many products per material" → aggregation_type="group", group_by_field="material", aggregation_field=null
+        - "which color has the highest average capacity" → aggregation_type="group", group_by_field="color", aggregation_field="capacity"
 
-IMPORTANT: For GROUP queries, always set group_by_field to indicate what to group by. The aggregation_field can be null for simple counting.
+        IMPORTANT: For GROUP queries, always set group_by_field to indicate what to group by. The aggregation_field can be null for simple counting.
 
-Return JSON:
-{{
-"query_type": "SEMANTIC_SEARCH" | "STRUCTURED_QUERY" | "AGGREGATION_QUERY" | "HYBRID" | "OUT_OF_SCOPE",
-"reasoning": "Brief explanation",
-"intent": "product_search" | "pricing_query" | "statistics" | "aggregation" | "find_extreme" | "out_of_scope",
-"requires_pinecone": boolean,
-"requires_mongodb": boolean,
-"requires_aggregation": boolean,
-"aggregation_type": "avg" | "count" | "sum" | "min" | "max" | "group" | null,
-"aggregation_field": "capacity" | "price" | null,
-"group_by_field": "company" | "color" | "material" | "shape" | null,
-"return_products": boolean (true for "which product" queries, false for statistics),
-"filters": {{
-  "capacity_range": {{"min": number, "max": number, "unit": "oz"|"ml"|"l"|"gal"}} or null,
-  "color": "color name" or null,
-  "material": "material type" or null,
-  "shape": "shape description" or null,
-  "company": "company name" or null,
-  "price_range": {{"min": number, "max": number}} or null,
-  "stock_required": boolean
-}},
-"semantic_description": "description",
-"is_data_related": boolean
-}}
+        Return JSON:
+        {{
+        "query_type": "SEMANTIC_SEARCH" | "STRUCTURED_QUERY" | "AGGREGATION_QUERY" | "HYBRID" | "OUT_OF_SCOPE",
+        "reasoning": "Brief explanation",
+        "intent": "product_search" | "pricing_query" | "statistics" | "aggregation" | "find_extreme" | "out_of_scope",
+        "requires_pinecone": boolean,
+        "requires_mongodb": boolean,
+        "requires_aggregation": boolean,
+        "aggregation_type": "avg" | "count" | "sum" | "min" | "max" | "group" | null,
+        "aggregation_field": "capacity" | "price" | null,
+        "group_by_field": "company" | "color" | "material" | "shape" | null,
+        "return_products": boolean (true for "which product" queries, false for statistics),
+        "filters": {{
+        "capacity_range": {{"min": number, "max": number, "unit": "oz"|"ml"|"l"|"gal"}} or null,
+        "color": "color name" or null,
+        "material": "material type" or null,
+        "shape": "shape description" or null,
+        "company": "company name" or null,
+        "price_range": {{"min": number, "max": number}} or null,
+        "stock_required": boolean
+        }},
+        "semantic_description": "description",
+        "is_data_related": boolean
+        }}
 
-FIELD EXTRACTION GUIDELINES:
-- "color": Extract bottle color (e.g., "Amber", "Cobalt Blue", "Clear")
-- "material": Extract material type (e.g., "Glass", "Plastic")
-- "shape": Extract bottle shape (e.g., "Boston Round", "Cylinder", "Flask","Round")
-- "capacity_range": **CRITICAL** - You MUST extract BOTH number AND unit:
-  * "4 oz" → {{"min": 4, "max": 4, "unit": "oz"}}
-  * "500ml" → {{"min": 500, "max": 500, "unit": "ml"}}
-  * "1 liter" → {{"min": 1, "max": 1, "unit": "l"}}
-  * If NO unit mentioned, use "ml"
+        FIELD EXTRACTION GUIDELINES:
+        - "color": Extract bottle color (e.g., "Amber", "Cobalt Blue", "Clear")
+        - "material": Extract material type (e.g., "Glass", "Plastic")
+        - "shape": Extract bottle shape (e.g., "Boston Round", "Cylinder", "Flask","Round")
+        - "capacity_range": **CRITICAL** - You MUST extract BOTH number AND unit:
+        * "4 oz" → {{"min": 4, "max": 4, "unit": "oz"}}
+        * "500ml" → {{"min": 500, "max": 500, "unit": "ml"}}
+        * "1 liter" → {{"min": 1, "max": 1, "unit": "l"}}
+        * If NO unit mentioned, use "ml"
 
-IMPORTANT REMINDERS:
-- For capacity_range, the "unit" field is MANDATORY - always extract "oz", "ml", "l", or "gal"
-- Look for unit indicators: oz, ounce, ml, milliliter, liter, litre, l, gallon, gal
-- The numeric value and unit MUST be separated in the JSON
-- For GROUP BY queries, extract group_by_field separate from aggregation_field
+        IMPORTANT REMINDERS:
+        - For capacity_range, the "unit" field is MANDATORY - always extract "oz", "ml", "l", or "gal"
+        - Look for unit indicators: oz, ounce, ml, milliliter, liter, litre, l, gallon, gal
+        - The numeric value and unit MUST be separated in the JSON
+        - For GROUP BY queries, extract group_by_field separate from aggregation_field
 
-Return ONLY valid JSON, no markdown.
-"""
+        Return ONLY valid JSON, no markdown.
+        """
 
         try:
             response = self.llm.invoke(analysis_prompt)

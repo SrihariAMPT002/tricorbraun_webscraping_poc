@@ -71,6 +71,7 @@ def display_product_table(df, selected_company):
         "avg_price_per_unit",  # Use the actual DataFrame key
         "color",
         "material",
+        "neck_finish",
         "shape",
         "stock",
     ]
