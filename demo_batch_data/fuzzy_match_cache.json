@@ -4,817 +4,38 @@
       "company": "Cary Company",
       "product": {
         "company": "Cary Company",
-        "url": "https://www.thecarycompany.com/glass-economy-jars-30w238",
-        "sku": "Part#: 30W238",
-        "name": "2 oz. Glass Jar, 38mm 38-405",
-        "price": 0.61,
+        "url": "https://www.thecarycompany.com/750-ml-clear-glass-nordic-liquor-bottle",
+        "sku": "Part#: 30WND5",
+        "name": "750 ml Clear Glass Nordic Liquor Bottle, Bar Top, 12/cs",
+        "price": 2.6775,
         "quantity_breaks": [
           {
-            "quantity_of_packing": "288",
+            "quantity_of_packing": "12",
             "type_of_packing": "case",
-            "unit_quantity": 288.0,
-            "price_per_packing": 221.184,
-            "price_per_item": 0.768
+            "unit_quantity": 12.0,
+            "price_per_packing": 39.36,
+            "price_per_item": 3.28
           },
-          {
-            "quantity_of_packing": "1152",
-            "type_of_packing": "case",
-            "unit_quantity": 288.0,
-            "price_per_packing": 203.904,
-            "price_per_item": 0.708
-          },
-          {
-            "quantity_of_packing": "2304",
-            "type_of_packing": "case",
-            "unit_quantity": 288.0,
-            "price_per_packing": 160.416,
-            "price_per_item": 0.557
-          },
-          {
-            "quantity_of_packing": "5760",
-            "type_of_packing": "case",
-            "unit_quantity": 288.0,
-            "price_per_packing": 149.76,
-            "price_per_item": 0.52
-          },
-          {
-            "quantity_of_packing": "12096",
-            "type_of_packing": "case",
-            "unit_quantity": 288.0,
-            "price_per_packing": 143.136,
-            "price_per_item": 0.497
-          }
-        ],
-        "sell_uom": [
-          {
-            "qty": "Quantity",
-            "price": "Price",
-            "unit": "Quantity"
-          },
-          {
-            "qty": "288",
-            "price": "$0.768",
-            "unit": "ea."
-          },
-          {
-            "qty": "1152",
-            "price": "$0.708",
-            "unit": "ea."
-          },
-          {
-            "qty": "2304",
-            "price": "$0.557",
-            "unit": "ea."
-          },
-          {
-            "qty": "5760",
-            "price": "$0.520",
-            "unit": "ea."
-          },
-          {
-            "qty": "12096",
-            "price": "$0.497",
-            "unit": "ea."
-          }
-        ],
-        "avg_price_per_unit": 0.61,
-        "normalised_capacity(ml)": 59.15,
-        "original_uom": "oz",
-        "original_capacity": "2",
-        "normalised_uom": "ml",
-        "normalised_capacity": 59.15,
-        "capacity": 59.15,
-        "unit": "ml",
-        "color": "Clear",
-        "material": "Glass",
-        "shape": "Jar",
-        "category": "Glass",
-        "closure_type": "38-405",
-        "market_segment": "Food & Condiments",
-        "product_origin": "",
-        "stock": "In Stock",
-        "product_industry": "Food & Beverage",
-        "product_description": " The 30W238 is a 2 fl. oz. economy glass jar with a 38mm (38-405) neck size. It has a wide mouth opening and popular profile, applicable for use across industries. This jar is excellent for food and useful for products that need a wide opening for dispensing. Glass offers excellent strength, weight and compatibility for materials that cannot use plastic containers. (38-400 caps fit 38-405 neck finishes.) "
-      },
-      "similarity": 0.9423333333333334
-    },
-    {
-      "company": "Cary Company",
-      "product": {
-        "company": "Cary Company",
-        "url": "https://www.thecarycompany.com/2-oz-amber-frosted-boston-round-glass-bottle-20mm-20-400",
-        "sku": "Part#: 30WFA2",
-        "name": "2 oz. Frosted Amber Boston Round Glass Bottle, 20mm 20-400",
-        "price": 0.4248,
-        "quantity_breaks": [
-          {
-            "quantity_of_packing": "240",
-            "type_of_packing": "case",
-            "unit_quantity": 240.0,
-            "price_per_packing": 133.2,
-            "price_per_item": 0.555
-          },
-          {
-            "quantity_of_packing": "960",
-            "type_of_packing": "case",
-            "unit_quantity": 240.0,
-            "price_per_packing": 110.88,
-            "price_per_item": 0.462
-          },
-          {
-            "quantity_of_packing": "2400",
-            "type_of_packing": "case",
-            "unit_quantity": 240.0,
-            "price_per_packing": 99.84,
-            "price_per_item": 0.416
-          },
-          {
-            "quantity_of_packing": "4800",
-            "type_of_packing": "case",
-            "unit_quantity": 240.0,
-            "price_per_packing": 88.56,
-            "price_per_item": 0.369
-          },
-          {
-            "quantity_of_packing": "15120",
-            "type_of_packing": "case",
-            "unit_quantity": 240.0,
-            "price_per_packing": 77.28,
-            "price_per_item": 0.322
-          }
-        ],
-        "sell_uom": [
-          {
-            "qty": "Quantity",
-            "price": "Price",
-            "unit": "Quantity"
-          },
-          {
-            "qty": "240",
-            "price": "$0.555",
-            "unit": "ea."
-          },
-          {
-            "qty": "960",
-            "price": "$0.462",
-            "unit": "ea."
-          },
-          {
-            "qty": "2400",
-            "price": "$0.416",
-            "unit": "ea."
-          },
-          {
-            "qty": "4800",
-            "price": "$0.369",
-            "unit": "ea."
-          },
-          {
-            "qty": "15120",
-            "price": "$0.322",
-            "unit": "ea."
-          }
-        ],
-        "avg_price_per_unit": 0.4248,
-        "normalised_capacity(ml)": 59.15,
-        "original_uom": "oz",
-        "original_capacity": "2",
-        "normalised_uom": "ml",
-        "normalised_capacity": 59.15,
-        "capacity": 59.15,
-        "unit": "ml",
-        "color": "Frosted Amber",
-        "material": "Glass",
-        "shape": "Boston Round",
-        "category": "Glass",
-        "closure_type": "20-400",
-        "market_segment": "Cosmetics",
-        "product_origin": "",
-        "product_industry": "",
-        "product_description": " This 2 fl. oz. (60 ml) amber frosted Boston round glass bottle features a 20mm (20-400) neck finish. With a classic rounded shoulder and base, this container is an ideal vehicle for personal care products such as essential oils, skincare formulations and chemical products. Glass offers excellent strength, weight and compatibility for materials that cannot use plastic containers. The amber (brown) glass is able to filter out ultraviolet (UV) light and is primarily used for UV-sensitive products.  ",
-        "stock": "N/A"
-      },
-      "similarity": 0.9294399999999999
-    },
-    {
-      "company": "Cary Company",
-      "product": {
-        "company": "Cary Company",
-        "url": "https://www.thecarycompany.com/2-oz-clear-flint-glass-cylinder-bottle-20mm",
-        "sku": "Part#: 30W2CG",
-        "name": "2 oz. Clear Glass Cylinder Round Bottle, 20mm 20-410",
-        "price": 0.5673,
-        "quantity_breaks": [
           {
             "quantity_of_packing": "144",
             "type_of_packing": "case",
-            "unit_quantity": 144.0,
-            "price_per_packing": 96.48,
-            "price_per_item": 0.67
+            "unit_quantity": 12.0,
+            "price_per_packing": 33.0,
+            "price_per_item": 2.75
           },
           {
-            "quantity_of_packing": "1008",
+            "quantity_of_packing": "1080",
             "type_of_packing": "case",
-            "unit_quantity": 144.0,
-            "price_per_packing": 82.08,
-            "price_per_item": 0.57
-          },
-          {
-            "quantity_of_packing": "4320",
-            "type_of_packing": "case",
-            "unit_quantity": 144.0,
-            "price_per_packing": 76.464,
-            "price_per_item": 0.531
-          },
-          {
-            "quantity_of_packing": "9504",
-            "type_of_packing": "case",
-            "unit_quantity": 144.0,
-            "price_per_packing": 71.712,
-            "price_per_item": 0.498
-          }
-        ],
-        "sell_uom": [
-          {
-            "qty": "Quantity",
-            "price": "Price",
-            "unit": "Quantity"
-          },
-          {
-            "qty": "144",
-            "price": "$0.670",
-            "unit": "ea."
-          },
-          {
-            "qty": "1008",
-            "price": "$0.570",
-            "unit": "ea."
-          },
-          {
-            "qty": "4320",
-            "price": "$0.531",
-            "unit": "ea."
-          },
-          {
-            "qty": "9504",
-            "price": "$0.498",
-            "unit": "ea."
-          }
-        ],
-        "avg_price_per_unit": 0.5673,
-        "normalised_capacity(ml)": 59.15,
-        "original_uom": "oz",
-        "original_capacity": "2",
-        "normalised_uom": "ml",
-        "normalised_capacity": 59.15,
-        "capacity": 59.15,
-        "unit": "ml",
-        "color": "Clear",
-        "material": "Glass",
-        "shape": "Cylinder",
-        "category": "Glass",
-        "closure_type": "20-410",
-        "market_segment": "Pharmaceutical",
-        "product_origin": "",
-        "stock": "In Stock",
-        "product_industry": "Health & Beauty",
-        "product_description": " Elevate your product’s appearance with this sleek, high-quality 2 oz. clear glass cylinder round bottle. It features a 20mm, 410 neck finish, making it compatible with dropper caps and fine mist sprayers. Ideal for serums, perfumes, shampoos, lotions and other cosmetic and personal care items. Elevate your product presentation with this high-end bottle so that your container reflects your product quality. "
-      },
-      "similarity": 0.9272645454545455
-    },
-    {
-      "company": "Cary Company",
-      "product": {
-        "company": "Cary Company",
-        "url": "https://www.thecarycompany.com/boston-round-glass-bottles-30wbr2",
-        "sku": "Part#: 30WBR2",
-        "name": "2 oz. Clear Boston Round Glass Bottle, 20mm 20-400",
-        "price": 0.2774,
-        "quantity_breaks": [
-          {
-            "quantity_of_packing": "132",
-            "type_of_packing": "case",
-            "unit_quantity": 132.0,
-            "price_per_packing": 43.164,
-            "price_per_item": 0.327
-          },
-          {
-            "quantity_of_packing": "792",
-            "type_of_packing": "case",
-            "unit_quantity": 132.0,
-            "price_per_packing": 39.072,
-            "price_per_item": 0.296
-          },
-          {
-            "quantity_of_packing": "2376",
-            "type_of_packing": "case",
-            "unit_quantity": 132.0,
-            "price_per_packing": 35.904,
-            "price_per_item": 0.272
-          },
-          {
-            "quantity_of_packing": "7128",
-            "type_of_packing": "case",
-            "unit_quantity": 132.0,
-            "price_per_packing": 33.528,
-            "price_per_item": 0.254
-          },
-          {
-            "quantity_of_packing": "14256",
-            "type_of_packing": "case",
-            "unit_quantity": 132.0,
-            "price_per_packing": 31.416,
-            "price_per_item": 0.238
-          }
-        ],
-        "sell_uom": [
-          {
-            "qty": "Quantity",
-            "price": "Price",
-            "unit": "Quantity"
-          },
-          {
-            "qty": "132",
-            "price": "$0.327",
-            "unit": "ea."
-          },
-          {
-            "qty": "792",
-            "price": "$0.296",
-            "unit": "ea."
-          },
-          {
-            "qty": "2376",
-            "price": "$0.272",
-            "unit": "ea."
-          },
-          {
-            "qty": "7128",
-            "price": "$0.254",
-            "unit": "ea."
-          },
-          {
-            "qty": "14256",
-            "price": "$0.238",
-            "unit": "ea."
-          }
-        ],
-        "avg_price_per_unit": 0.2774,
-        "normalised_capacity(ml)": 59.15,
-        "original_uom": "oz",
-        "original_capacity": "2",
-        "normalised_uom": "ml",
-        "normalised_capacity": 59.15,
-        "capacity": 59.15,
-        "unit": "ml",
-        "color": "Clear",
-        "material": "Glass",
-        "shape": "Boston Round",
-        "category": "Glass",
-        "closure_type": "20-400",
-        "market_segment": "General",
-        "product_origin": "",
-        "stock": "In Stock",
-        "product_industry": "Food & Beverage, Health & Beauty, Nutraceuticals, Pharmaceutical",
-        "product_description": " The 30WBR2 is a 2 fl. oz. (60 ml.) clear glass Boston Round bottle with a 20 mm (20-400) neck finish. Boston Rounds have a rounded shoulder and rounded base, making them popular in personal care packaging but also appropriate for applications in other industries.  "
-      },
-      "similarity": 0.9185533333333333
-    },
-    {
-      "company": "Cary Company",
-      "product": {
-        "company": "Cary Company",
-        "url": "https://www.thecarycompany.com/glass-packer-bottles-30wa60",
-        "sku": "Part#: 30WA60",
-        "name": "2 oz. (60 cc) Amber Glass Packer Bottle, 33mm 33-400",
-        "price": 0.398,
-        "quantity_breaks": [
-          {
-            "quantity_of_packing": "192",
-            "type_of_packing": "case",
-            "unit_quantity": 192.0,
-            "price_per_packing": 97.92,
-            "price_per_item": 0.51
-          },
-          {
-            "quantity_of_packing": "384",
-            "type_of_packing": "case",
-            "unit_quantity": 192.0,
-            "price_per_packing": 88.32,
-            "price_per_item": 0.46
-          },
-          {
-            "quantity_of_packing": "1152",
-            "type_of_packing": "case",
-            "unit_quantity": 192.0,
-            "price_per_packing": 74.88,
-            "price_per_item": 0.39
-          },
-          {
-            "quantity_of_packing": "5184",
-            "type_of_packing": "case",
-            "unit_quantity": 192.0,
-            "price_per_packing": 65.28,
-            "price_per_item": 0.34
-          },
-          {
-            "quantity_of_packing": "15552",
-            "type_of_packing": "case",
-            "unit_quantity": 192.0,
-            "price_per_packing": 55.68,
-            "price_per_item": 0.29
-          }
-        ],
-        "sell_uom": [
-          {
-            "qty": "Quantity",
-            "price": "Price",
-            "unit": "Quantity"
-          },
-          {
-            "qty": "192",
-            "price": "$0.510",
-            "unit": "ea."
-          },
-          {
-            "qty": "384",
-            "price": "$0.460",
-            "unit": "ea."
-          },
-          {
-            "qty": "1152",
-            "price": "$0.390",
-            "unit": "ea."
-          },
-          {
-            "qty": "5184",
-            "price": "$0.340",
-            "unit": "ea."
-          },
-          {
-            "qty": "15552",
-            "price": "$0.290",
-            "unit": "ea."
-          }
-        ],
-        "avg_price_per_unit": 0.398,
-        "normalised_capacity(ml)": 60.0,
-        "original_uom": "cc",
-        "original_capacity": "60",
-        "normalised_uom": "ml",
-        "normalised_capacity": 60.0,
-        "capacity": 60.0,
-        "unit": "ml",
-        "color": "Amber",
-        "material": "Glass",
-        "shape": "Bottle",
-        "category": "Glass",
-        "closure_type": "33-400",
-        "market_segment": "Pharmaceutical",
-        "product_origin": "",
-        "stock": "In Stock",
-        "product_industry": "Food & Beverage, Nutraceuticals, Pharmaceutical",
-        "product_description": " The 30WA60 is a 2 fl. oz. (60 cc) amber glass packer bottle with a 33 mm (33-400) neck finish. Packer bottles, also known as pill packers or vitamin bottles are commonly used in the pharmaceutical and nutraceutical industries for pill and capsule packaging. The amber (brown) glass is able to filter out ultraviolet (UV) light and is primarily used for UV-sensitive products.  "
-      },
-      "similarity": 0.9169833333333334
-    },
-    {
-      "company": "Cary Company",
-      "product": {
-        "company": "Cary Company",
-        "url": "https://www.thecarycompany.com/boston-round-glass-bottles-30wu02",
-        "sku": "Part#: 30WU02",
-        "name": "2 oz. Cobalt Blue Boston Round Glass Bottle, 20mm 20-400",
-        "price": 0.5098,
-        "quantity_breaks": [
-          {
-            "quantity_of_packing": "240",
-            "type_of_packing": "case",
-            "unit_quantity": 240.0,
-            "price_per_packing": 138.24,
-            "price_per_item": 0.576
-          },
-          {
-            "quantity_of_packing": "1920",
-            "type_of_packing": "case",
-            "unit_quantity": 240.0,
-            "price_per_packing": 132.0,
-            "price_per_item": 0.55
-          },
-          {
-            "quantity_of_packing": "3840",
-            "type_of_packing": "case",
-            "unit_quantity": 240.0,
-            "price_per_packing": 127.2,
-            "price_per_item": 0.53
-          },
-          {
-            "quantity_of_packing": "7200",
-            "type_of_packing": "case",
-            "unit_quantity": 240.0,
-            "price_per_packing": 110.64,
-            "price_per_item": 0.461
-          },
-          {
-            "quantity_of_packing": "15120",
-            "type_of_packing": "case",
-            "unit_quantity": 240.0,
-            "price_per_packing": 103.68,
-            "price_per_item": 0.432
-          }
-        ],
-        "sell_uom": [
-          {
-            "qty": "Quantity",
-            "price": "Price",
-            "unit": "Quantity"
-          },
-          {
-            "qty": "240",
-            "price": "$0.576",
-            "unit": "ea."
-          },
-          {
-            "qty": "1920",
-            "price": "$0.550",
-            "unit": "ea."
-          },
-          {
-            "qty": "3840",
-            "price": "$0.530",
-            "unit": "ea."
-          },
-          {
-            "qty": "7200",
-            "price": "$0.461",
-            "unit": "ea."
-          },
-          {
-            "qty": "15120",
-            "price": "$0.432",
-            "unit": "ea."
-          }
-        ],
-        "avg_price_per_unit": 0.5098,
-        "normalised_capacity(ml)": 59.15,
-        "original_uom": "oz",
-        "original_capacity": "2",
-        "normalised_uom": "ml",
-        "normalised_capacity": 59.15,
-        "capacity": 59.15,
-        "unit": "ml",
-        "color": "Cobalt Blue",
-        "material": "Glass",
-        "shape": "Boston Round",
-        "category": "Glass",
-        "closure_type": "20-400",
-        "market_segment": "General",
-        "product_origin": "",
-        "stock": "In Stock",
-        "product_industry": "Food & Beverage, Health & Beauty, Nutraceuticals, Pharmaceutical",
-        "product_description": " The 30WU02 is a 2 fl. oz. (60 ml.) cobalt blue Boston Round glass bottle with a 20 mm (20-400) neck finish. Boston Rounds have a rounded shoulder and rounded base, making them popular in personal care packaging but also appropriate for applications in other industries.  "
-      },
-      "similarity": 0.9151433333333333
-    },
-    {
-      "company": "Cary Company",
-      "product": {
-        "company": "Cary Company",
-        "url": "https://www.thecarycompany.com/2-oz-cobalt-blue-frosted-boston-round-glass-bottle-20mm-20-400",
-        "sku": "Part#: 30WFU2",
-        "name": "2 oz. Frosted Cobalt Blue Boston Round Glass Bottle, 20mm 20-400",
-        "price": 0.4978,
-        "quantity_breaks": [
-          {
-            "quantity_of_packing": "240",
-            "type_of_packing": "case",
-            "unit_quantity": 240.0,
-            "price_per_packing": 159.6,
-            "price_per_item": 0.665
-          },
-          {
-            "quantity_of_packing": "960",
-            "type_of_packing": "case",
-            "unit_quantity": 240.0,
-            "price_per_packing": 133.2,
-            "price_per_item": 0.555
-          },
-          {
-            "quantity_of_packing": "2400",
-            "type_of_packing": "case",
-            "unit_quantity": 240.0,
-            "price_per_packing": 114.24,
-            "price_per_item": 0.476
-          },
-          {
-            "quantity_of_packing": "5040",
-            "type_of_packing": "case",
-            "unit_quantity": 240.0,
-            "price_per_packing": 102.48,
-            "price_per_item": 0.427
-          },
-          {
-            "quantity_of_packing": "15120",
-            "type_of_packing": "case",
-            "unit_quantity": 240.0,
-            "price_per_packing": 87.84,
-            "price_per_item": 0.366
-          }
-        ],
-        "sell_uom": [
-          {
-            "qty": "Quantity",
-            "price": "Price",
-            "unit": "Quantity"
-          },
-          {
-            "qty": "240",
-            "price": "$0.665",
-            "unit": "ea."
-          },
-          {
-            "qty": "960",
-            "price": "$0.555",
-            "unit": "ea."
-          },
-          {
-            "qty": "2400",
-            "price": "$0.476",
-            "unit": "ea."
-          },
-          {
-            "qty": "5040",
-            "price": "$0.427",
-            "unit": "ea."
-          },
-          {
-            "qty": "15120",
-            "price": "$0.366",
-            "unit": "ea."
-          }
-        ],
-        "avg_price_per_unit": 0.4978,
-        "normalised_capacity(ml)": 59.15,
-        "original_uom": "oz",
-        "original_capacity": "2",
-        "normalised_uom": "ml",
-        "normalised_capacity": 59.15,
-        "capacity": 59.15,
-        "unit": "ml",
-        "color": "Frosted Cobalt Blue",
-        "material": "Glass",
-        "shape": "Boston Round",
-        "category": "Glass",
-        "closure_type": "20-400",
-        "market_segment": "Cosmetics",
-        "product_origin": "",
-        "stock": "In Stock",
-        "product_industry": "",
-        "product_description": " This 2 fl. oz. (60 ml) cobalt blue frosted Boston round glass bottle features a 20mm (20-400) neck finish. With a classic rounded shoulder and base, this container is an ideal vehicle for personal care products such as essential oils, skincare formulations and chemical products. Glass offers excellent strength, weight and compatibility for materials that cannot use plastic containers. Striking cobalt blue color helps your product stand out on store shelves.  "
-      },
-      "similarity": 0.9124933333333332
-    },
-    {
-      "company": "Cary Company",
-      "product": {
-        "company": "Cary Company",
-        "url": "https://www.thecarycompany.com/glass-straight-sided-jars-30w371",
-        "sku": "Part#: 30W371",
-        "name": "2 oz. Straight Sided Glass Jar, 53mm 53-400, 24/cs",
-        "price": 0.6486,
-        "quantity_breaks": [
-          {
-            "quantity_of_packing": "24",
-            "type_of_packing": "case",
-            "unit_quantity": 24.0,
-            "price_per_packing": 18.624,
-            "price_per_item": 0.776
-          },
-          {
-            "quantity_of_packing": "1008",
-            "type_of_packing": "case",
-            "unit_quantity": 24.0,
-            "price_per_packing": 16.992,
-            "price_per_item": 0.708
-          },
-          {
-            "quantity_of_packing": "2304",
-            "type_of_packing": "case",
-            "unit_quantity": 24.0,
-            "price_per_packing": 15.384,
-            "price_per_item": 0.641
-          },
-          {
-            "quantity_of_packing": "4608",
-            "type_of_packing": "case",
-            "unit_quantity": 24.0,
-            "price_per_packing": 13.752,
-            "price_per_item": 0.573
-          },
-          {
-            "quantity_of_packing": "9216",
-            "type_of_packing": "case",
-            "unit_quantity": 24.0,
-            "price_per_packing": 13.08,
-            "price_per_item": 0.545
-          }
-        ],
-        "sell_uom": [
-          {
-            "qty": "Quantity",
-            "price": "Price",
-            "unit": "Quantity"
-          },
-          {
-            "qty": "24",
-            "price": "$0.776",
-            "unit": "ea."
-          },
-          {
-            "qty": "1008",
-            "price": "$0.708",
-            "unit": "ea."
-          },
-          {
-            "qty": "2304",
-            "price": "$0.641",
-            "unit": "ea."
-          },
-          {
-            "qty": "4608",
-            "price": "$0.573",
-            "unit": "ea."
-          },
-          {
-            "qty": "9216",
-            "price": "$0.545",
-            "unit": "ea."
-          }
-        ],
-        "avg_price_per_unit": 0.6486,
-        "normalised_capacity(ml)": 59.15,
-        "original_uom": "oz",
-        "original_capacity": "2",
-        "normalised_uom": "ml",
-        "normalised_capacity": 59.15,
-        "capacity": 59.15,
-        "unit": "ml",
-        "color": "Clear",
-        "material": "Glass",
-        "shape": "Straight Sided",
-        "category": "Glass",
-        "closure_type": "53-400",
-        "market_segment": "Food & Condiments",
-        "product_origin": "",
-        "stock": "In Stock",
-        "product_industry": "Food & Beverage",
-        "product_description": " The 30W371 is a 2 fl. oz. 53 mm clear straight sided glass jar. This Glass Jar has a straight profile that can be used across industries. It can be used to pack food products, but also appropriate for packaging creams and body and hair care products. Glass offers excellent strength, weight and compatibility for materials that cannot use plastic containers. "
-      },
-      "similarity": 0.9109494117647059
-    },
-    {
-      "company": "Cary Company",
-      "product": {
-        "company": "Cary Company",
-        "url": "https://www.thecarycompany.com/2-oz-frosted-boston-round-glass-bottle-20mm-20-400",
-        "sku": "Part#: 30WFB2",
-        "name": "2 oz. Frosted Boston Round Glass Bottle, 20mm 20-400",
-        "price": 0.5094,
-        "quantity_breaks": [
-          {
-            "quantity_of_packing": "240",
-            "type_of_packing": "case",
-            "unit_quantity": 240.0,
-            "price_per_packing": 173.76,
-            "price_per_item": 0.724
-          },
-          {
-            "quantity_of_packing": "720",
-            "type_of_packing": "case",
-            "unit_quantity": 240.0,
-            "price_per_packing": 124.56,
-            "price_per_item": 0.519
+            "unit_quantity": 12.0,
+            "price_per_packing": 28.56,
+            "price_per_item": 2.38
           },
           {
             "quantity_of_packing": "2160",
             "type_of_packing": "case",
-            "unit_quantity": 240.0,
-            "price_per_packing": 115.92,
-            "price_per_item": 0.483
-          },
-          {
-            "quantity_of_packing": "4320",
-            "type_of_packing": "case",
-            "unit_quantity": 240.0,
-            "price_per_packing": 104.4,
-            "price_per_item": 0.435
-          },
-          {
-            "quantity_of_packing": "12240",
-            "type_of_packing": "case",
-            "unit_quantity": 240.0,
-            "price_per_packing": 92.64,
-            "price_per_item": 0.386
+            "unit_quantity": 12.0,
+            "price_per_packing": 27.6,
+            "price_per_item": 2.3
           }
         ],
         "sell_uom": [
@@ -824,193 +45,84 @@
             "unit": "Quantity"
           },
           {
-            "qty": "240",
-            "price": "$0.724",
+            "qty": "12",
+            "price": "$3.280",
             "unit": "ea."
           },
           {
-            "qty": "720",
-            "price": "$0.519",
+            "qty": "144",
+            "price": "$2.750",
+            "unit": "ea."
+          },
+          {
+            "qty": "1080",
+            "price": "$2.380",
             "unit": "ea."
           },
           {
             "qty": "2160",
-            "price": "$0.483",
-            "unit": "ea."
-          },
-          {
-            "qty": "4320",
-            "price": "$0.435",
-            "unit": "ea."
-          },
-          {
-            "qty": "12240",
-            "price": "$0.386",
+            "price": "$2.300",
             "unit": "ea."
           }
         ],
-        "avg_price_per_unit": 0.5094,
-        "normalised_capacity(ml)": 59.15,
-        "original_uom": "oz",
-        "original_capacity": "2",
+        "avg_price_per_unit": 2.6775,
+        "normalised_capacity(ml)": 750.0,
+        "original_uom": "ml",
+        "original_capacity": "750",
         "normalised_uom": "ml",
-        "normalised_capacity": 59.15,
-        "capacity": 59.15,
-        "unit": "ml",
-        "color": "Frosted White",
-        "material": "Glass",
-        "shape": "Boston Round",
-        "category": "Glass",
-        "closure_type": "20-400",
-        "market_segment": "Cosmetics",
-        "product_origin": "",
-        "stock": "In Stock",
-        "product_industry": "Health & Beauty, Household Chemicals, Nutraceuticals, Pharmaceutical",
-        "product_description": " This 2 fl. oz. (60 ml) frosted Boston round flint glass bottle features a 20mm (20-400) neck finish. With a classic rounded shoulder and base, this container is an ideal vehicle for personal care products such as essential oils, skincare formulations and chemical products. Glass offers excellent strength, weight and compatibility for materials that cannot use plastic containers.  "
-      },
-      "similarity": 0.9020688888888888
-    },
-    {
-      "company": "Cary Company",
-      "product": {
-        "company": "Cary Company",
-        "url": "https://www.thecarycompany.com/glass-french-square-jars-30wfs2",
-        "sku": "Part#: 30WFS2",
-        "name": "2 oz. French Square Glass Jar, 28mm 28-400",
-        "price": 0.7258,
-        "quantity_breaks": [
-          {
-            "quantity_of_packing": "240",
-            "type_of_packing": "case",
-            "unit_quantity": 240.0,
-            "price_per_packing": 216.0,
-            "price_per_item": 0.9
-          },
-          {
-            "quantity_of_packing": "480",
-            "type_of_packing": "case",
-            "unit_quantity": 240.0,
-            "price_per_packing": 192.72,
-            "price_per_item": 0.803
-          },
-          {
-            "quantity_of_packing": "960",
-            "type_of_packing": "case",
-            "unit_quantity": 240.0,
-            "price_per_packing": 167.76,
-            "price_per_item": 0.699
-          },
-          {
-            "quantity_of_packing": "1440",
-            "type_of_packing": "case",
-            "unit_quantity": 240.0,
-            "price_per_packing": 150.48,
-            "price_per_item": 0.627
-          },
-          {
-            "quantity_of_packing": "2880",
-            "type_of_packing": "case",
-            "unit_quantity": 240.0,
-            "price_per_packing": 144.0,
-            "price_per_item": 0.6
-          }
-        ],
-        "sell_uom": [
-          {
-            "qty": "Quantity",
-            "price": "Price",
-            "unit": "Quantity"
-          },
-          {
-            "qty": "240",
-            "price": "$0.900",
-            "unit": "ea."
-          },
-          {
-            "qty": "480",
-            "price": "$0.803",
-            "unit": "ea."
-          },
-          {
-            "qty": "960",
-            "price": "$0.699",
-            "unit": "ea."
-          },
-          {
-            "qty": "1440",
-            "price": "$0.627",
-            "unit": "ea."
-          },
-          {
-            "qty": "2880",
-            "price": "$0.600",
-            "unit": "ea."
-          }
-        ],
-        "avg_price_per_unit": 0.7258,
-        "normalised_capacity(ml)": 59.15,
-        "original_uom": "oz",
-        "original_capacity": "2",
-        "normalised_uom": "ml",
-        "normalised_capacity": 59.15,
-        "capacity": 59.15,
+        "normalised_capacity": 750.0,
+        "capacity": 750.0,
         "unit": "ml",
         "color": "Clear",
         "material": "Glass",
-        "shape": "Square",
+        "neck_finish": "Bar Top",
+        "shape": "Bottle",
         "category": "Glass",
-        "closure_type": "28-400",
-        "market_segment": "Food & Condiments",
-        "product_origin": "",
+        "closure_type": "Bar Top",
+        "market_segment": "Beverage",
+        "product_origin": "United States",
         "stock": "In Stock",
         "product_industry": "Food & Beverage",
-        "product_description": " The 30WFS2 is a 2 fl. oz. 28 mm clear French square glass jar. This jar has a distinctive rectangular profile, a great choice for unique bottling. It is also applicable for use across industries. This jar is excellent for food and useful for products that need a wide opening for dispensing. "
+        "product_description": " This liquor bottle is a classic style that is sure to look appealing on store shelves. The 750 ml Nordic liquor bottle is made in the USA out of pure flint glass. Its smooth, round surface makes applying labels quick and easy. It makes the perfect bottle for storing your tequila, gin, or mixer product. It requires a bar top closure and the bottom is flat. The Cary Company sells the necessary bar top closures compatible with these bottles. "
       },
-      "similarity": 0.8909266666666666
+      "similarity": 0.9765500130582399
     },
     {
       "company": "Cary Company",
       "product": {
         "company": "Cary Company",
-        "url": "https://www.thecarycompany.com/boston-round-glass-bottles-30wabr",
-        "sku": "Part#: 30WABR",
-        "name": "2 oz. Amber Boston Round Glass Bottle, 20mm 20-400",
-        "price": 0.267,
+        "url": "https://www.thecarycompany.com/750-ml-clear-glass-arizona-liquor-bottle",
+        "sku": "Part#: 30WAZL",
+        "name": "750 ml Clear Glass Arizona Liquor Bottle, Bar Top, 12/cs",
+        "price": 2.5725,
         "quantity_breaks": [
           {
-            "quantity_of_packing": "240",
+            "quantity_of_packing": "12",
             "type_of_packing": "case",
-            "unit_quantity": 240.0,
-            "price_per_packing": 73.92,
-            "price_per_item": 0.308
+            "unit_quantity": 12.0,
+            "price_per_packing": 35.04,
+            "price_per_item": 2.92
           },
           {
-            "quantity_of_packing": "960",
+            "quantity_of_packing": "144",
             "type_of_packing": "case",
-            "unit_quantity": 240.0,
-            "price_per_packing": 68.4,
-            "price_per_item": 0.285
+            "unit_quantity": 12.0,
+            "price_per_packing": 32.52,
+            "price_per_item": 2.71
           },
           {
-            "quantity_of_packing": "2400",
+            "quantity_of_packing": "1008",
             "type_of_packing": "case",
-            "unit_quantity": 240.0,
-            "price_per_packing": 63.36,
-            "price_per_item": 0.264
+            "unit_quantity": 12.0,
+            "price_per_packing": 28.44,
+            "price_per_item": 2.37
           },
           {
-            "quantity_of_packing": "4800",
+            "quantity_of_packing": "2016",
             "type_of_packing": "case",
-            "unit_quantity": 240.0,
-            "price_per_packing": 59.28,
-            "price_per_item": 0.247
-          },
-          {
-            "quantity_of_packing": "15120",
-            "type_of_packing": "case",
-            "unit_quantity": 240.0,
-            "price_per_packing": 55.44,
-            "price_per_item": 0.231
+            "unit_quantity": 12.0,
+            "price_per_packing": 27.48,
+            "price_per_item": 2.29
           }
         ],
         "sell_uom": [
@@ -1020,164 +132,2618 @@
             "unit": "Quantity"
           },
           {
-            "qty": "240",
-            "price": "$0.308",
+            "qty": "12",
+            "price": "$2.920",
             "unit": "ea."
           },
           {
-            "qty": "960",
-            "price": "$0.285",
+            "qty": "144",
+            "price": "$2.710",
             "unit": "ea."
           },
           {
-            "qty": "2400",
-            "price": "$0.264",
+            "qty": "1008",
+            "price": "$2.370",
             "unit": "ea."
           },
           {
-            "qty": "4800",
-            "price": "$0.247",
-            "unit": "ea."
-          },
-          {
-            "qty": "15120",
-            "price": "$0.231",
+            "qty": "2016",
+            "price": "$2.290",
             "unit": "ea."
           }
         ],
-        "avg_price_per_unit": 0.267,
-        "normalised_capacity(ml)": 59.15,
-        "original_uom": "oz",
-        "original_capacity": "2",
+        "avg_price_per_unit": 2.5725,
+        "normalised_capacity(ml)": 750.0,
+        "original_uom": "ml",
+        "original_capacity": "750",
         "normalised_uom": "ml",
-        "normalised_capacity": 59.15,
-        "capacity": 59.15,
+        "normalised_capacity": 750.0,
+        "capacity": 750.0,
         "unit": "ml",
-        "color": "Amber",
+        "color": "Clear",
         "material": "Glass",
-        "shape": "Boston Round",
+        "neck_finish": "Bar Top",
+        "shape": "Bordeaux",
         "category": "Glass",
-        "closure_type": "20-400",
-        "market_segment": "Pharmaceutical",
+        "closure_type": "Bar Top",
+        "market_segment": "Beverage",
         "product_origin": "",
-        "stock": "In Stock",
-        "product_industry": "Food & Beverage, Health & Beauty, Nutraceuticals, Pharmaceutical",
-        "product_description": " The 30WABR is a 2 fl. oz. (60 ml.) amber glass Boston Round bottle with a 20 mm (20-400) neck finish. The amber (brown) glass is able to filter out ultraviolet (UV) light and is primarily used for UV-sensitive products such as beer and some pharmaceuticals. Boston Rounds have a rounded shoulder and rounded base, making them popular in personal care packaging but also appropriate for applications in other industries.  "
+        "stock": "Backordered - Production Run Scheduled",
+        "product_industry": "Food & Beverage",
+        "product_description": " The elegant 750 ml Arizona liquor bottle is made out of flint glass. A classic Bordeaux shape, the clarity of this bottle makes it perfect for storing your light colored wines such as pinto grigio. It features a flat bottom and requires the use of a bar top closure, sold separately. The Cary Company sells the necessary bar top closures that are compatible with these bottles. "
       },
-      "similarity": 0.8854333333333333
+      "similarity": 0.9478897884565162
+    },
+    {
+      "company": "Cary Company",
+      "product": {
+        "company": "Cary Company",
+        "url": "https://www.thecarycompany.com/750-ml-clear-glass-st-louis-liquor-bottle",
+        "sku": "Part#: 30BSTL",
+        "name": "750 ml Clear Glass St. Louis Liquor Bottle, Bar Top, 12/cs",
+        "price": 3.2275,
+        "quantity_breaks": [
+          {
+            "quantity_of_packing": "1",
+            "type_of_packing": "case",
+            "price_per_packing": 41.66,
+            "price_per_item": 3.4717
+          },
+          {
+            "quantity_of_packing": "5",
+            "type_of_packing": "case",
+            "price_per_packing": 39.52,
+            "price_per_item": 3.2933
+          },
+          {
+            "quantity_of_packing": "15",
+            "type_of_packing": "case",
+            "price_per_packing": 37.65,
+            "price_per_item": 3.1375
+          },
+          {
+            "quantity_of_packing": "90",
+            "type_of_packing": "case",
+            "price_per_packing": 36.09,
+            "price_per_item": 3.0075
+          }
+        ],
+        "sell_uom": [
+          {
+            "qty": "Quantity",
+            "price": "Price",
+            "unit": "Quantity"
+          },
+          {
+            "qty": "1",
+            "price": "$41.660",
+            "unit": "case"
+          },
+          {
+            "qty": "5",
+            "price": "$39.520",
+            "unit": "case"
+          },
+          {
+            "qty": "15",
+            "price": "$37.650",
+            "unit": "case"
+          },
+          {
+            "qty": "90",
+            "price": "$36.090",
+            "unit": "case"
+          }
+        ],
+        "avg_price_per_unit": 3.2275,
+        "normalised_capacity(ml)": 750.0,
+        "original_uom": "ml",
+        "original_capacity": "750",
+        "normalised_uom": "ml",
+        "normalised_capacity": 750.0,
+        "capacity": 750.0,
+        "unit": "ml",
+        "color": "Clear",
+        "material": "Glass",
+        "neck_finish": "Bar Top",
+        "shape": "Bottle",
+        "category": "Glass",
+        "closure_type": "Bar Top",
+        "market_segment": "Beverage",
+        "product_origin": "",
+        "stock": "1-2 Weeks. Some Items May Vary.",
+        "product_industry": "Food & Beverage",
+        "product_description": " When you want your vodka product to stand out on the shelf, the 750 ml St Louis liquor bottle is an excellent choice. Made out of pure flint glass, the unusual oval shape is sure to add charm to your vodka, gin, or mixer product. Featuring a flat bottom, it requires the use of a bar top closure, sold separately. The Cary Company sells the necessary bar top closures that are compatible with these bottles. "
+      },
+      "similarity": 0.9370786765519531
+    },
+    {
+      "company": "Cary Company",
+      "product": {
+        "company": "Cary Company",
+        "url": "https://www.thecarycompany.com/750-ml-antique-green-stretch-hock-wine-bottles-cork",
+        "sku": "Part#: 30BASH",
+        "name": "750 ml Antique Green Stretch Hock Wine Bottles, Cork, 3\" x 13.109\" 12/cs",
+        "price": 2.6275,
+        "quantity_breaks": [
+          {
+            "quantity_of_packing": "2",
+            "type_of_packing": "case",
+            "price_per_packing": 38.41,
+            "price_per_item": 3.2008
+          },
+          {
+            "quantity_of_packing": "5",
+            "type_of_packing": "case",
+            "price_per_packing": 35.51,
+            "price_per_item": 2.9592
+          },
+          {
+            "quantity_of_packing": "15",
+            "type_of_packing": "case",
+            "price_per_packing": 31.68,
+            "price_per_item": 2.64
+          },
+          {
+            "quantity_of_packing": "105",
+            "type_of_packing": "case",
+            "price_per_packing": 20.52,
+            "price_per_item": 1.71
+          }
+        ],
+        "sell_uom": [
+          {
+            "qty": "Quantity",
+            "price": "Price",
+            "unit": "Quantity"
+          },
+          {
+            "qty": "2",
+            "price": "$38.410",
+            "unit": "case"
+          },
+          {
+            "qty": "5",
+            "price": "$35.510",
+            "unit": "case"
+          },
+          {
+            "qty": "15",
+            "price": "$31.680",
+            "unit": "case"
+          },
+          {
+            "qty": "105",
+            "price": "$20.520",
+            "unit": "case"
+          }
+        ],
+        "avg_price_per_unit": 2.6275,
+        "normalised_capacity(ml)": 750.0,
+        "original_uom": "ml",
+        "original_capacity": "750",
+        "normalised_uom": "ml",
+        "normalised_capacity": 750.0,
+        "capacity": 750.0,
+        "unit": "ml",
+        "color": "Antique Green",
+        "material": "Glass",
+        "neck_finish": "Cork",
+        "shape": "Bottle",
+        "category": "Glass",
+        "closure_type": "Cork",
+        "market_segment": "Beverage",
+        "product_origin": "United States",
+        "stock": "1-2 Weeks. Some Items May Vary.",
+        "product_industry": "Food & Beverage",
+        "product_description": " This 750 ml Stretch Hock bottle in Antique Green has a German look with its elongated body and narrow taper. In Antique Green, this Stretch Hock bottle with a flat bottom and cork finish can hold red or white wines. The narrow taper is perfect for a show-stopping display. "
+      },
+      "similarity": 0.9293195206175097
+    },
+    {
+      "company": "Cary Company",
+      "product": {
+        "company": "Cary Company",
+        "url": "https://www.thecarycompany.com/750-ml-red-bordeaux-wine-bottles",
+        "sku": "Part#: 30BBRD",
+        "name": "750 ml Red Bordeaux Wine Bottles, Cork, 12/cs",
+        "price": 2.7658,
+        "quantity_breaks": [
+          {
+            "quantity_of_packing": "2",
+            "type_of_packing": "case",
+            "price_per_packing": 38.29,
+            "price_per_item": 3.1908
+          },
+          {
+            "quantity_of_packing": "5",
+            "type_of_packing": "case",
+            "price_per_packing": 35.56,
+            "price_per_item": 2.9633
+          },
+          {
+            "quantity_of_packing": "15",
+            "type_of_packing": "case",
+            "price_per_packing": 31.88,
+            "price_per_item": 2.6567
+          },
+          {
+            "quantity_of_packing": "112",
+            "type_of_packing": "case",
+            "price_per_packing": 27.03,
+            "price_per_item": 2.2525
+          }
+        ],
+        "sell_uom": [
+          {
+            "qty": "Quantity",
+            "price": "Price",
+            "unit": "Quantity"
+          },
+          {
+            "qty": "2",
+            "price": "$38.290",
+            "unit": "case"
+          },
+          {
+            "qty": "5",
+            "price": "$35.560",
+            "unit": "case"
+          },
+          {
+            "qty": "15",
+            "price": "$31.880",
+            "unit": "case"
+          },
+          {
+            "qty": "112",
+            "price": "$27.030",
+            "unit": "case"
+          }
+        ],
+        "avg_price_per_unit": 2.7658,
+        "normalised_capacity(ml)": 750.0,
+        "original_uom": "ml",
+        "original_capacity": "750",
+        "normalised_uom": "ml",
+        "normalised_capacity": 750.0,
+        "capacity": 750.0,
+        "unit": "ml",
+        "color": "Red",
+        "material": "Glass",
+        "neck_finish": "Cork",
+        "shape": "Bordeaux",
+        "category": "Glass",
+        "closure_type": "Cork",
+        "market_segment": "Beverage",
+        "product_origin": "United States",
+        "stock": "1-2 Weeks. Some Items May Vary.",
+        "product_industry": "Food & Beverage",
+        "product_description": " An ideal bottle for red wines, the 750 ml painted red Bordeaux (Claret) Wine Bottles are the most common bottle styles used today. The bright painted red color makes a perfect fit for specialty products or special holiday releases. These tall, straight-sided glass bottles have tall shoulders and a cork finish. They are suitable for all types of red wine such as Cabernet Sauvignon, Merlot, and Malbec. It is proudly made in the USA and offers a flat bottom and cork 30-3115 neck finish. "
+      },
+      "similarity": 0.922016337303596
+    },
+    {
+      "company": "Cary Company",
+      "product": {
+        "company": "Cary Company",
+        "url": "https://www.thecarycompany.com/750-ml-antique-green-burgundy-punted-wine-bottles-symphony",
+        "sku": "Part#: 30BSYM",
+        "name": "750 ml Antique Green Symphony Burgundy Wine Bottles, Punted, Cork, 12/cs",
+        "price": 2.7904,
+        "quantity_breaks": [
+          {
+            "quantity_of_packing": "2",
+            "type_of_packing": "case",
+            "price_per_packing": 40.57,
+            "price_per_item": 3.3808
+          },
+          {
+            "quantity_of_packing": "5",
+            "type_of_packing": "case",
+            "price_per_packing": 37.66,
+            "price_per_item": 3.1383
+          },
+          {
+            "quantity_of_packing": "15",
+            "type_of_packing": "case",
+            "price_per_packing": 32.82,
+            "price_per_item": 2.735
+          },
+          {
+            "quantity_of_packing": "77",
+            "type_of_packing": "case",
+            "price_per_packing": 22.89,
+            "price_per_item": 1.9075
+          }
+        ],
+        "sell_uom": [
+          {
+            "qty": "Quantity",
+            "price": "Price",
+            "unit": "Quantity"
+          },
+          {
+            "qty": "2",
+            "price": "$40.570",
+            "unit": "case"
+          },
+          {
+            "qty": "5",
+            "price": "$37.660",
+            "unit": "case"
+          },
+          {
+            "qty": "15",
+            "price": "$32.820",
+            "unit": "case"
+          },
+          {
+            "qty": "77",
+            "price": "$22.890",
+            "unit": "case"
+          }
+        ],
+        "avg_price_per_unit": 2.7904,
+        "normalised_capacity(ml)": 750.0,
+        "original_uom": "ml",
+        "original_capacity": "750",
+        "normalised_uom": "ml",
+        "normalised_capacity": 750.0,
+        "capacity": 750.0,
+        "unit": "ml",
+        "color": "Antique Green",
+        "material": "Glass",
+        "neck_finish": "Cork",
+        "shape": "Other",
+        "category": "Glass",
+        "closure_type": "Cork",
+        "market_segment": "Beverage",
+        "product_origin": "United States",
+        "stock": "1-2 Weeks. Some Items May Vary.",
+        "product_industry": "Food & Beverage",
+        "product_description": " A high end style without the homemade look is what the 750 ml Antique Green Symphony Burgundy Punted Wine Bottles are known for. These burgundy wine bottles are made of glass, have a cork finish, sloped shoulders, and a deep pronounced punt. Use these bottles to hold Chablis, Chardonnay, Syrah, Pinot Noir, or Aligoté. "
+      },
+      "similarity": 0.9215186121536464
+    },
+    {
+      "company": "Cary Company",
+      "product": {
+        "company": "Cary Company",
+        "url": "https://www.thecarycompany.com/750-ml-clear-stretch-hock-wine-bottles-cork-flute",
+        "sku": "Part#: 30BFLV",
+        "name": "750 ml Clear Stretch Hock Wine Bottles, Cork, 2.95\" Dia., 12/cs",
+        "price": 2.1821,
+        "quantity_breaks": [
+          {
+            "quantity_of_packing": "2",
+            "type_of_packing": "case",
+            "price_per_packing": 31.89,
+            "price_per_item": 2.6575
+          },
+          {
+            "quantity_of_packing": "5",
+            "type_of_packing": "case",
+            "price_per_packing": 29.5,
+            "price_per_item": 2.4583
+          },
+          {
+            "quantity_of_packing": "15",
+            "type_of_packing": "case",
+            "price_per_packing": 25.52,
+            "price_per_item": 2.1267
+          },
+          {
+            "quantity_of_packing": "90",
+            "type_of_packing": "case",
+            "price_per_packing": 17.83,
+            "price_per_item": 1.4858
+          }
+        ],
+        "sell_uom": [
+          {
+            "qty": "Quantity",
+            "price": "Price",
+            "unit": "Quantity"
+          },
+          {
+            "qty": "2",
+            "price": "$31.890",
+            "unit": "case"
+          },
+          {
+            "qty": "5",
+            "price": "$29.500",
+            "unit": "case"
+          },
+          {
+            "qty": "15",
+            "price": "$25.520",
+            "unit": "case"
+          },
+          {
+            "qty": "90",
+            "price": "$17.830",
+            "unit": "case"
+          }
+        ],
+        "avg_price_per_unit": 2.1821,
+        "normalised_capacity(ml)": 750.0,
+        "original_uom": "ml",
+        "original_capacity": "750",
+        "normalised_uom": "ml",
+        "normalised_capacity": 750.0,
+        "capacity": 750.0,
+        "unit": "ml",
+        "color": "Clear",
+        "material": "Glass",
+        "neck_finish": "Cork",
+        "shape": "Bottle",
+        "category": "Glass",
+        "closure_type": "Cork",
+        "market_segment": "Beverage",
+        "product_origin": "United States",
+        "stock": "1-2 Weeks. Some Items May Vary.",
+        "product_industry": "Food & Beverage",
+        "product_description": " 30BFLV is a clear stretch hock wine bottle with a cork finish. This 750 ml clear bottle's simple, elegant design will give your wine true shelf presence. "
+      },
+      "similarity": 0.9193528336380257
+    },
+    {
+      "company": "Cary Company",
+      "product": {
+        "company": "Cary Company",
+        "url": "https://www.thecarycompany.com/750-ml-emerald-green-champagne-bottles",
+        "sku": "Part#: 30BGCB",
+        "name": "750 ml Emerald Green Champagne Bottles, 12/cs",
+        "price": 2.5983,
+        "quantity_breaks": [
+          {
+            "quantity_of_packing": "5",
+            "type_of_packing": "case",
+            "price_per_packing": 33.54,
+            "price_per_item": 2.795
+          },
+          {
+            "quantity_of_packing": "24",
+            "type_of_packing": "case",
+            "price_per_packing": 32.24,
+            "price_per_item": 2.6867
+          },
+          {
+            "quantity_of_packing": "78",
+            "type_of_packing": "case",
+            "price_per_packing": 27.76,
+            "price_per_item": 2.3133
+          }
+        ],
+        "sell_uom": [
+          {
+            "qty": "Quantity",
+            "price": "Price",
+            "unit": "Quantity"
+          },
+          {
+            "qty": "5",
+            "price": "$33.540",
+            "unit": "case"
+          },
+          {
+            "qty": "24",
+            "price": "$32.240",
+            "unit": "case"
+          },
+          {
+            "qty": "78",
+            "price": "$27.760",
+            "unit": "case"
+          }
+        ],
+        "avg_price_per_unit": 2.5983,
+        "normalised_capacity(ml)": 750.0,
+        "original_uom": "ml",
+        "original_capacity": "750",
+        "normalised_uom": "ml",
+        "normalised_capacity": 750.0,
+        "capacity": 750.0,
+        "unit": "ml",
+        "color": "Emerald Green",
+        "material": "Glass",
+        "neck_finish": "Cork",
+        "shape": "Other",
+        "category": "Glass",
+        "closure_type": "Cork",
+        "market_segment": "Beverage",
+        "product_origin": "",
+        "stock": "3-5 Days",
+        "product_industry": "Food & Beverage",
+        "product_description": " The night is still young when you use the functional 750 ml Emerald Green Champagne Bottles made of glass with a cork finish. These champagne bottles are suitable for highly carbonated drinks, sparkling wines, and champagne.  "
+      },
+      "similarity": 0.9180357874909977
+    },
+    {
+      "company": "Cary Company",
+      "product": {
+        "company": "Cary Company",
+        "url": "https://www.thecarycompany.com/750-ml-clear-burgundy-punted-wine-bottles",
+        "sku": "Part#: 30BBPW",
+        "name": "750 ml Clear Burgundy Wine Bottles, Punted, Cork 12/cs",
+        "price": 2.2757,
+        "quantity_breaks": [
+          {
+            "quantity_of_packing": "2",
+            "type_of_packing": "case",
+            "price_per_packing": 30.34,
+            "price_per_item": 2.5283
+          },
+          {
+            "quantity_of_packing": "10",
+            "type_of_packing": "case",
+            "price_per_packing": 28.89,
+            "price_per_item": 2.4075
+          },
+          {
+            "quantity_of_packing": "24",
+            "type_of_packing": "case",
+            "price_per_packing": 27.33,
+            "price_per_item": 2.2775
+          },
+          {
+            "quantity_of_packing": "48",
+            "type_of_packing": "case",
+            "price_per_packing": 25.5,
+            "price_per_item": 2.125
+          },
+          {
+            "quantity_of_packing": "105",
+            "type_of_packing": "case",
+            "price_per_packing": 24.48,
+            "price_per_item": 2.04
+          }
+        ],
+        "sell_uom": [
+          {
+            "qty": "Quantity",
+            "price": "Price",
+            "unit": "Quantity"
+          },
+          {
+            "qty": "2",
+            "price": "$30.340",
+            "unit": "case"
+          },
+          {
+            "qty": "10",
+            "price": "$28.890",
+            "unit": "case"
+          },
+          {
+            "qty": "24",
+            "price": "$27.330",
+            "unit": "case"
+          },
+          {
+            "qty": "48",
+            "price": "$25.500",
+            "unit": "case"
+          },
+          {
+            "qty": "105",
+            "price": "$24.480",
+            "unit": "case"
+          }
+        ],
+        "avg_price_per_unit": 2.2757,
+        "normalised_capacity(ml)": 750.0,
+        "original_uom": "ml",
+        "original_capacity": "750",
+        "normalised_uom": "ml",
+        "normalised_capacity": 750.0,
+        "capacity": 750.0,
+        "unit": "ml",
+        "color": "Clear",
+        "material": "Glass",
+        "neck_finish": "Cork",
+        "shape": "Other",
+        "category": "Glass",
+        "closure_type": "Cork",
+        "market_segment": "Beverage",
+        "product_origin": "",
+        "stock": "3-5 Days",
+        "product_industry": "Food & Beverage",
+        "product_description": " The 750 ml Clear Burgundy Punted Wine Bottles are known for high end style without the homemade look. These clear burgundy wine bottles are made of flint glass, have a cork finish, sloped shoulders, and a deep pronounced punt. Use these bottles to hold Chablis, Chardonnay, Syrah, Pinot Noir, or Aligoté. "
+      },
+      "similarity": 0.9159833804221372
+    },
+    {
+      "company": "Cary Company",
+      "product": {
+        "company": "Cary Company",
+        "url": "https://www.thecarycompany.com/750-ml-antique-green-burgundy-punted-wine-bottles-classique",
+        "sku": "Part#: 30BCSQ",
+        "name": "750 ml Antique Green Andante Burgundy Wine Bottles, Punted, Cork, 3.204\" Dia., 12/cs",
+        "price": 2.5983,
+        "quantity_breaks": [
+          {
+            "quantity_of_packing": "2",
+            "type_of_packing": "case",
+            "price_per_packing": 38.01,
+            "price_per_item": 3.1675
+          },
+          {
+            "quantity_of_packing": "5",
+            "type_of_packing": "case",
+            "price_per_packing": 35.2,
+            "price_per_item": 2.9333
+          },
+          {
+            "quantity_of_packing": "15",
+            "type_of_packing": "case",
+            "price_per_packing": 30.54,
+            "price_per_item": 2.545
+          },
+          {
+            "quantity_of_packing": "98",
+            "type_of_packing": "case",
+            "price_per_packing": 20.97,
+            "price_per_item": 1.7475
+          }
+        ],
+        "sell_uom": [
+          {
+            "qty": "Quantity",
+            "price": "Price",
+            "unit": "Quantity"
+          },
+          {
+            "qty": "2",
+            "price": "$38.010",
+            "unit": "case"
+          },
+          {
+            "qty": "5",
+            "price": "$35.200",
+            "unit": "case"
+          },
+          {
+            "qty": "15",
+            "price": "$30.540",
+            "unit": "case"
+          },
+          {
+            "qty": "98",
+            "price": "$20.970",
+            "unit": "case"
+          }
+        ],
+        "avg_price_per_unit": 2.5983,
+        "normalised_capacity(ml)": 750.0,
+        "original_uom": "ml",
+        "original_capacity": "750",
+        "normalised_uom": "ml",
+        "normalised_capacity": 750.0,
+        "capacity": 750.0,
+        "unit": "ml",
+        "color": "Antique Green",
+        "material": "Glass",
+        "neck_finish": "Cork",
+        "shape": "Other",
+        "category": "Glass",
+        "closure_type": "Cork",
+        "market_segment": "Beverage",
+        "product_origin": "",
+        "stock": "1-2 Weeks. Some Items May Vary.",
+        "product_industry": "Food & Beverage",
+        "product_description": " A high end style without the homemade look is what the 750 ml Antique Green Andante Burgundy Punted Wine Bottles are known for. These burgundy wine bottles are made of glass, have a cork finish, sloped shoulders, and a deep pronounced punt. Use these bottles to hold Chablis, Chardonnay, Syrah, Pinot Noir, or Aligoté. "
+      },
+      "similarity": 0.912480231935442
+    },
+    {
+      "company": "Cary Company",
+      "product": {
+        "company": "Cary Company",
+        "url": "https://www.thecarycompany.com/750-ml-clear-glass-oregon-liquor-bottle",
+        "sku": "Part#: 30WRG5",
+        "name": "750 ml Clear Glass Oregon Liquor Bottle, Bar Top, 12/cs",
+        "price": 2.055,
+        "quantity_breaks": [
+          {
+            "quantity_of_packing": "12",
+            "type_of_packing": "case",
+            "unit_quantity": 12.0,
+            "price_per_packing": 30.24,
+            "price_per_item": 2.52
+          },
+          {
+            "quantity_of_packing": "144",
+            "type_of_packing": "case",
+            "unit_quantity": 12.0,
+            "price_per_packing": 25.32,
+            "price_per_item": 2.11
+          },
+          {
+            "quantity_of_packing": "1080",
+            "type_of_packing": "case",
+            "unit_quantity": 12.0,
+            "price_per_packing": 22.08,
+            "price_per_item": 1.84
+          },
+          {
+            "quantity_of_packing": "2160",
+            "type_of_packing": "case",
+            "unit_quantity": 12.0,
+            "price_per_packing": 21.0,
+            "price_per_item": 1.75
+          }
+        ],
+        "sell_uom": [
+          {
+            "qty": "Quantity",
+            "price": "Price",
+            "unit": "Quantity"
+          },
+          {
+            "qty": "12",
+            "price": "$2.520",
+            "unit": "ea."
+          },
+          {
+            "qty": "144",
+            "price": "$2.110",
+            "unit": "ea."
+          },
+          {
+            "qty": "1080",
+            "price": "$1.840",
+            "unit": "ea."
+          },
+          {
+            "qty": "2160",
+            "price": "$1.750",
+            "unit": "ea."
+          }
+        ],
+        "avg_price_per_unit": 2.055,
+        "normalised_capacity(ml)": 750.0,
+        "original_uom": "ml",
+        "original_capacity": "750",
+        "normalised_uom": "ml",
+        "normalised_capacity": 750.0,
+        "capacity": 750.0,
+        "unit": "ml",
+        "color": "Clear",
+        "material": "Glass",
+        "neck_finish": "Bar Top",
+        "shape": "Bottle",
+        "category": "Glass",
+        "closure_type": "Bar Top",
+        "market_segment": "Beverage",
+        "product_origin": "United States",
+        "stock": "Lead Times May Vary",
+        "product_industry": "Food & Beverage",
+        "product_description": " This 750 ml glass Oregon liquor bottle features a bar top closure, a flat bottom and rounded shoulders. This liquor bottle features a classic shape that's perfect for whiskey or other spirits. This glass bottle can also be used as a unique packaging choice for non-alcoholic beverages, syrups and more. This Oregon bottle features a thinner, lightweight base, making it a cost-effective alternative to our Part #30WND5 Nordic bottle. "
+      },
+      "similarity": 0.9082684774092453
+    },
+    {
+      "company": "Cary Company",
+      "product": {
+        "company": "Cary Company",
+        "url": "https://www.thecarycompany.com/750-ml-clear-glass-moonshine-jug",
+        "sku": "Part#: 30BMF7",
+        "name": "750 ml Clear Glass Moonshine Jug, Bar Top, 12/cs",
+        "price": 3.7298,
+        "quantity_breaks": [
+          {
+            "quantity_of_packing": "5",
+            "type_of_packing": "case",
+            "price_per_packing": 65.34,
+            "price_per_item": 5.445
+          },
+          {
+            "quantity_of_packing": "15",
+            "type_of_packing": "case",
+            "price_per_packing": 47.05,
+            "price_per_item": 3.9208
+          },
+          {
+            "quantity_of_packing": "40",
+            "type_of_packing": "case",
+            "price_per_packing": 36.58,
+            "price_per_item": 3.0483
+          },
+          {
+            "quantity_of_packing": "80",
+            "type_of_packing": "case",
+            "price_per_packing": 30.06,
+            "price_per_item": 2.505
+          }
+        ],
+        "sell_uom": [
+          {
+            "qty": "Quantity",
+            "price": "Price",
+            "unit": "Quantity"
+          },
+          {
+            "qty": "5",
+            "price": "$65.340",
+            "unit": "case"
+          },
+          {
+            "qty": "15",
+            "price": "$47.050",
+            "unit": "case"
+          },
+          {
+            "qty": "40",
+            "price": "$36.580",
+            "unit": "case"
+          },
+          {
+            "qty": "80",
+            "price": "$30.060",
+            "unit": "case"
+          }
+        ],
+        "avg_price_per_unit": 3.7298,
+        "normalised_capacity(ml)": 750.0,
+        "original_uom": "ml",
+        "original_capacity": "750",
+        "normalised_uom": "ml",
+        "normalised_capacity": 750.0,
+        "capacity": 750.0,
+        "unit": "ml",
+        "color": "Clear",
+        "material": "Glass",
+        "neck_finish": "Bar Top",
+        "shape": "Bottle",
+        "category": "Glass",
+        "closure_type": "Bar Top",
+        "market_segment": "General",
+        "product_origin": "United States",
+        "stock": "1-2 Weeks. Some Items May Vary.",
+        "product_industry": "Food & Beverage",
+        "product_description": " A quintessential bottle to highlight your home brew, the 750 ml moonshine jug is made in the USA out of clear flint glass. Its smooth, round surface makes applying labels quick and easy. This glass bottle is ideal for home brewed moonshine or whiskey and would also make a great bottle for mixers and juices. It features the handle moonshine jugs are known for that makes for easy transport. It requires a bar top closure and has a flat bottom. The Cary Company sells the necessary bar top closures that are compatible with these bottles. "
+      },
+      "similarity": 0.9028421286472658
+    },
+    {
+      "company": "Cary Company",
+      "product": {
+        "company": "Cary Company",
+        "url": "https://www.thecarycompany.com/750-ml-antique-green-burgundy-punted-wine-bottles-andante",
+        "sku": "Part#: 30BAND",
+        "name": "750 ml Antique Green Andante Burgundy Wine Bottles, Punted, Cork, 3.244\" Dia.,12/cs",
+        "price": 2.4483,
+        "quantity_breaks": [
+          {
+            "quantity_of_packing": "2",
+            "type_of_packing": "case",
+            "price_per_packing": 35.57,
+            "price_per_item": 2.9642
+          },
+          {
+            "quantity_of_packing": "5",
+            "type_of_packing": "case",
+            "price_per_packing": 33.04,
+            "price_per_item": 2.7533
+          },
+          {
+            "quantity_of_packing": "15",
+            "type_of_packing": "case",
+            "price_per_packing": 28.81,
+            "price_per_item": 2.4008
+          },
+          {
+            "quantity_of_packing": "98",
+            "type_of_packing": "case",
+            "price_per_packing": 20.1,
+            "price_per_item": 1.675
+          }
+        ],
+        "sell_uom": [
+          {
+            "qty": "Quantity",
+            "price": "Price",
+            "unit": "Quantity"
+          },
+          {
+            "qty": "2",
+            "price": "$35.570",
+            "unit": "case"
+          },
+          {
+            "qty": "5",
+            "price": "$33.040",
+            "unit": "case"
+          },
+          {
+            "qty": "15",
+            "price": "$28.810",
+            "unit": "case"
+          },
+          {
+            "qty": "98",
+            "price": "$20.100",
+            "unit": "case"
+          }
+        ],
+        "avg_price_per_unit": 2.4483,
+        "normalised_capacity(ml)": 750.0,
+        "original_uom": "ml",
+        "original_capacity": "750",
+        "normalised_uom": "ml",
+        "normalised_capacity": 750.0,
+        "capacity": 750.0,
+        "unit": "ml",
+        "color": "Antique Green",
+        "material": "Glass",
+        "neck_finish": "Cork",
+        "shape": "Other",
+        "category": "Glass",
+        "closure_type": "Cork",
+        "market_segment": "Beverage",
+        "product_origin": "United States",
+        "stock": "1-2 Weeks. Some Items May Vary.",
+        "product_industry": "Food & Beverage",
+        "product_description": " A high end style without the homemade look is what the 750 ml Antique Green Andante Burgundy Punted Wine Bottles are known for. These burgundy wine bottles are made of glass, have a cork finish, sloped shoulders, and a deep pronounced punt. Use these bottles to hold Chablis, Chardonnay, Syrah, Pinot Noir, or Aligoté. "
+      },
+      "similarity": 0.8960268498513471
+    },
+    {
+      "company": "Cary Company",
+      "product": {
+        "company": "Cary Company",
+        "url": "https://www.thecarycompany.com/750-ml-clear-flint-burgundy-wine-bottles-cork",
+        "sku": "Part#: 30BBFC",
+        "name": "750 ml Clear Burgundy Wine Bottles, Cork, 12/cs",
+        "price": 2.0335,
+        "quantity_breaks": [
+          {
+            "quantity_of_packing": "2",
+            "type_of_packing": "case",
+            "price_per_packing": 34.82,
+            "price_per_item": 2.9017
+          },
+          {
+            "quantity_of_packing": "5",
+            "type_of_packing": "case",
+            "price_per_packing": 25.25,
+            "price_per_item": 2.1042
+          },
+          {
+            "quantity_of_packing": "15",
+            "type_of_packing": "case",
+            "price_per_packing": 22.6,
+            "price_per_item": 1.8833
+          },
+          {
+            "quantity_of_packing": "105",
+            "type_of_packing": "case",
+            "price_per_packing": 14.94,
+            "price_per_item": 1.245
+          }
+        ],
+        "sell_uom": [
+          {
+            "qty": "Quantity",
+            "price": "Price",
+            "unit": "Quantity"
+          },
+          {
+            "qty": "2",
+            "price": "$34.820",
+            "unit": "case"
+          },
+          {
+            "qty": "5",
+            "price": "$25.250",
+            "unit": "case"
+          },
+          {
+            "qty": "15",
+            "price": "$22.600",
+            "unit": "case"
+          },
+          {
+            "qty": "105",
+            "price": "$14.940",
+            "unit": "case"
+          }
+        ],
+        "avg_price_per_unit": 2.0335,
+        "normalised_capacity(ml)": 750.0,
+        "original_uom": "ml",
+        "original_capacity": "750",
+        "normalised_uom": "ml",
+        "normalised_capacity": 750.0,
+        "capacity": 750.0,
+        "unit": "ml",
+        "color": "Clear",
+        "material": "Glass",
+        "neck_finish": "Cork",
+        "shape": "Other",
+        "category": "Glass",
+        "closure_type": "Cork",
+        "market_segment": "Beverage",
+        "product_origin": "United States",
+        "stock": "1-2 Weeks. Some Items May Vary.",
+        "product_industry": "Food & Beverage",
+        "product_description": " A high-end style without the homemade look is what the 750 ml Clear Burgundy Wine Bottles are known for. These burgundy wine bottles are made of flint glass, have a cork finish, sloped shoulders and a flat bottom. Use these bottles to hold Chablis, Chardonnay, Syrah, Pinot Noir, or Aligoté. "
+      },
+      "similarity": 0.8894166528170184
+    },
+    {
+      "company": "Cary Company",
+      "product": {
+        "company": "Cary Company",
+        "url": "https://www.thecarycompany.com/750-ml-antique-green-stretch-hock-wine-bottles-cork-flute",
+        "sku": "Part#: 30BFAW",
+        "name": "750 ml Antique Green Stretch Hock Wine Bottles, Cork, 2.95\" x 12.99\" 12/cs",
+        "price": 2.2561,
+        "quantity_breaks": [
+          {
+            "quantity_of_packing": "3",
+            "type_of_packing": "case",
+            "price_per_packing": 33.06,
+            "price_per_item": 2.755
+          },
+          {
+            "quantity_of_packing": "5",
+            "type_of_packing": "case",
+            "price_per_packing": 29.24,
+            "price_per_item": 2.4367
+          },
+          {
+            "quantity_of_packing": "15",
+            "type_of_packing": "case",
+            "price_per_packing": 25.39,
+            "price_per_item": 2.1158
+          },
+          {
+            "quantity_of_packing": "90",
+            "type_of_packing": "case",
+            "price_per_packing": 20.6,
+            "price_per_item": 1.7167
+          }
+        ],
+        "sell_uom": [
+          {
+            "qty": "Quantity",
+            "price": "Price",
+            "unit": "Quantity"
+          },
+          {
+            "qty": "3",
+            "price": "$33.060",
+            "unit": "case"
+          },
+          {
+            "qty": "5",
+            "price": "$29.240",
+            "unit": "case"
+          },
+          {
+            "qty": "15",
+            "price": "$25.390",
+            "unit": "case"
+          },
+          {
+            "qty": "90",
+            "price": "$20.600",
+            "unit": "case"
+          }
+        ],
+        "avg_price_per_unit": 2.2561,
+        "normalised_capacity(ml)": 750.0,
+        "original_uom": "ml",
+        "original_capacity": "750",
+        "normalised_uom": "ml",
+        "normalised_capacity": 750.0,
+        "capacity": 750.0,
+        "unit": "ml",
+        "color": "Antique Green",
+        "material": "Glass",
+        "neck_finish": "Cork",
+        "shape": "Bottle",
+        "category": "Glass",
+        "closure_type": "Cork",
+        "market_segment": "Beverage",
+        "product_origin": "United States",
+        "stock": "1-2 Weeks. Some Items May Vary.",
+        "product_industry": "Food & Beverage",
+        "product_description": " This 750 ml antique green Hock shaped wine bottle has great shelf presence. These wine bottles close with a cork (sold separately) for a classic, elegant look. Hock wine bottles are tall and narrow with gently sloping shoulders, making them a popular choice for whine wine. "
+      },
+      "similarity": 0.8885809465772903
+    },
+    {
+      "company": "Cary Company",
+      "product": {
+        "company": "Cary Company",
+        "url": "https://www.thecarycompany.com/750-ml-cobalt-blue-stretch-hock-wine-bottles",
+        "sku": "Part#: 30BBW2",
+        "name": "750 ml Cobalt Blue Stretch Hock Wine Bottles, 12/cs",
+        "price": 2.1838,
+        "quantity_breaks": [
+          {
+            "quantity_of_packing": "2",
+            "type_of_packing": "case",
+            "price_per_packing": 31.73,
+            "price_per_item": 2.6442
+          },
+          {
+            "quantity_of_packing": "5",
+            "type_of_packing": "case",
+            "price_per_packing": 27.88,
+            "price_per_item": 2.3233
+          },
+          {
+            "quantity_of_packing": "15",
+            "type_of_packing": "case",
+            "price_per_packing": 24.85,
+            "price_per_item": 2.0708
+          },
+          {
+            "quantity_of_packing": "105",
+            "type_of_packing": "case",
+            "price_per_packing": 20.36,
+            "price_per_item": 1.6967
+          }
+        ],
+        "sell_uom": [
+          {
+            "qty": "Quantity",
+            "price": "Price",
+            "unit": "Quantity"
+          },
+          {
+            "qty": "2",
+            "price": "$31.730",
+            "unit": "case"
+          },
+          {
+            "qty": "5",
+            "price": "$27.880",
+            "unit": "case"
+          },
+          {
+            "qty": "15",
+            "price": "$24.850",
+            "unit": "case"
+          },
+          {
+            "qty": "105",
+            "price": "$20.360",
+            "unit": "case"
+          }
+        ],
+        "avg_price_per_unit": 2.1838,
+        "normalised_capacity(ml)": 750.0,
+        "original_uom": "ml",
+        "original_capacity": "750",
+        "normalised_uom": "ml",
+        "normalised_capacity": 750.0,
+        "capacity": 750.0,
+        "unit": "ml",
+        "color": "Cobalt Blue",
+        "material": "Glass",
+        "neck_finish": "Cork",
+        "shape": "Bottle",
+        "category": "Glass",
+        "closure_type": "Cork",
+        "market_segment": "Beverage",
+        "product_origin": "United States",
+        "stock": "1-2 Weeks. Some Items May Vary.",
+        "product_industry": "Food & Beverage",
+        "product_description": " These beautifully set 750 ml Cobalt Blue Stretch Hock Wine Bottles (also known as Rhine wine bottles) have a cork finish opening, long sloping shoulders, and short stretched neck. \"Hock\" refers to an old British word for German white wine, which has similar characteristics to the shape of this bottle. These glass hock bottles can hold alcoholic beverages such as Riesling and sweet or dessert wines. "
+      },
+      "similarity": 0.8882893053016454
+    },
+    {
+      "company": "Cary Company",
+      "product": {
+        "company": "Cary Company",
+        "url": "https://www.thecarycompany.com/750-ml-clear-glass-jimmy-lee-liquor-bottle",
+        "sku": "Part#: 30BJLB",
+        "name": "750 ml Clear Glass Jimmy Lee Liquor Bottle, Bar Top, 6/cs",
+        "price": 4.0742,
+        "quantity_breaks": [
+          {
+            "quantity_of_packing": "2",
+            "type_of_packing": "case",
+            "price_per_packing": 32.69,
+            "price_per_item": 5.4483
+          },
+          {
+            "quantity_of_packing": "5",
+            "type_of_packing": "case",
+            "price_per_packing": 26.23,
+            "price_per_item": 4.3717
+          },
+          {
+            "quantity_of_packing": "15",
+            "type_of_packing": "case",
+            "price_per_packing": 22.68,
+            "price_per_item": 3.78
+          },
+          {
+            "quantity_of_packing": "140",
+            "type_of_packing": "case",
+            "price_per_packing": 16.18,
+            "price_per_item": 2.6967
+          }
+        ],
+        "sell_uom": [
+          {
+            "qty": "Quantity",
+            "price": "Price",
+            "unit": "Quantity"
+          },
+          {
+            "qty": "2",
+            "price": "$32.690",
+            "unit": "case"
+          },
+          {
+            "qty": "5",
+            "price": "$26.230",
+            "unit": "case"
+          },
+          {
+            "qty": "15",
+            "price": "$22.680",
+            "unit": "case"
+          },
+          {
+            "qty": "140",
+            "price": "$16.180",
+            "unit": "case"
+          }
+        ],
+        "avg_price_per_unit": 4.0742,
+        "normalised_capacity(ml)": 750.0,
+        "original_uom": "ml",
+        "original_capacity": "750",
+        "normalised_uom": "ml",
+        "normalised_capacity": 750.0,
+        "capacity": 750.0,
+        "unit": "ml",
+        "color": "Clear",
+        "material": "Glass",
+        "neck_finish": "Bar Top",
+        "shape": "Bottle",
+        "category": "Glass",
+        "closure_type": "Bar Top",
+        "market_segment": "Beverage",
+        "product_origin": "",
+        "stock": "1-2 Weeks. Some Items May Vary.",
+        "product_industry": "Food & Beverage",
+        "product_description": " The always elegant 750 ml Jimmy Lee liquor bottle is sure to please. This bottle is made out of clear flint glass. The scalloped shoulder design is eye-catching and creates an elegant display for your whiskey or mixer product. It requires a bar top closure and the bottom is flat. The Cary Company sells the necessary bar top closures that are compatible with these bottles. "
+      },
+      "similarity": 0.8842463726445858
+    },
+    {
+      "company": "Cary Company",
+      "product": {
+        "company": "Cary Company",
+        "url": "https://www.thecarycompany.com/750-ml-clear-glass-california-liquor-bottle",
+        "sku": "Part#: 30WCAL",
+        "name": "750 ml Clear Glass California Liquor Bottle, Bar Top",
+        "price": 1.98,
+        "quantity_breaks": [
+          {
+            "quantity_of_packing": "12",
+            "type_of_packing": "case",
+            "unit_quantity": 12.0,
+            "price_per_packing": 28.92,
+            "price_per_item": 2.41
+          },
+          {
+            "quantity_of_packing": "144",
+            "type_of_packing": "case",
+            "unit_quantity": 12.0,
+            "price_per_packing": 24.12,
+            "price_per_item": 2.01
+          },
+          {
+            "quantity_of_packing": "1080",
+            "type_of_packing": "case",
+            "unit_quantity": 12.0,
+            "price_per_packing": 21.36,
+            "price_per_item": 1.78
+          },
+          {
+            "quantity_of_packing": "2160",
+            "type_of_packing": "case",
+            "unit_quantity": 12.0,
+            "price_per_packing": 20.64,
+            "price_per_item": 1.72
+          }
+        ],
+        "sell_uom": [
+          {
+            "qty": "Quantity",
+            "price": "Price",
+            "unit": "Quantity"
+          },
+          {
+            "qty": "12",
+            "price": "$2.410",
+            "unit": "ea."
+          },
+          {
+            "qty": "144",
+            "price": "$2.010",
+            "unit": "ea."
+          },
+          {
+            "qty": "1080",
+            "price": "$1.780",
+            "unit": "ea."
+          },
+          {
+            "qty": "2160",
+            "price": "$1.720",
+            "unit": "ea."
+          }
+        ],
+        "avg_price_per_unit": 1.98,
+        "normalised_capacity(ml)": 750.0,
+        "original_uom": "ml",
+        "original_capacity": "750",
+        "normalised_uom": "ml",
+        "normalised_capacity": 750.0,
+        "capacity": 750.0,
+        "unit": "ml",
+        "color": "Clear",
+        "material": "Glass",
+        "neck_finish": "Bar Top",
+        "shape": "Bordeaux",
+        "category": "Glass",
+        "closure_type": "Bar Top",
+        "market_segment": "Beverage",
+        "product_origin": "United States",
+        "stock": "In Stock",
+        "product_industry": "Food & Beverage",
+        "product_description": " The elegant 750 ml California liquor bottle is made out of flint glass. A classic Bordeaux shape, the clarity of this bottle makes it perfect for storing your light colored wines such as pinto grigio or rosa®. It features a flat bottom and requires the use of a bar top closure, sold separately. The Cary Company sells the necessary bar top closures that are compatible with these bottles. "
+      },
+      "similarity": 0.8828989292243407
+    },
+    {
+      "company": "Cary Company",
+      "product": {
+        "company": "Cary Company",
+        "url": "https://www.thecarycompany.com/750-ml-antique-green-burgundy-punted-wine-bottles-heavy",
+        "sku": "Part#: 30BAG9",
+        "name": "750 ml Antique Green Heavy Burgundy Wine Bottles, Punted, Cork, 12/cs",
+        "price": 2.3177,
+        "quantity_breaks": [
+          {
+            "quantity_of_packing": "2",
+            "type_of_packing": "case",
+            "price_per_packing": 33.62,
+            "price_per_item": 2.8017
+          },
+          {
+            "quantity_of_packing": "5",
+            "type_of_packing": "case",
+            "price_per_packing": 31.16,
+            "price_per_item": 2.5967
+          },
+          {
+            "quantity_of_packing": "15",
+            "type_of_packing": "case",
+            "price_per_packing": 27.87,
+            "price_per_item": 2.3225
+          },
+          {
+            "quantity_of_packing": "98",
+            "type_of_packing": "case",
+            "price_per_packing": 18.6,
+            "price_per_item": 1.55
+          }
+        ],
+        "sell_uom": [
+          {
+            "qty": "Quantity",
+            "price": "Price",
+            "unit": "Quantity"
+          },
+          {
+            "qty": "2",
+            "price": "$33.620",
+            "unit": "case"
+          },
+          {
+            "qty": "5",
+            "price": "$31.160",
+            "unit": "case"
+          },
+          {
+            "qty": "15",
+            "price": "$27.870",
+            "unit": "case"
+          },
+          {
+            "qty": "98",
+            "price": "$18.600",
+            "unit": "case"
+          }
+        ],
+        "avg_price_per_unit": 2.3177,
+        "normalised_capacity(ml)": 750.0,
+        "original_uom": "ml",
+        "original_capacity": "750",
+        "normalised_uom": "ml",
+        "normalised_capacity": 750.0,
+        "capacity": 750.0,
+        "unit": "ml",
+        "color": "Antique Green",
+        "material": "Glass",
+        "neck_finish": "Cork",
+        "shape": "Other",
+        "category": "Glass",
+        "closure_type": "Cork",
+        "market_segment": "Beverage",
+        "product_origin": "United States",
+        "stock": "1-2 Weeks. Some Items May Vary.",
+        "product_industry": "Food & Beverage",
+        "product_description": " A high end style without the homemade look is what the 750 ml Antique Green Heavy Burgundy Punted Wine Bottles are known for. These wine bottles are made of glass, have a cork finish, sloped shoulders, and a deep pronounced punt. They are known as the heavier alternative to the standard burgundy wine bottles due to their slightly larger size and heavier weight. Use these bottles to hold Chablis, Chardonnay, Syrah, Pinot Noir, or Aligoté. "
+      },
+      "similarity": 0.8817014385167949
+    },
+    {
+      "company": "Cary Company",
+      "product": {
+        "company": "Cary Company",
+        "url": "https://www.thecarycompany.com/750-ml-clear-california-hock-wine-bottles-cork",
+        "sku": "Part#: 30BCH7",
+        "name": "750 ml Clear California Hock Wine Bottles, Cork 12/cs",
+        "price": 1.8292,
+        "quantity_breaks": [
+          {
+            "quantity_of_packing": "2",
+            "type_of_packing": "case",
+            "price_per_packing": 30.0,
+            "price_per_item": 2.5
+          },
+          {
+            "quantity_of_packing": "5",
+            "type_of_packing": "case",
+            "price_per_packing": 23.23,
+            "price_per_item": 1.9358
+          },
+          {
+            "quantity_of_packing": "15",
+            "type_of_packing": "case",
+            "price_per_packing": 20.79,
+            "price_per_item": 1.7325
+          },
+          {
+            "quantity_of_packing": "105",
+            "type_of_packing": "case",
+            "price_per_packing": 13.78,
+            "price_per_item": 1.1483
+          }
+        ],
+        "sell_uom": [
+          {
+            "qty": "Quantity",
+            "price": "Price",
+            "unit": "Quantity"
+          },
+          {
+            "qty": "2",
+            "price": "$30.000",
+            "unit": "case"
+          },
+          {
+            "qty": "5",
+            "price": "$23.230",
+            "unit": "case"
+          },
+          {
+            "qty": "15",
+            "price": "$20.790",
+            "unit": "case"
+          },
+          {
+            "qty": "105",
+            "price": "$13.780",
+            "unit": "case"
+          }
+        ],
+        "avg_price_per_unit": 1.8292,
+        "normalised_capacity(ml)": 750.0,
+        "original_uom": "ml",
+        "original_capacity": "750",
+        "normalised_uom": "ml",
+        "normalised_capacity": 750.0,
+        "capacity": 750.0,
+        "unit": "ml",
+        "color": "Clear",
+        "material": "Glass",
+        "neck_finish": "Cork",
+        "shape": "Bottle",
+        "category": "Glass",
+        "closure_type": "Cork",
+        "market_segment": "Beverage",
+        "product_origin": "United States",
+        "stock": "1-2 Weeks. Some Items May Vary.",
+        "product_industry": "Food & Beverage",
+        "product_description": " This 750 ml Clear Flint California Hock Wine Bottle is ideal for white wines. Made from flint glass with a flat bottom and a cork finish, this simply classic bottle has an elegant look and shelf appeal. It is also American made. "
+      },
+      "similarity": 0.8806435100548446
     },
     {
       "company": "Berlin Packaging",
       "product": {
         "company": "Berlin Packaging",
-        "url": "https://www.berlinpackaging.com/4699b05-babr-boston-round-glass-bottles-2-oz-amber-case-of-24/",
-        "sku": "#4699B05-BABR",
-        "name": "2 oz Amber Glass Boston Round Bottles (Cap Not Included)",
-        "price": 0.474,
+        "url": "https://www.berlinpackaging.com/6005b01abr-750-ml-amber-flat-base-corked-tapered-wine-bottle-cap-not-included/",
+        "sku": "#6005B01ABR",
+        "name": "750 ml Glass Hock Wine Bottles, Cork Finish, Amber",
+        "price": 2.5333,
         "quantity_breaks": [
           {
-            "quantity_of_packing": "1-9",
+            "quantity_of_packing": "1-4",
             "type_of_packing": "Case",
-            "price_per_packing": 11.64,
-            "price_per_item": 0.485,
-            "unit_quantity": 24.0
+            "price_per_packing": 31.45,
+            "price_per_item": 2.6208,
+            "unit_quantity": 12.0
           },
           {
-            "quantity_of_packing": "10-269",
+            "quantity_of_packing": "5-104",
             "type_of_packing": "Case",
-            "price_per_packing": 11.38,
-            "price_per_item": 0.4742,
-            "unit_quantity": 24.0
+            "price_per_packing": 30.4,
+            "price_per_item": 2.5333,
+            "unit_quantity": 12.0
           },
           {
-            "quantity_of_packing": "270+",
+            "quantity_of_packing": "105+",
             "type_of_packing": "Case",
-            "price_per_packing": 11.11,
-            "price_per_item": 0.4629,
-            "unit_quantity": 24.0
+            "price_per_packing": 29.35,
+            "price_per_item": 2.4458,
+            "unit_quantity": 12.0
           }
         ],
         "sell_uom": [
           {
-            "qty_range": "Case (Qty 24)",
+            "qty_range": "Case (Qty 12)",
             "price": "Price Per Case",
             "header": "true"
           },
           {
-            "qty_range": "1-9",
-            "price": "$11.64",
-            "price_per_unit": "$0.49 ea."
+            "qty_range": "1-4",
+            "price": "$31.45",
+            "price_per_unit": "$2.62 ea."
           },
           {
-            "qty_range": "10-269",
-            "price": "$11.38",
-            "price_per_unit": "$0.47 ea."
+            "qty_range": "5-104",
+            "price": "$30.40",
+            "price_per_unit": "$2.53 ea."
           },
           {
-            "qty_range": "270+",
-            "price": "$11.11",
-            "price_per_unit": "$0.46 ea."
+            "qty_range": "105+",
+            "price": "$29.35",
+            "price_per_unit": "$2.45 ea."
           }
         ],
-        "avg_price_per_unit": 0.474,
-        "normalised_capacity(ml)": 59.15,
-        "original_uom": "oz",
-        "original_capacity": "2",
+        "avg_price_per_unit": 2.5333,
+        "normalised_capacity(ml)": 750.0,
+        "original_uom": "ml",
+        "original_capacity": "750",
         "normalised_uom": "ml",
-        "normalised_capacity": 59.15,
-        "capacity": 59.15,
+        "normalised_capacity": 750.0,
+        "capacity": 750.0,
         "unit": "ml",
         "color": "Amber",
         "material": "Glass - Type III",
-        "shape": "Boston Round",
+        "neck_finish": "30 mm",
+        "shape": "Bottle",
         "category": "Glass",
-        "closure_type": "Continuous Thread?A continuous thread (CT) closure has non-interrupted threads, and is closed by twisting on the threaded neck of the container. CT closures are recognized as two numbers separated by a dash (ex. 38-400).",
-        "market_segment": "General",
-        "stock": "Backordered: Expected to Ship 11/04/2025",
-        "items_per_unit": "24"
+        "closure_type": "Cork?Cork is a natural material and is made from the bark of a tree. Cork is not wood, but a dead tissue, which makes it an inert substance. Cork is a pretty remarkable material—it’s elastic, strong and relatively impermeable to air.",
+        "market_segment": "Beverage",
+        "stock": "In Stock",
+        "items_per_unit": "12"
       },
-      "similarity": 0.8623040033712601
+      "similarity": 0.8761613998433012
+    },
+    {
+      "company": "Cary Company",
+      "product": {
+        "company": "Cary Company",
+        "url": "https://www.thecarycompany.com/750-ml-clear-glass-liberty-liquor-bottle",
+        "sku": "Part#: 30BLBY",
+        "name": "750 ml Clear Glass Liberty Liquor Bottle, Bar Top, 12/cs",
+        "price": 4.2485,
+        "quantity_breaks": [
+          {
+            "quantity_of_packing": "1",
+            "type_of_packing": "case",
+            "price_per_packing": 56.48,
+            "price_per_item": 4.7067
+          },
+          {
+            "quantity_of_packing": "5",
+            "type_of_packing": "case",
+            "price_per_packing": 52.24,
+            "price_per_item": 4.3533
+          },
+          {
+            "quantity_of_packing": "15",
+            "type_of_packing": "case",
+            "price_per_packing": 50.21,
+            "price_per_item": 4.1842
+          },
+          {
+            "quantity_of_packing": "75",
+            "type_of_packing": "case",
+            "price_per_packing": 45.0,
+            "price_per_item": 3.75
+          }
+        ],
+        "sell_uom": [
+          {
+            "qty": "Quantity",
+            "price": "Price",
+            "unit": "Quantity"
+          },
+          {
+            "qty": "1",
+            "price": "$56.480",
+            "unit": "case"
+          },
+          {
+            "qty": "5",
+            "price": "$52.240",
+            "unit": "case"
+          },
+          {
+            "qty": "15",
+            "price": "$50.210",
+            "unit": "case"
+          },
+          {
+            "qty": "75",
+            "price": "$45.000",
+            "unit": "case"
+          }
+        ],
+        "avg_price_per_unit": 4.2485,
+        "normalised_capacity(ml)": 750.0,
+        "original_uom": "ml",
+        "original_capacity": "750",
+        "normalised_uom": "ml",
+        "normalised_capacity": 750.0,
+        "capacity": 750.0,
+        "unit": "ml",
+        "color": "Clear",
+        "material": "Glass",
+        "neck_finish": "Bar Top",
+        "shape": "Bottle",
+        "category": "Glass",
+        "closure_type": "Bar Top",
+        "market_segment": "Beverage",
+        "product_origin": "",
+        "stock": "1-2 Weeks. Some Items May Vary.",
+        "product_industry": "Food & Beverage",
+        "product_description": " This rectangular 750 ml Liberty liquor bottle will add a touch of opulence to the presentation of your tequila. Made out of flint glass, its rectangular shape extends from the shoulder to the base. It features a bar top finish and has a flat bottom. This bottle can also store oils and dressings. The Cary Company sells the necessary bar top closures that are compatible with these bottles. "
+      },
+      "similarity": 0.8759841288522
+    },
+    {
+      "company": "Cary Company",
+      "product": {
+        "company": "Cary Company",
+        "url": "https://www.thecarycompany.com/750-ml-clear-frosted-bordeaux-wine-bottles",
+        "sku": "Part#: 30BBFR",
+        "name": "750 ml Clear Frosted Bordeaux Wine Bottles, Cork, 12/cs",
+        "price": 2.3035,
+        "quantity_breaks": [
+          {
+            "quantity_of_packing": "2",
+            "type_of_packing": "case",
+            "price_per_packing": 32.02,
+            "price_per_item": 2.6683
+          },
+          {
+            "quantity_of_packing": "5",
+            "type_of_packing": "case",
+            "price_per_packing": 27.65,
+            "price_per_item": 2.3042
+          },
+          {
+            "quantity_of_packing": "15",
+            "type_of_packing": "case",
+            "price_per_packing": 26.07,
+            "price_per_item": 2.1725
+          },
+          {
+            "quantity_of_packing": "112",
+            "type_of_packing": "case",
+            "price_per_packing": 24.83,
+            "price_per_item": 2.0692
+          }
+        ],
+        "sell_uom": [
+          {
+            "qty": "Quantity",
+            "price": "Price",
+            "unit": "Quantity"
+          },
+          {
+            "qty": "2",
+            "price": "$32.020",
+            "unit": "case"
+          },
+          {
+            "qty": "5",
+            "price": "$27.650",
+            "unit": "case"
+          },
+          {
+            "qty": "15",
+            "price": "$26.070",
+            "unit": "case"
+          },
+          {
+            "qty": "112",
+            "price": "$24.830",
+            "unit": "case"
+          }
+        ],
+        "avg_price_per_unit": 2.3035,
+        "normalised_capacity(ml)": 750.0,
+        "original_uom": "ml",
+        "original_capacity": "750",
+        "normalised_uom": "ml",
+        "normalised_capacity": 750.0,
+        "capacity": 750.0,
+        "unit": "ml",
+        "color": "Frosted White",
+        "material": "Glass",
+        "neck_finish": "Cork",
+        "shape": "Bordeaux",
+        "category": "Glass",
+        "closure_type": "Cork",
+        "market_segment": "Beverage",
+        "product_origin": "United States",
+        "stock": "1-2 Weeks. Some Items May Vary.",
+        "product_industry": "Food & Beverage",
+        "product_description": " The frosted Bordeaux bottle provides an elegant look on the shelf and the etched glass helps the label stand out. An ideal bottle for red wines, the 750 ml Clear Frosted Bordeaux (Claret) Wine Bottles are the most common bottle styles used today. These tall, straight-sided glass bottles have tall shoulders and a cork finish. They are suitable for all types of red wine such as Cabernet Sauvignon, Merlot, and Malbec. It is proudly made in the USA and offers a flat bottom and cork 30-3115 neck finish. "
+      },
+      "similarity": 0.8710818026174517
+    },
+    {
+      "company": "Cary Company",
+      "product": {
+        "company": "Cary Company",
+        "url": "https://www.thecarycompany.com/750-ml-champagne-green-stretch-hock-wine-bottles-cork",
+        "sku": "Part#: 30BSHE",
+        "name": "750 ml Champagne Green Stretch Hock Wine Bottles, Cork, 3\" x 13.109\" 12/cs",
+        "price": 2.0602,
+        "quantity_breaks": [
+          {
+            "quantity_of_packing": "2",
+            "type_of_packing": "case",
+            "price_per_packing": 29.85,
+            "price_per_item": 2.4875
+          },
+          {
+            "quantity_of_packing": "5",
+            "type_of_packing": "case",
+            "price_per_packing": 27.05,
+            "price_per_item": 2.2542
+          },
+          {
+            "quantity_of_packing": "15",
+            "type_of_packing": "case",
+            "price_per_packing": 23.33,
+            "price_per_item": 1.9442
+          },
+          {
+            "quantity_of_packing": "96",
+            "type_of_packing": "case",
+            "price_per_packing": 18.66,
+            "price_per_item": 1.555
+          }
+        ],
+        "sell_uom": [
+          {
+            "qty": "Quantity",
+            "price": "Price",
+            "unit": "Quantity"
+          },
+          {
+            "qty": "2",
+            "price": "$29.850",
+            "unit": "case"
+          },
+          {
+            "qty": "5",
+            "price": "$27.050",
+            "unit": "case"
+          },
+          {
+            "qty": "15",
+            "price": "$23.330",
+            "unit": "case"
+          },
+          {
+            "qty": "96",
+            "price": "$18.660",
+            "unit": "case"
+          }
+        ],
+        "avg_price_per_unit": 2.0602,
+        "normalised_capacity(ml)": 750.0,
+        "original_uom": "ml",
+        "original_capacity": "750",
+        "normalised_uom": "ml",
+        "normalised_capacity": 750.0,
+        "capacity": 750.0,
+        "unit": "ml",
+        "color": "Champagne Green",
+        "material": "Glass",
+        "neck_finish": "Cork",
+        "shape": "Bottle",
+        "category": "Glass",
+        "closure_type": "Cork",
+        "market_segment": "Beverage",
+        "product_origin": "",
+        "stock": "1-2 Weeks. Some Items May Vary.",
+        "product_industry": "Food & Beverage",
+        "product_description": " This 750 ml Stretch Hock bottle with Champagne Green glass features a flat bottom and finishes with a natural or synthetic cork closure. The long, narrow bottle makes a beautiful display piece and the Champagne Green color is ideal for red wines. This bottle is made in the USA and uses less glass but keeps our standard for durability. "
+      },
+      "similarity": 0.870981718464351
+    },
+    {
+      "company": "Cary Company",
+      "product": {
+        "company": "Cary Company",
+        "url": "https://www.thecarycompany.com/750-ml-antique-green-bordeaux-wine-bottle-punted-cork-tapered",
+        "sku": "Part#: 30BLRG",
+        "name": "750 ml Antique Green Bordeaux Wine Bottles, Punted Bottom, Taper, Cork, 12/cs",
+        "price": 3.3244,
+        "quantity_breaks": [
+          {
+            "quantity_of_packing": "2",
+            "type_of_packing": "case",
+            "price_per_packing": 48.36,
+            "price_per_item": 4.03
+          },
+          {
+            "quantity_of_packing": "5",
+            "type_of_packing": "case",
+            "price_per_packing": 44.85,
+            "price_per_item": 3.7375
+          },
+          {
+            "quantity_of_packing": "15",
+            "type_of_packing": "case",
+            "price_per_packing": 39.06,
+            "price_per_item": 3.255
+          },
+          {
+            "quantity_of_packing": "112",
+            "type_of_packing": "case",
+            "price_per_packing": 27.3,
+            "price_per_item": 2.275
+          }
+        ],
+        "sell_uom": [
+          {
+            "qty": "Quantity",
+            "price": "Price",
+            "unit": "Quantity"
+          },
+          {
+            "qty": "2",
+            "price": "$48.360",
+            "unit": "case"
+          },
+          {
+            "qty": "5",
+            "price": "$44.850",
+            "unit": "case"
+          },
+          {
+            "qty": "15",
+            "price": "$39.060",
+            "unit": "case"
+          },
+          {
+            "qty": "112",
+            "price": "$27.300",
+            "unit": "case"
+          }
+        ],
+        "avg_price_per_unit": 3.3244,
+        "normalised_capacity(ml)": 750.0,
+        "original_uom": "ml",
+        "original_capacity": "750",
+        "normalised_uom": "ml",
+        "normalised_capacity": 750.0,
+        "capacity": 750.0,
+        "unit": "ml",
+        "color": "Antique Green",
+        "material": "Glass",
+        "neck_finish": "Cork",
+        "shape": "Bordeaux",
+        "category": "Glass",
+        "closure_type": "Cork",
+        "market_segment": "Beverage",
+        "product_origin": "United States",
+        "stock": "1-2 Weeks. Some Items May Vary.",
+        "product_industry": "Food & Beverage",
+        "product_description": " This 750 ml Antique Green Bordeaux (Claret) shape punted wine bottles have tapered sides with tall shoulders and come with a cork finish. Bordeaux or Claret wine bottles are the most common wine bottles used. They are suitable for all types of red wine such as Cabernet Sauvignon, Merlot, and Malbec. "
+      },
+      "similarity": 0.8707797086668462
+    },
+    {
+      "company": "Cary Company",
+      "product": {
+        "company": "Cary Company",
+        "url": "https://www.thecarycompany.com/750-ml-antique-green-bordeaux-wine-bottle-punted-cork-taper",
+        "sku": "Part#: 30BAT7",
+        "name": "750 ml Antique Green Bordeaux Wine Bottles, Punted Bottom, Taper, Cork, 12/cs (heavy)",
+        "price": 3.3317,
+        "quantity_breaks": [
+          {
+            "quantity_of_packing": "2",
+            "type_of_packing": "case",
+            "price_per_packing": 48.77,
+            "price_per_item": 4.0642
+          },
+          {
+            "quantity_of_packing": "5",
+            "type_of_packing": "case",
+            "price_per_packing": 45.15,
+            "price_per_item": 3.7625
+          },
+          {
+            "quantity_of_packing": "15",
+            "type_of_packing": "case",
+            "price_per_packing": 39.11,
+            "price_per_item": 3.2592
+          },
+          {
+            "quantity_of_packing": "112",
+            "type_of_packing": "case",
+            "price_per_packing": 26.89,
+            "price_per_item": 2.2408
+          }
+        ],
+        "sell_uom": [
+          {
+            "qty": "Quantity",
+            "price": "Price",
+            "unit": "Quantity"
+          },
+          {
+            "qty": "2",
+            "price": "$48.770",
+            "unit": "case"
+          },
+          {
+            "qty": "5",
+            "price": "$45.150",
+            "unit": "case"
+          },
+          {
+            "qty": "15",
+            "price": "$39.110",
+            "unit": "case"
+          },
+          {
+            "qty": "112",
+            "price": "$26.890",
+            "unit": "case"
+          }
+        ],
+        "avg_price_per_unit": 3.3317,
+        "normalised_capacity(ml)": 750.0,
+        "original_uom": "ml",
+        "original_capacity": "750",
+        "normalised_uom": "ml",
+        "normalised_capacity": 750.0,
+        "capacity": 750.0,
+        "unit": "ml",
+        "color": "Antique Green",
+        "material": "Glass",
+        "neck_finish": "Cork",
+        "shape": "Bordeaux",
+        "category": "Glass",
+        "closure_type": "Cork",
+        "market_segment": "Beverage",
+        "product_origin": "Canada",
+        "stock": "1-2 Weeks. Some Items May Vary.",
+        "product_industry": "Food & Beverage",
+        "product_description": " This 750 ml Antique Green Bordeaux (Claret) shape punted wine bottles have tapered sides with tall shoulders and come with a cork finish. Bordeaux or Claret wine bottles are the most common wine bottles used. They are suitable for all types of red wine such as Cabernet Sauvignon, Merlot, and Malbec. "
+      },
+      "similarity": 0.8702389265978424
+    },
+    {
+      "company": "Cary Company",
+      "product": {
+        "company": "Cary Company",
+        "url": "https://www.thecarycompany.com/750-ml-frosted-stretch-hock-wine-bottles-cork",
+        "sku": "Part#: 30BSFR",
+        "name": "750 ml Frosted Stretch Hock Wine Bottles, Cork 12/cs",
+        "price": 3.5854,
+        "quantity_breaks": [
+          {
+            "quantity_of_packing": "2",
+            "type_of_packing": "case",
+            "price_per_packing": 50.22,
+            "price_per_item": 4.185
+          },
+          {
+            "quantity_of_packing": "5",
+            "type_of_packing": "case",
+            "price_per_packing": 48.95,
+            "price_per_item": 4.0792
+          },
+          {
+            "quantity_of_packing": "15",
+            "type_of_packing": "case",
+            "price_per_packing": 44.19,
+            "price_per_item": 3.6825
+          },
+          {
+            "quantity_of_packing": "105",
+            "type_of_packing": "case",
+            "price_per_packing": 28.74,
+            "price_per_item": 2.395
+          }
+        ],
+        "sell_uom": [
+          {
+            "qty": "Quantity",
+            "price": "Price",
+            "unit": "Quantity"
+          },
+          {
+            "qty": "2",
+            "price": "$50.220",
+            "unit": "case"
+          },
+          {
+            "qty": "5",
+            "price": "$48.950",
+            "unit": "case"
+          },
+          {
+            "qty": "15",
+            "price": "$44.190",
+            "unit": "case"
+          },
+          {
+            "qty": "105",
+            "price": "$28.740",
+            "unit": "case"
+          }
+        ],
+        "avg_price_per_unit": 3.5854,
+        "normalised_capacity(ml)": 750.0,
+        "original_uom": "ml",
+        "original_capacity": "750",
+        "normalised_uom": "ml",
+        "normalised_capacity": 750.0,
+        "capacity": 750.0,
+        "unit": "ml",
+        "color": "Frosted White",
+        "material": "Glass",
+        "neck_finish": "Cork",
+        "shape": "Bottle",
+        "category": "Glass",
+        "closure_type": "Cork",
+        "market_segment": "Beverage",
+        "product_origin": "United States",
+        "stock": "1-2 Weeks. Some Items May Vary.",
+        "product_industry": "Food & Beverage",
+        "product_description": " In a unique frosted finish, this 750 ml Strech Hock wine bottle holds the standard 750 ml and tops off with a cork. The bottom is flat, the bottle is made in the USA and uses less glass but keeps our standard for durability. "
+      },
+      "similarity": 0.8644003148571676
+    },
+    {
+      "company": "Cary Company",
+      "product": {
+        "company": "Cary Company",
+        "url": "https://www.thecarycompany.com/750-ml-amber-california-hock-wine-bottles-cork",
+        "sku": "Part#: 30BCHA",
+        "name": "750 ml Amber California Hock Wine Bottles, Cork 12/cs",
+        "price": 1.9523,
+        "quantity_breaks": [
+          {
+            "quantity_of_packing": "2",
+            "type_of_packing": "case",
+            "price_per_packing": 29.74,
+            "price_per_item": 2.4783
+          },
+          {
+            "quantity_of_packing": "5",
+            "type_of_packing": "case",
+            "price_per_packing": 25.59,
+            "price_per_item": 2.1325
+          },
+          {
+            "quantity_of_packing": "15",
+            "type_of_packing": "case",
+            "price_per_packing": 22.9,
+            "price_per_item": 1.9083
+          },
+          {
+            "quantity_of_packing": "105",
+            "type_of_packing": "case",
+            "price_per_packing": 15.48,
+            "price_per_item": 1.29
+          }
+        ],
+        "sell_uom": [
+          {
+            "qty": "Quantity",
+            "price": "Price",
+            "unit": "Quantity"
+          },
+          {
+            "qty": "2",
+            "price": "$29.740",
+            "unit": "case"
+          },
+          {
+            "qty": "5",
+            "price": "$25.590",
+            "unit": "case"
+          },
+          {
+            "qty": "15",
+            "price": "$22.900",
+            "unit": "case"
+          },
+          {
+            "qty": "105",
+            "price": "$15.480",
+            "unit": "case"
+          }
+        ],
+        "avg_price_per_unit": 1.9523,
+        "normalised_capacity(ml)": 750.0,
+        "original_uom": "ml",
+        "original_capacity": "750",
+        "normalised_uom": "ml",
+        "normalised_capacity": 750.0,
+        "capacity": 750.0,
+        "unit": "ml",
+        "color": "Amber",
+        "material": "Glass",
+        "neck_finish": "Cork",
+        "shape": "Bottle",
+        "category": "Glass",
+        "closure_type": "Cork",
+        "market_segment": "Beverage",
+        "product_origin": "",
+        "stock": "1-2 Weeks. Some Items May Vary.",
+        "product_industry": "Food & Beverage",
+        "product_description": " 750 ml Amber California Hock Wine Bottle with a cork finish. One of the great features of a California Hock bottle is that they fit well on store shelves and in your customers' refrigerators. Made in the USA, this beautiful Amber brown bottle features a flat bottom and uses a cork finish. "
+      },
+      "similarity": 0.864146252285192
+    },
+    {
+      "company": "Cary Company",
+      "product": {
+        "company": "Cary Company",
+        "url": "https://www.thecarycompany.com/750-ml-amber-sparkling-beer-bottle-pry-off",
+        "sku": "Part#: 30WSPC",
+        "name": "25.36 oz. (750 ml) Amber Glass Sparkling Beer Bottles, Pry-Off Crown, 26-3160, 12/cs",
+        "price": 1.948,
+        "quantity_breaks": [
+          {
+            "quantity_of_packing": "12",
+            "type_of_packing": "case",
+            "unit_quantity": 12.0,
+            "price_per_packing": 28.56,
+            "price_per_item": 2.38
+          },
+          {
+            "quantity_of_packing": "120",
+            "type_of_packing": "case",
+            "unit_quantity": 12.0,
+            "price_per_packing": 26.16,
+            "price_per_item": 2.18
+          },
+          {
+            "quantity_of_packing": "252",
+            "type_of_packing": "case",
+            "unit_quantity": 12.0,
+            "price_per_packing": 23.28,
+            "price_per_item": 1.94
+          },
+          {
+            "quantity_of_packing": "504",
+            "type_of_packing": "case",
+            "unit_quantity": 12.0,
+            "price_per_packing": 20.4,
+            "price_per_item": 1.7
+          },
+          {
+            "quantity_of_packing": "1512",
+            "type_of_packing": "case",
+            "unit_quantity": 12.0,
+            "price_per_packing": 18.48,
+            "price_per_item": 1.54
+          }
+        ],
+        "sell_uom": [
+          {
+            "qty": "Quantity",
+            "price": "Price",
+            "unit": "Quantity"
+          },
+          {
+            "qty": "12",
+            "price": "$2.380",
+            "unit": "ea."
+          },
+          {
+            "qty": "120",
+            "price": "$2.180",
+            "unit": "ea."
+          },
+          {
+            "qty": "252",
+            "price": "$1.940",
+            "unit": "ea."
+          },
+          {
+            "qty": "504",
+            "price": "$1.700",
+            "unit": "ea."
+          },
+          {
+            "qty": "1512",
+            "price": "$1.540",
+            "unit": "ea."
+          }
+        ],
+        "avg_price_per_unit": 1.948,
+        "normalised_capacity(ml)": 739.34,
+        "original_uom": "oz",
+        "original_capacity": "25",
+        "normalised_uom": "ml",
+        "normalised_capacity": 739.34,
+        "capacity": 739.34,
+        "unit": "ml",
+        "color": "Amber",
+        "material": "Glass",
+        "neck_finish": "26-3160",
+        "shape": "Bottle",
+        "category": "Glass",
+        "closure_type": "26-3160",
+        "market_segment": "Beverage",
+        "product_origin": "United States",
+        "stock": "In Stock",
+        "product_industry": "Food & Beverage",
+        "product_description": " Case Pack - Sophistication and elegance at its best, this 750 ml (25.36 oz) Amber Sparkling Beer Glass Bottle has a tall and tanned champagne bottle design with a pry-off crown or cork finish. This celebration bottle is made of amber glass that helps to protect your beer from degrading from harmful UV light. Your brewed beer date nights or trips to the brewery will never be the same with this bottle. "
+      },
+      "similarity": 0.8594250648559242
+    },
+    {
+      "company": "Cary Company",
+      "product": {
+        "company": "Cary Company",
+        "url": "https://www.thecarycompany.com/750-ml-cobalt-blue-california-hock-wine-bottles-cork",
+        "sku": "Part#: 30BCHU",
+        "name": "750 ml Cobalt Blue California Hock Wine Bottles, Cork 12/cs",
+        "price": 1.8613,
+        "quantity_breaks": [
+          {
+            "quantity_of_packing": "2",
+            "type_of_packing": "case",
+            "price_per_packing": 28.6,
+            "price_per_item": 2.3833
+          },
+          {
+            "quantity_of_packing": "5",
+            "type_of_packing": "case",
+            "price_per_packing": 23.78,
+            "price_per_item": 1.9817
+          },
+          {
+            "quantity_of_packing": "15",
+            "type_of_packing": "case",
+            "price_per_packing": 19.08,
+            "price_per_item": 1.59
+          },
+          {
+            "quantity_of_packing": "105",
+            "type_of_packing": "case",
+            "price_per_packing": 17.88,
+            "price_per_item": 1.49
+          }
+        ],
+        "sell_uom": [
+          {
+            "qty": "Quantity",
+            "price": "Price",
+            "unit": "Quantity"
+          },
+          {
+            "qty": "2",
+            "price": "$28.600",
+            "unit": "case"
+          },
+          {
+            "qty": "5",
+            "price": "$23.780",
+            "unit": "case"
+          },
+          {
+            "qty": "15",
+            "price": "$19.080",
+            "unit": "case"
+          },
+          {
+            "qty": "105",
+            "price": "$17.880",
+            "unit": "case"
+          }
+        ],
+        "avg_price_per_unit": 1.8613,
+        "normalised_capacity(ml)": 750.0,
+        "original_uom": "ml",
+        "original_capacity": "750",
+        "normalised_uom": "ml",
+        "normalised_capacity": 750.0,
+        "capacity": 750.0,
+        "unit": "ml",
+        "color": "Cobalt Blue",
+        "material": "Glass",
+        "neck_finish": "Cork",
+        "shape": "Bottle",
+        "category": "Glass",
+        "closure_type": "Cork",
+        "market_segment": "Beverage",
+        "product_origin": "United States",
+        "stock": "1-2 Weeks. Some Items May Vary.",
+        "product_industry": "Food & Beverage",
+        "product_description": " Lengthen your look with a 750 ml California Hock Wine Bottle in Cobalt Blue. This bottle has a flat bottom and can be closed with natural or synthetic cork. "
+      },
+      "similarity": 0.852914533820841
+    },
+    {
+      "company": "Cary Company",
+      "product": {
+        "company": "Cary Company",
+        "url": "https://www.thecarycompany.com/750-ml-champagne-green-stretch-hock-wine-bottles-cork-flute",
+        "sku": "Part#: 30BFLF",
+        "name": "750 ml Champagne Green Stretch Hock Wine Bottles, Cork, 2.95\" x 12.99\" 12/cs",
+        "price": 1.8902,
+        "quantity_breaks": [
+          {
+            "quantity_of_packing": "2",
+            "type_of_packing": "case",
+            "price_per_packing": 29.67,
+            "price_per_item": 2.4725
+          },
+          {
+            "quantity_of_packing": "5",
+            "type_of_packing": "case",
+            "price_per_packing": 24.53,
+            "price_per_item": 2.0442
+          },
+          {
+            "quantity_of_packing": "15",
+            "type_of_packing": "case",
+            "price_per_packing": 21.29,
+            "price_per_item": 1.7742
+          },
+          {
+            "quantity_of_packing": "90",
+            "type_of_packing": "case",
+            "price_per_packing": 15.24,
+            "price_per_item": 1.27
+          }
+        ],
+        "sell_uom": [
+          {
+            "qty": "Quantity",
+            "price": "Price",
+            "unit": "Quantity"
+          },
+          {
+            "qty": "2",
+            "price": "$29.670",
+            "unit": "case"
+          },
+          {
+            "qty": "5",
+            "price": "$24.530",
+            "unit": "case"
+          },
+          {
+            "qty": "15",
+            "price": "$21.290",
+            "unit": "case"
+          },
+          {
+            "qty": "90",
+            "price": "$15.240",
+            "unit": "case"
+          }
+        ],
+        "avg_price_per_unit": 1.8902,
+        "normalised_capacity(ml)": 750.0,
+        "original_uom": "ml",
+        "original_capacity": "750",
+        "normalised_uom": "ml",
+        "normalised_capacity": 750.0,
+        "capacity": 750.0,
+        "unit": "ml",
+        "color": "Champagne Green",
+        "material": "Glass",
+        "neck_finish": "Cork",
+        "shape": "Bottle",
+        "category": "Glass",
+        "closure_type": "Cork",
+        "market_segment": "Beverage",
+        "product_origin": "",
+        "stock": "1-2 Weeks. Some Items May Vary.",
+        "product_industry": "Food & Beverage",
+        "product_description": " With a capacity of 750 ml and a Cork Finish to ensure your wine will be elegantly presented, this lovely Hock shaped wine bottle that paints a pretty picture in Champagne Green. "
+      },
+      "similarity": 0.8523345521023766
+    },
+    {
+      "company": "Cary Company",
+      "product": {
+        "company": "Cary Company",
+        "url": "https://www.thecarycompany.com/750-ml-antique-green-burgundy-punted-wine-bottles",
+        "sku": "Part#: 30BGBW",
+        "name": "750 ml Dead Leaf Green Burgundy Wine Bottles, Punted, Cork, 12/cs",
+        "price": 3.8208,
+        "quantity_breaks": [
+          {
+            "quantity_of_packing": "2",
+            "type_of_packing": "case",
+            "price_per_packing": 52.76,
+            "price_per_item": 4.3967
+          },
+          {
+            "quantity_of_packing": "10",
+            "type_of_packing": "case",
+            "price_per_packing": 45.22,
+            "price_per_item": 3.7683
+          },
+          {
+            "quantity_of_packing": "24",
+            "type_of_packing": "case",
+            "price_per_packing": 39.57,
+            "price_per_item": 3.2975
+          }
+        ],
+        "sell_uom": [
+          {
+            "qty": "Quantity",
+            "price": "Price",
+            "unit": "Quantity"
+          },
+          {
+            "qty": "2",
+            "price": "$52.760",
+            "unit": "case"
+          },
+          {
+            "qty": "10",
+            "price": "$45.220",
+            "unit": "case"
+          },
+          {
+            "qty": "24",
+            "price": "$39.570",
+            "unit": "case"
+          }
+        ],
+        "avg_price_per_unit": 3.8208,
+        "normalised_capacity(ml)": 750.0,
+        "original_uom": "ml",
+        "original_capacity": "750",
+        "normalised_uom": "ml",
+        "normalised_capacity": 750.0,
+        "capacity": 750.0,
+        "unit": "ml",
+        "color": "Dead Leaf Green",
+        "material": "Glass",
+        "neck_finish": "Cork",
+        "shape": "Other",
+        "category": "Glass",
+        "closure_type": "Cork",
+        "market_segment": "Beverage",
+        "product_origin": "",
+        "stock": "3-5 Days",
+        "product_industry": "Food & Beverage",
+        "product_description": " A high end style without the homemade look is what the 750 ml Dead Leaf Green Burgundy Punted Wine Bottles are known for. These burgundy wine bottles are made of glass, have a cork finish, sloped shoulders, and a deep pronounced punt. Use these bottles to hold Chablis, Chardonnay, Syrah, Pinot Noir, or Aligoté. "
+      },
+      "similarity": 0.8511092393787117
     }
   ],
   "selected_product_data": {
     "company": "TricorBraun",
-    "url": "https://www.tricorbraun.com/2-oz-glass-heavy-wall-squat-jar-53-400-neck-finish-clear.html",
-    "sku": "263201",
-    "name": "2 oz Clear Glass Heavy Wall Squat Jar 53-400 Neck Finish",
-    "price": 0.44,
+    "url": "https://www.tricorbraun.com/750-ml-clear-glass-round-long-neck-memphis-liquor-bottle-18-5-mm-bar-top-neck-finish.html",
+    "sku": "322118",
+    "name": "750 ml Clear Glass Round Long Neck Memphis Liquor Bottle 18.5 mm Bar Top Neck Finish",
+    "price": 2.735,
     "quantity_breaks": [
       {
         "quantity_of_packing": 1,
-        "type_of_packing": "Pallet",
-        "price_per_packing": 3100.0,
-        "price_per_item": 0.44
+        "type_of_packing": "Case",
+        "price_per_packing": 19.59,
+        "price_per_item": 3.27
+      },
+      {
+        "quantity_of_packing": 12,
+        "type_of_packing": "Case",
+        "price_per_packing": 17.9,
+        "price_per_item": 2.98
+      },
+      {
+        "quantity_of_packing": 18,
+        "type_of_packing": "Case",
+        "price_per_packing": 15.04,
+        "price_per_item": 2.51
+      },
+      {
+        "quantity_of_packing": 161,
+        "type_of_packing": "Case",
+        "price_per_packing": 13.1,
+        "price_per_item": 2.18
       }
     ],
     "sell_uom": [
       {
-        "qty_range": "1 Pallet",
-        "unit": "Pallet",
-        "price": "$3,100.00",
-        "price_per_unit": "$0.44"
+        "qty_range": "1 Case",
+        "unit": "Case",
+        "price": "$19.59",
+        "price_per_unit": "$3.27"
+      },
+      {
+        "qty_range": "12 Case",
+        "unit": "Case",
+        "price": "$17.90",
+        "price_per_unit": "$2.98"
+      },
+      {
+        "qty_range": "18 Case",
+        "unit": "Case",
+        "price": "$15.04",
+        "price_per_unit": "$2.51"
+      },
+      {
+        "qty_range": "161 Case",
+        "unit": "Case",
+        "price": "$13.10",
+        "price_per_unit": "$2.18"
       }
     ],
-    "avg_price_per_unit": 0.44,
-    "normalised_capacity(ml)": 59.15,
-    "original_uom": "oz",
-    "original_capacity": "2",
+    "avg_price_per_unit": 2.735,
+    "normalised_capacity(ml)": 750.0,
+    "original_uom": "ml",
+    "original_capacity": "750",
     "normalised_uom": "ml",
-    "normalised_capacity": 59.15,
-    "capacity": 59.15,
+    "normalised_capacity": 750.0,
+    "capacity": 750.0,
     "unit": "ml",
     "color": "Clear",
     "material": "Glass",
-    "shape": "Jar",
+    "neck_finish": "18.5 mm",
+    "shape": "Bottle",
     "category": "Glass",
-    "closure_type": "53-400",
-    "market_segment": "General",
-    "product_origin": "China",
-    "stock": "Item is currently estimated to ship within 7 - 10 business days.",
-    "items_per_unit": 7000
+    "closure_type": "18.5 mm",
+    "market_segment": "Beverage",
+    "product_origin": "India",
+    "stock": "In stock",
+    "items_per_unit": 6
   },
   "selected_companies": [
     "Berlin Packaging",

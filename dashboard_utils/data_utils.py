@@ -102,6 +102,7 @@ def process_berlin_data(data):
                 "shape": "Shape",
                 "category": "Material Group",
                 "closure_type": "Neck Finish",
+                "neck_finish": "Cap Size",
             },
             availability_keys=[
                 ("product_availability", "in_stock"),
@@ -160,6 +161,7 @@ def process_cary_data(data):
                 "shape": "Style",
                 "category": "Material",
                 "closure_type": "Neck Finish",
+                "neck_finish": "Neck Finish",
                 "product_origin": "Country of Manufacture",
             },
             availability_keys=[("product_availability", "availability_text")],
@@ -217,6 +219,7 @@ def process_tricor_data(data):
                 "shape": "Shape",
                 "category": "Material",
                 "closure_type": "Neck Finish",
+                "neck_finish": "Neck Finish",
                 "product_origin": "Country of Origin",
             },
             availability_keys=[("product_availability", "availability_text")],

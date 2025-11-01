@@ -53,6 +53,7 @@ def build_product_record(
     shape_key = spec_keys.get("shape")
     category_key = spec_keys.get("category")
     closure_key = spec_keys.get("closure_type")
+    neck_finish_key = spec_keys.get("neck_finish")
     origin_key = spec_keys.get("product_origin")
 
     stock_value = ""
@@ -89,6 +90,7 @@ def build_product_record(
         "unit": normalised_uom,  # used for analysis
         "color": specs.get(color_key, "") if color_key else "",
         "material": specs.get(material_key, "") if material_key else "",
+        "neck_finish": specs.get(neck_finish_key, "") if neck_finish_key else "",
         "shape": normalized_shape,
         "category": specs.get(category_key, "") if category_key else "",
         "closure_type": specs.get(closure_key, "") if closure_key else "",

@@ -30,13 +30,43 @@ def main():
         st.error(str(e))
         st.stop()
 
-    # Sidebar: Global market segment filter
+    # Sidebar: Global filters
     with st.sidebar:
         st.markdown("##  Side Bar Navigation")
         st.divider()
-        # Derive available market segments from loaded data
+
+        # Company filter (now using multiselect)
+        company_options = sorted(companies_data.keys())
+        if "company" not in st.session_state:
+            st.session_state.company = (
+                company_options  # Default: all companies selected
+            )
+
+        st.markdown("***Select companies:***")
+        selected_companies = st.multiselect(
+            "Companies",
+            company_options,
+            default=st.session_state.company,
+            key="global_company",
+        )
+        # Guarantee state
+        if not selected_companies:
+            # If nothing selected, show all companies
+            selected_companies = company_options
+        st.session_state.company = selected_companies
+
+        if set(selected_companies) != set(company_options):
+            company_filtered_data = {
+                k: companies_data.get(k, []) for k in selected_companies
+            }
+        else:
+            company_filtered_data = companies_data
+
+        st.divider()
+
+        # Derive available market segments from company-filtered data
         all_segments = set()
-        for data in companies_data.values():
+        for data in company_filtered_data.values():
             for p in data:
                 seg = p.get("market_segment") or "General"
                 all_segments.add(seg)
@@ -44,7 +74,7 @@ def main():
         if "market_segment" not in st.session_state:
             st.session_state.market_segment = "All Segments"
 
-        st.markdown("***Select a domain:***")
+        st.markdown("***Select a Market Segment:***")
         selected_segment = st.selectbox(
             "Market Segment",
             segment_options,
@@ -59,13 +89,13 @@ def main():
         # Persist selection
         st.session_state.market_segment = selected_segment
 
-    # Apply global market segment filter across all pages
+    # Apply global filters across all pages
     if (
         st.session_state.market_segment
         and st.session_state.market_segment != "All Segments"
     ):
         filtered_companies_data = {}
-        for company, data in companies_data.items():
+        for company, data in company_filtered_data.items():
             filtered = [
                 p
                 for p in data
@@ -75,7 +105,7 @@ def main():
             if filtered:
                 filtered_companies_data[company] = filtered
     else:
-        filtered_companies_data = companies_data
+        filtered_companies_data = company_filtered_data
 
     # Navigation menu
     page = create_navigation_menu()
@@ -88,7 +118,13 @@ def main():
     elif page == "Assortment Analysis":
         show_assortment_kpis(filtered_companies_data)
     elif page == "Product Matching":
-        show_product_fuzzy_match(filtered_companies_data)
+        if len(filtered_companies_data) == 1:
+            st.error(
+                "Only one company data selected. Please select at least two companies to compare."
+            )
+            st.stop()
+        else:
+            show_product_fuzzy_match(filtered_companies_data)
     elif page == "Chatbot":
         show_chatbot()
 

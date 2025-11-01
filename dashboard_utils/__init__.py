@@ -8,7 +8,6 @@ from .common import (
     apply_custom_styling,
     create_header,
     create_navigation_menu,
-    get_pinecone_vectorstore,
 )
 
 from .homepage import (
@@ -39,7 +38,6 @@ __all__ = [
     "apply_custom_styling",
     "create_header",
     "create_navigation_menu",
-    "get_pinecone_vectorstore",
     # Homepage
     "show_homepage",
     "display_sell_uom_data",
