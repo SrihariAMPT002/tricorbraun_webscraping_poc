@@ -179,90 +179,137 @@ class QueryRouter:
 
         analysis_prompt = f"""Analyze this user query about glass bottles and jars.
 
-        Query: "{user_query}"
+Query: "{user_query}"
+ehs
+Classify into ONE type:
 
-        Classify into ONE type:
+1. SEMANTIC_SEARCH: Conceptual product description
+   Examples: "bottles for essential oils", "elegant wine bottles"
 
-        1. SEMANTIC_SEARCH: Conceptual product description
-        Examples: "bottles for essential oils", "elegant wine bottles"
+2. STRUCTURED_QUERY: Specific filters, wants product list
+   Examples: "500ml bottles under $2", "show amber bottles"
 
-        2. STRUCTURED_QUERY: Specific filters, wants product list
-        Examples: "500ml bottles under $2", "show amber bottles"
+3. AGGREGATION_QUERY: Statistics/calculations OR finding products by extreme values
+   Examples:
+   - "average capacity of Cobalt Blue products" (compute statistic)
+   - "how many amber bottles in stock" (count)
+   - "Which product has the largest capacity?" (find product with max)
+   - "What's the smallest bottle?" (find product with min)
+   - "Most expensive wine bottle?" (find product with max price)
+   - "which company has the most products" (group by company and count)
+   - "count products by color" (group by color)
+   - "which market segment does cary serve?" (group by market_segment with company filter)
+   - "what categories are available?" (group by category)
+   - "closure types for wine bottles" (group by closure_type)
+   - "count of in stock, out of stock, lead time items" (group by stock_status)
+   - "how many products are in stock vs out of stock" (group by stock_status)
+   - "breakdown of stock availability for glass products" (group by stock_status)
 
-        3. AGGREGATION_QUERY: Statistics/calculations OR finding products by extreme values
-        Examples:
-        - "average capacity of Cobalt Blue products" (compute statistic)
-        - "how many amber bottles in stock" (count)
-        - "Which product has the largest capacity?" (find product with max)
-        - "What's the smallest bottle?" (find product with min)
-        - "Most expensive wine bottle?" (find product with max price)
-        - "which company has the most products" (group by company and count)
-        - "count products by color" (group by color)
 
-        Keywords: average, mean, count, total, sum, max, min, largest, smallest, biggest, which product, what product, which company, count by, group by
+    Keywords: average, mean, count, total, sum, max, min, largest, smallest, biggest, which product, what product, which company, count by, group by, which segment, what categories, which closure, availability, in stock, out of stock, lead time, backordered, special order
 
-        4. HYBRID: Semantic description + specific filters
-        Examples: "modern bottles in 750ml size"
+4. HYBRID: Semantic description + specific filters
+   Examples: "modern bottles in 750ml size"
 
-        5. OUT_OF_SCOPE: Not about products
+5. OUT_OF_SCOPE: Not about products
 
-        CRITICAL:
-        - "Which/What product has [largest/smallest/most/least]" → AGGREGATION_QUERY with return_products=true
-        - "What is the average/count/total" → AGGREGATION_QUERY with return_products=false
-        - "which company has the most" → AGGREGATION_QUERY with aggregation_type="group", group_by_field="company"
-        - "count by [color/material/shape/company]" → AGGREGATION_QUERY with aggregation_type="group", group_by_field=[field]
+CRITICAL:
+- "Which/What product has [largest/smallest/most/least]" → AGGREGATION_QUERY with return_products=true
+- "What is the average/count/total" → AGGREGATION_QUERY with return_products=false
+- "which company has the most" → AGGREGATION_QUERY with aggregation_type="group", group_by_field="company"
+- "count by [color/material/shape/company]" → AGGREGATION_QUERY with aggregation_type="group", group_by_field=[field]
+- "which [field] does [company] serve/have/offer?" → Extract company filter AND set group_by_field=[field]
 
-        GROUP BY QUERIES (queries that count/aggregate BY a category):
-        - "which company has the most products" → aggregation_type="group", group_by_field="company", aggregation_field=null
-        - "count products by color" → aggregation_type="group", group_by_field="color", aggregation_field=null
-        - "how many products per material" → aggregation_type="group", group_by_field="material", aggregation_field=null
-        - "which color has the highest average capacity" → aggregation_type="group", group_by_field="color", aggregation_field="capacity"
 
-        IMPORTANT: For GROUP queries, always set group_by_field to indicate what to group by. The aggregation_field can be null for simple counting.
 
-        Return JSON:
-        {{
-        "query_type": "SEMANTIC_SEARCH" | "STRUCTURED_QUERY" | "AGGREGATION_QUERY" | "HYBRID" | "OUT_OF_SCOPE",
-        "reasoning": "Brief explanation",
-        "intent": "product_search" | "pricing_query" | "statistics" | "aggregation" | "find_extreme" | "out_of_scope",
-        "requires_pinecone": boolean,
-        "requires_mongodb": boolean,
-        "requires_aggregation": boolean,
-        "aggregation_type": "avg" | "count" | "sum" | "min" | "max" | "group" | null,
-        "aggregation_field": "capacity" | "price" | null,
-        "group_by_field": "company" | "color" | "material" | "shape" | null,
-        "return_products": boolean (true for "which product" queries, false for statistics),
-        "filters": {{
-        "capacity_range": {{"min": number, "max": number, "unit": "oz"|"ml"|"l"|"gal"}} or null,
-        "color": "color name" or null,
-        "material": "material type" or null,
-        "shape": "shape description" or null,
-        "company": "company name" or null,
-        "price_range": {{"min": number, "max": number}} or null,
-        "stock_required": boolean
-        }},
-        "semantic_description": "description",
-        "is_data_related": boolean
-        }}
+GROUP BY QUERIES (queries that count/aggregate BY a category):
+- "which company has the most products" → aggregation_type="group", group_by_field="company", aggregation_field=null
+- "count products by color" → aggregation_type="group", group_by_field="color", aggregation_field=null
+- "how many products per material" → aggregation_type="group", group_by_field="material", aggregation_field=null
+- "which color has the highest average capacity" → aggregation_type="group", group_by_field="color", aggregation_field="capacity"
+- "which market segment does cary serve?" → aggregation_type="group", group_by_field="market_segment", filters.company="Cary Company"
+- "what categories does berlin offer?" → aggregation_type="group", group_by_field="category", filters.company="Berlin Packaging"
+- "what closure types are available for wine bottles?" → aggregation_type="group", group_by_field="closure_type", filters.category="wine"
+- "count in stock vs out of stock" → aggregation_type="group", group_by_field="stock_status", aggregation_field=null
+- "breakdown of stock availability" → aggregation_type="group", group_by_field="stock_status", aggregation_field=null
+- "how many products are backordered" → aggregation_type="group", group_by_field="stock_status", aggregation_field=null
 
-        FIELD EXTRACTION GUIDELINES:
-        - "color": Extract bottle color (e.g., "Amber", "Cobalt Blue", "Clear")
-        - "material": Extract material type (e.g., "Glass", "Plastic")
-        - "shape": Extract bottle shape (e.g., "Boston Round", "Cylinder", "Flask","Round")
-        - "capacity_range": **CRITICAL** - You MUST extract BOTH number AND unit:
-        * "4 oz" → {{"min": 4, "max": 4, "unit": "oz"}}
-        * "500ml" → {{"min": 500, "max": 500, "unit": "ml"}}
-        * "1 liter" → {{"min": 1, "max": 1, "unit": "l"}}
-        * If NO unit mentioned, use "ml"
 
-        IMPORTANT REMINDERS:
-        - For capacity_range, the "unit" field is MANDATORY - always extract "oz", "ml", "l", or "gal"
-        - Look for unit indicators: oz, ounce, ml, milliliter, liter, litre, l, gallon, gal
-        - The numeric value and unit MUST be separated in the JSON
-        - For GROUP BY queries, extract group_by_field separate from aggregation_field
+IMPORTANT: For GROUP queries, always set group_by_field to indicate what to group by. The aggregation_field can be null for simple counting.
 
-        Return ONLY valid JSON, no markdown.
-        """
+Return JSON:
+{{
+"query_type": "SEMANTIC_SEARCH" | "STRUCTURED_QUERY" | "AGGREGATION_QUERY" | "HYBRID" | "OUT_OF_SCOPE",
+"reasoning": "Brief explanation",
+"intent": "product_search" | "pricing_query" | "statistics" | "aggregation" | "find_extreme" | "out_of_scope",
+"requires_pinecone": boolean,
+"requires_mongodb": boolean,
+"requires_aggregation": boolean,
+"aggregation_type": "avg" | "count" | "sum" | "min" | "max" | "group" | null,
+"aggregation_field": "capacity" | "price" | null,
+"group_by_field": "company" | "color" | "material" | "shape" | "category" | "closure_type" | "market_segment" | null,
+"return_products": boolean (true for "which product" queries, false for statistics),
+"filters": {{
+  "capacity_range": {{"min": number, "max": number, "unit": "oz"|"ml"|"l"|"gal"}} or null,
+  "color": "color name" or null,
+  "material": "material type" or null,
+  "shape": "shape description" or null,
+  "company": "company name" or null,
+  "price_range": {{"min": number, "max": number}} or null,
+  "stock_required": boolean,
+  "category": "category name" or null,
+  "closure_type": "closure type" or null,
+  "market_segment": "market segment" or null,
+  "items_per_unit": {{"min": number, "max": number}} or null
+}},
+"semantic_description": "description",
+"is_data_related": boolean
+}}
+
+FIELD EXTRACTION GUIDELINES:
+- "color": Extract bottle color (e.g., "Amber", "Cobalt Blue", "Clear")
+- "material": Extract material type (e.g., "Glass", "Plastic")
+- "shape": Extract bottle shape (e.g., "Boston Round", "Cylinder", "Flask","Round")
+- "capacity_range": **CRITICAL** - You MUST extract BOTH number AND unit:
+  * "4 oz" → {{"min": 4, "max": 4, "unit": "oz"}}
+  * "500ml" → {{"min": 500, "max": 500, "unit": "ml"}}
+  * "1 liter" → {{"min": 1, "max": 1, "unit": "l"}}
+  * If NO unit mentioned, use "ml"
+- "company": Extract company name (e.g., "Cary Company", "Berlin Packaging", "TricorBrawn")
+  * IMPORTANT: Normalize company names:
+    - "cary", "cary company" → "Cary Company"
+    - "berlin", "berlin packaging" → "Berlin Packaging"
+    - "tricor", "tricorbraun" → "TricorBraun"
+- "category": Extract product category (e.g., "Wine", "Liquor", "Beer", "Pharmaceutical")
+- "closure_type": Extract closure/cap type (e.g., "Cork", "Screw Cap", "Crown Cap")
+- "market_segment": Extract market segment (e.g., "Food Condiments", "Beverage", "Pharmaceutical", "Cosmetics")
+- "stock_status": Extract stock availability queries
+  * Keywords: "in stock", "out of stock", "lead time", "backordered", "special order", "availability", "stock status"
+  * When user asks about counting/grouping by availability → set group_by_field="stock_status"
+  * Examples: "count in stock items", "breakdown by availability" → group_by_field="stock_status"
+
+
+
+IMPORTANT REMINDERS:
+- For capacity_range, the "unit" field is MANDATORY - always extract "oz", "ml", "l", or "gal"
+- Look for unit indicators: oz, ounce, ml, milliliter, liter, litre, l, gallon, gal
+- The numeric value and unit MUST be separated in the JSON
+- For GROUP BY queries, extract group_by_field separate from aggregation_field
+- When query asks "which [field] does [company] [verb]?", extract BOTH:
+  1. group_by_field = [field] (e.g., "market_segment", "category", "closure_type")
+  2. filters.company = [company] (e.g., "Cary Company")
+
+QUERY PATTERN RECOGNITION:
+Pattern: "which/what [FIELD] does/do [COMPANY] serve/have/offer/provide?"
+→ aggregation_type="group", group_by_field=[FIELD], filters.company=[COMPANY]
+
+Examples:
+- "which market segment cary serves?" → group_by_field="market_segment", filters.company="Cary Company"
+- "what categories does berlin offer?" → group_by_field="category", filters.company="Berlin Packaging"
+- "which closure types tricor have?" → group_by_field="closure_type", filters.company="TricorBrawn"
+  
+Return ONLY valid JSON, no markdown.
+"""
 
         try:
             response = self.llm.invoke(analysis_prompt)
@@ -355,6 +402,20 @@ class GuardrailSystem:
             "count",
             "how many",
             "company",
+            "category",
+            "closure",
+            "cap",
+            "cork",
+            "thread",
+            "pharmaceutical",
+            "beverage",
+            "market",
+            "segment",
+            "food",
+            "cosmetic",
+            "per case",
+            "per box",
+            "pallet",
         ]
 
         query_lower = query.lower()
@@ -406,6 +467,10 @@ class HybridRAGChatbot:
     SKU_FIELD = "sku"
     NAME_FIELD = "name"
     STOCKFIELD = "stock"
+    CATEGORY_FIELD = "category"
+    CLOSURE_TYPE_FIELD = "closure_type"
+    MARKET_SEGMENT_FIELD = "market_segment"
+    ITEMS_PER_UNIT_FIELD = "items_per_unit"
 
     def __init__(self, verbose: bool = False, log_file: str = "chatbot_activity.log"):
         self.logger = ChatbotLogger(verbose=verbose, log_file=log_file)
@@ -442,7 +507,7 @@ class HybridRAGChatbot:
         )
         self.llm = ChatGoogleGenerativeAI(
             model="gemini-2.5-flash",
-            temperature=0.1,
+            temperature=0.4,
             google_api_key=os.getenv("GOOGLE_API_KEY"),
             convert_system_message_to_human=True,
         )
@@ -517,10 +582,8 @@ class HybridRAGChatbot:
             "berlin packaging": "Berlin Packaging",
             "cary": "Cary Company",
             "cary company": "Cary Company",
-            "the cary company": "Cary Company",
-            "tricor": "TricorBraun",
+            "tricor": "TricorBrawn",
             "tricorbraun": "TricorBraun",
-            "tricorbraun packaging": "TricorBraun",
             "tricor braun": "TricorBraun",
             "tricor-braun": "TricorBraun",
         }
@@ -592,6 +655,10 @@ class HybridRAGChatbot:
             "shape": self.SHAPE_FIELD,
             "stock_status": self.STOCKFIELD,  # Add this line
             "stock": self.STOCKFIELD,
+            "category": self.CATEGORY_FIELD,
+            "closure_type": self.CLOSURE_TYPE_FIELD,
+            "market_segment": self.MARKET_SEGMENT_FIELD,
+            "availability": self.STOCKFIELD,  # Add this
         }
 
         # Map fields appropriately
@@ -896,6 +963,15 @@ class HybridRAGChatbot:
         if filters.get("stock_required"):
             pinecone_filter["in_stock"] = True
 
+        if filters.get("category"):
+            pinecone_filter["category"] = {"$eq": filters["category"]}
+
+        if filters.get("closure_type"):
+            pinecone_filter["closure_type"] = {"$eq": filters["closure_type"]}
+
+        if filters.get("market_segment"):
+            pinecone_filter["market_segment"] = {"$eq": filters["market_segment"]}
+
         return pinecone_filter
 
     def structured_query_mongodb(self, filters: Dict, limit: int = 10) -> List[Dict]:
@@ -986,6 +1062,45 @@ class HybridRAGChatbot:
 
         if filters.get("stock_required"):
             mongo_query[self.STOCK_FIELD] = {"$regex": "In Stock", "$options": "i"}
+
+        if filters.get("category"):
+            mongo_query[self.CATEGORY_FIELD] = {
+                "$regex": filters["category"],
+                "$options": "i",
+            }
+            self.logger.console_logger.info(
+                f"🆕 Category filter applied: {filters['category']}"
+            )
+
+        if filters.get("closure_type"):
+            mongo_query[self.CLOSURE_TYPE_FIELD] = {
+                "$regex": filters["closure_type"],
+                "$options": "i",
+            }
+            self.logger.console_logger.info(
+                f"🆕 Closure Type filter applied: {filters['closure_type']}"
+            )
+
+        if filters.get("market_segment"):
+            mongo_query[self.MARKET_SEGMENT_FIELD] = {
+                "$regex": filters["market_segment"],
+                "$options": "i",
+            }
+            self.logger.console_logger.info(
+                f"🆕 Market Segment filter applied: {filters['market_segment']}"
+            )
+
+        if filters.get("items_per_unit"):
+            items_range = filters["items_per_unit"]
+            if items_range.get("min") or items_range.get("max"):
+                mongo_query[self.ITEMS_PER_UNIT_FIELD] = {}
+                if items_range.get("min"):
+                    mongo_query[self.ITEMS_PER_UNIT_FIELD]["$gte"] = items_range["min"]
+                if items_range.get("max"):
+                    mongo_query[self.ITEMS_PER_UNIT_FIELD]["$lte"] = items_range["max"]
+                self.logger.console_logger.info(
+                    f"🆕 Items Per Unit filter applied: {items_range}"
+                )
 
         return mongo_query
 
@@ -1154,7 +1269,8 @@ For AGGREGATION queries:
 STRICT RULES:
 1. ONLY use information from the provided context
 2. Never fabricate data
-3. Be accurate and concise"""
+3. Be accurate and concise
+4. Present your response in bullet points whenever possible. highlight important numbers or product names."""
         else:
             system_context = """You are a product catalog assistant for glass bottles and jars.
 
@@ -1165,6 +1281,7 @@ STRICT RULES:
 4. Always cite specific product names, SKUs, and prices exactly as provided
 5. Stay within the domain of product catalog assistance
 6. Include stock status when relevant
+7. Present your response in bullet points whenever possible. highlight important numbers or product names.
 
 Be helpful, accurate, and concise."""
 
@@ -1184,6 +1301,7 @@ Provide an accurate response based ONLY on the above information."""
             start_time,
             {
                 "prompt_length": len(final_prompt),
+                "response": response.content,
                 "response_length": len(response.content),
                 "query_type": query_type,
             },

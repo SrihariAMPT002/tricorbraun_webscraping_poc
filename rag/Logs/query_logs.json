@@ -1,300 +1,84 @@
 [
   {
-    "timestamp": "2025-10-31T16:39:44.523887",
-    "user_query": "list all market segments and point out which category tricorbraun doesnt have?",
-    "query_type": "out_of_scope",
-    "intent": "out_of_scope",
-    "retrieval_strategy": "none",
+    "timestamp": "2025-11-03T18:21:45.086492",
+    "user_query": "What is the minimum average price per unit (excluding zero) among TricorBraun products?",
+    "query_type": "aggregation_query",
+    "intent": "statistics",
+    "retrieval_strategy": "Pinecone: False, MongoDB: True, Aggregation: True",
     "timing_metrics": [
       {
         "operation": "MongoDB Connection",
-        "start_time": 1761908965.4572423,
-        "end_time": 1761908965.649241,
-        "duration": 0.19199872016906738,
+        "start_time": 1762174252.5765734,
+        "end_time": 1762174252.6411612,
+        "duration": 0.06458783149719238,
         "details": null
       },
       {
         "operation": "Pinecone Connection",
-        "start_time": 1761908965.6494367,
-        "end_time": 1761908966.71028,
-        "duration": 1.0608432292938232,
+        "start_time": 1762174252.6413083,
+        "end_time": 1762174252.6422577,
+        "duration": 0.0009493827819824219,
         "details": null
       },
       {
         "operation": "Gemini Models Initialization",
-        "start_time": 1761908966.7105434,
-        "end_time": 1761908966.7425628,
-        "duration": 0.03201937675476074,
+        "start_time": 1762174252.6424983,
+        "end_time": 1762174252.6475248,
+        "duration": 0.005026578903198242,
         "details": null
       },
       {
         "operation": "Query Analysis & Routing",
-        "start_time": 1761908976.9783103,
-        "end_time": 1761908984.5235896,
-        "duration": 7.545279264450073,
-        "details": {
-          "query_type": "out_of_scope",
-          "intent": "out_of_scope",
-          "requires_aggregation": false,
-          "aggregation_type": null,
-          "group_by_field": null,
-          "return_products": false
-        }
-      }
-    ],
-    "pinecone_query": null,
-    "mongodb_query": null,
-    "aggregation_pipeline": null,
-    "results_count": 0,
-    "response_length": 220,
-    "guardrail_checks": {
-      "scope_check": false,
-      "response_validation": true
-    },
-    "total_time": 7.545607805252075,
-    "errors": []
-  },
-  {
-    "timestamp": "2025-10-31T16:40:17.949237",
-    "user_query": "can you list all the market segments and point out which category tricorbraun doesnt have?",
-    "query_type": "out_of_scope",
-    "intent": "out_of_scope",
-    "retrieval_strategy": "none",
-    "timing_metrics": [
-      {
-        "operation": "Query Analysis & Routing",
-        "start_time": 1761909011.6538997,
-        "end_time": 1761909017.948918,
-        "duration": 6.295018434524536,
-        "details": {
-          "query_type": "out_of_scope",
-          "intent": "out_of_scope",
-          "requires_aggregation": false,
-          "aggregation_type": null,
-          "group_by_field": null,
-          "return_products": false
-        }
-      }
-    ],
-    "pinecone_query": null,
-    "mongodb_query": null,
-    "aggregation_pipeline": null,
-    "results_count": 0,
-    "response_length": 220,
-    "guardrail_checks": {
-      "scope_check": false,
-      "response_validation": true
-    },
-    "total_time": 6.295372247695923,
-    "errors": []
-  },
-  {
-    "timestamp": "2025-10-31T16:41:03.378946",
-    "user_query": "what are the market segments and what segment tricorbraun doesnt have?",
-    "query_type": "out_of_scope",
-    "intent": "out_of_scope",
-    "retrieval_strategy": "none",
-    "timing_metrics": [
-      {
-        "operation": "Query Analysis & Routing",
-        "start_time": 1761909058.688398,
-        "end_time": 1761909063.3786752,
-        "duration": 4.690277338027954,
-        "details": {
-          "query_type": "out_of_scope",
-          "intent": "out_of_scope",
-          "requires_aggregation": false,
-          "aggregation_type": null,
-          "group_by_field": null,
-          "return_products": false
-        }
-      }
-    ],
-    "pinecone_query": null,
-    "mongodb_query": null,
-    "aggregation_pipeline": null,
-    "results_count": 0,
-    "response_length": 220,
-    "guardrail_checks": {
-      "scope_check": false,
-      "response_validation": true
-    },
-    "total_time": 4.690574645996094,
-    "errors": []
-  },
-  {
-    "timestamp": "2025-10-31T16:41:38.832670",
-    "user_query": "what are the market segments the all three companies offer?",
-    "query_type": "out_of_scope",
-    "intent": "out_of_scope",
-    "retrieval_strategy": "none",
-    "timing_metrics": [
-      {
-        "operation": "Query Analysis & Routing",
-        "start_time": 1761909094.5280704,
-        "end_time": 1761909098.8323488,
-        "duration": 4.304278373718262,
-        "details": {
-          "query_type": "out_of_scope",
-          "intent": "out_of_scope",
-          "requires_aggregation": false,
-          "aggregation_type": null,
-          "group_by_field": null,
-          "return_products": false
-        }
-      }
-    ],
-    "pinecone_query": null,
-    "mongodb_query": null,
-    "aggregation_pipeline": null,
-    "results_count": 0,
-    "response_length": 220,
-    "guardrail_checks": {
-      "scope_check": false,
-      "response_validation": true
-    },
-    "total_time": 4.304622650146484,
-    "errors": []
-  },
-  {
-    "timestamp": "2025-10-31T16:42:08.132769",
-    "user_query": "what are the unique market segments the all three companies offer?",
-    "query_type": "out_of_scope",
-    "intent": "out_of_scope",
-    "retrieval_strategy": "none",
-    "timing_metrics": [
-      {
-        "operation": "Query Analysis & Routing",
-        "start_time": 1761909123.6580012,
-        "end_time": 1761909128.1325035,
-        "duration": 4.474502325057983,
-        "details": {
-          "query_type": "out_of_scope",
-          "intent": "out_of_scope",
-          "requires_aggregation": false,
-          "aggregation_type": null,
-          "group_by_field": null,
-          "return_products": false
-        }
-      }
-    ],
-    "pinecone_query": null,
-    "mongodb_query": null,
-    "aggregation_pipeline": null,
-    "results_count": 0,
-    "response_length": 220,
-    "guardrail_checks": {
-      "scope_check": false,
-      "response_validation": true
-    },
-    "total_time": 4.47478985786438,
-    "errors": []
-  },
-  {
-    "timestamp": "2025-10-31T16:44:52.569847",
-    "user_query": "from the product catalog, what are the unique market segments the all three companies offer?",
-    "query_type": "error",
-    "intent": "error",
-    "retrieval_strategy": "none",
-    "timing_metrics": [
-      {
-        "operation": "Query Analysis & Routing",
-        "start_time": 1761909274.0466654,
-        "end_time": 1761909292.2969522,
-        "duration": 18.25028681755066,
+        "start_time": 1762174262.9363682,
+        "end_time": 1762174294.7269595,
+        "duration": 31.7905912399292,
         "details": {
           "query_type": "aggregation_query",
-          "intent": "aggregation",
+          "intent": "statistics",
           "requires_aggregation": true,
-          "aggregation_type": "group",
-          "group_by_field": "market_segment",
-          "return_products": false
-        }
-      }
-    ],
-    "pinecone_query": null,
-    "mongodb_query": null,
-    "aggregation_pipeline": null,
-    "results_count": 0,
-    "response_length": 0,
-    "guardrail_checks": {
-      "scope_check": false,
-      "response_validation": false
-    },
-    "total_time": 18.52323007583618,
-    "errors": [
-      "An error occurred: $regex has to be a string, full error: {'ok': 0.0, 'errmsg': '$regex has to be a string', 'code': 2, 'codeName': 'BadValue', '$clusterTime': {'clusterTime': Timestamp(1761909292, 3), 'signature': {'hash': b'\\xd6\\xe6\\xf7\\xc4\\xee8\\xf3\\xda\\xa1B\\x08\\xc8\\x88\\xb8\\xb0\\x07\\xcd\\xb8Uk', 'keyId': 7512921708022464525}}, 'operationTime': Timestamp(1761909292, 3)}"
-    ]
-  },
-  {
-    "timestamp": "2025-10-31T16:45:50.527884",
-    "user_query": "from the product catalog, what are the market segments that tricorbraun doesnt offer?",
-    "query_type": "aggregation_query",
-    "intent": "aggregation",
-    "retrieval_strategy": "Pinecone: False, MongoDB: True, Aggregation: True",
-    "timing_metrics": [
-      {
-        "operation": "Query Analysis & Routing",
-        "start_time": 1761909331.7130032,
-        "end_time": 1761909347.1481845,
-        "duration": 15.435181379318237,
-        "details": {
-          "query_type": "aggregation_query",
-          "intent": "aggregation",
-          "requires_aggregation": true,
-          "aggregation_type": "group",
-          "group_by_field": "market_segment",
+          "aggregation_type": "avg",
+          "group_by_field": null,
           "return_products": false
         }
       },
       {
         "operation": "MongoDB Aggregation Query",
-        "start_time": 1761909347.1485825,
-        "end_time": 1761909347.232554,
-        "duration": 0.08397150039672852,
+        "start_time": 1762174294.7272506,
+        "end_time": 1762174294.915251,
+        "duration": 0.18800044059753418,
         "details": {
-          "query_time": 0.08367419242858887,
-          "pipeline_stages": 4,
-          "results_count": 4,
-          "aggregation_type": "group",
+          "query_time": 0.18776917457580566,
+          "pipeline_stages": 3,
+          "results_count": 1,
+          "aggregation_type": "avg",
           "results": [
             {
-              "_id": "General",
-              "count": 230
-            },
-            {
-              "_id": "Beverage",
-              "count": 88
-            },
-            {
-              "_id": "Pharmaceutical",
-              "count": 56
-            },
-            {
-              "_id": "Food & Condiments",
-              "count": 3
+              "_id": null,
+              "result": 1.9798695852534562,
+              "count": 217
             }
           ]
         }
       },
       {
         "operation": "Context Formatting",
-        "start_time": 1761909347.2327654,
-        "end_time": 1761909347.2328322,
-        "duration": 6.67572021484375e-05,
+        "start_time": 1762174294.915393,
+        "end_time": 1762174294.915431,
+        "duration": 3.790855407714844e-05,
         "details": {
-          "aggregation_type": "group",
+          "aggregation_type": "avg",
           "return_products": false
         }
       },
       {
         "operation": "Response Generation",
-        "start_time": 1761909347.2330563,
-        "end_time": 1761909350.527517,
-        "duration": 3.2944607734680176,
+        "start_time": 1762174294.9155931,
+        "end_time": 1762174305.0863125,
+        "duration": 10.170719385147095,
         "details": {
-          "prompt_length": 1102,
-          "response_length": 329,
+          "prompt_length": 1291,
+          "response": "Based on the provided context:\n\n*   The aggregation query calculated the **average** of the `avg_price_per_unit` for TricorBraun products, not the minimum.\n*   The average `avg_price_per_unit` for **217** TricorBraun products (excluding zero prices) is **$1.9798695852534562**.\n*   The context does not provide the specific minimum `avg_price_per_unit` among these products.",
+          "response_length": 374,
           "query_type": "aggregation_query"
         }
       }
@@ -305,35 +89,42 @@
       {
         "$match": {
           "company": {
-            "$regex": "tricorbraun",
+            "$regex": "TricorBraun",
             "$options": "i"
+          },
+          "avg_price_per_unit": {
+            "$gte": 1e-06
+          }
+        }
+      },
+      {
+        "$match": {
+          "avg_price_per_unit": {
+            "$ne": null,
+            "$exists": true,
+            "$type": "number"
           }
         }
       },
       {
         "$group": {
-          "_id": "$market_segment",
+          "_id": null,
+          "result": {
+            "$avg": "$avg_price_per_unit"
+          },
           "count": {
             "$sum": 1
           }
         }
-      },
-      {
-        "$sort": {
-          "count": -1
-        }
-      },
-      {
-        "$limit": 10
       }
     ],
     "results_count": 1,
-    "response_length": 329,
+    "response_length": 374,
     "guardrail_checks": {
       "scope_check": true,
       "response_validation": true
     },
-    "total_time": 18.81492805480957,
+    "total_time": 42.150156021118164,
     "errors": []
   }
 ]

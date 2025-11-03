@@ -108,7 +108,25 @@ def show_chatbot():
 
                     # Display the response using proper markdown
                     with st.container(border=True):
-                        st.markdown(f"**Chatbot Response:**\n\n{clean_response}")
+                        st.markdown(
+                            """
+                            <div style="
+                                background: #f5f6fa;
+                                border-radius: 10px;
+                                border: 1px solid #e2e4ea;
+                                padding: 1.2em 1em 1.2em 1em;
+                                margin-bottom: 1em;
+                                ">
+                                <strong>Chatbot Response:</strong>
+                                <div style="margin-top:0.75em;">
+                                    {resp}
+                                </div>
+                            </div>
+                            """.format(
+                                resp=clean_response.replace("\n", "<br>")
+                            ),
+                            unsafe_allow_html=True,
+                        )
 
                 except Exception as e:
                     st.error(f"⚠️ Error: {str(e)}")
