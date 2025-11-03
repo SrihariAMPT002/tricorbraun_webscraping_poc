@@ -208,6 +208,7 @@ def normalize_shape(product_name: str, description: str, shape: str) -> str:
         "Straight Sided": ["straight sided"],
         "Bordeaux": ["bordeaux"],
         "Bullet": ["bullet", "rocket"],
+        "French Square": ["french square"],
         "Square": ["square", "f-style"],
         "Cylinder": ["cylinder", "cylindrical"],
         "Jar": ["jar"],

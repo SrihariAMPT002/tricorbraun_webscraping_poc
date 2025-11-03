@@ -16,7 +16,7 @@ def load_data():
 
     # Load Berlin Packaging data
     try:
-        with open("demo_batch_data/berlin_products_data_pg=8.json", "r") as f:
+        with open("demo_batch_data/berlin_packing_data.json", "r") as f:
             berlin_data = json.load(f)
             companies["Berlin Packaging"] = process_berlin_data(berlin_data)
     except FileNotFoundError:
@@ -24,22 +24,22 @@ def load_data():
         companies["Berlin Packaging"] = []
 
     # Load Cary Company data
-    # try:
-    #     with open("demo_batch_data/cary_company_data.json", "r") as f:
-    #         cary_data = json.load(f)
-    #         companies["Cary Company"] = process_cary_data(cary_data)
-    # except FileNotFoundError:
-    #     print("Warning: Cary Company data not found. Skipping this company.")
-    #     companies["Cary Company"] = []
+    try:
+        with open("demo_batch_data/cary_company_data.json", "r") as f:
+            cary_data = json.load(f)
+            companies["Cary Company"] = process_cary_data(cary_data)
+    except FileNotFoundError:
+        print("Warning: Cary Company data not found. Skipping this company.")
+        companies["Cary Company"] = []
 
-    # # Load TricorBraun data
-    # try:
-    #     with open("demo_batch_data/tricorbraun_data.json", "r") as f:
-    #         tricor_data = json.load(f)
-    #         companies["TricorBraun"] = process_tricor_data(tricor_data)
-    # except FileNotFoundError:
-    #     print("Warning: TricorBraun data not found. Skipping this company.")
-    #     companies["TricorBraun"] = []
+    # Load TricorBraun data
+    try:
+        with open("demo_batch_data/tricorbraun_data.json", "r") as f:
+            tricor_data = json.load(f)
+            companies["TricorBraun"] = process_tricor_data(tricor_data)
+    except FileNotFoundError:
+        print("Warning: TricorBraun data not found. Skipping this company.")
+        companies["TricorBraun"] = []
 
     # Filter out empty companies
     companies = {k: v for k, v in companies.items() if v}
@@ -59,7 +59,7 @@ def processed_data_output(companies_data):
     for company, data in companies_data.items():
         all_data.extend(data)
 
-    with open("processed_data/processed_data_new_bp_batch.json", "w") as f:
+    with open("processed_data/processed_data_new.json", "w") as f:
         json.dump(all_data, f, indent=4)
 
 
