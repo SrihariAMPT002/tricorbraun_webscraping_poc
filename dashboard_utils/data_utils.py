@@ -3,7 +3,7 @@ Data processing utilities for the packing competitor analysis dashboard.
 This module contains all data loading, processing, and analysis functions.
 """
 
-import json, re, pandas as pd, pint, plotly.express as px
+import json, re, pandas as pd, pint, plotly.express as px, os
 import streamlit as st
 from rapidfuzz import fuzz
 from typing import Optional
@@ -27,6 +27,20 @@ ureg = pint.UnitRegistry()
 def load_data():
     """Load and process all company data"""
     companies = {}
+
+    if os.path.isfile("processed_data/processed_data_new.json"):
+        with open("processed_data/processed_data_new.json", "r") as pd:
+            loaded_pd = json.load(pd)
+            companies["Cary Company"] = [
+                c for c in loaded_pd if c["company"] == "Cary Company"
+            ]
+            companies["Berlin Packaging"] = [
+                b for b in loaded_pd if b["company"] == "Berlin Packaging"
+            ]
+            companies["TricorBraun"] = [
+                t for t in loaded_pd if t["company"] == "TricorBraun"
+            ]
+            return companies
 
     # Load Berlin Packaging data
     try:
